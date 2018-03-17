@@ -1,0 +1,312 @@
+/**
+* /Start of Demo Importer style
+*/
+
+.note-wrap {
+	padding: 20px;
+	background: #fff;
+	margin: 20px 10px;
+	border: 1px solid #e3e3e3;
+}
+.note-wrap h3 {
+	margin-top: 0;
+}
+.message-wrap {
+	margin: 20px 0 0 20px;
+	padding: 30px 0;
+	border-top: 1px solid #e3e3e3;
+	display: inline-block;
+	min-width: 40%;
+}
+.message-wrap h3 {
+	margin-top: 0;
+}
+.import-success-msg {
+	display: none;	
+}
+.post-filter-tabs {
+	text-align: center;
+}
+.post-filter-tabs li {
+	display: inline-block;
+	margin-left: 10px;
+	line-height: 48px;
+}
+.post-filter-tabs li:first-child {
+	margin-left: 0;
+}
+.post-filter-tabs li a {
+	text-decoration: none;
+	color: #666;
+}
+.post-filter-tabs li a:hover {
+	color: #222;
+}
+.post-filter-tabs li.selected a {
+	color: #222;
+	font-weight: bold
+}
+.swift-demo {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.swift-demo li img {		
+	width: 100%;
+	height: auto;
+}
+.swift-demo li.hidden {
+	display: none;
+}
+.swift-demo span {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #666;
+}		
+.swift-demo .dinput {				
+	width: 50%;
+	float: left;
+	margin-bottom: 8px;
+}			
+.swift-demo li {
+	width: 300px;
+	height: auto;
+	padding: 0 0 15px;
+	margin: 0 10px 20px;
+	display: inline-block; 	
+	background-color: #FFF;
+	border: 1px solid #dedede;
+	color: #222;
+	text-align: left;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 5px 6px -7px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 5px 6px -7px rgba(0,0,0,0.2);
+	box-shadow: 0px 5px 6px -7px rgba(0,0,0,0.2);
+}
+.swift-demo li .item-wrap {
+	padding: 20px 15px 0;
+}
+.swift-demo li h3 {
+	text-align: center;
+	margin: 0 0 20px;
+}
+.product {
+	background: #222 url('images/demo-images_1500x1350.png') no-repeat 0 0;
+	cursor: pointer;
+	display: block;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none !important;
+	width: 299px;
+	height: 225px;
+	float: none!important;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+.product:hover {
+	opacity: 0.6;
+}
+.product.features {
+	background-position: -1200px -1125px;
+}
+.product.agency {
+	background-position: 0 0;
+}
+.product.agency_two {
+	background-position: -300px 0;
+}
+.product.agency_three {
+	background-position: -600px 0;
+}
+.product.agency_four {
+	background-position: -900px 0;
+}
+.product.agency_five {
+	background-position: -1200px 0;
+}
+.product.buddypress {
+	background-position: 0 -225px;
+}
+.product.corporate {
+	background-position: -300px -225px;
+}
+.product.corporate_two {
+	background-position: -600px -225px;
+}
+.product.corporate_three {
+	background-position: -900px -225px;
+}
+.product.corporate_four {
+	background-position: -1200px -225px;
+}
+.product.corporate_five {
+	background-position: 0px -450px;
+}
+.product.crowdfunding {
+	background-position: -300px -450px;
+}
+.product.magazine {
+	background-position: -600px -450px;
+}
+.product.magazine_two {
+	background-position: -900px -450px;
+}
+.product.magazine_three {
+	background-position: -1200px -450px;
+}
+.product.nonprofit {
+	background-position: 0 -675px;
+}
+.product.personal {
+	background-position: -300px -675px;
+}
+.product.personal_two {
+	background-position: -600px -675px;
+}
+.product.photography {
+	background-position: -900px -675px;
+}
+.product.photography_two {
+	background-position: -1200px -675px;
+}
+.product.photography_three {
+	background-position: -900px -1125px;
+}
+.product.restaurant {
+	background-position: 0 -900px;
+}
+.product.shop {
+	background-position: -300px -900px;
+}
+.product.shop_two {
+	background-position: -600px -900px;
+}
+.product.shop_three {
+	background-position: -900px -900px;
+}
+.product.shop_four {
+	background-position: -1200px -900px;
+}
+.product.shop_five {
+	background-position: 0 -1125px;
+}
+.product.wedding {
+	background-position: -300px -1125px;
+}
+.product.musician {
+	background-position: -600px -1125px;
+}
+.product.directory {
+	background-position: -900px -1125px;
+}
+.importoptions {	
+	margin-top: 10px;
+	margin-left: 10px;		
+}				
+.demoimp-button:hover, #sf_import_start:hover {		
+	cursor: pointer;
+	background: #fe504f;
+	color: #fff;
+}		
+.demoimp-button, #sf_import_start {
+	width: 100%;
+	margin-left:0px;
+	margin-top:10px;
+	background-color: #ECEBEB;
+	padding: 15px 20px;
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	float: left;
+	box-sizing: border-box;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.sf-black-overlay {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;  
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.sf-modal-notice {
+	width: 380px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -190px;
+	padding: 20px;
+	border: 6px solid white;
+	background-color: white;
+	z-index: 1002;
+	overflow: hidden;
+	height: auto;
+}
+.sf-modal-notice h3 {
+	margin-top: 0;
+}
+.sf-modal-notice p span {
+	font-weight: bold;
+}
+
+	
+/**
+* /Start of Bounce annimation
+*/
+	
+.importspinner {     
+    width: 100%;
+    text-align: left;
+	margin-top:20px;
+}
+.importspinner > div {	
+    width: 20px;
+	height: 20px;
+	background-color: #666;
+	border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+ .importspinner .bounce1 {	
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;	
+}
+.importspinner .bounce2 {		
+     -webkit-animation-delay: -0.16s;
+     animation-delay: -0.16s; 
+}
+@-webkit-keyframes bouncedelay {	
+     	0%, 80%, 100% { -webkit-transform: scale(0.0) }
+      	40% { -webkit-transform: scale(1.0) }
+}
+@keyframes bouncedelay {
+      	
+		0%, 80%, 100% {
+        	transform: scale(0.0);
+        	-webkit-transform: scale(0.0);
+      	} 40% {
+        	transform: scale(1.0);
+        	-webkit-transform: scale(1.0);
+      	}
+}
+	
+/**
+* /End of Bounce annimation
+*/

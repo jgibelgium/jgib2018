@@ -1,0 +1,238 @@
+ /*--------------------------------------------------------------
+1.0 Auth Pages
+--------------------------------------------------------------*/
+
+.sf-about-wrap {
+	position: relative;
+	margin: 25px 40px 0 20px;
+	max-width: 1050px;
+	font-size: 15px;
+}
+.sf-about-wrap h1 {
+	margin: 30px 0 40px 0;
+	color: #333;
+	line-height: 24px;
+	font-size: 36px;
+	font-weight: 400;
+}
+.about-content {
+	margin-top: 40px;
+}
+.about-content .divide {
+	width: 200px;
+	height: 2px;
+	background: #ccc;
+	margin: 30px 0;
+}
+.about-content ul {
+	list-style: disc inside;
+}
+.instagram-generate-content {
+ 	margin-top: 40px;
+}
+.instagram-generate-content .divide {
+	margin: 50px 0;
+}
+.instagram-generate-content p {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.instagram-generate-content p strong {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.instagram-generate-content h3 {
+	margin-bottom: 20px;
+}
+.instagram-generate-content .notice {
+	margin: 30px 0;
+	width: auto;
+}
+.instagram-generate-content .notice p {
+    margin: .6em 0;
+    padding: 2px;
+    font-size: 13px;
+}
+.sf-auth-button {
+	background: #ff6666!important;
+    color: #fff!important;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    outline: 0!important;
+    box-shadow: none!important;
+    opacity: 0.8;
+}
+.sf-auth-button:hover, .sf-auth-button:focus, .sf-auth-button:active {
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+2.0 Meta
+--------------------------------------------------------------*/
+
+.swiftframework-mdl .mdl-checkbox {
+    width: auto;
+}
+
+.swiftframework-mdl .mdl-slider__container {
+    margin-left: -25px;
+}
+
+.swiftframework-mdl .getmdl-select .mdl-menu__container {
+    margin-top: 2px;
+}
+
+.swiftframework-mdl .mdl-slider__container .thumb.active {
+    position: absolute;
+    right: -20px!important;
+    top: -3px!important;
+    left: auto!important;
+    font-weight: bold;
+}
+
+.swiftframework-metabox-table tr {
+    border-top: 1px solid #EEEEEE;
+}
+
+.swiftframework-metabox-table tr.dependency-field.hide {
+    display: none;
+}
+
+.swiftframework-metabox-table tr.divide div {
+    background: #eee;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.swiftframework-metabox-table tr.divide, .swiftframework-metabox-table tr.divide + tr {
+    border-top-width: 0;
+}
+
+.swiftframework-metabox-table th {
+    width: 25%;
+    padding-right: 30px;
+}
+
+.swiftframework-metabox-table label strong {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.swiftframework-metabox-table label span {
+    color: #999999;
+    font-size: 12px;
+    display: block;
+    line-height: 20px;
+    margin: 0px 0 0;
+    font-weight: normal;
+}
+
+.swiftframework-metabox-table input[type="text"], .swiftframework-metabox-table textarea {
+    float: left;
+    margin-right: 0;
+    box-shadow: none;
+    width: 100%;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.swiftframework-metabox-table input[type=checkbox] {
+	width: 20px;
+}
+
+.swiftframework-metabox-table input.file {
+    width: 85%;
+}
+
+.swiftframework-metabox-table input.button {
+    margin-right: 0;
+    width: auto;
+}
+
+.swiftframework-metabox-table input.radio {
+    float: none;
+    margin-right: 3px;
+    width: auto;
+}
+
+.swiftframework-metabox-table fieldset.buttonset > label {
+	margin-left: 20px!important;
+}
+
+.swiftframework-metabox-table fieldset.buttonset > label:first-child {
+	margin-left: 0!important;
+}
+
+.swiftframework-metabox-table fieldset.buttonset label .mdl-radio__label {
+	font-size: 14px;
+    line-height: 24px;
+}
+
+.swiftframework-metabox-table .radio-label {
+    margin-right: 10px;
+}
+
+.swiftframework-metabox-table img {
+	width: 50%;
+	display: block;
+    margin-bottom: 14px;
+}
+
+.swiftframework-metabox-table .file_display_text {
+    margin-bottom: 14px;
+}
+
+.swiftframework-metabox-table .swiftframework-meta-thumb[src=""] {
+    display: none;
+}
+
+.swiftframework-metabox-table .images-list li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.swiftframework-metabox-table .images-list li img {
+    width: 100%;
+    margin: 0;
+}
+.swiftframework-metabox-table .images-list .swiftframework-meta-remove-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.swiftframework-metabox-table .images-list .swiftframework-meta-remove-img a {
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #222;
+    opacity: 0;
+}
+.swiftframework-metabox-table .images-list li:hover .swiftframework-meta-remove-img a {
+    opacity: 1;
+}
+.swiftframework-metabox-table .images-list .swiftframework-img-order {
+    display: none;
+}
+.swiftframework-metabox-table .sortable-placeholder {
+    width: 100px;
+    height: 100px;
+    background: transparent url('../img/pattern.gif') repeat center center;
+    padding: 0;
+    border: 0;
+}
+#side-sortables .swiftframework-metabox-table th {
+    padding: 25px 5px;
+}
+#side-sortables .swiftframework-metabox-table .mdl-textfield.getmdl-select {
+    margin: -20px 0;
+}

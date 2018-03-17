@@ -1,0 +1,190 @@
+/************ Generic styling for GFM forms [form class = gfm-form] *************/
+/* Error messages */
+.gfm-api-message {
+    color: #790000;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-top: 2px solid #790000;
+    border-bottom: 2px solid #790000;
+    padding: 16px 0;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form styling */
+form.gfm-form {
+	width: 100%;
+	 /* border: 1px solid #ccc;                     border for testing */
+	margin: 0 auto;
+}
+
+/* Field styling */
+.gfm-form .ginput_container input, select {			
+	background-color: #f7f7f7 !important;       /* input field backcolor and height */ 
+        height: 36px;
+}
+
+.gfm-form label.gfield_label {			
+	font-size: 14px !important;                 /* label font size */ 
+}
+
+/* Submit button styling */
+.gfm-form .gform_footer input[type=submit] {
+	width:              150px !important;
+	background-color:   #DF7125 !important;
+        border-radius:      10px;
+        font-size:          14px;
+}
+
+/* Input fields for phones */
+@media only screen and (max-width: 600px) {
+    .gfm-form .ginput_container input, select {			
+            width: 280px !important;
+    }
+}
+
+/* Input fields for tablets */
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+    .gfm-form .ginput_container input, select {			
+            width: 250px !important;
+    }
+}
+
+/************ Styling for Donation form [form class = gfm-form-donation] *************/
+/*** Radio pushbuttons ***/
+.gfm-radio-buttons .gfield_radio {
+     list-style-type: none;
+     margin: 25px 0 0 0;
+     padding: 0;
+}
+
+.gfm-radio-buttons .gfield_radio li {
+    float: left;
+    margin: 0 5px 0 0;
+    width:  75px;
+    height: 40px;
+    position: relative;
+}
+
+.gfm-radio-buttons .gfield_radio li:last-child {
+    width: 70px !important;
+}
+
+.gfm-radio-buttons .gfield_radio input[type="text"] {
+    width: 60px !important;  
+    height: 40px;    
+}
+
+.gfm-radio-buttons .gfield_radio label, .gfield_radio input {
+    display: block;
+    position: absolute;
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
+}
+
+.gfm-radio-buttons .gfield_radio label {
+    background:     #DF7125;
+    color:          #fff;
+    padding:        5px 10px !important;
+    border:         2px solid #DF7125;
+    border-radius:  10px; 
+    cursor:         pointer;
+    z-index:        90;   
+}
+
+.gfm-radio-buttons .gfield_radio input[type="radio"] {
+    opacity:        0.01;
+    z-index:        100;
+    border-radius:  5px; 
+}
+
+.gfm-radio-buttons .gfield_radio input[type="radio"]:checked + label {
+    background: #fff;
+    color:      #DF7125;
+}
+
+.gfm-radio-buttons .gfield_radio label:hover {
+     background: #DDD;
+}
+/*** End radio pushbuttons ***/
+
+/* Authorization text */
+.gfm-authorization {
+    margin-top: 0px !important;   
+}
+
+.gfm-authorization ul.gfield_checkbox, div.ginput_container {
+    margin-top: 0px !important;   
+}
+
+li.gfm-payment-method select {
+    margin-top: 20px !important;
+}
+
+/************ End styling for Donation form *************/
+
+/************ Styling for Chimp Adoption form [form class = gfm-form-adoption] *************/
+form.gfm-form-adoption .ginput_product_price_label, .ginput_product_price {
+        display: none;                              /* hide adoption price */
+}
+
+form.gfm-form-adoption .gfield_total {
+        margin-top: 0px !important;                 /* total price margins */
+        margin-bottom: 30px !important;             
+}
+
+form.gfm-form-adoption .ginput_container_total {
+        display: inline-block;                      /* total price amount */
+        padding-left: 10px;
+}
+
+form.gfm-form-adoption .ginput_total {
+        color: #ffffff;
+        background-color: #129269;
+        font-weight: bold;
+}
+
+/* Hide instruction for 'Bedrag' field */
+form.gfm-form-adoption .ginput_container_number .instruction {
+	display: none !important;
+}
+
+/* Chimp header text label */
+div.gfm-form-adoption_wrapper {
+    margin-top: 0px !important;
+}
+
+form.gfm-form-adoption li.gfield_html {
+    margin-top: 0px !important;
+}
+
+/* Chimp pictures (background-images for list items) */
+/* Note: hardcoded chimp styles in /joyn-child/style.css kept to keep old adoption page working */
+form.gfm-form-adoption .gfm-select-chimp li {
+    display:        block; 
+    float:          left; 
+    width:          150px;
+    padding-right:  25px ;
+    height:         200px;
+}
+
+form.gfm-form-adoption .gfm-select-chimp li:nth-child(1) { background:url(../../../uploads/jeje.png) top no-repeat; }
+form.gfm-form-adoption .gfm-select-chimp li:nth-child(2) { background:url(../../../uploads/lemba.png) top no-repeat; }
+form.gfm-form-adoption .gfm-select-chimp li:nth-child(3) { background:url(../../../uploads/africa.png) top no-repeat; }
+form.gfm-form-adoption .gfm-select-chimp li:nth-child(4) { background:url(../../../uploads/tumbo.png) top no-repeat; }
+
+/* Chimp names */
+form.gfm-form-adoption .gfm-select-chimp ul.gfield_checkbox input { margin-top: 150px!important; margin-left: 30px; }   /*150 / 30px*/
+form.gfm-form-adoption .gfm-select-chimp ul.gfield_checkbox label { margin-top: 150px!important; margin-left: 20px; }   /*150 / 20px*/
+
+@media only screen and (max-width: 600px) {
+    form.gfm-form-adoption .gfm-select-chimp ul.gfield_checkbox input { margin-top: 150px!important; margin-left: 10px; }  
+    form.gfm-form-adoption .gfm-select-chimp ul.gfield_checkbox label { margin-top: -60px!important; margin-left: 30px; } 
+}
+
+
+/************ End styling for Chimp Adoption form *************/

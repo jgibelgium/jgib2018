@@ -1,0 +1,70 @@
+* There seems to be a mistake in Joyn theme, Theme Options, General Options, 404 page, 404 page content.
+
+A shortcode there is not working. 
+
+
+1) Open the file: /wp-content/themes/joyn/swift-framework/layout/404.php
+
+2) Find this: 
+
+echo $error_content;
+
+3) Replace that with this:
+
+echo do_shortcode( $error_content );
+
+
+*Teneinde de hero image zonder vertraging te laten verschijnen:
+
+Put the values of 400, 800 and 1200 to 0 in the following code, starting at line 380 in functions.js of the Joyn theme
+
+// Animate in the heading text and title
+			setTimeout(function() {
+				fancyHeading.css({
+					'height': fancyHeadingHeight + 'px',
+					'opacity': 1
+				});
+			}, 400);
+			setTimeout(function() {
+				fancyHeadingText.css('opacity', 1);
+			}, 800);
+			setTimeout(function() {
+				fancyHeading.addClass('animated');
+			}, 1400);
+
+Dit bestand is met zijn gewijzigde waarden ook opgenomen in het Joyn child thema. In het Joyn child themna wordt functions.js eerst gedequeued en dan functions.js van het child thema geenqueued.
+
+* if ( sf_theme_supports( 'product-summary-tabs' ) ) {
+	    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+		add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 35 );
+	}  
+	
+Dit staat op lijn 961 van sf-woocommerce.php in themes/joyn/swift-framework/core/sf-woocommerce.php en is in commentaar geplaatst om de data tabs van een product naar zijn oorspronkelijke plaats terug te plaatsen.
+
+*Polylang voor woocommerce costs 99 euro. 
+
+*Hello,
+
+Polylang for WooCommerce can work in combination with Polylang (free) or Polylang Pro. If at some point you discover that you need a feature of Polylang Pro, you'll be able to upgrade to Polylang Pro for WooCommerce (the bundle of the 2 plugins) for the difference of price.
+
+We take care to update Polylang for WooCommerce before the official WooCommerce releases. For example the 0.9.4 (which supports WooCommerce 3.3) has been published on 29 january. It was just before the official WooCommerce release for the 3.3.
+
+If you want you can Polylang Pro and Polylang for WooCommerce by creating a new sandbox site by clicking on on http://poopy.life/create?src=glorious-walrus&key=bnH2X9RQlbQ9mYRv
+
+This is a fresh site with only these 2 plugins activated. No language is created. You can install the last version of WooCommerce and other plugins to make all the tests you want. 
+See also: https://polylang.pro/doc/polylang-wc-installation/
+
+* As long travels with the mouse are needed in the mega menu, a breadcrumb is suitable.
+
+* press / pers /presse is verwijderd uit het top bar menu
+
+* De pagina en post titels beginnen met een hoofdletter. De andere woorden geen hoofdletter tenzij eigennaam.
+
+* No credit of the recycle4chimps banner at the Canadian website, nor as author in file details.
+
+* Onderlijnen van de hyperlinks bij aanklikken:
+	- verwijderd in de pagina inhoud
+	- verwijderd in taalmenu, navigatiemenu em hoofdmenu voor desktop
+    - aanwezig in taalmenu en mobiele menu voor tablet en smartphone
+
+* De breadcrum verschijnt niet op smartphone en kleine smartphone.

@@ -1,0 +1,3069 @@
+/* LICENSE & DETAILS
+   ==================================================
+
+	Theme Name: Joyn Child Theme
+	Theme URI: http://joyn.swiftideas.com
+	Description: An Incredible Responsive Multi-Purpose WordPress Theme - Designed & Developed by Swift Ideas ( www.swiftideas.net )
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Template: joyn
+	Version: 1.0
+	Author: Swift Ideas
+	Author URI: www.swiftideas.net
+
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+   ==================================================
+*/
+
+/* --------------------------------------------
+	CHILD THEME CSS
+-------------------------------------------- */
+
+
+/*algemeen*/
+.page-id-103 .inner-page-wrap, .page-id-106 .inner-page-wrap, .page-id-108 .inner-page-wrap {
+    margin-top: 0;
+}
+
+.page-content p, .page-content div, .page-content ul {
+    text-align: justify;
+    color: #58595b;
+}
+
+.page-content p, .page-content div{
+    /*font-family: Geneva, Verdana, "DejaVu Sans", sans-serif;*/
+    font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+}
+
+h1 {
+    font-family:Futura, sans-serif !important;
+}
+
+h2 {
+     font-family:Futura, sans-serif !important;
+     letter-spacing: 0.025rem;
+}
+
+/*kolommen*/
+.columnthird {
+	float: left;
+	width: 32%;
+	margin-right: 1%;
+}
+
+
+
+/*Page titles*/
+.fancy-heading.fancy-image.light-style h1 {
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+div.fancy-heading.fancy-image.light-style h3 {
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+
+
+/*icons in front of some post titles*/
+/*
+.janeicon:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/janeicon_50x50.png);
+    padding-right: 0.7em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+.environmenticon:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/environmenticon_50x50.png);
+    padding-right: 0.7em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+.monkeyicon:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/monkeyicon_83x50.png);
+    padding-right: 0.7em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+.peopleicon:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/peopleicon_63x50.png);
+    padding-right: 0.7em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+*/
+
+/*overriding in the style tag*/
+.page-content a {
+    color: #428BCA;
+    text-decoration: none;/*verwijdert de underline van de hyperlink bij klikken*/
+}
+
+.page-content a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+/*hyperlinks in accordion*/
+.page-content .ui-widget-content  a {
+	color: #428BCA;
+}
+
+.page-content .ui-widget-content a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+.page-content img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #87734f;
+}
+
+/*Donation Button Paypal*/
+.donateBtn {
+    cursor: pointer;
+}
+
+/* custom containers*/
+.viewcontent {
+    border: 1px dotted #bfa26f;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.rowtop, .rowmid {
+    border-bottom: 1px dotted #805d1e;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ }
+
+.rowlast {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.thumbleft {
+    display: inline-block;
+    width: 30%;
+ }
+
+.thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #87734f;
+    padding: 0;
+ }
+
+.contentright {
+    display: inline-block;
+    width: 67%;
+    margin-left: 2%;
+    vertical-align: top;
+    text-align: justify;
+}
+
+
+
+.contentright b {
+    font-family: FuturaBT-Medium, sans-serif;
+    letter-spacing: 0.025rem;
+}
+
+/*customborders and customquote*/
+.customborders {
+    padding: 10px;
+    margin-bottom:10px;
+    border: 1px solid #6b4b15;
+    box-shadow: 2px 2px 2px 0 #87734f;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fdf9e1;
+}
+    
+.customquote {
+    background: #fdf9e1;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 2px 0 rgb(191, 162, 111);
+    padding: 10px;
+}
+    
+/* Clear Floated Elements (source: pinboard)*/
+.clear {
+    clear:both;
+    display:block;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+    height:0;
+ }
+
+ .clear:after {
+    clear:both;
+    content:' ';
+    display:block;
+    font-size:0;
+    line-height:0;
+    visibility:hidden;
+    width:0;
+    height:0;
+  }
+
+ * html .clear {
+    height:1%;
+ }   
+   
+ /*ul indentation*/
+.jgi-indent {
+    padding-left: 2em;
+    text-indent: -2em;
+    text-align: justify;
+    line-height: 25px;
+    padding-bottom: 0.25em;
+    }
+   
+/*videos and presentations*/
+.jgibvideo {
+      padding-bottom: 1em;    
+ }
+  
+.jgibvideo iframe {
+      box-shadow: 0 0 90px -13px rgba(0,0,0,.75);
+      border-radius: 5px;
+}
+    
+.prezi {
+		width: 75%;
+		margin: 0 auto;
+}
+	
+/*videos in quickview*/
+#jckqv_summary div.prezi {
+		display: none;
+}
+  
+/*downloads*/
+.dwnlddiv {
+   margin-bottom: 1em !important;
+   width: 100%;
+ }
+   
+.dwnlddiv > div {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+ }
+
+.centerpdficon {
+   vertical-align: middle;
+ }
+
+img.pdficon {
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  margin-bottom: 1em;
+  border: 0;
+  box-shadow: none;
+ }
+
+img.pdficon:hover {opacity: 0.75;}
+  
+
+
+#mobile-logo.has-img {
+    max-width: 70%;
+}
+
+/**********/
+/*Gravity Forms*/
+/**********/
+
+.newsletter, .recycle4chimps, .rootsandshoots {
+	background-color: #fdf9e1;
+	box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
+}
+
+.gform_body, .g_form_footer {
+	padding: 10px;
+}
+
+li.gfield input.large {
+	background-color: #f7f7f7;
+}
+
+li.gfield div.charleft {
+	display: none;
+}
+
+.gform_button {
+	background-color: #fe504f ;
+	color: #fff ; 
+}
+
+/*top bar sticky wrapper*/
+#top-bar-sticky-wrapper{
+  	display: none;
+  }
+
+/*surveys of parent pages*/
+.surveycol {
+     border-radius: 1px;
+   }
+ 
+.surveycol > div {
+       border: 1px solid #27093b;
+ }
+ 
+.surveytext > div > div {
+        text-align: center;
+   }
+    
+.surveytext a {
+        padding: 0.8em;
+        color: #FFF;
+        background-color: #2A2A2E;
+        border-radius: 2px;
+  }
+    
+.surveytext a:hover {
+        text-decoration: none;
+        color: yellow;
+        background-color: #101013;
+  }
+  
+  
+  
+/*survey of child pages*/
+.gcsurveycol {
+     border-radius: 1px;
+   }
+ 
+.gcsurveytext h2 {
+        font-family: FuturaBT-Medium, sans-serif !important;
+  }
+  
+.gcsurveytext p {
+        font-size: 18px; 
+    }
+
+.gcsurvey-btn > div {
+	text-align: center;	
+}
+
+.gcsurvey-btn a.sf-button {
+        font-size: 16px;
+        font-family: FuturaBT-Medium,sans-serif;
+}
+     
+/*photo credits*/
+.photo-credit p {
+    position: relative;
+    font-family: FuturaBT-Medium,sans-serif;
+    font-size: 12px ;
+    color: #2a2a2e;
+    text-align: center;
+ }
+ 
+/*accordions*/
+.spb_accordion_section {
+     font-family: adobe-caslon-pro, Georgia;
+  }
+ 
+.spb_accordion .spb_accordion_section h4 {
+     background: linear-gradient(to bottom, #c9b18d 0%,#dbceba 50%,#ddccb1 100%) !important;
+     box-shadow: 1px 1px 1px 0 rgb(135, 115, 79);
+     opacity: 1;
+     margin: 0 0 3px 0 !important;
+  }
+
+.spb_accordion .spb_accordion_section h4 a {
+     font-size: 20px;
+     padding-left: 20px; 
+     padding-right: 20px; 
+     font-weight: normal;
+     color: #333333;
+  } 
+ 
+  
+.spb_accordion .ui-accordion .ui-accordion-content {
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ 
+.spb_accordion_section, .spb_accordion .spb_accordion_section:last-child {
+    border-bottom-width: 0;
+ }
+ 
+/*zip pattern*/
+div.zipcol, div.ziptextcol {
+    height: 400px;
+  }
+   
+.ziptextcol > div {
+    margin: auto !important;
+  } 
+ 
+/*footer*/
+#footer { 
+	padding: 0;}
+   
+#copyright {
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#copyright div .text-left {
+    line-height: 25px;
+    font-size: 14px;
+    color: #FFF;
+    text-shadow: 0 -0.1px 0 rgba(0,0,0,1);
+ }
+
+#copyright div a {
+    padding-right: 1em;
+    text-decoration: underline;
+ }
+  
+nav.footer-menu ul.menu li {
+    float: none;
+  }
+  
+#copyright nav ul.menu li a {
+    font-size: 14px;
+    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+    line-height: 25px;
+  }
+  
+  
+  
+/*lijsten*/
+.bananafull {
+  	list-style-type: square;
+  }
+
+/*****/
+/*Mobile menu*/
+/*****/
+#mobile-menu li > a {
+	text-transform: uppercase;
+	font-weight: 700;
+	} 
+  
+#mobile-menu ul li ul li {
+       font-size: 16px;
+ }
+ 
+   
+/*==========*/
+/*Pages*/
+/*==========*/
+/*1. home page*/
+
+div.swiper-slide h1 strong{
+	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+	color: #FFFFFF;
+}
+
+div.swift-slider-pagination {
+	text-align: center;
+}
+
+.sf-count-asset .count-divider {
+       display: none;
+    }
+  
+h6.count-subject {
+        font-family: FuturaBT-Medium, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.025rem;
+        text-transform: none;
+    }
+    
+
+    
+.ourworkcolumn, .newscolumn {
+        border-radius: 5px;
+        box-shadow: 0 3px 3px 0 rgba(50,50,50,.2);
+    }
+    
+div.ourwork .spb-asset-content {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        height: 200px; /*needed for FF which does not know min-height*/
+        display: table;
+     }
+     
+.ourwork p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 24px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+.ourworkreadmore, .newsreadmore {
+        width: 100%;
+     }
+     
+.ourworkreadmore a, .newsreadmore a {
+        color: #F06A00;
+     }
+
+/*2. Dr Jane page*/
+div.spb_swift-slider div.caption-content div.caption-excerpt p {
+	color: #FFFFFF;
+}
+    
+/*3. who we are*/
+ #who4icons {
+        position: relative;
+        top: -4em;
+     }
+    
+ #who4icons img {
+        border: none;
+        box-shadow: none;
+    }
+    
+/*4. q&A*/
+ .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
+        background-position: 20% 7% !important;
+     }
+     
+     
+     
+/*5. our mission */
+.page-id-25 .page-heading.fancy-heading, .page-id-118 .page-heading.fancy-heading, .page-id-176 .page-heading.fancy-heading{
+    background-position: top !important;
+}
+
+ div.missioncol {
+     height: 400px;
+ }
+
+   
+ .missiontextcol1, .missiontextcol2 {
+    height: 400px;
+   }
+   
+ .missiontextcol1 > div, .missiontextcol2 > div {
+    margin: auto !important;
+   } 
+
+/*6. our people*/
+.page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
+    background-position: 0% 45% !important;
+}
+
+
+/*7. our team our board*/
+.page-id-31 .page-heading.fancy-heading, .page-id-126 .page-heading.fancy-heading, .page-id-192 .page-heading.fancy-heading{
+    background-position: 0% 23% !important;
+}
+
+.jgib-active strong {
+     font-family: FuturaBT-Medium, sans-serif;
+    letter-spacing: 0.025rem;
+}
+
+/*8. our board*/
+.page-id-33 .page-heading.fancy-heading, .page-id-124 .page-heading.fancy-heading, .page-id-182 .page-heading.fancy-heading{
+    background-position: 0% 25% !important;
+}
+
+/*9. our ambassadors*/
+.page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
+    background-position: 0% 20% !important;
+}
+
+/*10. annual reports*/
+.page-id-29 .page-heading.fancy-heading, .page-id-100 .page-heading.fancy-heading, .page-id-1267 .page-heading.fancy-heading{
+    background-position: top !important;
+}
+
+.annrep {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: 0.1px 0.1px 0.1px 0 #87734f;
+}
+    
+/*11.Burundi  reforestation*/
+.page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
+    background-position: 0% 60% !important;
+}
+
+.wp-image-6148 {
+	width: 40%;
+}
+
+.post-143 h3, .post-45 h3 {
+    margin-top: 0;
+}
+
+/*12. gombe*/
+.page-id-51 .page-heading.fancy-heading, .page-id-206 .page-heading.fancy-heading, .page-id-151 .page-heading.fancy-heading{
+    background-position: top !important;
+}
+
+   /*centreert niet in Chrome, dus is !important nodig*/
+   /*
+   .flexbox .spb-column-container.achievementtextcol > .spb-column-inner {
+        margin: auto;
+   }
+   */
+  
+.donationp {
+      padding-top: 25px;
+}
+  
+  
+  
+   
+/*13. snares*/
+.page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
+    background-position: top !important;
+}
+   
+/*14. public awareness*/
+.page-id-188 .page-heading.fancy-heading, .page-id-132 .page-heading.fancy-heading, .page-id-59 .page-heading.fancy-heading{
+    background-position: 0% 35% !important;
+}
+   
+/*15. Senegal*/
+.page-id-47 .page-heading.fancy-heading, .page-id-147 .page-heading.fancy-heading, .page-id-200 .page-heading.fancy-heading{
+    background-position: 0% 45% !important;
+}
+   
+/*16. research*/
+.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
+    background-position: 0% 35% !important;
+    }
+   
+.page-id-39 .customquote,  .page-id-149 .customquote, .page-id-202 .customquote {
+       width: 90%;
+       float: none;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    
+/*17. roots&shoots*/
+.jgquote {
+        float: right;
+     }
+  
+/*18. peace day*/
+.janepeacequote {
+        text-align: justify;    
+    }
+    
+/*19. recycle4chimps*/
+#recycatable {
+        width: 100%;
+        margin: 2em 0;
+    }
+    
+#recycatable th {
+        text-align: center;
+    }
+    
+#recycatable * {border: 1px solid #ccc;}
+
+#recycatable td:first-child {
+    width: 50%;
+    }
+
+#recycatable td:last-child {
+    width: 50%;
+    }
+
+#recycatable img {
+    max-width: 100%;
+    box-shadow: none;
+    }
+
+#recycatable tr:nth-child(even) {
+    background: #fff;
+    }
+    
+/*20. ways to give*/
+.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
+    background-position: 0% 55% !important;
+    }
+    
+div.donationcol {
+     height: 400px;
+    }
+   
+.donationtextcol {
+     height: 400px;
+   }
+   
+.donationtextcol > div {
+    margin: auto !important;
+   } 
+   
+/*21. host a workshop in your school*/
+ul.workshopschool {
+  	 list-style-type: none;
+    }
+
+/*22 start a rs group*/
+img.wp-image-4183 {
+	border: none;
+	box-shadow: none;
+}
+
+    
+/*22. chimpanzees and great apes*/
+.page-id-1805 img, .page-id-1807 img, .page-id-1785 img {
+    	border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+/*23. faq*/
+.page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
+    background-position: 0% 30% !important;
+    }
+    
+/*24. youth corner*/
+/*Still used?*/
+.page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
+    background-position: center top !important;
+    }
+    
+img.wp-image-4180, img.wp-image-4179, img.wp-image-4190, img.wp-image-4191, img.wp-image-4192, img.wp-image-4218, img.wp-image-4182 {
+    	border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+/*25. chimps of gombe*/
+.page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
+    background-position: 0% 19% !important;
+    }
+    
+img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
+    	border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+  
+/*26. educators and mentors page*/
+.page-id-4045 .page-heading.fancy-heading, .page-id-4048 .page-heading.fancy-heading, .page-id-4050 .page-heading.fancy-heading{
+    background-position: 0% 30% !important;
+    }
+    
+
+	
+
+	
+/*27. contact page*/
+.formcontainer {
+    padding: 10px;
+    margin-bottom: 1em;
+    background: #fdf9e1;
+    box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
+    }
+    
+.formcontainer h3 {
+    	margin:0;
+    }
+
+.formcontainer p {
+	 margin-bottom: 10px;
+    }
+    
+span.wpcf7-list-item {
+    float: left;
+    min-width: 370px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    }
+    
+.checkbox-845, .checkbox-846 {
+    	border: 1px solid;
+    	border-radius: 5px;
+    	margin-bottom: 1em;
+    	box-shadow: 1px 1px 1px #ccc ;
+    }
+    
+.checkbox-845 span.wpcf7-list-item, .checkbox-846 span.wpcf7-list-item {
+    	display: block;
+    	float: none;
+    	padding: 0.75em 0 0.75em 1em;
+    	
+    }
+    
+select.femselect {
+    	width: 25%;
+    	min-width: 250px;
+    }
+    
+.wpcf7 input.wpcf7-submit[type="submit"] {
+	font-size: 16px;
+}
+    
+/*28. 404 page*/
+.error404  .page-heading {
+	 display: none;
+} 
+    
+/*29. jgi au monde*/
+.page-id-299 .page-heading, .page-id-301 .page-heading, .page-id-5351 .page-heading {
+    display: none;
+}
+
+#tablepress-1 {
+font-size: 20px;	
+}
+
+.page-id-5351 .embed-container {
+	position: relative;
+    padding-bottom: 80%;
+    height: 0;
+    max-width: 100%;
+}
+
+/*30. site map*/
+.page-id-647 .page-heading, .page-id-649 .page-heading, .page-id-651 .page-heading {
+    display: none;
+}
+
+/*31. private policy document*/
+.page-id-641 .page-heading, .page-id-643 .page-heading, .page-id-645 .page-heading {
+    display: none;
+}
+
+/*32. Search results page*/
+.search-results .page-heading, .search-no-results .page-heading {
+    display: none;
+}
+
+/*33. FAQ Fi1D*/
+.page-id-1620 .page-heading.fancy-heading, .page-id-5523 .page-heading.fancy-heading, .page-id-5538 .page-heading.fancy-heading{
+    background-position: 0% 30% !important;
+    }
+    
+/*34 chimpanzees and great apes*/
+.page-id-1805 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
+    background-position: 0% 42% !important;
+    }    
+
+/*35. sponsors*/   
+.page-id-5456 .page-heading, .page-id-5458 .page-heading, .page-id-5460 .page-heading {
+    display: none;
+}
+ 
+div.highlight {
+    color: rgb(97, 26, 26);
+    font-size: 20px;
+    line-height: 1.62em;
+    font-family: Georgia, "URW Bookman L", serif;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.jgibsponsors img {
+	border:none;
+	box-shadow:none;
+}
+
+/*36. partners*/
+.page-id-5463 .page-heading, .page-id-5465 .page-heading, .page-id-5467 .page-heading {
+    display: none;
+}
+
+.jgibpartners img {
+	border:none;
+	box-shadow:none;
+}
+
+/*37. FAQ Dr. Jane*/
+.page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
+    background-position: 0% 15% !important;
+    } 
+    
+/*38. subscribe to newsletter*/ 
+.page-id-6603 div.page-heading, .page-id-6607 div.page-heading, .page-id-6611 div.page-heading {
+	  display:none;
+} 
+
+    
+/*==========*/
+/*Woocommerce*/
+/*=========*/
+/*=====*/
+/*Headings*/
+/*=====*/
+   
+/*All headings*/
+/*Page heading*/
+    .page-id-2851 .page-heading.fancy-heading, .page-id-4865 .page-heading.fancy-heading, .page-id-4869 .page-heading.fancy-heading{
+    background-position: 0% 20% !important;
+ }
+        
+/*Product category heading*/
+.tax-product_cat .page-heading.fancy-heading {
+   	    height: 120px !important;
+   	    background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
+    	background-size: 100%;
+    	background-position: 0% 45% !important;
+} 
+
+.tax-product_cat .page-heading.fancy-heading h1 {
+   	    font-weight: normal;
+   	    letter-spacing: normal;
+}
+    
+    
+/*Product heading*/    
+.woocommerce .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
+    	background-size: 100%;
+    	background-position: 0% 45% !important;
+ }
+    
+.woocommerce .page-heading h1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    }
+    
+/*Post heading*/
+.single-post .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
+ }
+    
+.single-post .page-heading h1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+    
+/*Post categories headings*/
+.category .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
+}
+   
+.category .page-heading h1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    }
+    
+/*=====*/
+/*Overview page*/
+/*=====*/
+div.cartimage img, div.checkoutimage img {
+    	width: 40px;
+    	height: 40px;
+    	border: none;
+    	box-shadow: none;
+    	margin: 0 auto;
+    	cursor: pointer;
+    }
+    
+.webshoppage h2 {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: normal;
+    font-size: 26px;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+    background-color: #ffffe0;
+    padding: 10px;
+    }
+    
+.woocommerce ul.products li.product img {
+    	border: 1px solid #dddddd;
+    	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+    }
+    
+span.free-badge {
+    	display:none;
+    }
+    
+/*=====*/
+/*Product item*/
+/*=====*/
+.woocommerce button {
+	font-size: 16px;
+}
+
+
+
+.woocommerce div.product div.woocommerce-product-gallery figure a img {
+    border: none;
+    box-shadow: none;
+}
+    
+.woocommerce div.summary-top {
+    	display: none;
+}
+    
+.summary .product_meta span.leave-feedback {
+    	display:none;
+}
+    
+.woocommerce table.shop_attributes td > p {
+    	text-align: right;
+    	font-size: 14px;
+}
+    
+/*======*/
+/*Categories*/
+/*======*/
+.tax-product_cat #breadcrumbs {
+	//display: none;
+}
+    
+/*=====*/
+/*Cart page*/
+/*=====*/
+   
+ul#shipping_method li label {
+  	cursor: pointer;
+  	margin-left: 10px;
+}
+  
+.woocommerce ul#shipping_method {
+  	text-align: right;
+}
+  
+.woocommerce ul#shipping_method li {
+  	padding-left: 2px;
+}
+  
+.woocommerce ul#shipping_method li input {
+  	margin-right: 15px;
+}
+  
+.product_meta span.sku_wrapper {
+  	display: none;
+}
+  
+.woocommerce .cart_totals table tr th {
+  	font-weight: bold;
+}
+  
+.woocommerce .cart_totals table tr.shipping th {
+  	padding-right: 10px;
+  	
+}
+
+.woocommerce-cart div.wc-proceed-to-checkout a.checkout-button {
+	background-color: #fe504f !important;
+	color: #fff !important;
+}
+
+.woocommerce-cart div.wc-proceed-to-checkout a.checkout-button:hover {
+	background-color: #222222 !important;
+    border-color: #222222;
+} 
+
+.woocommerce a.button.wc-backward {
+	font-size: 16px;
+	background-color: #fe504f;
+	color: #fff;
+}  
+
+.woocommerce a.button.wc-backward:hover {
+	background-color: #000;
+}
+
+.woocommerce button.button[name="woocommerce_checkout_place_order"] {
+	font-size: 16px;
+}
+    
+/*=====*/
+/*Quickview*/
+/*=====*/
+#jckqv_summary span.leave-feedback {display:none;}
+#jckqv_summary span.sku_wrapper {display:none;}
+
+    
+/*=====*/
+/*Blog page*/
+/*=====*/
+.masonry-items .blog-item h2 {
+  	overflow: hidden;
+}
+
+.masonry-items .blog-item .details-wrap {
+  	padding-bottom: 25px;
+}
+
+
+    
+      
+/*---------------------------------------------------------------------------*/
+/* @media queries
+/*---------------------------------------------------------------------------*/
+/*1ste query*/
+@media only screen and (max-width: 480px) {
+    
+.thumbleft {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+.contentright {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+div[class^='menu-language-menu'] {
+    display: block;
+    background: -webkit-linear-gradient(#555,#000) !important;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    }
+    
+div[class^='menu-language-menu'] ul {
+    margin-bottom: 0;
+    }
+    
+div[class^='menu-language-menu'] li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 5% 0 5%;
+    }
+    
+div[class^='menu-language-menu'] li > a{
+        color: #FFF;
+        font-size: 16px;
+    }
+    
+div[class^='menu-language-menu'] li > a:focus {
+        text-decoration: underline;
+    }
+    
+/*mobile menu social icons*/
+#mobile-top-text {
+      text-align: center;
+    }
+  
+#mobile-top-text ul {
+       width: 80%;
+       margin: 0 10%;
+    }
+  
+ul.social-icons li:not(.sf-love) a {
+      font-size: 30px;
+      padding: 0;
+     }
+  
+ul.social-icons li {
+      margin: 0 20px;
+    }
+  
+.fa-twitter:before {
+      vertical-align: middle;
+    }
+  
+.fa-facebook:before {
+      vertical-align: middle;
+  }
+  
+.fa-youtube:before {
+      vertical-align: middle;
+  }
+  
+.fa-flickr {
+  	padding-top:6px;
+  }
+  
+#mobile-top-text ul.social-icons li a:hover i {
+    top: 0;
+   }
+
+#mobile-top-text li.twitter a:focus {
+       background-color: #00aced;
+       color: #fff;
+   }
+   
+#mobile-top-text li.facebook a:focus {
+       background-color: #3b5998;
+       color: #fff;
+   }
+   
+#mobile-top-text li.youtube a:focus {
+       background-color: #b00;
+       color: #fff;
+   }
+   
+#copyright {
+       background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
+   }
+   
+/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
+#copyright div a:hover {
+       text-decoration: underline !important;
+       color: #000 !important;
+   }
+
+/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
+#copyright div nav .menu li a:hover {
+      text-decoration: underline !important;
+      color: #000 !important;
+   }
+
+#copyright nav .menu li {
+      border: none;
+   } 
+   
+/*necessary completion for touch devices*/
+ .hover {
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;        
+    }
+    
+/*icons in front of the titles*/
+/*
+.janeicon:before {
+    content: '';
+    }
+
+.environmenticon:before {
+    content: '';
+    }
+
+.monkeyicon:before {
+    content: '';
+     }
+
+    .peopleicon:before {
+    content: '';
+    }
+ */
+   
+/*surveys*/
+.surveycol {
+        height: 400px;
+    }
+    
+.surveytext {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+     }
+     
+/*survey of the grandchild pages*/
+.gcsurveycol {
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    
+.spb_content_element.gcsurveycol {
+        margin-bottom: 0;   
+    }
+    
+.gcsurveytext > div{
+        padding-left: 0 !important;
+    }
+     
+.gcsurveytext h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 0;
+     }
+     
+.gcsurvey-btn {
+         margin-bottom: 20px;
+     }
+     
+/*videos and presentations*/
+.spb_video_widget div.video-wrap {
+      padding: 0 !important;
+    }
+    
+.prezi {
+    	width: 100%;
+    }
+    
+/*zip pattern*/
+div.ziptitle {
+        margin-bottom: 0;    
+     } 
+     
+div.zipcol {
+        margin-top: 1em;
+     }
+     
+div.ziptextcol {
+        height: auto;
+        margin-top: 1em;
+     }
+     
+.zippage section:nth-child(2n+2) {
+         display: flex;
+         flex-direction: column;
+     }
+     
+.zippage section:nth-child(2n+2) div.ziptextcol {
+         order: 2;
+     }
+ 
+/*footer*/
+#footer {display:none;}  
+    
+/*==========*/
+/*Pages*/
+/*==========*/
+/*1. home page*/
+.sf-count-asset .count-number {
+          font-size: 32px !important;
+    }
+  
+h6.count-subject {
+        font-size: 18px;
+        line-height: 24px;
+    } 
+    
+.diffctr img {
+    width: 53.3%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+} 
+    
+.ourworkreadmore, .newsreadmore {
+        position: absolute;
+        top: 110px;
+    }
+         
+.ourworkdesc, .newsdesc {
+        height: 150px;
+    }
+    
+.post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
+    	top: 130px;
+    }
+    
+    
+    
+/*2. dr Jane page*/
+.page-id-22 .page-heading {
+        display: table;
+        width: 100%;
+    }
+    
+.page-id-22 .page-heading > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+.natgeo h3 {
+        white-space: normal;
+    }
+    
+/*3. mission*/
+.missiontextcol1, .missiontextcol2 {
+        height: auto;
+    }
+   
+.missiontextcol1 {
+        margin-top: 1em;
+    }
+    
+.missiontextcol2 {
+        margin-top: -1em;
+    }
+    
+/*4. our board  */ 
+.boardimg {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+/*5. Burundi reforestation*/
+.wp-image-6148 {
+	width: auto;
+	float: none;
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+/*6. RS*/
+        
+div > img.wp-image-2665 {
+        width: 90.1%;
+    }
+    
+img.wp-image-2665 {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+      }
+    
+        
+/*7. jane goodalls roots&shoots*/
+.jgquote {
+        width: 100%;
+        margin-bottom: 1em;
+      } 
+    
+.wp-image-1582 {
+        float: none;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+/*8. campaigns in Belgium survey*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
+        height: 500px;
+    }
+    
+.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
+        height: 550px;
+    }
+    
+    
+    
+/*9. peace day*/
+img.wp-image-1582-bis {
+         width: 50%;
+         float: none;
+         display: inline-block;
+         margin-left: 25%;
+         margin-right: 25%;
+     }
+     
+.wp-image-1650 {
+         width: 50%;
+         float: none;
+         display: inline-block;
+         margin-left: 25%;
+         margin-right: 25%;
+     }
+     
+ /*10. run4chimps*/
+.post-666 h2 {
+         text-align: center;
+     }
+     
+.post-666 .thumbleft {
+         padding-bottom: 0;
+     }
+     
+.post-666 .thumbleft img {
+         float: none;
+     }
+     
+/*11. recycle4chimps*/
+       
+.post-660 .viewcontent {
+    border: 0;
+    background: none;
+    margin-bottom: 2em;
+    }
+
+.post-660 .thumbleft {
+    display: block;
+    width: 100%;
+     }
+
+.post-660 .thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: none;
+    padding: 0;
+    width: 50%;
+    }
+
+.post-660 .contentmid {
+    display: inline-block;
+    width: 47%;
+    margin-left: 2%;
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+.post-660 .contentright {
+    display: inline-block;
+    width: 47%;
+    margin-left: 2%;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+/*12 chimpanzees and great apes*/
+.wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
+    	display: block;
+    	width: 300px;
+    	height: 300px;
+    	margin: 20px auto;
+    	float: none;
+    }
+    
+/*13. educators*/
+.post-4045 > section:last-child  {
+       
+        background-color: yellow;
+    }
+    
+/*14. ways to give*/
+.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
+    background-position: 40% 55% !important;
+    }  
+
+/*15. our ambassadors*/
+.page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
+    background-position: 60% 20% !important;
+}
+
+/*16. research*/
+.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
+    background-position: 30% 35% !important;
+    }
+    
+
+    
+      
+/*==========*/
+/*Posts*/
+/*==========*/
+/*workshops monkeys*/
+.wp-image-4483, .wp-image-4484, .wp-image-4485 {
+    	width: 100%;
+    }
+    
+/*==========*/
+/*Woocommerce */
+/*=========*/
+div.cartimage, div.checkoutimage {
+    	display: inline-block;
+    	width: 45%;
+}
+    
+.cart_totals tr.shipping td {
+    	width: 40%;
+}
+    
+.woocommerce div.product {
+    	width: 95%;
+    	margin: 0 auto;
+}  
+
+/*checkout page*/
+.woocommerce form div#customer_details .form-row label {
+	padding-right:20px;
+} 
+    
+}
+
+
+/*2de query*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+.thumbleft {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1em;
+ }
+
+.contentright {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+div[class^='menu-language-menu'] {
+    display: block;
+    background: -webkit-linear-gradient(#555,#000) !important;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+ }
+    
+div[class^='menu-language-menu'] ul {
+    margin-bottom: 0;
+    }
+    
+div[class^='menu-language-menu'] li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 5% 0 5%;
+    }
+    
+div[class^='menu-language-menu'] li > a{
+        color: #FFF;
+        font-size: 16px;
+    }
+    
+div[class^='menu-language-menu'] li > a:focus {
+        text-decoration: underline;
+    }
+ 
+/*mobile menu social icons*/
+#mobile-top-text {
+      text-align: center;
+    }
+  
+ #mobile-top-text ul {
+       width: 80%;
+       margin: 0 10%;
+    }
+  
+ ul.social-icons li:not(.sf-love) a {
+      font-size: 30px;
+      padding: 0;
+     }
+  
+ ul.social-icons li {
+      margin: 0 20px;
+    }
+  
+ .fa-twitter:before {
+      vertical-align: middle;
+    }
+  
+ .fa-facebook:before {
+      vertical-align: middle;
+  }
+  
+ .fa-youtube:before {
+      vertical-align: middle;
+  }
+  
+ .fa-flickr {
+  	padding-top:6px;
+  }
+  
+  
+ #mobile-top-text ul.social-icons li a:hover i {
+    top: 0;
+   }
+
+ #mobile-top-text li.twitter a:focus {
+       background-color: #00aced;
+       color: #fff;
+   }
+   
+ #mobile-top-text li.facebook a:focus {
+       background-color: #3b5998;
+       color: #fff;
+   }
+   
+ #mobile-top-text li.youtube a:focus {
+       background-color: #b00;
+       color: #fff;
+   }
+   
+ #copyright {
+       background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
+   }
+   
+   /*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
+ #copyright div a:hover {
+       text-decoration: underline !important;
+       color: #000 !important;
+   }
+
+ /*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
+ #copyright div nav .menu li a:hover {
+      text-decoration: underline !important;
+      color: #000 !important;
+   }
+
+ #copyright nav .menu li {
+      border: none;
+   } 
+   
+ /*necessary completion for touch devices*/
+ .hover {
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;        
+    }
+    
+ /*icons in front of the titles*/
+/*
+ .janeicon:before {
+    content: '';
+    }
+
+ .environmenticon:before {
+    content: '';
+    }
+
+ .monkeyicon:before {
+    content: '';
+     }
+
+ .peopleicon:before {
+    content: '';
+    }
+*/
+    
+ /*surveys*/
+ .surveycol {
+        height: 400px;
+    }
+    
+ .surveytext {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+     }
+     
+ /*survey of the grandchild pages*/
+ .gcsurveycol {
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    
+ .spb_content_element.gcsurveycol {
+        margin-bottom: 0;   
+    }
+    
+ .gcsurveytext > div{
+        padding-left: 0 !important;
+    }
+     
+ .gcsurveytext h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 0;
+     }
+     
+ .gcsurvey-btn {
+         margin-bottom: 20px;
+     }
+     
+ /*videos and presentations*/
+ .spb_video_widget div.video-wrap {
+      padding: 0 !important;
+    }
+    
+ .prezi {
+    	width: 90%;
+    }
+    
+ /*zip pattern*/
+ div.ziptitle {
+        margin-bottom: 0;    
+     } 
+     
+ div.zipcol {
+        margin-top: 1em;
+     }
+     
+ div.ziptextcol {
+        height: auto;
+        margin-top: 1em;
+     }
+     
+ .zippage section:nth-child(2n+2) {
+         display: flex;
+         flex-direction: column;
+     }
+     
+ .zippage section:nth-child(2n+2) div.ziptextcol {
+         order: 2;
+     }
+     
+/*footer*/
+#footer {display:none;}  
+
+   
+/*Woocommerce*/
+.cart_totals tr.shipping td {
+    	width: 40%;
+    }
+    
+/*Pages*/
+/*1. home page*/
+ 
+.sf-count-asset .count-number {
+          font-size: 32px !important;
+    }
+  
+h6.count-subject {
+        font-size: 18px;
+        line-height: 24px;
+    }  
+    
+.diffctr img {
+    width: 33.3%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+} 
+    
+.ourworkreadmore, .newsreadmore {
+        position: absolute;
+        top: 110px;
+    }
+         
+.ourworkdesc, .newsdesc {
+        height: 150px;
+    }
+    
+    
+    
+/*2. dr Jane page*/
+   
+.page-id-22 .page-heading {
+        display: table;
+        width: 100%;
+    }
+    
+.page-id-22 .page-heading > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+.natgeo h3 {
+        white-space: normal;
+    }
+    
+/*3. mission*/
+.missiontextcol1, .missiontextcol2 {
+        height: auto;
+    }
+   
+.missiontextcol1 {
+        margin-top: 1em;
+    }
+    
+.missiontextcol2 {
+        margin-top: -1em;
+    }
+    
+/*4. our board  */ 
+.boardimg {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+/*5. Burundi reforestation*/
+.wp-image-6148 {
+	    width: 75%;
+	    float: none;
+        display: block;
+        margin: 0 auto 1em auto;
+    }
+    
+/*6. RS*/
+div > img.wp-image-2665 {
+        width: 90.1%;
+    }
+    
+ img.wp-image-2665 {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+      }
+    
+        
+ /*7. jane goodalls roots&shoots*/
+ .jgquote {
+        width: 100%;
+        margin-bottom: 1em;
+      } 
+    
+ .wp-image-1582 {
+        float: none;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+ /*8. campaigns in Belgium survey*/
+ .post-61 > section:nth-child(1) > div:nth-child(2), .post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+ .post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
+        height: 500px;
+    }
+    
+ .post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
+        height: 550px;
+    }
+    
+    
+    
+ /*9. peace day*/
+ img.wp-image-1582-bis {
+         width: 50%;
+         float: none;
+         display: inline-block;
+         margin-left: 25%;
+         margin-right: 25%;
+     }
+     
+ .wp-image-1650 {
+         width: 50%;
+         float: none;
+         display: inline-block;
+         margin-left: 25%;
+         margin-right: 25%;
+     }
+     
+ /*10. run4chimps*/
+ .post-666 h2 {
+         text-align: center;
+     }
+     
+ .post-666 .thumbleft {
+         padding-bottom: 0;
+     }
+     
+ .post-666 .thumbleft img {
+         float: none;
+     }
+     
+ /*11. recycle4chimps*/
+ .page-id-660 .page-heading h1 {
+        display: none;
+    }
+    
+ .post-660 .viewcontent {
+    border: 0;
+    background: none;
+    margin-bottom: 2em;
+    }
+
+ .post-660 .thumbleft {
+    display: block;
+    width: 100%;
+     }
+
+ .post-660 .thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: none;
+    padding: 0;
+    width: 50%;
+    }
+
+ .post-660 .contentmid {
+    display: inline-block;
+    width: 47%;
+    margin-left: 2%;
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+ .post-660 .contentright {
+    display: inline-block;
+    width: 47%;
+    margin-left: 2%;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+ /*12 chimpanzees and great apes*/
+ .wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
+    	display: block;
+    	margin: 20px auto;
+    	float: none;
+    }
+    
+
+	
+/*==========*/
+/*Posts*/
+/*==========*/
+/*workshops monkeys*/
+.wp-image-4483, .wp-image-4484, .wp-image-4485 {
+    	width: 75%;
+    }
+    
+/*==========*/
+/*Woocommerce*/
+/*=========*/
+/*checkout page*/
+.woocommerce form div#customer_details .form-row label {
+	padding-right:20px;
+} 
+
+div.cartimage, div.checkoutimage {
+    	display: inline-block;
+    	width: 45%;
+}
+
+.woocommerce div.product {
+    	width: 80%;
+    	margin: 0 auto;
+}  
+    
+               
+}/*end media query tablet portrait*/
+
+/*3de query*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+div[class^='menu-language-menu'] {
+    display: block;
+    background: -webkit-linear-gradient(#555,#000) !important;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    }
+    
+div[class^='menu-language-menu'] ul {
+    margin-bottom: 0;
+    }
+    
+div[class^='menu-language-menu'] li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 5% 0 5%;
+    }
+    
+div[class^='menu-language-menu'] li > a{
+        color: #FFF;
+        font-size: 16px;
+       }
+    
+div[class^='menu-language-menu'] li > a:focus {
+        text-decoration: underline;
+    }
+
+/*mobile menu social icons*/
+#mobile-top-text {
+      text-align: center;
+  }
+  
+#mobile-top-text ul {
+       width: 80%;
+       margin: 0 10%;
+   }
+  
+ul.social-icons li:not(.sf-love) a {
+      font-size: 30px;
+      padding: 0;
+  }
+  
+ul.social-icons li {
+      margin: 0 20px;
+  }
+  
+.fa-twitter:before {
+      vertical-align: middle;
+  }
+  
+.fa-facebook:before {
+      vertical-align: middle;
+  }
+  
+.fa-youtube:before {
+      vertical-align: middle;
+  }
+  
+.fa-flickr {
+  	padding-top:6px;
+  }
+  
+#mobile-top-text ul.social-icons li a:hover i {
+    top: 0;
+   }
+
+#mobile-top-text li.twitter a:focus {
+       background-color: #00aced;
+       color: #fff;
+   }
+   
+#mobile-top-text li.facebook a:focus {
+       background-color: #3b5998;
+       color: #fff;
+   }
+   
+#mobile-top-text li.youtube a:focus {
+       background-color: #b00;
+       color: #fff;
+   }
+   
+   
+   
+/*surveys*/
+.surveycol {
+        width: 50%;
+        height: 500px;
+    }
+    
+.surveytext {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+/*survey grandchild pages*/
+.gcsurveycol {
+        width: 50%;
+        height: 350px; 
+     }
+    
+.flexbox .spb-column-container.gcsurveycol > div {
+        /*margin-left: 20px;*/
+    }
+    
+.gcsurveytext > div {
+        padding-left: 0;
+ }
+    
+.gcsurveytext h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-top: 0;
+}
+    
+.gcsurvey-btn {
+        padding-left: 20px;
+     }
+   
+/*videos*/
+.spb_video_widget div.video-wrap {
+      width: 75%;
+      margin: 0 auto;
+      padding: 0 !important;
+     }
+   
+/*footer*/
+   
+#copyright {
+    background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
+ }
+
+
+
+
+/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
+#copyright div a:hover {
+    text-decoration: underline !important;
+    color: #000 !important;
+}
+
+/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
+#copyright div nav .menu li a:hover {
+    text-decoration: underline !important;
+    color: #000 !important;
+}
+
+
+#copyright nav .menu li {
+    border: none;
+}
+
+/*necessary completion for touch devices*/
+.hover {
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;        
+    }
+    
+  
+
+    
+ /*Pages*/
+ /*1. home page*/
+.sf-count-asset .count-number {
+          font-size: 40px !important;
+    }
+  
+h6.count-subject {
+        font-size: 20px;
+        line-height: 24px;
+     }  
+     
+.diffctr img {
+        width: 53.3%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+.ourworkreadmore, .newsreadmore {
+        position: absolute;
+        top: 220px;
+    }
+           
+.ourworkdesc, .newsdesc {
+        height: 250px;
+    }
+    
+.post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
+    	top: 260px;
+    }
+    
+.post-106 .ourworkdesc, .post-108 .ourworkdesc {
+    	height: 280px;
+    }
+    
+.post-106 > section:nth-child(6) > div:nth-child(2) > div > section > div {
+    	overflow-x: hidden;
+    }
+    
+.post-108 > section:nth-child(6) > div:nth-child(2) > div > section > div {
+    	overflow-x: hidden;
+    }
+    
+/*2 Dr Jane page*/
+   .swiper-slide .caption-content > h2 {
+       font-size: 30px !important;
+   }
+    
+/*3. annual reports*/
+.annrep {
+    width: 59.8%;
+    }
+    
+/*4. reforestation*/
+.wp-image-1275 {
+      width: 35.1%;
+   }
+   
+/*5. roots&shoots*/
+.jgquote {
+        max-width: 360px;
+        margin: 0 10px 10px 20px;
+    } 
+    
+.wp-image-1582 {
+        width: 51.9%;
+    }
+  
+/*6. peace day*/
+.wp-image-1582-bis {
+         width: 26.83%;
+     }
+     
+.wp-image-1650 {
+         width: 22.55%;
+     }
+     
+/*7. recycle4chimps*/
+.post-660 .viewcontent {
+    border: 0;
+    background: none;
+    margin-bottom: 2em;
+    }
+
+.post-660 .thumbleft {
+    display: inline-block;
+    width: 33%;
+     }
+
+.post-660 .thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: none;
+    padding: 0;
+    }
+
+.post-660 .contentmid {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    text-align: left;
+    vertical-align: middle;
+    }
+    
+.post-660 .contentright {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    vertical-align: middle;
+    text-align: left;
+    text-transform: uppercase;
+    }
+    
+/*11. roots and shoots survey*/
+.jgrs-logo  {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+div > img.wp-image-2665 {
+        width: 90.1%;
+    }
+    
+img.wp-image-2665 {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+      }
+      
+/*8. campaigns in Belgium survey*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+    
+/*9. campaigns in Belgium*/
+.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
+        height: 500px;
+    }
+    
+/*10. join recycle4chimps*/
+.page-id-6615 .fancy-heading .heading-text, .page-id-6617 .fancy-heading .heading-text, .page-id-6619 .fancy-heading .heading-text {
+	top:75%;
+}
+	
+/*==========*/
+/*Posts*/
+/*==========*/
+/*workshops monkeys*/
+.wp-image-4483, .wp-image-4484, .wp-image-4485 {
+    	width: 50%;
+    }
+    
+/*==========*/
+/*Woocommerce */
+/*=========*/
+/*checkout page*/
+.woocommerce form div#customer_details .form-row label {
+	padding-right:20px;
+}    
+    
+/*==========*/
+/*Woocommerce product*/
+/*=========*/
+   
+    
+    
+         
+}/*end media query tablet landscape*/
+
+/*4de query*/
+@media only screen and (min-width: 1025px)
+{
+	
+/*verbergen van het mobiele taalmenu*/
+div[class^='menu-language-menu'] {
+	display: none;
+}
+    
+.full-center #logo {
+    max-width: 35%;
+}
+
+#top-bar {
+    border-bottom: 0px;
+    text-transform: uppercase;
+    font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#555,#000) !important;
+}
+
+/*1. social icons menu*/
+#top-bar .col-sm-2 {text-align: center !important;}
+
+.fa-twitter, .fa-facebook, .fa-youtube, .fa-flickr {color: #FFF; }
+
+
+/*2. language menu in top bar*/
+#top-bar .col-sm-3 {text-align: center;}
+
+#menu-language-menu-english-1, #menu-language-menu-dutch-1, #menu-language-menu-french-1  {
+    font-size: 12px;
+    margin-bottom: 0;/*overrides bootstrap*/
+}
+
+#menu-language-menu-english-1 li, #menu-language-menu-dutch-1 li, #menu-language-menu-french-1 li {
+    display: inline-block;
+ }
+ 
+#menu-language-menu-english-1 a, #menu-language-menu-dutch-1 a, #menu-language-menu-french-1 a {
+    display: block;
+    line-height: 36px;
+    text-decoration: none;
+ }
+
+/*vertical line between menu items*/
+#menu-language-menu-english-1 a .menu-item-text, #menu-language-menu-dutch-1 a .menu-item-text, #menu-language-menu-french-1 a .menu-item-text {
+      padding: 0 0.5em;
+      border-right: solid 1px #fff;
+  }
+  
+/*no vertical line right of last menu item*/
+#menu-language-menu-english-1 li:last-child a .menu-item-text, #menu-language-menu-dutch-1 li:last-child a .menu-item-text, #menu-language-menu-french-1 li:last-child a .menu-item-text {
+      padding-right: 0.9em;
+      border: 0;
+ }
+
+#menu-language-menu-english-1 li:hover, #menu-language-menu-dutch-1 li:hover, #menu-language-menu-french-1 li:hover {
+    background-color: #A1CA3A;
+    box-shadow: -2px 0 0 #A1CA3A;
+ }
+
+#menu-language-menu-english-1 a:hover,  #menu-language-menu-dutch-1 a:hover,  #menu-language-menu-french-1 a:hover {
+    text-decoration: none;
+    color: #FFF !important;
+ }
+ 
+#menu-language-menu-english-1 li.current-lang a, #menu-language-menu-dutch-1 li.current-lang a, #menu-language-menu-french-1 li.current-lang a {
+     color: #fe504f !important;
+ } 
+ 
+#menu-language-menu-english-1 li.current-lang:hover a,  #menu-language-menu-dutch-1 li.current-lang:hover a,  #menu-language-menu-french-1 li.current-lang:hover a {
+     color: #fff !important;
+ } 
+ 
+    
+/*3. navigation menu*/
+#top-bar nav .menu {
+      padding-right: 9%;
+  }
+  
+
+#top-bar nav .menu > li > a
+  {
+      padding: 0 !important;
+      text-decoration: none;
+  }
+
+#top-bar li:last-child > a {
+      border-right: 0 !important;
+  }
+  
+/*vertical line between menu items*/
+#top-bar nav .menu > li > a .menu-item-text {
+      padding: 0 0.5em;
+      border-right: solid 1px #fff;
+  }
+  
+/*no vertical line right of last menu item*/
+#top-bar nav .menu > li:last-child > a .menu-item-text {
+      padding-right: 0.9em;
+      border: 0;
+  }
+    
+#top-bar nav .menu > li:hover {
+      background-color: #A1CA3A;
+  }
+  
+#top-bar nav .menu > li > a:hover {
+      color: #FFF !important;
+      text-decoration: none;
+  }
+  
+/*4. main menu*/
+
+.full-center #logo {
+    padding-left: 5%;
+}
+
+div.float-menu {
+    padding-right: 5% !important;
+}
+
+.full-center nav#main-navigation ul.menu > li:first-child {
+    margin-left: 2em !important;
+}
+
+/*styling of the items of the main menu*/
+#menu-main-menu-english > li > a,  #menu-main-menu-french > li > a, #menu-main-menu-dutch > li > a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: FuturaBT-Medium, sans-serif;
+}
+
+/*verwijdert de underline in het mega menu bij aanklikken*/
+#menu-main-menu-english a,  #menu-main-menu-french a, #menu-main-menu-dutch a {
+    text-decoration: none;/*verwijdert de underline in het hoofdmenu bij aanklikken*/
+}
+
+/*styling of the children of the main menu upon hovering*/
+#menu-main-menu-english > li > a:hover,  #menu-main-menu-french > li > a:hover, #menu-main-menu-dutch > li > a:hover {
+    text-decoration: none ;
+}
+
+/*1. background color of who we are submenu*/
+.menu-item-87 ul, .menu-item-225 ul, .menu-item-256 ul {
+     background-color: #E07126 !important;
+} 
+
+/*2. background color of the children of the who we are submenu*/
+.menu-item-87 ul > *, .menu-item-225 ul > *, .menu-item-256 ul > * {
+     background-color: #E07126 !important;
+ }
+ 
+/*hovering of who we are submenu*/
+li.menu-item-87 > ul.sub-menu > li > a:hover, li.menu-item-225 > ul > li > a:hover, li.menu-item-256 > ul > li > a:hover {
+	text-decoration: none;	
+}
+
+/*hovering of our work submenu*/
+li.menu-item-92 > ul.sub-menu > li > a:hover, li.menu-item-233 > ul > li > a:hover, li.menu-item-264 > ul > li > a:hover {
+	text-decoration: none;	
+}
+
+/*hovering of join us submenu*/
+li.menu-item-97 > ul.sub-menu > li > a:hover, li.menu-item-246 > ul > li > a:hover, li.menu-item-276 > ul > li > a:hover {
+	text-decoration: none;	
+}
+
+ /*3. background color of our work upon hovering*/
+.menu-item-92 a:focus, .menu-item-233 a:hover, .menu-item-264 a:hover {
+      background-color: #FFD147;
+ }
+
+ /*4. background color of our work submenu upon hovering of our work*/
+.menu-item-92 ul, .menu-item-233 ul, .menu-item-264 ul {
+     background-color: #FFD147 !important;
+ }
+ 
+ /*5. background color of support us upon hovering*/
+.menu-item-97 a:hover, .menu-item-246 a:hover, .menu-item-276 a:hover {
+    background-color: #97D0DB;
+}
+
+/*6. background color of support us submenu upon hovering of support us*/
+.menu-item-97 ul, .menu-item-246 ul, .menu-item-276 ul {
+    background-color: #97D0DB !important;
+}
+
+
+
+/*remove inset box-shadow from main menu subitems*/
+nav .menu > li.current-menu-item > a {
+    box-shadow: none !important;  
+}
+
+nav .menu > li.current-menu-ancestor > a {
+    box-shadow: none !important;  
+}
+
+#main-navigation ul.menu > li:hover > a {
+    box-shadow: none !important;
+}
+
+/*adapt grandchildren of main menu*/
+li.menu-item.sf-mega-menu > ul.sub-menu {
+    width: 100%;
+}
+
+/*remove vertical white line left of li*/
+li.menu-item.sf-mega-menu > ul.sub-menu > li {
+    border-left: 0;
+}
+
+.menu-item-87 ul, .menu-item-225 ul {
+    padding: 0 10%;
+}
+
+.menu-item-256 ul {
+    padding-top: 0;
+    padding-right: 5%;
+    padding-bottom: 0;
+    padding-left: 10%;
+}
+
+
+.menu-item-97 > ul > li > a {
+    padding: 10px 5px !important;
+}
+
+#main-navigation > div > ul > li span {
+     text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
+}
+
+/*remove the padding-bottom of the menu items such as The chimps of Gombe*/
+#menu-main-menu-english > li > ul > li > ul > li > ul {
+	padding-bottom: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#menu-main-menu-dutch > li > ul > li > ul > li > ul {
+	padding-bottom: 0;
+}
+
+#menu-main-menu-french > li > ul > li > ul > li > ul {
+	padding-bottom: 0;
+}
+
+
+/*donations btn*/ 
+#main-navigation > div > ul > li:last-child > a {
+    height: 35px !important;
+    line-height: 35px !important;
+    text-decoration: none;/*verwijdert de underline bij aanklikken*/
+ }
+
+
+#main-navigation > div > ul > li:last-child span {
+    background-color: #6c8720;
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
+ }
+
+#main-navigation > div > ul > li:last-child:hover {
+    background: linear-gradient(#6c8720, #58730C); 
+ }
+ 
+#main-navigation > div > ul > li:last-child a:hover span {
+    background: linear-gradient(#6c8720, #58730C); 
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
+}
+
+
+#main-navigation > div > ul > li:last-child:hover > a {
+    text-decoration: none;
+   }
+   
+/*stylimg of the submenu items (eg our people) */
+li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a {
+    //color: #FFF !important;
+    //color: #FFF;
+    font-size: 20px !important;
+    line-height: 22px !important;
+    font-family: FuturaBT-Medium, sans-serif !important;
+    font-weight: normal !important;
+    margin-top: 10px !important;
+    padding-top: 5px !important;
+    //text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
+    text-shadow: 0.2px 0.2px 0 rgba(0,0,0,0.3);
+    }
+ 
+ /*kleurt sub menu item wit bij hoveren*/   
+ li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a:hover {
+    //color: #FFF !important;
+ }
+    
+ 
+ /*styling of subsubmenu*/
+ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul {
+      padding-bottom: 5px;
+ }
+ 
+ /*verwijdert de underline bij hoveren van een susubmenuitem*/
+ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a:hover{
+      text-decoration: none;
+ }
+ 
+/*apparently the english submenu of Join us needs some particular styling*/
+li.menu-item-97 ul.sub-menu > li.menu-item > ul.sub-menu {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+    
+/*styling of subsubmenu items (eg our team)*/
+li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
+    color: #222 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    font-family: FuturaBT-Medium, sans-serif !important;
+    //text-transform: uppercase;
+    padding: 5px 15px;
+    //text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
+    //text-shadow: 0.25px 0.25px 0 rgba(255,255,255,0.1);
+    text-shadow: 0.2px 0.2px 0 rgba(0,0,0,0.3);
+}
+
+ nav.std-menu ul.submenu > li ul {
+     padding-bottom: 0 !important;
+ }
+ 
+/*5. donation buttons*/
+ #main-navigation > div > ul > li:last-child {
+    background-color: #6c8720;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #222 #333 #333;
+    border-radius: 25px;
+    margin-left: 1em;
+    position: relative;
+    top: 1.9em;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+ } 
+ 
+/*6. top bar sticky wrapper*/
+#top-bar-sticky-wrapper{
+  	display: block;
+  }
+ 
+/*7. surveys*/
+.surveycol {
+        width: 50%;
+        height: 500px;
+    }
+    
+.surveytext {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+ /*8. survey of the grand child pages*/
+.gcsurveycol {
+        width: 50%;
+        height: 350px; 
+     }
+    
+.flexbox .spb-column-container.gcsurveycol > div {
+        margin-left: 20px;
+    }
+    
+.gcsurveytext h2 {
+        font-size: 30px;
+        line-height: 37px;
+     }
+    
+.gcsurvey-btn {
+        padding-left: 20px;
+     }
+    
+/*9. videos*/
+.spb_video_widget div.video-wrap {
+      width: 75%;
+      margin: 0 auto;
+      padding-bottom: 0 !important;
+  } 
+  
+/*10. zip pattern*/
+div.zipcol, div.ziptextcol {
+       height: 500px;  
+   }
+   
+
+/*11. footer*/
+
+#copyright {
+    background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
+  }
+
+footer#copyright .container {
+    min-width: 990px;
+    z-index: 99;
+   }
+
+#copyright div .text-left {
+    font-size: 16px;
+    max-width: 60%;
+}
+
+/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
+#copyright div a:hover {
+    text-decoration: underline !important;
+    color: yellow !important;
+}
+
+/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
+#copyright div nav .menu li a:hover {
+    text-decoration: underline !important;
+    color: yellow !important;
+}
+
+/*114*/
+#copyright nav ul.menu li a {
+    font-size: 16px;
+}
+
+
+
+  
+ /*===========*/
+ /*Pages*/
+ /*==========*/
+
+/*1. home page*/
+ 
+.sf-count-asset .count-number {
+          font-size: 48px !important;
+    }
+  
+h6.count-subject {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+.diffctr img {
+        width: 53.3%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+.ourworkreadmore, .newsreadmore {
+        position: absolute;
+        top: 120px;
+     }
+    
+       
+.ourworkdesc, .newsdesc {
+        height: 150px;
+    }
+        
+.post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
+    	top: 180px;
+    }
+    
+.post-106 .ourworkdesc, .post-108 .ourworkdesc {
+    	height: 200px;
+    }
+
+/*2. dr jane page*/
+/*slider*/
+.swiper-slide .caption-content > h2 {
+       font-size: 30px !important;
+   }
+
+.caption-excerpt p {
+    font-family: adobe-caslon-pro, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px !important;
+    line-height: 29px !important;
+  }
+  
+.natgeo .title-wrap {
+       text-align: center !important;
+  }
+   
+.natgeo h3 {
+      font-size: 1.2em;
+      float: none !important;
+   }
+  
+.natgeo h3 > span {
+      display: inline-block;
+    }
+  
+/*3. mission*/
+div.missioncol {
+     height: 500px;
+     }
+     
+.missiontextcol1, .missiontextcol2 {
+    height: 500px;
+   }
+  
+/*4. annual reports*/
+.annrep {
+    width: 59.8%;
+    }
+    
+/*5. reforestation*/
+.wp-image-1275 {
+      width: 35.1%;
+  }
+    
+    
+/*6. roots&shoots*/
+.jgquote {
+        max-width: 600px;
+        margin: 0 10px 10px 20px;
+    } 
+    
+.wp-image-1582 {
+        width: 51.9%;
+    }
+    
+/*7. peace day*/
+.wp-image-1582-bis {
+         width: 26.83%;
+     }
+   
+.wp-image-1650 {
+         width: 22.55%;
+     }
+     
+/*8. recycle4chimps*/
+.post-660 .viewcontent, .post-662 .viewcontent, .post-664 .viewcontent {
+    border: 0;
+    background: none;
+    margin-bottom: 2em;
+    }
+
+.post-660 .thumbleft, .post-662 .thumbleft, .post-664 .thumbleft {
+    display: inline-block;
+    width: 33%;
+     }
+
+.post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: none;
+    padding: 0;
+    }
+
+.post-660 .contentmid, .post-662 .contentmid, .post-664 .contentmid {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    text-align: left;
+    vertical-align: middle;
+    }
+    
+.post-660 .contentright, .post-662 .contentright, .post-664 .contentright  {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    vertical-align: middle;
+    text-align: left;
+    text-transform: uppercase;
+    }
+    
+.dwnldp {
+    height: 50px;
+    margin-top: -6px;
+    margin-bottom: 6px !important;
+	}
+    
+/*11 ways to give*/
+div.donationcol {
+      height: 350px;
+      margin-bottom: 1em;
+     }
+     
+.donationtextcol {
+      height: 350px;
+      margin-bottom: 1em;
+    }
+    
+/*11 roots and shoots survey*/
+/*
+  .jgrs-logo  {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    */
+   
+/*this image got on the French page the same mr as on the Ducth page*/
+div > img.wp-image-2665,  div > img.wp-image-2697 {
+        width: 90.1%;
+    }
+    
+img.wp-image-2665, img.wp-image-2697 {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+    }
+    
+/*9 campaigns in Belgium survey*/
+.post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
+        height: 400px;
+    }
+    
+.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
+        height: 450px;
+    }
+    
+/*10. chimpanzees and great apes*/
+.wp-image-4073, .wp-image-4071, .wp-image-4080, .wp-image-4081, .wp-image-4089, .wp-image-4088, .wp-image-4094, .wp-image-4095 {
+    		margin-bottom: 5px;
+ }
+    
+
+/*12. my account page*/
+.page-id-2854 div#main-container, .page-id-4941 div#main-container, .page-id-4943 div#main-container {
+		min-height: 600px;
+}
+
+	
+/*13. Cart page*/
+.page-id-2852 div#main-container, .page-id-4935 div#main-container, .page-id-4937 div#main-container {
+		min-height: 600px;
+}
+
+/*14 webshop page*/
+.page-id-2851 div#main-container, .page-id-4865 div#main-container, .page-id-4869 div#main-container {
+		min-height: 600px;
+}
+
+	
+/*15. no results page*/
+/*Search results page*/
+.search-no-results div#main-container , .search-results div#main-container{
+        min-height: 500px;
+        }	
+        
+/*16. subscribe to newsletter*/ 
+.page-id-6603 div#main-container, .page-id-6607 div#main-container, .page-id-6611 div#main-container {
+	  min-height: 600px;
+} 
+
+/*17. join recycle4chimps*/
+.page-id-6615 .fancy-heading .heading-text, .page-id-6617 .fancy-heading .heading-text, .page-id-6619 .fancy-heading .heading-text {
+	top:75%;
+}       
+        
+/*18. registration roots & shoots*/
+.page-id-6633 div#main-container, .page-id-6635 div#main-container, .page-id-6637 div#main-container {
+	  min-height: 600px;
+}      
+        
+/*==========*/
+/*Posts*/
+/*==========*/
+/*workshops monkeys*/
+.wp-image-4483, .wp-image-4484, .wp-image-4485 {
+    	width: 30%;
+}
+    
+/*==========*/
+/*Woocommerce */
+/*=========*/
+/*checkout page*/
+.woocommerce form div#customer_details .form-row label {
+	padding-right:20px;
+}    
+    
+/*==========*/
+/*Woocommerce product*/
+/*=========*/
+
+
+
+    
+	
+}
+
+
+
+
