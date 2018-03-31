@@ -288,9 +288,8 @@ function jgi_ProvideLeftFooter() {
 	{
 		case "en":
 			$message = "Jane Goodall Institute Belgium asbl/vzw<br />
-			            Mundo-J (Trône), Rue de l’Industrie 10, 1000 Brussels<br />
-			            +32(0)2/893.25.02<br />
 			            +32(0)488/87.80.41<br />
+			            (call Tuesday 12h00 - 14h00 or Thursday 15h00 -17h00)<br />
 			            info@janegoodall.be<br />
 			            <br />
 			            <a href='http://localhost:8080/jgib2017/privacy-policy'>Privacy Policy</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map'>Site map</a>";
@@ -299,9 +298,8 @@ function jgi_ProvideLeftFooter() {
 
 		case "nl":
 			$message = "Jane Goodall Institute Belgium vzw<br />
-			            Mundo-J (Troon), Nijverheidsstraat 10, 1000 Brussel<br />
-			            +32(0)2/893.25.02<br />
 			            +32(0)488/87.80.41<br />
+			            (bel dinsdag 12u00 - 14u00 of donderdag 15u00 -17u00)<br />
 			            info@janegoodall.be<br />
 			            <br />
 			            <a href='http://localhost:8080/jgib2017/disclaimer'>Disclaimer</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-nl'>Site map</a>";
@@ -310,9 +308,8 @@ function jgi_ProvideLeftFooter() {
 
 		case "fr":
 			$message = "Jane Goodall Institute Belgium asbl<br />
-			            Mundo-J (Trône), Rue de l’Industrie 10, 1000 Bruxelles<br />
-			            +32(0)2/893.25.02<br />
 			            +32(0)488/87.80.41<br />
+			            (appelez mardi 12h00 - 14h00 ou jeudi 15h00 -17h00)<br />
 			            info@janegoodall.be<br />
 			            <br />
 			            <a href='http://localhost:8080/jgib2017/copyright-et-vie-privee'>Copyright et vie privée</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-fr'>Site map</a>";
@@ -366,16 +363,50 @@ function re_adapt_javascriptfunctions()
 }
 add_action('wp_enqueue_scripts', 're_adapt_javascriptfunctions', 1000);
 
-/*9*/
-/*
-function re_change_tabs(){
-if ( sf_theme_supports( 'product-summary-tabs' ) ) {
-	    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
-		//add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 35 );
-  	
-}}
-add_action( 'woocommerce_single_product_summary', 're_change_tabs', 100 );
-*/
+/*9. validatie gravity form Roots & Shoots*/
+
+add_filter( 'gform_field_validation_10_13', 'custom_address_validation', 10, 4 );
+add_filter( 'gform_field_validation_13_11', 'custom_address_validation', 10, 4 );
+add_filter( 'gform_field_validation_14_10', 'custom_address_validation', 10, 4 );
+function custom_address_validation( $result, $value, $form, $field ) {
+			
+		$street  = rgar( $value, $field->id . '.1' );
+        $street2 = rgar( $value, $field->id . '.2' );
+        $city    = rgar( $value, $field->id . '.3' );
+        $state   = rgar( $value, $field->id . '.4' );
+        $zip     = rgar( $value, $field->id . '.5' );
+        $country = rgar( $value, $field->id . '.6' );
+	
+	
+        if ( !empty( $street ) && !empty( $city ) && !empty( $zip ) && !empty( $country )) {
+            $result['is_valid'] = TRUE;
+            $result['message']  = 'ok';
+        } 
+        elseif (empty( $street ) && empty( $city ) && empty( $zip ) && empty( $country ))
+        {
+             $result['is_valid'] = TRUE;	 	
+	 		 $result['message']  = 'ok';
+        }
+		else
+		{
+		 	 $result['is_valid'] = FALSE;
+             $result['message']  = 'Please write a complete address or no address at all.';
+		}
+         
+	 return $result;
+}
+
+
+
+
+/*10. beperking van het aantal landen in een gravity form*/
+
+add_filter( 'gform_countries', 'remove_country' );
+function remove_country( $countries ){
+    return array( 'Belgium' );
+}
+
+
 
 
 ?>

@@ -128,9 +128,9 @@ div.fancy-heading.fancy-image.light-style h3 {
     box-shadow: 3px 3px 3px 0 #87734f;
 }
 
-/*Donation Button Paypal*/
-.donateBtn {
-    cursor: pointer;
+.imgnoborder img {
+	border: none;
+    box-shadow: none;
 }
 
 /* custom containers*/
@@ -288,7 +288,7 @@ img.pdficon:hover {opacity: 0.75;}
 /*Gravity Forms*/
 /**********/
 
-.newsletter, .recycle4chimps, .rootsandshoots {
+.newsletter, .recycle4chimps, .rootsandshoots, .donation, .adoption {
 	background-color: #fdf9e1;
 	box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
 }
@@ -363,6 +363,7 @@ li.gfield div.charleft {
 .gcsurvey-btn a.sf-button {
         font-size: 16px;
         font-family: FuturaBT-Medium,sans-serif;
+        border-radius: 2px;
 }
      
 /*photo credits*/
@@ -543,7 +544,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     
 /*4. q&A*/
  .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
-        background-position: 20% 7% !important;
+        background-position: 0% 7% !important;
      }
      
      
@@ -731,12 +732,7 @@ img.wp-image-4183 {
 }
 
     
-/*22. chimpanzees and great apes*/
-.page-id-1805 img, .page-id-1807 img, .page-id-1785 img {
-    	border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
+
     
 /*23. faq*/
 .page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
@@ -776,16 +772,22 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 
 	
 /*27. contact page*/
-.formcontainer {
+div.formcontainer {
     padding: 10px;
     margin-bottom: 1em;
     background: #fdf9e1;
     box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
+    font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+    font-size: 20px;
     }
     
 .formcontainer h3 {
     	margin:0;
     }
+    
+.formcontainer h4 {
+	font-size: 20px;
+}
 
 .formcontainer p {
 	 margin-bottom: 10px;
@@ -866,9 +868,20 @@ font-size: 20px;
 /*34 chimpanzees and great apes*/
 .page-id-1805 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     background-position: 0% 42% !important;
+    } 
+    
+.page-id-1805 img, .page-id-1807 img, .page-id-1785 img {
+    	border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }   
+
+/*35. partnerships and gifts*/
+.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
+    background-position: 0% 60% !important;
     }    
 
-/*35. sponsors*/   
+/*36. sponsors*/   
 .page-id-5456 .page-heading, .page-id-5458 .page-heading, .page-id-5460 .page-heading {
     display: none;
 }
@@ -889,7 +902,7 @@ div.highlight {
 	box-shadow:none;
 }
 
-/*36. partners*/
+/*37. partners*/
 .page-id-5463 .page-heading, .page-id-5465 .page-heading, .page-id-5467 .page-heading {
     display: none;
 }
@@ -899,16 +912,35 @@ div.highlight {
 	box-shadow:none;
 }
 
-/*37. FAQ Dr. Jane*/
+/*38. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
     background-position: 0% 15% !important;
     } 
     
-/*38. subscribe to newsletter*/ 
+/*39. subscribe to newsletter*/ 
 .page-id-6603 div.page-heading, .page-id-6607 div.page-heading, .page-id-6611 div.page-heading {
 	  display:none;
 } 
 
+/*40. chimp guardianship*/
+.page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
+    background-position: 0% 30% !important;
+    } 
+    
+/*41. resources*/
+/*form nog vervangen door een gravirty form*/
+/* font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;*/
+
+.instpage > div {
+	text-align:center;
+}
+
+.instpage a {
+	width:100%;
+	font-size:16px;
+	font-family: FuturaBT-Medium, sans-serif;
+	border-radius: 2px;
+}
     
 /*==========*/
 /*Woocommerce*/
@@ -1547,6 +1579,11 @@ img.wp-image-1582-bis {
     background-position: 30% 35% !important;
     }
     
+/*17. partnerships and gifts*/
+.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
+    background-position: 35% 60% !important;
+    }   
+
 
     
       
@@ -1989,14 +2026,18 @@ div > img.wp-image-2665 {
     text-transform: uppercase;
     }
     
- /*12 chimpanzees and great apes*/
- .wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
+/*12 chimpanzees and great apes*/
+.wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
     	display: block;
     	margin: 20px auto;
     	float: none;
     }
     
-
+/*13. partnerships and gifts*/
+.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
+    background-position: 50% 60% !important;
+    }   
+    
 	
 /*==========*/
 /*Posts*/
@@ -2342,6 +2383,8 @@ img.wp-image-2665 {
 .page-id-6615 .fancy-heading .heading-text, .page-id-6617 .fancy-heading .heading-text, .page-id-6619 .fancy-heading .heading-text {
 	top:75%;
 }
+
+ 
 	
 /*==========*/
 /*Posts*/

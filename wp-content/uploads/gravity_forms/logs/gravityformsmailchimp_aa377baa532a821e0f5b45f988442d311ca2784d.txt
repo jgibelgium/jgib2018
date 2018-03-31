@@ -1,0 +1,49 @@
+2018-03-25 20:00:06.155158 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #106 for gravityformsmailchimp. 
+2018-03-25 20:00:06.158487 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #106. 
+2018-03-25 20:17:50.044291 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #107 for gravityformsmailchimp. 
+2018-03-25 20:17:50.045800 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #107. 
+2018-03-31 18:20:41.587410 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #108 for gravityformsmailchimp. 
+2018-03-31 18:20:41.591329 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Starting to process feed (#1 - Newsletter Feed 1) for entry #108 for gravityformsmailchimp 
+2018-03-31 18:20:41.591480 - DEBUG --> GFMailChimp::process_feed(): Processing feed. 
+2018-03-31 18:20:41.591660 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-03-31 18:20:42.016037 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-03-31 18:20:42.017874 - DEBUG --> GFMailChimp::process_feed(): Checking to see if sky96474@skynet.be is already on the list. 
+2018-03-31 18:20:42.413264 - DEBUG --> GFMailChimp::process_feed(): sky96474@skynet.be was found on list. Status: pending 
+2018-03-31 18:20:42.414645 - DEBUG --> GFMailChimp::process_feed(): Subscriber to be updated: Array
+(
+    [interests] => Array
+        (
+            [8d2e06d567] => 
+            [65f4f96cd4] => 
+            [cf8ab6f3cc] => 
+            [cb98ab7e90] => 
+            [d33231a9af] => 
+        )
+
+    [email_type] => html
+    [status] => pending
+    [ip_signup] => ::1
+    [merge_fields] => Array
+        (
+            [FNAME] => Gunter
+            [LNAME] => Eelbode
+            [MMERGE3] => Nederlands
+            [MMERGE5] => 
+        )
+
+    [email_address] => sky96474@skynet.be
+)
+ 
+2018-03-31 18:20:43.996433 - DEBUG --> GFMailChimp::process_feed(): Subscriber successfully updated. 
+2018-03-31 18:20:43.996607 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Marking entry #108 as fulfilled for gravityformsmailchimp 
+2018-03-31 18:42:31.929873 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-03-31 18:42:32.360265 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-03-31 18:42:37.509259 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-03-31 18:42:37.792509 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-03-31 18:42:38.031114 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-03-31 18:42:39.299169 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 19 

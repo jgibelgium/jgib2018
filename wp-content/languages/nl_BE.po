@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-03-02 13:50:55+0000\n"
+"PO-Revision-Date: 2018-03-23 12:33:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,6 +35,22 @@ msgstr "."
 #: wp-includes/class-wp-locale.php:220
 msgid "number_format_decimal_point"
 msgstr ","
+
+#: wp-includes/class-wp-customize-manager.php:450
+#: wp-includes/class-wp-xmlrpc-server.php:3689 wp-includes/functions.php:2617
+#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:565
+#: wp-includes/script-loader.php:645 wp-includes/script-loader.php:839
+msgid "Something went wrong."
+msgstr "Iets is misgelopen."
+
+#: wp-includes/functions.php:2607
+msgid "The link you followed has expired."
+msgstr "De link die je volgde is verlopen."
+
+#: wp-includes/class-wp-customize-manager.php:515
+#: wp-includes/script-loader.php:566
+msgid "You need a higher level of permission."
+msgstr "Je hebt hogere toegangsrechten nodig."
 
 #. translators: %s: User who is customizing the changeset in customizer.
 #: wp-includes/class-wp-customize-manager.php:3968
@@ -70,7 +86,7 @@ msgid "%1$s is not a valid property of Object."
 msgstr "%1$s is geen geldige eigenschap van Object."
 
 #. translators: %s: URL to Add Themes admin screen
-#: wp-includes/script-loader.php:601
+#: wp-includes/script-loader.php:602
 msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
 msgstr "Je zal geen nieuwe thema&#8217;s van hieruit kunnen installeren omdat je installatie SFTP logingegevens vereist. In de tussentijd kan je wel <a href=\"%s\">thema&#8217;s toevoegen in de admin</a>."
 
@@ -94,7 +110,7 @@ msgstr "Klik op &#8220;Volgende&#8221; om links aan je nieuwe menu toe te voegen
 msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
 msgstr "We kunnen de video van de opgegeven URL niet laden. Gelieve te controleren dat de URL naar een ondersteund bestandstype (%s) of streaming-dienst (bv. YouTube en Vimeo) verwijst."
 
-#: wp-includes/script-loader.php:690
+#: wp-includes/script-loader.php:691
 msgctxt "post action/button label"
 msgid "Schedule"
 msgstr "Inplannen"
@@ -125,11 +141,11 @@ msgstr "Voeg een menu toe aan je zijbalk."
 
 #. translators: %s: Display name of the user who has taken over the changeset
 #. in customizer.
-#: wp-includes/script-loader.php:578
+#: wp-includes/script-loader.php:579
 msgid "%s has taken over and is currently customizing."
 msgstr "%s heeft overgenomen en is op dit moment bezig met aanpassen."
 
-#: wp-includes/script-loader.php:572
+#: wp-includes/script-loader.php:573
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Het lijkt dat er iets verkeerd is gegaan. Wacht enkele seconden en probeer dan opnieuw."
 
@@ -336,7 +352,7 @@ msgstr "<strong>FOUT</strong>: Dit e-mailadres is al in gebruik."
 msgid "&larr; Back to Categories"
 msgstr "&larr; Terug naar categorieën"
 
-#: wp-includes/script-loader.php:856
+#: wp-includes/script-loader.php:857
 msgid "Color value"
 msgstr "Kleurwaarde"
 
@@ -344,28 +360,28 @@ msgstr "Kleurwaarde"
 msgid "&larr; Back to Link Categories"
 msgstr "&larr; Terug naar Link categorieën"
 
-#: wp-includes/script-loader.php:852
+#: wp-includes/script-loader.php:853
 msgid "Clear color"
 msgstr "Verwijder kleur"
 
-#: wp-includes/script-loader.php:798
+#: wp-includes/script-loader.php:799
 msgid "Installation Failed!"
 msgstr "Installatie mislukt"
 
-#: wp-includes/script-loader.php:597
+#: wp-includes/script-loader.php:598
 msgid "Schedule your customization changes to publish (\"go live\") at a future date."
 msgstr "Plan je aanpassingen in om gepubliceerd (\"live gaan\") te worden in de toekomst."
 
-#: wp-includes/script-loader.php:598
+#: wp-includes/script-loader.php:599
 msgid "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or wait until they publish to preview new themes."
 msgstr "Sorry, je kan geen voorbeeld van nieuwe thema's bekijken wanneer je wijzigingen gepland hebt of opgeslagen als concept. Gelieve je wijzigingen te publiceren of wacht tot ze gepubliceerd zijn voordat je een voorbeeld van nieuwe thema's kan bekijken."
 
-#: wp-includes/script-loader.php:590
+#: wp-includes/script-loader.php:591
 msgid "Homepage and posts page must be different."
 msgstr "Homepagina en berichtenpagina moeten verschillend zijn."
 
 #. translators: %d: error count
-#: wp-includes/script-loader.php:586 wp-includes/script-loader.php:588
+#: wp-includes/script-loader.php:587 wp-includes/script-loader.php:589
 #: wp-includes/widgets/class-wp-widget-custom-html.php:217
 #: wp-includes/widgets/class-wp-widget-custom-html.php:219
 msgid "There is %d error which must be fixed before you can save."
@@ -377,7 +393,7 @@ msgstr[1] "Er zijn %d fouten die opgelost moeten worden voor je kan opslaan."
 msgid "Japanese"
 msgstr "Japans"
 
-#: wp-includes/script-loader.php:575
+#: wp-includes/script-loader.php:576
 msgid "Reverting unpublished changes&hellip;"
 msgstr "Ongepubliceerde aanpassingen terugdraaien&hellip;"
 
@@ -448,7 +464,7 @@ msgstr "Aanpassingen ongedaan maken"
 msgid "Welsh"
 msgstr "Welsh"
 
-#: wp-includes/script-loader.php:574
+#: wp-includes/script-loader.php:575
 msgid "Setting up your live preview. This may take a bit."
 msgstr "Je live-voorbeeld opzetten. Dit kan even duren."
 
@@ -496,11 +512,11 @@ msgstr "Jiddisch"
 msgid "Tagalog"
 msgstr "Tagalog"
 
-#: wp-includes/script-loader.php:576
+#: wp-includes/script-loader.php:577
 msgid "Are you sure you&#8217;d like to discard your unpublished changes?"
 msgstr "Ben je zeker dat je de niet-gepubliceerde aanpassingen wilt verwijderen?"
 
-#: wp-includes/script-loader.php:573
+#: wp-includes/script-loader.php:574
 msgid "Downloading your new theme&hellip;"
 msgstr "Je nieuwe thema wordt gedownload&hellip;"
 
@@ -529,7 +545,7 @@ msgid "Activate &amp; Publish"
 msgstr "Activeer &amp; publiceren"
 
 #. translators: %s: URL to the Customizer to load the autosaved version
-#: wp-includes/script-loader.php:580
+#: wp-includes/script-loader.php:581
 msgid "There is a more recent autosave of your changes than the one you are previewing. <a href=\"%s\">Restore the autosave</a>"
 msgstr "Er is een recentere versie die automatisch werd opgeslagen dan het voorbeeld dat je aan het bekijken bent. <a href=\"%s\">Herstel deze versie</a>"
 
@@ -1048,7 +1064,7 @@ msgstr "Instellingen van homepagina"
 msgid "You must supply a future date to schedule."
 msgstr "Je moet een datum in de toekomst kiezen om in te plannen."
 
-#: wp-includes/script-loader.php:604
+#: wp-includes/script-loader.php:605
 msgid "Publish Settings"
 msgstr "Instellingen over publiceren"
 
@@ -1108,7 +1124,7 @@ msgstr "Nog geen aanpassingen werden opgeslagen, dus is er niks om weg te gooien
 
 #. translators: %s: number of invalid settings
 #: wp-includes/class-wp-customize-manager.php:2707
-#: wp-includes/script-loader.php:593 wp-includes/script-loader.php:595
+#: wp-includes/script-loader.php:594 wp-includes/script-loader.php:596
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
 msgstr[0] "Niet mogelijk om op te slaan, vanwege %s ongeldige instelling."
@@ -1204,12 +1220,12 @@ msgstr "Geluidsfragment toevoegen"
 msgid "(no author)"
 msgstr "(geen auteur)"
 
-#: wp-includes/script-loader.php:1180
+#: wp-includes/script-loader.php:1181
 msgid "Attend an upcoming event near you."
 msgstr "Een aanstaand evenement in je buurt bijwonen."
 
 #. translators: %s: the name of a city
-#: wp-includes/script-loader.php:1201
+#: wp-includes/script-loader.php:1202
 msgid "City updated. Listing events near %s."
 msgstr "Stad bijgewerkt. Evenementen nabij %s worden weergeven."
 
@@ -1220,15 +1236,15 @@ msgstr "Stad bijgewerkt. Evenementen nabij %s worden weergeven."
 #. locale that would be recognizable to most users. Use only the city name
 #. itself, without any region or country. Use the endonym (native locale name)
 #. instead of the English name if possible.
-#: wp-includes/script-loader.php:1197
+#: wp-includes/script-loader.php:1198
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "We konden %s niet lokaliseren. Gelieve een andere dichtbijzijnde stad te proberen. Bijvoorbeeld: Leuven, Vlaams-Brabant, België."
 
-#: wp-includes/script-loader.php:1179
+#: wp-includes/script-loader.php:1180
 msgid "An error occurred. Please try again."
 msgstr "Er is een fout opgetreden. Gelieve het opnieuw te proberen."
 
-#: wp-includes/script-loader.php:1178
+#: wp-includes/script-loader.php:1179
 msgid "Enter your closest city to find nearby events."
 msgstr "Je dichtstbijzijnde stad invoeren om evenementen in de buurt te vinden."
 
@@ -1344,57 +1360,57 @@ msgid_plural "Image Widget (%d)"
 msgstr[0] "Afbeeldingswidget(%d)"
 msgstr[1] "Afbeeldingen widget (%d)"
 
-#: wp-includes/script-loader.php:827
+#: wp-includes/script-loader.php:828
 msgctxt "theme"
 msgid "Deleted!"
 msgstr "Verwijderd!"
 
-#: wp-includes/script-loader.php:826
+#: wp-includes/script-loader.php:827
 msgctxt "plugin"
 msgid "Deleted!"
 msgstr "Verwijderd!"
 
-#: wp-includes/script-loader.php:797
+#: wp-includes/script-loader.php:798
 msgctxt "theme"
 msgid "Installed!"
 msgstr "Geïnstalleerd!"
 
-#: wp-includes/script-loader.php:796
+#: wp-includes/script-loader.php:797
 msgctxt "plugin"
 msgid "Installed!"
 msgstr "Geïnstalleerd!"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:794
+#: wp-includes/script-loader.php:795
 msgctxt "plugin"
 msgid "Install %s now"
 msgstr "Installeer %s nu"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:784
+#: wp-includes/script-loader.php:785
 msgctxt "plugin"
 msgid "%s update failed"
 msgstr "%s update mislukt"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:782
+#: wp-includes/script-loader.php:783
 msgctxt "plugin"
 msgid "%s updated!"
 msgstr "%s geüpdatet!"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:780
+#: wp-includes/script-loader.php:781
 msgctxt "plugin"
 msgid "Updating %s..."
 msgstr "%s aan het updaten&hellip;"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:775
+#: wp-includes/script-loader.php:776
 msgctxt "plugin"
 msgid "Update %s now"
 msgstr "Update %s nu"
 
-#: wp-includes/script-loader.php:771
+#: wp-includes/script-loader.php:772
 msgctxt "theme"
 msgid "Updated!"
 msgstr "Geüpdatet!"
@@ -1497,7 +1513,7 @@ msgctxt "label for button in the gallery widget; should not be longer than ~13 c
 msgid "Add Images"
 msgstr "Afbeeldingen toevoegen"
 
-#: wp-includes/script-loader.php:770
+#: wp-includes/script-loader.php:771
 msgctxt "plugin"
 msgid "Updated!"
 msgstr "Geüpdatet!"
@@ -1950,7 +1966,7 @@ msgid "Invalid email address."
 msgstr "Ongeldig e-mailadres."
 
 #: wp-includes/post.php:3207 wp-includes/rest-api.php:1151
-#: wp-includes/script-loader.php:605
+#: wp-includes/script-loader.php:606
 msgid "Invalid date."
 msgstr "Ongeldige datum."
 
@@ -2144,7 +2160,7 @@ msgstr "Dit kan een goede plaats zijn om jezelf en je website te introduceren."
 msgid "Reassign the deleted user's posts and links to this user ID."
 msgstr "Wijs de links en berichten van de verwijderde gebruiker toe aan deze gebruiker ID."
 
-#: wp-includes/script-loader.php:581
+#: wp-includes/script-loader.php:582
 msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "Dit thema ondersteunt geen video headers op deze pagina. Ga naar de homepagina of een andere pagina die video headers ondersteunt."
 
@@ -2278,12 +2294,12 @@ msgstr "De gebruikersnaam bevat ongeldige tekens."
 msgid "Invalid user parameter(s)."
 msgstr "Ongeldige gebruikersparameter."
 
-#: wp-includes/script-loader.php:570
+#: wp-includes/script-loader.php:571
 msgctxt "label for hide controls button without length constraints"
 msgid "Show Controls"
 msgstr "Besturing tonen"
 
-#: wp-includes/script-loader.php:569
+#: wp-includes/script-loader.php:570
 msgctxt "label for hide controls button without length constraints"
 msgid "Hide Controls"
 msgstr "Verbergen"
@@ -2421,19 +2437,19 @@ msgstr "Trackbacks zijn uitgeschakeld voor dit item."
 msgid "I really need an ID for this to work."
 msgstr "Ik heb echt een ID nodig om dit te laten werken."
 
-#: wp-includes/script-loader.php:673
+#: wp-includes/script-loader.php:674
 msgid "Term selected."
 msgstr "Term geselecteerd."
 
-#: wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:673
 msgid "Remove term:"
 msgstr "Term verwijderen:"
 
-#: wp-includes/script-loader.php:675
+#: wp-includes/script-loader.php:676
 msgid "Term removed."
 msgstr "Term verwijderd."
 
-#: wp-includes/script-loader.php:674
+#: wp-includes/script-loader.php:675
 msgid "Term added."
 msgstr "Term toegevoegd."
 
@@ -3633,7 +3649,7 @@ msgstr "Geselecteerde menu bewerken"
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "Waarschuwing: de link is geplaatst, maar kan fouten bevatten. Gelieve te testen."
 
-#: wp-includes/script-loader.php:766
+#: wp-includes/script-loader.php:767
 msgid "Search Results"
 msgstr "Zoekresultaten"
 
@@ -3690,73 +3706,73 @@ msgid "Inexistent terms."
 msgstr "Niet-bestaande termen."
 
 #. translators: %s: Importer name
-#: wp-includes/script-loader.php:837
+#: wp-includes/script-loader.php:838
 msgid "Run %s"
 msgstr "Voer %s uit"
 
 #. translators: %s: Activation URL
-#: wp-includes/script-loader.php:816
+#: wp-includes/script-loader.php:817
 msgid "Importer installed successfully. <a href=\"%s\">Run importer</a>"
 msgstr "Importeerfunctie met succes geïnstalleerd. <a href=\"%s\">Importeren uitvoeren</a>"
 
-#: wp-includes/script-loader.php:835
+#: wp-includes/script-loader.php:836
 msgid "Run Importer"
 msgstr "Start importeerfunctie"
 
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Activate %s"
 msgstr "Activeer %s"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:802
+#: wp-includes/script-loader.php:803
 msgctxt "plugin"
 msgid "Installing %s..."
 msgstr "%s installeren..."
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:804
+#: wp-includes/script-loader.php:805
 msgctxt "theme"
 msgid "Installing %s..."
 msgstr "%s installeren..."
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:806
+#: wp-includes/script-loader.php:807
 msgctxt "plugin"
 msgid "%s installed!"
 msgstr "%s geïnstalleerd!"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:808
+#: wp-includes/script-loader.php:809
 msgctxt "theme"
 msgid "%s installed!"
 msgstr "%s geïnstalleerd!"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:810
+#: wp-includes/script-loader.php:811
 msgctxt "plugin"
 msgid "%s installation failed"
 msgstr "%s installatie mislukt"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:812
+#: wp-includes/script-loader.php:813
 msgctxt "theme"
 msgid "%s installation failed"
 msgstr "%s installatie mislukt"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Network Activate %s"
 msgstr "Activeer Netwerk %s"
 
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Activate %s"
 msgstr "Activeer %s"
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Network Activate %s"
 msgstr "Activeer Netwerk %s"
@@ -3765,7 +3781,7 @@ msgstr "Activeer Netwerk %s"
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "Sorry, je hebt geen toegang tot de gebruikersgegevens van deze site."
 
-#: wp-includes/script-loader.php:841
+#: wp-includes/script-loader.php:842
 msgid "Number of plugins found: %d"
 msgstr "Aantal gevonden plugins: %d"
 
@@ -3836,33 +3852,33 @@ msgid "Sorry, you are not allowed to edit this page."
 msgstr "Sorry, maar je hebt geen rechten om deze pagina te bewerken."
 
 #. translators: %s: Error string for a failed installation
-#: wp-includes/script-loader.php:800
+#: wp-includes/script-loader.php:801
 msgid "Installation failed: %s"
 msgstr "Installatie mislukt: %s"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:820
+#: wp-includes/script-loader.php:821
 msgid "Are you sure you want to delete %s and its data?"
 msgstr "Ben je zeker dat je %s en de bijhorende data wil verwijderen?"
 
-#: wp-includes/script-loader.php:821
+#: wp-includes/script-loader.php:822
 msgid "Are you sure you want to delete the selected plugins and their data?"
 msgstr "Ben je zeker dat je de geselecteerde plugins en hun bijhorende data wil verwijderen?"
 
-#: wp-includes/script-loader.php:823
+#: wp-includes/script-loader.php:824
 msgid "Deleting..."
 msgstr "Verwijderen..."
 
 #. translators: %s: Error string for a failed deletion
-#: wp-includes/script-loader.php:825
+#: wp-includes/script-loader.php:826
 msgid "Deletion failed: %s"
 msgstr "Verwijderen mislukt: %s"
 
-#: wp-includes/script-loader.php:829
+#: wp-includes/script-loader.php:830
 msgid "Network Activate"
 msgstr "Activeer Netwerk"
 
-#: wp-includes/script-loader.php:1126
+#: wp-includes/script-loader.php:1127
 msgid "Today"
 msgstr "Vandaag"
 
@@ -3876,7 +3892,7 @@ msgstr "&larr; Terug naar %s"
 msgid "Unable to retrieve the error message from MySQL"
 msgstr "Niet in staat om de foutmelding van MySQL op te halen"
 
-#: wp-includes/script-loader.php:822
+#: wp-includes/script-loader.php:823
 msgid "Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?"
 msgstr "Opgelet: Deze thema's kunnen actief zijn op andere websites in het netwerk. Ben je zeker dat je wil doorgaan?"
 
@@ -3886,24 +3902,24 @@ msgid "Edit Menu"
 msgstr "Menu Bewerken"
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:818
+#: wp-includes/script-loader.php:819
 msgid "Are you sure you want to delete %s?"
 msgstr "Ben je zeker dat je %s wil verwijderen?"
 
 #. translators: %s: Search string
-#: wp-includes/script-loader.php:765
+#: wp-includes/script-loader.php:766
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Zoekresultaten voor &#8220;%s&#8221;"
 
-#: wp-includes/script-loader.php:767
+#: wp-includes/script-loader.php:768
 msgid "You do not appear to have any plugins available at this time."
 msgstr "Het lijkt erop dat je op dit moment geen plugins beschikbaar hebt."
 
-#: wp-includes/script-loader.php:768
+#: wp-includes/script-loader.php:769
 msgid "Please select at least one item to perform this action on."
 msgstr "Gelieve tenminste één item te selecteren waarop je deze actie wil toepassen."
 
-#: wp-includes/script-loader.php:773
+#: wp-includes/script-loader.php:774
 msgid "Update Now"
 msgstr "Nu Updaten"
 
@@ -3918,7 +3934,7 @@ msgid "[%s] Password Changed"
 msgstr "[%s] Wachtwoord Gewijzigd"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:911
-#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:643
+#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:644
 msgid "Sorry, you are not allowed to do that."
 msgstr "Sorry, je hebt geen toestemming om deze actie te ondernemen."
 
@@ -3927,7 +3943,7 @@ msgctxt "password strength"
 msgid "Password strength unknown"
 msgstr "Sterkte van wachtwoord onbekend"
 
-#: wp-includes/script-loader.php:654
+#: wp-includes/script-loader.php:655
 msgid ""
 "Are you sure you want to do this?\n"
 "The comment changes you made will be lost."
@@ -3973,12 +3989,12 @@ msgstr "Je hebt geen rechten om de gebruikerslijst te bekijken."
 
 #: wp-includes/class-wp-customize-manager.php:2300
 #: wp-includes/class-wp-customize-setting.php:579
-#: wp-includes/script-loader.php:606
+#: wp-includes/script-loader.php:607
 msgid "Invalid value."
 msgstr "Ongeldige waarde."
 
 #: wp-includes/class-wp-customize-manager.php:516
-#: wp-includes/script-loader.php:566
+#: wp-includes/script-loader.php:567
 msgid "Sorry, you are not allowed to customize this site."
 msgstr "Sorry, je hebt geen rechten om deze site aan te passen."
 
@@ -4007,7 +4023,7 @@ msgstr "Link ingevoegd."
 msgid "%s is required to strip image meta."
 msgstr "%s is vereist om meta gegevens van afbeeldingen te verwijderen."
 
-#: wp-includes/script-loader.php:756
+#: wp-includes/script-loader.php:757
 msgid "Plugin details"
 msgstr "Plugin details"
 
@@ -4031,13 +4047,13 @@ msgid "1 result found. Use up and down arrow keys to navigate."
 msgstr "1 Zoekresultaat gevonden. Gebruik de up en down pijltjestoetsen om te navigeren."
 
 #. translators: %s: user name
-#: wp-includes/comment-template.php:2232
+#: wp-includes/comment-template.php:2231
 msgid "Logged in as %s. Edit your profile."
 msgstr "Ingelogged als %s. Pas uw profiel aan."
 
 #. translators: 1: edit user link, 2: accessibility text, 3: user name, 4:
 #. logout URL
-#: wp-includes/comment-template.php:2229
+#: wp-includes/comment-template.php:2228
 msgid "<a href=\"%1$s\" aria-label=\"%2$s\">Logged in as %3$s</a>. <a href=\"%4$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"%2$s\">Ingelogd als %3$s</a>. <a href=\"%4$s\">Uitloggen?</a>"
 
@@ -4084,7 +4100,7 @@ msgstr "<strong>FOUT</strong>: Gelieve een geldig e-mailadres op te geven"
 msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "Het de-registreren van een ingebouwde taxonomie is niet toegelaten"
 
-#: wp-includes/script-loader.php:571
+#: wp-includes/script-loader.php:572
 msgid "(Untitled)"
 msgstr "(Naamloos)"
 
@@ -4092,7 +4108,7 @@ msgstr "(Naamloos)"
 msgid "Route must be specified."
 msgstr "Route moet gespecificeerd worden."
 
-#: wp-includes/script-loader.php:664
+#: wp-includes/script-loader.php:665
 msgid "Drag boxes here"
 msgstr "Sleep het vak naar hier."
 
@@ -4307,7 +4323,7 @@ msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 msgid "<strong>ERROR</strong>: %1$s in %2$s can only contain numbers, letters, and underscores."
 msgstr "<strong>FOUT</strong>: %1$s in %2$s mag enkel nummers, letters en underscores bevatten."
 
-#: wp-includes/script-loader.php:744 wp-includes/script-loader.php:750
+#: wp-includes/script-loader.php:745 wp-includes/script-loader.php:751
 msgid "Changes saved."
 msgstr "Aanpassingen opgeslagen."
 
@@ -4607,7 +4623,7 @@ msgstr "Tags lijst navigatie"
 msgid "Categories list navigation"
 msgstr "Categorieën lijst navigatie"
 
-#: wp-includes/script-loader.php:702
+#: wp-includes/script-loader.php:703
 msgid "Permalink saved"
 msgstr "Permalink opgeslagen"
 
@@ -4958,7 +4974,7 @@ msgstr "Wissel sectie: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1088
+#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1089
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "woorden"
@@ -5242,7 +5258,7 @@ msgstr ""
 "###SITEURL###"
 
 #. translators: %s: Error string for a failed update
-#: wp-includes/script-loader.php:778
+#: wp-includes/script-loader.php:779
 msgid "Update Failed: %s"
 msgstr "Update Mislukt: %s"
 
@@ -5258,7 +5274,7 @@ msgstr "Sluit code tag"
 msgid "Close numbered list tag"
 msgstr "Sluit genummerde lijst tag"
 
-#: wp-includes/script-loader.php:653
+#: wp-includes/script-loader.php:654
 msgid ""
 "Are you sure you want to edit this comment?\n"
 "The changes you made will be lost."
@@ -5629,20 +5645,20 @@ msgstr "https://codex.wordpress.org/"
 msgid "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to silence this notice and keep existing sidebar content."
 msgstr "%1$s was niet ingesteld in de argumenten array voor de %2$s zijbalk. Standaard is %3$s. Handmatig instellen van %1$s naar %3$s om de melding het zwijgen op te leggen en de bestaande zijbalk inhoud te behouden."
 
-#: wp-includes/script-loader.php:839
+#: wp-includes/script-loader.php:840
 msgid "Connection lost or the server is busy. Please try again later."
 msgstr "Verbinding verloren of server te druk. Gelieve later opnieuw te proberen."
 
-#: wp-includes/script-loader.php:791
+#: wp-includes/script-loader.php:792
 msgid "Updates may not complete if you navigate away from this page."
 msgstr "Updates zullen mogelijks niet voltooid worden wanneer je weggaat van deze pagina."
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:790
+#: wp-includes/script-loader.php:791
 msgid "Update canceled."
 msgstr "Update geannuleerd."
 
-#: wp-includes/script-loader.php:776
+#: wp-includes/script-loader.php:777
 msgid "Update Failed!"
 msgstr "Update Mislukt!"
 
@@ -5668,32 +5684,32 @@ msgid "<span>Previewing:</span> %s"
 msgstr "<span>Voorbeeld:</span> %s"
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:786
+#: wp-includes/script-loader.php:787
 msgid "Updating... please wait."
 msgstr "Aan het updaten.. gelieve even te wachten."
 
-#: wp-includes/script-loader.php:813
+#: wp-includes/script-loader.php:814
 msgid "Installing... please wait."
 msgstr "Aan het installeren.. gelieve even te wachten."
 
-#: wp-includes/script-loader.php:795
+#: wp-includes/script-loader.php:796
 msgid "Installing..."
 msgstr "Installeren..."
 
-#: wp-includes/script-loader.php:792
+#: wp-includes/script-loader.php:793
 msgid "Install Now"
 msgstr "Nu Installeren"
 
-#: wp-includes/script-loader.php:769
+#: wp-includes/script-loader.php:770
 msgid "Updating..."
 msgstr "Updaten..."
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:788
+#: wp-includes/script-loader.php:789
 msgid "Update completed successfully."
 msgstr "Update succesvol voltooid."
 
-#: wp-includes/script-loader.php:814
+#: wp-includes/script-loader.php:815
 msgid "Installation completed successfully."
 msgstr "Installatie succesvol voltooid."
 
@@ -5709,7 +5725,7 @@ msgstr "Customizer"
 msgid "Could not split shared term."
 msgstr "Niet mogelijk om gedeelde term te delen."
 
-#: wp-includes/script-loader.php:567
+#: wp-includes/script-loader.php:568
 msgid "Site Preview"
 msgstr "Website voorbeeld"
 
@@ -5870,7 +5886,7 @@ msgid "Theme Details"
 msgstr "Thema Details"
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:118
-#: wp-includes/script-loader.php:828
+#: wp-includes/script-loader.php:829
 msgid "Live Preview"
 msgstr "Live voorbeeld"
 
@@ -5938,7 +5954,7 @@ msgstr "Je moet een reeks van types doorgeven"
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s moet een databaseconnectie instellen voor het gebruik van 'escaping'."
 
-#: wp-includes/script-loader.php:1130
+#: wp-includes/script-loader.php:1131
 msgid "Previous"
 msgstr "Vorige"
 
@@ -6254,7 +6270,7 @@ msgid "%s: %l."
 msgstr "%s: %l."
 
 #: wp-includes/class-wp-customize-nav-menus.php:427
-#: wp-includes/script-loader.php:888
+#: wp-includes/script-loader.php:889
 msgctxt "missing menu item navigation label"
 msgid "(no label)"
 msgstr "(geen label)"
@@ -6347,7 +6363,7 @@ msgstr "Bitrate"
 msgid "This site is no longer available."
 msgstr "Deze website is niet langer beschikbaar."
 
-#: wp-includes/script-loader.php:842
+#: wp-includes/script-loader.php:843
 msgid "No plugins found. Try a different search."
 msgstr "Geen plugins gevonden. Probeer een andere zoekopdracht."
 
@@ -7035,7 +7051,7 @@ msgid "Select an area to move this widget into:"
 msgstr "Selecteer een sectie naarwaar je deze widget wil verplaatsen:"
 
 #: wp-includes/class-wp-customize-widgets.php:755
-#: wp-includes/script-loader.php:840 wp-includes/script-loader.php:866
+#: wp-includes/script-loader.php:841 wp-includes/script-loader.php:867
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "Een fout trad op. Herlaadt de pagina en probeer opnieuw."
 
@@ -7345,7 +7361,7 @@ msgstr "Een lijst van de pagina&#39;s op deze website."
 #. translators: If there are characters in your language that are not supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: wp-includes/script-loader.php:935
+#: wp-includes/script-loader.php:936
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "aan"
@@ -7363,7 +7379,7 @@ msgstr "Standaard"
 #. translators: To add an additional Open Sans character subset specific to
 #. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
 #. translate into your own language.
-#: wp-includes/script-loader.php:941
+#: wp-includes/script-loader.php:942
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "geen subset."
@@ -7557,7 +7573,7 @@ msgid "The site you were looking for, %s, does not exist, but you can create it 
 msgstr "De website die je zocht, %s, bestaat niet, creeer ze nu."
 
 #. translators: 1: month, 2: day, 3: year, 4: hour, 5: minute
-#: wp-includes/script-loader.php:686 wp-includes/script-loader.php:714
+#: wp-includes/script-loader.php:687 wp-includes/script-loader.php:715
 msgid "%1$s %2$s, %3$s @ %4$s:%5$s"
 msgstr "%1$s %2$s, %3$s @ %4$s:%5$s"
 
@@ -7590,7 +7606,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Zoek &hellip;"
 
-#: wp-includes/functions.php:5328 wp-includes/script-loader.php:568
+#: wp-includes/functions.php:5328 wp-includes/script-loader.php:569
 msgid "Session expired"
 msgstr "Sessie verstreken"
 
@@ -7975,7 +7991,7 @@ msgstr "Bijlagepagina tonen"
 msgid "Add to gallery"
 msgstr "Toevoegen aan gallerij"
 
-#: wp-includes/script-loader.php:855
+#: wp-includes/script-loader.php:856
 msgid "Select Color"
 msgstr "Selecteer Kleur"
 
@@ -7983,7 +7999,7 @@ msgstr "Selecteer Kleur"
 msgid "Could not insert term relationship into the database."
 msgstr "Niet mogelijk om relatietype in database in te voegen"
 
-#: wp-includes/media-template.php:601 wp-includes/script-loader.php:851
+#: wp-includes/media-template.php:601 wp-includes/script-loader.php:852
 msgid "Clear"
 msgstr "Duidelijk"
 
@@ -8059,7 +8075,7 @@ msgstr "Header tekstkleur"
 msgid "Colors"
 msgstr "Kleuren"
 
-#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:722
+#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:723
 msgid "Saved"
 msgstr "Opgeslagen"
 
@@ -8162,7 +8178,7 @@ msgstr "Sorry, je hebt geen rechten om deze reactie te bewerken."
 msgid "Posts page"
 msgstr "Berichtenpagina"
 
-#: wp-includes/script-loader.php:583
+#: wp-includes/script-loader.php:584
 msgid "Allowed Files"
 msgstr "Toegelaten Bestanden"
 
@@ -8336,8 +8352,8 @@ msgstr "Standaard linktype voor afbeelding"
 msgid "Sorry, you are not allowed to edit this post."
 msgstr "Je hebt geen rechten om dit bericht te wijzigen."
 
-#: wp-includes/post.php:3952 wp-includes/script-loader.php:671
-#: wp-includes/script-loader.php:743
+#: wp-includes/post.php:3952 wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:744
 msgctxt "tag delimiter"
 msgid ","
 msgstr ","
@@ -8569,7 +8585,7 @@ msgstr "<strong>FOUT</strong>: vul de verplichte velden in (naam, e-mailadres)"
 msgid "<strong>ERROR</strong>: please enter a valid email address."
 msgstr "<strong>FOUT</strong>: vul een geldig e-mailadres in."
 
-#: wp-includes/script-loader.php:871
+#: wp-includes/script-loader.php:872
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "Het voorbeeld van de afbeelding kon niet geladen worden, laad de pagina opnieuw"
 
@@ -8695,7 +8711,7 @@ msgstr "Je account is nu geactiveerd. <a href=\"%1$s\">Bekijk je website</a> of 
 msgid "All Posts"
 msgstr "Alle berichten"
 
-#: wp-includes/script-loader.php:651
+#: wp-includes/script-loader.php:652
 msgid "Approve and Reply"
 msgstr "Toelaten en reageren"
 
@@ -8877,7 +8893,7 @@ msgstr "Geen pagina&#39;s gevonden."
 msgid "No pages found in Trash."
 msgstr "Geen pagina&#39;s gevonden in de prullenmand."
 
-#: wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Network Enable"
 msgstr "Netwerk Inschakelen"
 
@@ -9177,7 +9193,7 @@ msgstr "<strong>Conflicterende waarden voor de constanten VHOST en SUBDOMAIN_INS
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>FOUT</strong>: Deze gebruikersnaam is niet geldig, want er zitten verboden tekens in. Voer een geldige gebruikersnaam in."
 
-#: wp-includes/comment-template.php:2207
+#: wp-includes/comment-template.php:2206
 msgid "Required fields are marked %s"
 msgstr "Verplichte velden zijn gemarkeerd met %s"
 
@@ -9339,7 +9355,7 @@ msgstr "Er is een fout opgetreden bij het toevoegen van je op deze website. Ga t
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "Dit bestand is te groot. Bestanden moeten kleiner zijn dan %d KB."
 
-#: wp-includes/comment-template.php:2236
+#: wp-includes/comment-template.php:2235
 msgid "Your email address will not be published."
 msgstr "Je e-mailadres zal niet getoond worden."
 
@@ -9382,11 +9398,11 @@ msgstr "Welkom terug, %s. Door onderstaand formulier in te vullen kun je <strong
 msgid "This action has been disabled by the administrator."
 msgstr "Deze handeling is uitgeschakeld door de beheerder."
 
-#: wp-includes/script-loader.php:757
+#: wp-includes/script-loader.php:758
 msgid "Are you sure you want to install this plugin?"
 msgstr "Ben je zeker dat je deze plugin wilt installeren?"
 
-#: wp-includes/script-loader.php:876
+#: wp-includes/script-loader.php:877
 msgid "Use as featured image"
 msgstr "Gebruik als uitgelichte afbeelding"
 
@@ -9423,7 +9439,7 @@ msgstr "Links voor %s"
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "Er zijn nog geen menu's aangemaakt. <a href=\"%s\">Maak er één aan</a>."
 
-#: wp-includes/script-loader.php:886
+#: wp-includes/script-loader.php:887
 msgid ""
 "You are about to permanently delete this menu. \n"
 " 'Cancel' to stop, 'OK' to delete."
@@ -9842,7 +9858,7 @@ msgstr "Revisie"
 msgid "Table properties"
 msgstr "Tabel eigenschappen"
 
-#: wp-includes/script-loader.php:712
+#: wp-includes/script-loader.php:713
 msgid "Submitted on:"
 msgstr "Toegevoegd op:"
 
@@ -9882,7 +9898,7 @@ msgstr "Donderdag"
 msgid "Copy table row"
 msgstr "Kopieer tabel rij"
 
-#: wp-includes/script-loader.php:683
+#: wp-includes/script-loader.php:684
 msgid "Schedule for:"
 msgstr "Inplannen voor:"
 
@@ -10011,7 +10027,7 @@ msgstr "Oktober"
 msgid "By: %s"
 msgstr "Door: %s"
 
-#: wp-includes/script-loader.php:684
+#: wp-includes/script-loader.php:685
 msgid "Published on:"
 msgstr "Gepubliceerd op:"
 
@@ -10224,7 +10240,7 @@ msgstr "Selecteer Maand"
 msgid "New document"
 msgstr "Nieuw document"
 
-#: wp-includes/script-loader.php:697
+#: wp-includes/script-loader.php:698
 msgid "Password Protected"
 msgstr "Beschermd door een wachtwoord"
 
@@ -10244,7 +10260,7 @@ msgstr "Registreer voor deze website"
 msgid "Row"
 msgstr "Rij"
 
-#: wp-includes/script-loader.php:682
+#: wp-includes/script-loader.php:683
 msgid "Publish on:"
 msgstr "Gepubliceerd op:"
 
@@ -10350,7 +10366,7 @@ msgstr "Verwijder rij"
 msgid "%1$s %2$s Feed"
 msgstr "%1$s %2$s Feed"
 
-#: wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:702
 msgid "Saving Draft&#8230;"
 msgstr "Concept Opslaan&#8230;"
 
@@ -10410,7 +10426,7 @@ msgstr "Midden"
 msgid "Could not update comment status"
 msgstr "Kon de status van de reactie niet wijzigen"
 
-#: wp-includes/script-loader.php:740 wp-includes/script-loader.php:749
+#: wp-includes/script-loader.php:741 wp-includes/script-loader.php:750
 msgid "Error while saving the changes."
 msgstr "Fout tijdens het opslaan van de wijzigingen"
 
@@ -10487,7 +10503,7 @@ msgstr "Uitloggen"
 msgid "You have attempted to queue too many files."
 msgstr "Je probeerde te veel bestanden in de wachtrij te plaatsen."
 
-#: wp-includes/script-loader.php:688
+#: wp-includes/script-loader.php:689
 msgid "No more comments found."
 msgstr "Geen verdere reacties gevonden."
 
@@ -10549,7 +10565,7 @@ msgstr "WordPress &rsaquo; Fout"
 msgid "Select a city"
 msgstr "Selecteer een stad"
 
-#: wp-includes/comment-template.php:2250
+#: wp-includes/comment-template.php:2249
 msgid "Cancel reply"
 msgstr "Annuleer antwoord"
 
@@ -10682,7 +10698,7 @@ msgid "But, before you can start using your new username, <strong>you must activ
 msgstr "Maar, voor je je nieuwe gebruikersnaam kunt gebruiken, <strong>moet je deze activeren</strong>."
 
 #: wp-includes/class-wp-customize-nav-menus.php:967
-#: wp-includes/script-loader.php:1129 wp-signup.php:562
+#: wp-includes/script-loader.php:1130 wp-signup.php:562
 msgid "Next"
 msgstr "Volgende"
 
@@ -10719,7 +10735,7 @@ msgstr "Controleer je e-mailbox voor de bevestigingslink."
 msgid "You are now logged out."
 msgstr "Je bent nu uitgelogd."
 
-#: wp-includes/script-loader.php:687
+#: wp-includes/script-loader.php:688
 msgid "Show more comments"
 msgstr "Meer reacties tonen"
 
@@ -10746,12 +10762,6 @@ msgstr "&lt; Vorige"
 #: wp-includes/script-loader.php:273
 msgid "Next &gt;"
 msgstr "Volgende &gt;"
-
-#: wp-includes/class-wp-xmlrpc-server.php:3689
-#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:644
-#: wp-includes/script-loader.php:838
-msgid "An unidentified error has occurred."
-msgstr "Er is een ongeïdentificeerde fout opgetreden."
 
 #: wp-includes/script-loader.php:95
 msgid "Enter the URL of the image"
@@ -10892,10 +10902,6 @@ msgstr "%1$s werd aangeroepen met een argument dat <strong>verouderd</strong> is
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s is <strong>verouderd</strong> sinds versie%2$s! Gebruik in plaats daarvan %3$s."
 
-#: wp-includes/functions.php:2617
-msgid "WordPress Failure Notice"
-msgstr "WordPress-foutmelding"
-
 #. translators: %s: directory path
 #: wp-includes/functions.php:1905 wp-includes/functions.php:2174
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
@@ -10929,15 +10935,15 @@ msgstr "<strong>FOUT</strong>: De gebruikersnaam is niet ingevuld."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "Er is geen hoofdhema aanwezig. Installeer het hoofdthema \"%s\"."
 
-#: wp-includes/script-loader.php:878
+#: wp-includes/script-loader.php:879
 msgid "Could not set that as the thumbnail image. Try a different attachment."
 msgstr "Kon het niet instellen als thumbnail afbeelding. Probeer een andere bijlage."
 
-#: wp-includes/script-loader.php:877
+#: wp-includes/script-loader.php:878
 msgid "Saving..."
 msgstr "Opslaan..."
 
-#: wp-includes/script-loader.php:741
+#: wp-includes/script-loader.php:742
 msgid "Remove From Bulk Edit"
 msgstr "Verwijderen uit bulkbewerking"
 
@@ -11132,8 +11138,8 @@ msgid "Paragraph"
 msgstr "Alinea"
 
 #: wp-includes/class-wp-editor.php:1238 wp-includes/script-loader.php:477
-#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:700
-#: wp-includes/script-loader.php:723 wp-includes/script-loader.php:887
+#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:724 wp-includes/script-loader.php:888
 #: wp-includes/theme.php:2961
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "De gemaakte wijzigingen gaan verloren als je naar een andere pagina navigeert."
@@ -11213,7 +11219,7 @@ msgstr "%s [Automatisch opgeslagen]"
 msgid "Home"
 msgstr "Home"
 
-#: wp-includes/comment-template.php:2251
+#: wp-includes/comment-template.php:2250
 msgid "Post Comment"
 msgstr "Plaats een reactie"
 
@@ -11304,7 +11310,7 @@ msgstr "Thema's"
 msgid "Settings"
 msgstr "Instellingen"
 
-#: wp-includes/comment-template.php:2201 wp-login.php:809
+#: wp-includes/comment-template.php:2200 wp-login.php:809
 msgid "Email"
 msgstr "E-mail"
 
@@ -11319,11 +11325,11 @@ msgstr "Hoogte"
 #: wp-includes/customize/class-wp-customize-media-control.php:235
 #: wp-includes/customize/class-wp-customize-media-control.php:245
 #: wp-includes/customize/class-wp-customize-media-control.php:255
-#: wp-includes/script-loader.php:853
+#: wp-includes/script-loader.php:854
 msgid "Default"
 msgstr "Standaard"
 
-#: wp-includes/script-loader.php:755
+#: wp-includes/script-loader.php:756
 msgid "Plugin:"
 msgstr "Plugin:"
 
@@ -11344,13 +11350,13 @@ msgstr "Plugin:"
 msgid "Title:"
 msgstr "Titel:"
 
-#: wp-includes/comment-template.php:2203
+#: wp-includes/comment-template.php:2202
 msgid "Website"
 msgstr "Website"
 
 #: wp-includes/class-wp-customize-nav-menus.php:276
 #: wp-includes/script-loader.php:242 wp-includes/script-loader.php:527
-#: wp-includes/script-loader.php:885
+#: wp-includes/script-loader.php:886
 msgid "No results found."
 msgstr "Geen resultaten gevonden."
 
@@ -11381,7 +11387,7 @@ msgid "Edit This"
 msgstr "Bewerk Dit"
 
 #. translators: %s: comments count
-#: wp-includes/script-loader.php:657
+#: wp-includes/script-loader.php:658
 msgid "Comments (%s)"
 msgstr "Reacties (%s)"
 
@@ -11452,7 +11458,7 @@ msgid "Visit %s&#8217;s website"
 msgstr "Bezoek %s&#8217;s website"
 
 #. translators: %s: login URL
-#: wp-includes/comment-template.php:2223
+#: wp-includes/comment-template.php:2222
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Je moet <a href=\"%s\">ingelogd</a> zijn om een reactie te plaatsen."
 
@@ -11594,11 +11600,11 @@ msgctxt "page"
 msgid "Add New"
 msgstr "Nieuwe pagina"
 
-#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2244
+#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2243
 msgid "Leave a Reply"
 msgstr "Geef een reactie"
 
-#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2245
+#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2244
 msgid "Leave a Reply to %s"
 msgstr "Geef een reactie op %s"
 
@@ -11610,7 +11616,7 @@ msgstr "Tijdnotatie"
 msgid "Date Format"
 msgstr "Datumnotatie"
 
-#: wp-includes/script-loader.php:854
+#: wp-includes/script-loader.php:855
 msgid "Select default color"
 msgstr "Standaard kleur selecteren"
 
@@ -11640,7 +11646,7 @@ msgstr "Bewerk"
 msgid "No"
 msgstr "Nee"
 
-#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2607
+#: wp-includes/deprecated.php:3130
 msgid "Are you sure you want to do this?"
 msgstr "Ben je zeker dat je dit wil doen?"
 
@@ -11653,7 +11659,7 @@ msgstr "Revisies"
 msgid "Search Results for &#8220;%s&#8221;"
 msgstr "Zoekresultaten voor &#8220;%s&#8221;"
 
-#: wp-includes/comment-template.php:2199
+#: wp-includes/comment-template.php:2198
 msgid "Name"
 msgstr "Naam"
 
@@ -11661,7 +11667,7 @@ msgstr "Naam"
 msgid "Advanced"
 msgstr "Geavanceerd"
 
-#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:721
+#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:722
 msgid "Save"
 msgstr "Opslaan"
 
@@ -11691,7 +11697,7 @@ msgstr "Gebruikers"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:55
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
-#: wp-includes/script-loader.php:879
+#: wp-includes/script-loader.php:880
 msgid "Done"
 msgstr "Voltooid"
 
@@ -11705,7 +11711,7 @@ msgstr "Plugins"
 
 #: wp-includes/class-wp-editor.php:1052 wp-includes/class-wp-editor.php:1741
 #: wp-includes/media.php:3498 wp-includes/script-loader.php:510
-#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:681
+#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:682
 msgid "Cancel"
 msgstr "Annuleer"
 
@@ -11717,7 +11723,7 @@ msgstr "Inhoud"
 msgid "Tags"
 msgstr "Tags"
 
-#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:652
+#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:653
 msgid "Reply"
 msgstr "Beantwoord"
 
@@ -11785,7 +11791,7 @@ msgstr "Rechts"
 msgid "Caption"
 msgstr "Bijschrift"
 
-#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:680
+#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:681
 msgid "OK"
 msgstr "Oké"
 
@@ -11793,11 +11799,11 @@ msgstr "Oké"
 msgid "Add Link"
 msgstr "Link Toevoegen"
 
-#: wp-includes/script-loader.php:655
+#: wp-includes/script-loader.php:656
 msgid "Comments"
 msgstr "Reacties"
 
-#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2219
+#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2218
 msgctxt "noun"
 msgid "Comment"
 msgstr "Reactie"
@@ -11832,12 +11838,12 @@ msgstr "Grootte"
 msgid "Alignment"
 msgstr "Uitlijning"
 
-#: wp-includes/script-loader.php:695
+#: wp-includes/script-loader.php:696
 msgid "Public"
 msgstr "Openbaar"
 
 #: wp-includes/post.php:705 wp-includes/post.php:725
-#: wp-includes/script-loader.php:694
+#: wp-includes/script-loader.php:695
 msgid "Private"
 msgstr "Privaat"
 
@@ -11867,7 +11873,7 @@ msgid "New Page"
 msgstr "Nieuwe Pagina"
 
 #: wp-includes/media.php:3143 wp-includes/script-loader.php:526
-#: wp-includes/script-loader.php:742
+#: wp-includes/script-loader.php:743
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:91
 msgid "(no title)"
 msgstr "(geen titel)"
@@ -11879,7 +11885,7 @@ msgstr "Ongecategoriseerd"
 #: wp-includes/class-wp-customize-manager.php:5301
 #: wp-includes/class-wp-editor.php:1053 wp-includes/class-wp-editor.php:1695
 #: wp-includes/script-loader.php:277 wp-includes/script-loader.php:371
-#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1125
+#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1126
 msgid "Close"
 msgstr "Sluit"
 
@@ -11911,7 +11917,7 @@ msgstr "Afbeeldings url"
 msgid "Link Categories"
 msgstr "Link Categorieën"
 
-#: wp-includes/script-loader.php:692
+#: wp-includes/script-loader.php:693
 msgid "Save as Pending"
 msgstr "Opslaan als In afwachting"
 
@@ -11962,7 +11968,7 @@ msgid "Number of comments to show:"
 msgstr "Aantal reacties die getoond worden:"
 
 #: wp-includes/class-wp-customize-manager.php:4622
-#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:693
+#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:694
 msgid "Save Draft"
 msgstr "Sla concept op"
 
@@ -11977,7 +11983,7 @@ msgstr "Negeren"
 msgid "Update Category"
 msgstr "Categorie bijwerken"
 
-#: wp-includes/script-loader.php:696
+#: wp-includes/script-loader.php:697
 msgid "Public, Sticky"
 msgstr "Publiekelijk , Sticky"
 
@@ -11986,7 +11992,7 @@ msgstr "Publiekelijk , Sticky"
 msgid "Medium"
 msgstr "Medium"
 
-#: wp-includes/script-loader.php:698
+#: wp-includes/script-loader.php:699
 msgid "Privately Published"
 msgstr "Gepubliceerd als privé"
 
@@ -12022,7 +12028,7 @@ msgid "Add"
 msgstr "Toevoegen"
 
 #: wp-includes/media.php:3499 wp-includes/script-loader.php:524
-#: wp-includes/script-loader.php:691 wp-includes/script-loader.php:772
+#: wp-includes/script-loader.php:692 wp-includes/script-loader.php:773
 msgid "Update"
 msgstr "Bijwerken"
 
@@ -12049,7 +12055,7 @@ msgid "Apply"
 msgstr "Toepassen"
 
 #: wp-includes/class-wp-customize-manager.php:4617
-#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:689
+#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:690
 msgid "Publish"
 msgstr "Publiceren"
 
@@ -12068,7 +12074,7 @@ msgid "Username:"
 msgstr "Gebruikersnaam:"
 
 #: wp-includes/post.php:706 wp-includes/post.php:726
-#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:699
+#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:700
 msgid "Published"
 msgstr "Gepubliceerd"
 
@@ -12076,8 +12082,8 @@ msgstr "Gepubliceerd"
 msgid "Draft"
 msgstr "Concept"
 
-#: wp-activate.php:85 wp-includes/script-loader.php:829
-#: wp-includes/script-loader.php:830
+#: wp-activate.php:85 wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Activate"
 msgstr "Activeer"
 
@@ -12118,12 +12124,6 @@ msgstr "Activatiesleutel vereist"
 #: wp-includes/post.php:1394
 msgid "No posts found."
 msgstr "Geen berichten gevonden."
-
-#: wp-includes/class-wp-customize-manager.php:450
-#: wp-includes/class-wp-customize-manager.php:515
-#: wp-includes/script-loader.php:565
-msgid "Cheatin&#8217; uh?"
-msgstr "Aan het vals spelen?"
 
 #: wp-includes/class-wp-editor.php:1634
 msgid "Y/m/d"

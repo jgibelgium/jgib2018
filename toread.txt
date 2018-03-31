@@ -68,3 +68,13 @@ See also: https://polylang.pro/doc/polylang-wc-installation/
     - aanwezig in taalmenu en mobiele menu voor tablet en smartphone
 
 * De breadcrum verschijnt niet op smartphone en kleine smartphone.
+
+* lettertypes
+text: adobe caslon pro
+buttons: FuturaBT-Medium
+Gravity forms: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+Cf7 forms: font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+Top bar menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+Hoofmenu: FuturaBT-Medium, sans-serif;
+Footer menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+Mobile menu: 

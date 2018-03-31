@@ -1,7 +1,5 @@
 h als URL
 
-exploring gombe famous places NL 
-
 become a rs school NL F
  
 disclaimer / become a rs school / host a workshop / 4 laatste nieuwsberichten
@@ -10,32 +8,27 @@ photo credits donations page
  
 photo credits uniformiseren
 
-volgorde pag swiftideas support
-
 afprintbaarheid pags ctln
-
-fotos resources !!!!!!!
- 
-faq rs 
-
-zart wit foto van Jane
 
 volunteer types accordion
 
-fotos volunttes 
-
-adres JGI wissen
-
-formulieren:
-
-http://eepurl.com/20ayj   RS NL
-
-http://eepurl.com/20bqn   RS FR
-
-http://eepurl.com/6d40T   RS EN
+donation hero imahe vert krimpen
 
 
-1ste paragraaf moet weg bij verzensen form recycle
+
+inschrijving RS  checkboxs en adres komen niet door
+
+
+cf7 en gravity forms borderradius: 2px
+
+resources pagina form door een gravity form vervangen
+
+peace day gravity form
+
+Ron for JGIB
+
+team fotos credieren
+
 
 ***WC****
 
@@ -72,22 +65,15 @@ hoofding product page verkleinen
 
 bronze membership nt ok
 
-****gravity forms***
-forms to embed:
-roots $shoots?
-
-
-
 ****FOTOS****
 some guys with Mister H voor banner van de campaigns
 foto voor jane goodall page
 foto who we are
-more than 300 chimps are lost from the wild everywhere NL F
-
+chimp guardianship
 
 ***unused pages****
 jeugdhoek
 press
-
-
+*****
+mailchimp beheer je voorkeuren wissen
 
