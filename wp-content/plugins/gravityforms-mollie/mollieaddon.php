@@ -8,6 +8,8 @@ Text Domain: gravityforms-mollie
 Domain Path: /languages/
 */
 
+
+
 define('GFM_PLUGIN_PATH', plugin_dir_path(__FILE__));
 
 add_action('gform_loaded', array('GF_Mollie_Bootstrap', 'load' ), 5 );  // load addon only if GF loaded

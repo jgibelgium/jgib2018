@@ -78,3 +78,11 @@ Top bar menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
 Hoofmenu: FuturaBT-Medium, sans-serif;
 Footer menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
 Mobile menu: 
+
+
+* Mollie - Teamleader
+Iedere geslaagde betaling komt als een contract in TL terecht.
+Een gefaalde betaling komt niet in Teamleader terecht.
+De data van een ontvanger komen niet in TL terecht.
+
+

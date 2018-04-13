@@ -41,12 +41,12 @@ class GFMollieAddOn extends GFAddOn
 
         $site_url = get_home_url();                                        
         if (GFM_TEST_URL !== '') {                                          // test URL is set
-            $site_url = str_replace('http://localhost', GFM_TEST_URL,  $site_url);
+            $site_url = str_replace('http://localhost:8080', GFM_TEST_URL,  $site_url);
         }   
 
         $this->site_url    = $site_url;                                     // set site / webhook URL
         $this->webhook_url = $site_url . '/' .GFM_WEBHOOK. '/';
-                
+				                
         add_shortcode('gfm_payments_total', array($this, 'set_payments_total'));  // shortcode for total payments amount 
 
         if (isset($_GET[GFM_DONATION_ID])) {                                // payment confirmed by Mollie
@@ -83,6 +83,7 @@ class GFMollieAddOn extends GFAddOn
     
 	public function process_result() 
     {
+    	 
         //  for test: check form_id
         //  localhost/janegoodall/gravity-form-donaties/?donation_id=47598e0e94b9c86&form_id=12&entry_id=150
         //  localhost/janegoodall/1-adopteer-chimp-pdj/?donation_id=3959a189967d1c7&form_id=12&entry_id=194
@@ -155,7 +156,7 @@ class GFMollieAddOn extends GFAddOn
 	public function send_notifications($form, $entry) 
     {
         $notification_ids = array();
-        
+               
         foreach($form['notifications'] as $id => $info) {
             array_push($notification_ids, $id);
         }
@@ -354,6 +355,7 @@ class GFMollieAddOn extends GFAddOn
         $pages = get_pages();
 
         $page_list = array();
+        
         foreach ($pages as $page)
         {
             $page_entry = array();

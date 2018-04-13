@@ -28,6 +28,7 @@ class GFM_Webhook
         add_rewrite_rule('^' . GFM_WEBHOOK . '/sub/([0-9]+)/?', 'index.php?__gfmapi=1&sub=$matches[1]', 'top');
         add_rewrite_rule('^' . GFM_WEBHOOK . '/?','index.php?__gfmapi=1','top');
         flush_rewrite_rules();
+		//remove rewrite rules and then recreate rewrite rules.
     }
  
     // - One-time payment     : http://localhost/jg_test_wp48/gfm-webhook/                                      $_POST['id'] = 'tr_nnnnnnnnnn' [current payment]
@@ -76,12 +77,13 @@ class GFM_Webhook
 
                 $payment = $mollie->payments->get($payment_id);
                 
-                $addon->log_message(__METHOD__, 'Get payment completed [type = one-time or first / payment_id = {p1}]', 3, $payment_id);                          
+                $addon->log_message(__METHOD__, 'Get payment completed (Ron) [type = one-time or first / payment_id = {p1}]', 3, $payment_id); 
+				$addon->log_message(__METHOD__, 'Ron is here in handle request, one time payment');                          
 
                 $sql = "UPDATE " . GFM_TABLE_DONATIONS . " SET status = %s, payment_method = %s, payment_mode = %s, customer_id = %s WHERE id = %d";
                 $qry = $this->wpdb->prepare($sql, 
                             $payment->status,
-                            $payment->method,
+                            $payment->method, 
                             $payment->mode,
                             $payment->customerId,
                             $donation->id

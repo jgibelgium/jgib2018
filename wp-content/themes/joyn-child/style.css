@@ -532,6 +532,10 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
 }
     
 /*3. who we are*/
+.page-id-16 .page-heading.fancy-heading, .page-id-98 .page-heading.fancy-heading, .page-id-169 .page-heading.fancy-heading{
+        background-position: 0% 43% !important;
+     }
+
  #who4icons {
         position: relative;
         top: -4em;
@@ -569,7 +573,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
 
 /*6. our people*/
 .page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
-    background-position: 0% 45% !important;
+    background-position: 0% 60% !important;
 }
 
 

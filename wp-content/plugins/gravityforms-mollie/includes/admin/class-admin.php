@@ -23,12 +23,12 @@ class GFM_Admin
         $rights_subscriptions    = $this->addon->plugin_settings['rights-subscriptions'];
         
         add_menu_page(
-            __('Donations', GFM_TXT_DOMAIN),            // page title
-            __('GFM Donations', GFM_TXT_DOMAIN),        // menu item
+            __('Donations', GFM_TXT_DOMAIN),  // page title
+            __('GFM Donations', GFM_TXT_DOMAIN),         // menu item
             $rights_donations,                          // donation rights required
             GFM_PAGE_DONATIONS,                         // menu slug
             array($this, 'show_donation_list'),         // page function
-            'dashicons-money'
+            'dashicons-money'                           // icon url
         );
 
         add_submenu_page(

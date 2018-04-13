@@ -1,4 +1,4 @@
-<?php
+ <?php
 class MDB_Customers_Table extends MDB_Items_Table
 {
     public function prepare_items($page = 1, $page_length = MDB_ITEMS_PER_PAGE)  

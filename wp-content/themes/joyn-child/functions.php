@@ -399,14 +399,16 @@ function custom_address_validation( $result, $value, $form, $field ) {
 
 
 
-/*10. beperking van het aantal landen in een gravity form*/
-
-add_filter( 'gform_countries', 'remove_country' );
-function remove_country( $countries ){
-    return array( 'Belgium' );
+/*10. limit payment methods for direct debts*/
+function jgib_LimitPaymentMethods()
+{
+	if(is_page('chimp-guardianship') or is_page('ways-to-donate/donate')){
+	wp_register_script('lpm_script', get_stylesheet_directory_uri() . '/js/filterpayments.js', array('jquery'),'1.1', true);
+    wp_enqueue_script('lpm_script');	
+	}
+    
+	
 }
-
-
-
+add_action('wp_enqueue_scripts', 'jgib_LimitPaymentMethods');
 
 ?>

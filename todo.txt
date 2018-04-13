@@ -1,7 +1,3 @@
-h als URL
-
-become a rs school NL F
- 
 disclaimer / become a rs school / host a workshop / 4 laatste nieuwsberichten
 
 photo credits donations page
@@ -12,23 +8,13 @@ afprintbaarheid pags ctln
 
 volunteer types accordion
 
-donation hero imahe vert krimpen
+cf7 en gravity forms borderradius buttons: 2px
 
+resources pagina form door een gravity form vervangen met notificatie
 
+search van 404 page op hidden ziten 
 
-inschrijving RS  checkboxs en adres komen niet door
-
-
-cf7 en gravity forms borderradius: 2px
-
-resources pagina form door een gravity form vervangen
-
-peace day gravity form
-
-Ron for JGIB
-
-team fotos credieren
-
+min hoogte donation adoption succeded failed
 
 ***WC****
 
@@ -67,9 +53,8 @@ bronze membership nt ok
 
 ****FOTOS****
 some guys with Mister H voor banner van de campaigns
-foto voor jane goodall page
-foto who we are
-chimp guardianship
+our board
+donation hero image vert krimpen
 
 ***unused pages****
 jeugdhoek
@@ -77,3 +62,30 @@ press
 *****
 mailchimp beheer je voorkeuren wissen
 
+
+radiobittons donatie
+payment methode beperken
+
+****
+is plugin svg support nodig?
+
+***Mollie***
+Waarom verschillende naam bij description and consumer name?
+
+
+in contactform ict@janegoodall.be vervangen door info@janegoodall.be
+
+***plugins
+Page after donation success 	
+Page after donation failed
+
+vervangen door Page after payment sycces
+                          payment failed
+
+foutieve foutmelding the payment could not be refunded
+geen admin notificatie bij periodieke doantie
+
+notificatie receiver met ontvangst adoptiecertificaat
+
+
+gravity form zonder ajax proberen

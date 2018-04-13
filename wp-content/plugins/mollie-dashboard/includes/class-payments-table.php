@@ -27,7 +27,7 @@ class MDB_Payments_Table extends MDB_Items_Table
                     $cust_name = isset($payment->details->consumerName) ? $payment->details->consumerName : '';                    
                 }
                 
-                $data[] = array(
+                $data = array(
                     'payment_id'                => $payment->id,
                     'payment_amount'            => $payment->amount,
                     'payment_method'            => $payment->method,
@@ -58,7 +58,7 @@ class MDB_Payments_Table extends MDB_Items_Table
 
             if (! empty($_POST['s'])) 
             {
-                $data_found = [];
+                $data_found = array();
                 $search = $_POST['s'];
                 foreach ($data as $row) 
                 {

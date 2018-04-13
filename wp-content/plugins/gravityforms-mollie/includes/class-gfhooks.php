@@ -122,7 +122,7 @@ class GFM_Hooks
 
                 if (isset($fieldName) && $fieldName == GFM_FIELD_PAYMENT_METHOD) 
                 {
-                    $choices = array();                 // payment-method field found               
+                    $choices = array();                 // payment-method field found  
                     $sel = true;
                     foreach ($methods as $method) 
                     {

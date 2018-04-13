@@ -77,6 +77,7 @@ class GFM_Request
             );
             
             $redirect_url = get_page_link() . '?' . GFM_DONATION_ID . '=' . $donation_id . '&' . GFM_FORM_ID . '=' . $form_id . '&' . GFM_ENTRY_ID . '=' . $entry_id;
+			//$addon->show_api_message(__METHOD__, '$redirect_url: {p1}', 3, $redirect_url);
             
             $mollie = $addon->init_mollie();                                     // initialize Mollie API
             if (!isset($mollie))
@@ -103,7 +104,7 @@ class GFM_Request
                 ));
                 
                 $addon->log_message(__METHOD__, 'Create payment completed [type = one-time / payment_id = {p1}]', 2, $payment->id);
-            }
+			}
             else                                    // Donation interval = N periods
             {
                 // create customer in Mollie              
@@ -115,7 +116,7 @@ class GFM_Request
                     "email" => $email,
                 ));
                 
-                $addon->log_message(__METHOD__, 'Create customer completed [customer_id = {p1}]', 2, $customer->id);                
+                $addon->log_message(__METHOD__, 'Create customer completed [customer_id = {p1}]', 2, $customer->id); 
 
                 // insert customer -> donors table
                 $sql = "INSERT INTO " . GFM_TABLE_DONORS . "
@@ -160,9 +161,10 @@ class GFM_Request
                 ));
                 
                 $addon->log_message(__METHOD__, 'Create payment completed [type = first / payment_id = {p1}]', 2, $payment->id);
-            }
+            }//end else
             
             // insert donation -> donations table
+            
             $tpl = "INSERT INTO " . GFM_TABLE_DONATIONS . 
                    "(`time`, payment_id, customer_id, donation_id, status, amount, name, email, project, company, address, zipcode, city, country, message, phone, tag, custom, payment_method, payment_mode)" .
                     "VALUES ( %s, %s, %s, %s, %s, %f, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s )";
@@ -193,25 +195,30 @@ class GFM_Request
            
             $res = $this->wpdb->query($qry);
             $addon->log_message(__METHOD__, 'Insert donation [request] - {p1}', 3, $res ? 'success' : 'failed');                          
-
+			 
+			  
             // redirect to Mollie payment page
             $mollie_page_url = $payment->getPaymentUrl();
-            wp_redirect($mollie_page_url);            
-            exit;
+		    $addon->log_message(__METHOD__, '$mollie_page_url: {p1}', 3, $mollie_page_url);
+			wp_redirect($mollie_page_url); 
+		    exit;// wp_redirect() does not exit automatically, and should almost always be followed by a call to exit
         } 
         catch (Mollie_API_Exception $e) {
             $addon->show_api_message(__METHOD__, $e->getMessage());
+			//$addon->show_api_message(__METHOD__, "Ron is in API exception");
         }       
 	}
 
     public function get_custom_fields($form, $fields)
     {
-        $custom_fields = [];              
+        $custom_fields = [];  
+        //$custom_fields = array();             
         foreach ($form['fields'] as $fld) {
             if (strpos($fld->cssClass, GFM_TYPE_CUSTOM) !== false) {
                 $val = $this->gval($fields, $fld->adminLabel);
                 if (! empty($val))
                     $custom_fields[] = $val;
+				    //$custom_fields = $val;
             }
         }
         
