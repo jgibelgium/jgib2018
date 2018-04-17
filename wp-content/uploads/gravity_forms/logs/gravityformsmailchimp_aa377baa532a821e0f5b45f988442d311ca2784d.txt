@@ -1,8 +1,0 @@
-2018-04-12 22:21:00.328727 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #186 for gravityformsmailchimp. 
-2018-04-12 22:21:00.329423 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #186. 
-2018-04-12 23:07:58.594027 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #187 for gravityformsmailchimp. 
-2018-04-12 23:07:58.594778 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #187. 
-2018-04-12 23:12:08.684400 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #188 for gravityformsmailchimp. 
-2018-04-12 23:12:08.685120 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #188. 
-2018-04-12 23:21:08.693555 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #189 for gravityformsmailchimp. 
-2018-04-12 23:21:08.694391 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #189. 

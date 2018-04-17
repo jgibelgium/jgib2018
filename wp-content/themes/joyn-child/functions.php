@@ -411,4 +411,17 @@ function jgib_LimitPaymentMethods()
 }
 add_action('wp_enqueue_scripts', 'jgib_LimitPaymentMethods');
 
+/*11 write field validation of gravity form in core log            */
+add_filter( 'gform_validation', 'log_validation_errors', 50 );
+function log_validation_errors( $validation_result ) {
+    $form = $validation_result['form'];
+    foreach ( $form['fields'] as $field ) {
+        if ( $field->failed_validation ) {
+            GFCommon::log_error( "form #{$form['id']}: validate() - failed: {$field->label}({$field->id} - {$field->type}) - message: {$field->validation_message}" );
+        }
+    }
+ 
+    return $validation_result;
+}
+
 ?>

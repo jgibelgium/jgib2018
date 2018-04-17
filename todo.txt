@@ -88,4 +88,7 @@ geen admin notificatie bij periodieke doantie
 notificatie receiver met ontvangst adoptiecertificaat
 
 
-gravity form zonder ajax proberen
+newsletter form en adoption en donation form uniformiseren voor newsletter
+ander bedragverschijnt niet op het donatie form wegens GFM plugin
+donatie uitprobern met required authorize edbt
+
