@@ -67,12 +67,12 @@ See also: https://polylang.pro/doc/polylang-wc-installation/
 	- verwijderd in taalmenu, navigatiemenu em hoofdmenu voor desktop
     - aanwezig in taalmenu en mobiele menu voor tablet en smartphone
 
-* De breadcrum verschijnt niet op smartphone en kleine smartphone.
+* De breadcrumb verschijnt niet op smartphone en kleine smartphone.
 
 * lettertypes
 text: adobe caslon pro
 buttons: FuturaBT-Medium
-Gravity forms: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+Gravity forms (ook buttons): adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 Cf7 forms: font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 Top bar menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
 Hoofmenu: FuturaBT-Medium, sans-serif;
@@ -81,8 +81,24 @@ Mobile menu:
 
 
 * Mollie - Teamleader
-Iedere geslaagde betaling komt als een contract in TL terecht.
+Iedere geslaagde betaling komt als een contact in TL terecht.
 Een gefaalde betaling komt niet in Teamleader terecht.
 De data van een ontvanger komen niet in TL terecht.
+De betalingsmethodes van een periodieke betaling worden slechts exact ingevuld bij tunneling met ngrok.
+Gezien de redirectie naar een andere pagina na afloop verschijnt een confirmatie niet, tenzij de volgend efout bij het verzenden van een donatieformuleer optreedt. 100 € als ander bedrag leidt tot een Mollie API error, waarbij toch de standaard confirmatie getoond wordt. 
+
+* Encryptie email adressen
+Het Joyn thema behoudt de encoding van een email adres in html entities niet.
+http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/
+
+* Als Ajax ingesteld is bij een gravity form verschijnt eeen draaiend wieltje naast de knop bij aanklikken, anders verschijnt het draaiend wieltje bovenaan in het browserblad.
+
+* Bij een rode knop als hyperlink is er kleuromslag naar zwart bij hoveren. Bij de rode knoppen van de formulieren gebeurt dit niet.
+
+* In het bestand custom.css van de plugin Grvaity Forms voor Mollie is de volgende code uitgecommentarieerd.
+
+li.gfm-payment-method select {
+    margin-top: 20px !important;
+}
 
 

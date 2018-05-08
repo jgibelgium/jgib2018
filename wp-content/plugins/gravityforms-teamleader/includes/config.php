@@ -26,7 +26,7 @@ define('GFT_FIELD_CUSTOM',              'gft-field-custom');
 define('GFT_NUM_TL_CUSTOM_FIELDS',       5);
 
 // Test URLs
-define('GFT_TEST_URL', '');                                   // uncomment for production session
-//define('GFT_TEST_URL', 'http://fca33dae.ngrok.io');             // uncomment plus adapt for ngrok test session
+//define('GFT_TEST_URL', '');                                   // uncomment for production session
+define('GFT_TEST_URL', 'http://3f813e58.ngrok.io');             // uncomment plus adapt for ngrok test session
 //define('GFT_TEST_URL', 'http://test1.janegoodall.nl');          // uncomment for non-ngrok test session 
 

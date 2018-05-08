@@ -1,0 +1,160 @@
+2018-04-18 12:47:26.687011 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #196 for gravityformsmailchimp. 
+2018-04-18 12:47:26.688170 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #196. 
+2018-04-18 13:43:10.630394 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #197 for gravityformsmailchimp. 
+2018-04-18 13:43:10.631628 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #197. 
+2018-04-18 13:53:00.019459 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #198 for gravityformsmailchimp. 
+2018-04-18 13:53:00.020255 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #198. 
+2018-04-18 13:58:25.402744 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #199 for gravityformsmailchimp. 
+2018-04-18 13:58:25.404146 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #199. 
+2018-04-18 14:07:51.776838 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #200 for gravityformsmailchimp. 
+2018-04-18 14:07:51.777553 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #200. 
+2018-04-18 14:39:15.956437 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #201 for gravityformsmailchimp. 
+2018-04-18 14:39:15.957226 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #201. 
+2018-04-18 14:44:20.737313 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #202 for gravityformsmailchimp. 
+2018-04-18 14:44:20.738466 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #202. 
+2018-04-18 14:48:54.891473 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #203 for gravityformsmailchimp. 
+2018-04-18 14:48:54.892199 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #203. 
+2018-04-18 15:00:04.890196 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #204 for gravityformsmailchimp. 
+2018-04-18 15:00:04.890892 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #204. 
+2018-04-19 13:37:06.657378 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #205 for gravityformsmailchimp. 
+2018-04-19 13:37:06.659629 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #205. 
+2018-04-19 13:38:33.158049 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #206 for gravityformsmailchimp. 
+2018-04-19 13:38:33.158768 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #206. 
+2018-04-19 13:39:27.670259 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #207 for gravityformsmailchimp. 
+2018-04-19 13:39:27.671458 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #207. 
+2018-04-19 13:39:57.633292 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #208 for gravityformsmailchimp. 
+2018-04-19 13:39:57.634444 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #208. 
+2018-04-19 13:40:57.445492 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #209 for gravityformsmailchimp. 
+2018-04-19 13:40:57.446564 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #209. 
+2018-04-19 13:52:21.000700 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #210 for gravityformsmailchimp. 
+2018-04-19 13:52:21.001872 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #210. 
+2018-04-19 14:01:41.932444 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #211 for gravityformsmailchimp. 
+2018-04-19 14:01:41.933156 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #211. 
+2018-04-19 14:08:14.637100 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #212 for gravityformsmailchimp. 
+2018-04-19 14:08:14.638434 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #212. 
+2018-04-19 14:14:44.168664 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #213 for gravityformsmailchimp. 
+2018-04-19 14:14:44.169410 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #213. 
+2018-04-19 14:23:54.854253 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #214 for gravityformsmailchimp. 
+2018-04-19 14:23:54.855460 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #214. 
+2018-04-19 14:24:09.571621 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #215 for gravityformsmailchimp. 
+2018-04-19 14:24:09.572387 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #215. 
+2018-04-26 21:33:12.593245 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:33:13.424681 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:40:03.820126 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:40:04.601314 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:40:09.675477 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:40:10.050046 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:40:10.053544 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 21:40:12.313519 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-26 21:40:33.067341 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:40:33.458049 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:40:33.729557 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 21:40:34.619108 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-26 21:41:03.507105 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:41:03.924175 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:41:04.752522 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 21:41:05.855664 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-26 21:42:06.656661 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #216 for gravityformsmailchimp. 
+2018-04-26 21:42:06.658795 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Starting to process feed (#13 - Volunteer feed) for entry #216 for gravityformsmailchimp 
+2018-04-26 21:42:06.658938 - DEBUG --> GFMailChimp::process_feed(): Processing feed. 
+2018-04-26 21:42:06.659112 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 21:42:07.025675 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 21:42:07.281918 - DEBUG --> GFMailChimp::process_feed(): Checking to see if ict@janegoodall.be is already on the list. 
+2018-04-26 21:42:07.550493 - DEBUG --> GFMailChimp::process_feed(): ict@janegoodall.be was not found on list. 
+2018-04-26 21:42:07.550946 - DEBUG --> GFMailChimp::process_feed(): Subscriber to be added: Array
+(
+    [email_type] => html
+    [status] => pending
+    [ip_signup] => ::1
+    [merge_fields] => Array
+        (
+            [ADDRESS] => Tielt
+            [FNAME] => Ronald
+            [LNAME] => Eelbode
+            [MMERGE5] => IT
+            [MMERGE6] => Nederlands
+            [PHONE] => 
+        )
+
+    [email_address] => ict@janegoodall.be
+)
+ 
+2018-04-26 21:42:09.241352 - DEBUG --> GFMailChimp::process_feed(): Subscriber successfully added. 
+2018-04-26 21:42:09.241534 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Marking entry #216 as fulfilled for gravityformsmailchimp 
+2018-04-26 22:27:52.459254 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 22:27:52.874908 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 22:27:57.007157 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 22:27:57.279808 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 22:28:01.035295 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 22:28:01.419819 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 22:28:01.423151 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 22:28:02.971703 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-26 22:28:42.949419 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 22:28:43.259536 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 22:28:43.541526 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 22:28:44.576426 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-26 22:29:10.299494 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-26 22:29:10.638062 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-26 22:29:11.388916 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-26 22:29:12.260507 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-27 21:39:15.835232 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-27 21:39:16.754446 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-27 21:39:21.150634 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-27 21:39:21.490427 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-27 21:39:21.496433 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Retrieving contact lists; params: Array
+(
+    [offset] => 0
+    [count] => 100
+)
+ 
+2018-04-27 21:39:22.841312 - DEBUG --> GFMailChimp::settings_mailchimp_list(): Number of lists: 24 
+2018-04-27 21:40:13.609375 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-27 21:40:13.977161 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-27 21:40:34.675321 - DEBUG --> GFMailChimp::initialize_api(): Validating API Info. 
+2018-04-27 21:40:35.044430 - DEBUG --> GFMailChimp::initialize_api(): MailChimp successfully authenticated. 
+2018-04-29 13:51:32.807233 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #217 for gravityformsmailchimp. 
+2018-04-29 13:51:32.808737 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #217. 
+2018-04-30 16:41:10.626638 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #218 for gravityformsmailchimp. 
+2018-04-30 16:41:10.634392 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #218. 
+2018-04-30 16:49:32.884999 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #219 for gravityformsmailchimp. 
+2018-04-30 16:49:32.886387 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #219. 
+2018-04-30 17:04:36.289366 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #220 for gravityformsmailchimp. 
+2018-04-30 17:04:36.290559 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #220. 
+2018-04-30 17:38:41.795563 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #221 for gravityformsmailchimp. 
+2018-04-30 17:38:41.796744 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #221. 
+2018-04-30 17:40:46.517291 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #222 for gravityformsmailchimp. 
+2018-04-30 17:40:46.518393 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #222. 
+2018-04-30 17:41:14.496171 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #223 for gravityformsmailchimp. 
+2018-04-30 17:41:14.496927 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #223. 
+2018-05-04 15:02:05.351277 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #224 for gravityformsmailchimp. 
+2018-05-04 15:02:05.361066 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #224. 

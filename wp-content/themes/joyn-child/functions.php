@@ -88,7 +88,7 @@
     //CUSTOM FUNCTIONS
     /*==========*/
     
-    /*1. hook custom javascript*/
+/*1. hook custom javascript*/
     
     function joyn_re_script_enqueue(){
     // get_template_directory_uri geldt voor een parent theme; get_stylesheet_directory_uri() geldt voor een child theme;
@@ -97,7 +97,7 @@
     }
     add_action('wp_enqueue_scripts', 'joyn_re_script_enqueue');
     
-    //2. backend taal menu
+//2. backend taal menu
     function re_language_menu(){
     register_nav_menu('secondary','Language Menu');
     }
@@ -363,38 +363,31 @@ function re_adapt_javascriptfunctions()
 }
 add_action('wp_enqueue_scripts', 're_adapt_javascriptfunctions', 1000);
 
-/*9. validatie gravity form Roots & Shoots*/
+/*9. error messages field validations gravity forms*/
+add_filter( 'gform_validation_message_8', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_13', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_15', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_21', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_23', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_26', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_28', 'change_message_into_nl', 10, 2 );
 
-add_filter( 'gform_field_validation_10_13', 'custom_address_validation', 10, 4 );
-add_filter( 'gform_field_validation_13_11', 'custom_address_validation', 10, 4 );
-add_filter( 'gform_field_validation_14_10', 'custom_address_validation', 10, 4 );
-function custom_address_validation( $result, $value, $form, $field ) {
-			
-		$street  = rgar( $value, $field->id . '.1' );
-        $street2 = rgar( $value, $field->id . '.2' );
-        $city    = rgar( $value, $field->id . '.3' );
-        $state   = rgar( $value, $field->id . '.4' );
-        $zip     = rgar( $value, $field->id . '.5' );
-        $country = rgar( $value, $field->id . '.6' );
-	
-	
-        if ( !empty( $street ) && !empty( $city ) && !empty( $zip ) && !empty( $country )) {
-            $result['is_valid'] = TRUE;
-            $result['message']  = 'ok';
-        } 
-        elseif (empty( $street ) && empty( $city ) && empty( $zip ) && empty( $country ))
-        {
-             $result['is_valid'] = TRUE;	 	
-	 		 $result['message']  = 'ok';
-        }
-		else
-		{
-		 	 $result['is_valid'] = FALSE;
-             $result['message']  = 'Please write a complete address or no address at all.';
-		}
-         
-	 return $result;
+function change_message_into_nl( $message, $form ) {
+    return "<div class='validation_error'>Er was een probleem bij het verzenden. Fouten staan hieronder aangeduid.</div>";
 }
+
+add_filter( 'gform_validation_message_9', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_14', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_17', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_22', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_24', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_27', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_29', 'change_message_into_fr', 10, 2 );
+
+function change_message_into_fr( $message, $form ) {
+    return "<div class='validation_error'>Il y avait un problème à la soumission. Les erreurs sont marquées ci-dessous.</div>";
+}
+
 
 
 
@@ -402,16 +395,14 @@ function custom_address_validation( $result, $value, $form, $field ) {
 /*10. limit payment methods for direct debts*/
 function jgib_LimitPaymentMethods()
 {
-	if(is_page('chimp-guardianship') or is_page('ways-to-donate/donate')){
+	if(is_page('become-chimp-guardian') or is_page('word-chimpvoogd') or is_page('parrainez-un-chimpanze') or is_page('ways-to-donate/donation') or is_page('mogelijkheden-tot-gift/gift') or is_page('possibilites-de-don/don')){
 	wp_register_script('lpm_script', get_stylesheet_directory_uri() . '/js/filterpayments.js', array('jquery'),'1.1', true);
     wp_enqueue_script('lpm_script');	
 	}
-    
-	
 }
 add_action('wp_enqueue_scripts', 'jgib_LimitPaymentMethods');
 
-/*11 write field validation of gravity form in core log            */
+/*11. write field validation of gravity form in core log */
 add_filter( 'gform_validation', 'log_validation_errors', 50 );
 function log_validation_errors( $validation_result ) {
     $form = $validation_result['form'];
@@ -420,8 +411,10 @@ function log_validation_errors( $validation_result ) {
             GFCommon::log_error( "form #{$form['id']}: validate() - failed: {$field->label}({$field->id} - {$field->type}) - message: {$field->validation_message}" );
         }
     }
- 
-    return $validation_result;
+   return $validation_result;
 }
+
+
+
 
 ?>

@@ -8,13 +8,11 @@ afprintbaarheid pags ctln
 
 volunteer types accordion
 
-cf7 en gravity forms borderradius buttons: 2px
+lnks en gravity forms borderradius buttons: 2px
 
 resources pagina form door een gravity form vervangen met notificatie
 
 search van 404 page op hidden ziten 
-
-min hoogte donation adoption succeded failed
 
 ***WC****
 
@@ -63,12 +61,6 @@ press
 mailchimp beheer je voorkeuren wissen
 
 
-radiobittons donatie
-payment methode beperken
-
-****
-is plugin svg support nodig?
-
 ***Mollie***
 Waarom verschillende naam bij description and consumer name?
 
@@ -76,19 +68,17 @@ Waarom verschillende naam bij description and consumer name?
 in contactform ict@janegoodall.be vervangen door info@janegoodall.be
 
 ***plugins
-Page after donation success 	
-Page after donation failed
-
-vervangen door Page after payment sycces
-                          payment failed
-
 foutieve foutmelding the payment could not be refunded
-geen admin notificatie bij periodieke doantie
 
-notificatie receiver met ontvangst adoptiecertificaat
+h2 hoger senegal
+groter lettertype input velden vd forms
 
+form paginas responsive maken
 
-newsletter form en adoption en donation form uniformiseren voor newsletter
-ander bedragverschijnt niet op het donatie form wegens GFM plugin
-donatie uitprobern met required authorize edbt
+php 7.1.15
+
+resources knopen even groot maken
+
+mobiele menu ctln             
+no requirement for newsletter
 

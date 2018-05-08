@@ -27,4 +27,8 @@ jQuery(document).ready(function()
             }			
         });                            
     });
+    
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Other]').attr('placeholder','Other eg. 100'); 
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Andere]').attr('placeholder','Anders bv. 100'); 
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Autrement]').attr('placeholder','Autrement ex. 100'); 
 });      

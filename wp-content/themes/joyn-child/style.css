@@ -288,7 +288,7 @@ img.pdficon:hover {opacity: 0.75;}
 /*Gravity Forms*/
 /**********/
 
-.newsletter, .recycle4chimps, .rootsandshoots, .donation, .adoption {
+.newsletter, .recycle4chimps, .rootsandshoots, .donation, .adoption, .volunteer, .contact, .resources {
 	background-color: #fdf9e1;
 	box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
 }
@@ -305,17 +305,44 @@ li.gfield div.charleft {
 	display: none;
 }
 
-.gform_button {
-	background-color: #fe504f ;
+div.gform_footer input.gform_button.button {
+	background-color: #fe504f !important;
 	color: #fff ; 
+	border-radius: 2px;
+	font-size: 20px;
+	width: auto !important;
 }
 
+div.ginput_container.ginput_container_total {
+	display: block;
+}
+
+.gform_wrapper .field_description_below div.gfield_description {
+	padding-top: 0;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
+	margin-top: 0;
+}
+
+div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
+	width: auto;
+}
+
+@media only screen and (max-width:641px) {
+	.gform_wrapper .gform_footer input[type=submit]{ margin-left: 10px;}
+}
+
+/*=====*/
 /*top bar sticky wrapper*/
+/*=====*/
 #top-bar-sticky-wrapper{
   	display: none;
   }
 
+/*=====*/
 /*surveys of parent pages*/
+/*=====*/
 .surveycol {
      border-radius: 1px;
    }
@@ -343,7 +370,9 @@ li.gfield div.charleft {
   
   
   
+/*=====*/
 /*survey of child pages*/
+/*=====*/
 .gcsurveycol {
      border-radius: 1px;
    }
@@ -366,7 +395,9 @@ li.gfield div.charleft {
         border-radius: 2px;
 }
      
+/*=====*/
 /*photo credits*/
+/*=====*/
 .photo-credit p {
     position: relative;
     font-family: FuturaBT-Medium,sans-serif;
@@ -375,7 +406,9 @@ li.gfield div.charleft {
     text-align: center;
  }
  
+/*=====*/
 /*accordions*/
+/*=====*/
 .spb_accordion_section {
      font-family: adobe-caslon-pro, Georgia;
   }
@@ -414,7 +447,9 @@ div.zipcol, div.ziptextcol {
     margin: auto !important;
   } 
  
+/*=====*/
 /*footer*/
+/*=====*/
 #footer { 
 	padding: 0;}
    
@@ -451,7 +486,9 @@ nav.footer-menu ul.menu li {
   
   
   
+/*==========*/
 /*lijsten*/
+/*==========*/
 .bananafull {
   	list-style-type: square;
   }
@@ -744,7 +781,7 @@ img.wp-image-4183 {
     }
     
 /*24. youth corner*/
-/*Still used?*/
+/*Still used? NO*/
 .page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
     background-position: center top !important;
     }
@@ -766,7 +803,7 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
         box-shadow: none;
     }
   
-/*26. educators and mentors page*/
+/*26. youth page*/
 .page-id-4045 .page-heading.fancy-heading, .page-id-4048 .page-heading.fancy-heading, .page-id-4050 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     }
@@ -775,7 +812,8 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 	
 
 	
-/*27. contact page*/
+/*27. get in touch page*/
+/*
 div.formcontainer {
     padding: 10px;
     margin-bottom: 1em;
@@ -827,6 +865,15 @@ select.femselect {
 .wpcf7 input.wpcf7-submit[type="submit"] {
 	font-size: 16px;
 }
+*/
+
+#gform_submit_button_25, #gform_submit_button_26, #gform_submit_button_27 {
+	margin-left:15px;
+}
+
+#gform_confirmation_wrapper_25, #gform_confirmation_wrapper_26, #gform_confirmation_wrapper_27{
+	margin-top:15px;
+}
     
 /*28. 404 page*/
 .error404  .page-heading {
@@ -869,7 +916,7 @@ font-size: 20px;
     background-position: 0% 30% !important;
     }
     
-/*34 chimpanzees and great apes*/
+/*34. Chimpanzees and great apes*/
 .page-id-1805 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     background-position: 0% 42% !important;
     } 
@@ -880,12 +927,13 @@ font-size: 20px;
         box-shadow: none;
     }   
 
-/*35. partnerships and gifts*/
+/*35. Partnerships*/
 .page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
-    background-position: 0% 60% !important;
+    background-position: 0% 35% !important;
     }    
 
 /*36. sponsors*/   
+/*
 .page-id-5456 .page-heading, .page-id-5458 .page-heading, .page-id-5460 .page-heading {
     display: none;
 }
@@ -905,8 +953,9 @@ div.highlight {
 	border:none;
 	box-shadow:none;
 }
-
+*/
 /*37. partners*/
+/*
 .page-id-5463 .page-heading, .page-id-5465 .page-heading, .page-id-5467 .page-heading {
     display: none;
 }
@@ -915,21 +964,82 @@ div.highlight {
 	border:none;
 	box-shadow:none;
 }
+*/
 
 /*38. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
     background-position: 0% 15% !important;
     } 
     
-/*39. subscribe to newsletter*/ 
-.page-id-6603 div.page-heading, .page-id-6607 div.page-heading, .page-id-6611 div.page-heading {
-	  display:none;
-} 
 
-/*40. chimp guardianship*/
+/*39. Chimpanzee adoption*/
 .page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     } 
+    
+div.toggle-wrap h4.spb_toggle {
+	background: linear-gradient(to bottom, #c9b18d 0%,#dbceba 50%,#ddccb1 100%) !important;
+    box-shadow: 1px 1px 1px 0 rgb(135, 115, 79);
+    opacity: 1;
+    margin: 0 0 3px 0 !important;
+    font-size: 20px;
+    color: #333333;
+    font-weight: normal;
+    border: none;  
+  }
+  
+/*Become chimp guardian*/  
+.page-id-7091 .gfm-form label.gfield_label, .page-id-7093 .gfm-form label.gfield_label , .page-id-7095 .gfm-form label.gfield_label  {
+    font-size: 20px !important;
+}
+    
+/*you have become a chimp guardian */
+.page-id-6720 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
+    //background-position: 0% 30% !important;
+    } 
+
+/*adoption proces failed*/
+.page-id-6722 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
+    //background-position: 0% 30% !important;
+    } 
+
+/*40. Donation*/
+.page-id-6664 .gfm-form label.gfield_label, .page-id-6666 .gfm-form label.gfield_label , .page-id-6668 .gfm-form label.gfield_label  {
+    font-size: 20px !important;
+}
+
+/*Donation succeeded*/
+.page-id-6664 .gform_wrapper .gfield_radio li label, .page-id-6666 .gform_wrapper .gfield_radio li label, .page-id-6668 .gform_wrapper .gfield_radio li label {
+	margin-left: 20px;
+    height: 36px;
+}
+
+/*Donation failed*/
+.page-id-6664 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6666 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6668 .gf_browser_chrome.gform_wrapper .gfield_radio li input{
+	margin-top:0;
+}
+
+
+
+.page-id-6664 .gform_wrapper ul.gfield_radio li input+input, .page-id-6666 .gform_wrapper ul.gfield_radio li input+input, .page-id-6668 .gform_wrapper ul.gfield_radio li input+input{
+	 margin-left: 20px;
+	 margin-bottom: 0;
+}
+
+.gchoice_3_6_3, .gchoice_23_6_3, .gchoice_24_6_3 {
+	height: 36px;
+}
+
+.gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
+    margin-top: 0 !important;
+}
+
+
+
+.page-id-6664 .gfm-api-message, .page-id-6666 .gfm-api-message, .page-id-6668 .gfm-api-message {
+	color: #333;
+	background-color: #fff;
+}
     
 /*41. resources*/
 /*form nog vervangen door een gravirty form*/
@@ -1138,8 +1248,10 @@ ul#shipping_method li label {
 /*=====*/
 /*Blog page*/
 /*=====*/
-.masonry-items .blog-item h2 {
+.masonry-items .blog-item .details-wrap h2 {
   	overflow: hidden;
+  	font-size: 22px;
+  	line-height: 24px;
 }
 
 .masonry-items .blog-item .details-wrap {
@@ -1562,9 +1674,8 @@ img.wp-image-1582-bis {
     	float: none;
     }
     
-/*13. educators*/
+/*13. youth*/
 .post-4045 > section:last-child  {
-       
         background-color: yellow;
     }
     
@@ -1588,8 +1699,7 @@ img.wp-image-1582-bis {
     background-position: 35% 60% !important;
     }   
 
-
-    
+   
       
 /*==========*/
 /*Posts*/
@@ -3082,8 +3192,13 @@ img.wp-image-2665, img.wp-image-2697 {
         
 /*18. registration roots & shoots*/
 .page-id-6633 div#main-container, .page-id-6635 div#main-container, .page-id-6637 div#main-container {
-	  min-height: 600px;
-}      
+	  min-height: 600px;  
+}   
+
+/*19. contact page*/
+ .jgibemails {
+ 	padding-left:100px;
+ }  
         
 /*==========*/
 /*Posts*/

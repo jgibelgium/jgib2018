@@ -48,6 +48,6 @@ define('GFM_FIELD_OPTIONS',             'gfm-field-options');
 define('GFM_TYPE_CUSTOM',               'gfm-type-custom');
 
 // Test URLs
-define('GFM_TEST_URL', '');                                   // uncomment for production session
-//define('GFM_TEST_URL', 'http://fca33dae.ngrok.io');           // uncomment plus adapt for ngrok test session
+//define('GFM_TEST_URL', '');                                   // uncomment for production session
+define('GFM_TEST_URL', 'http://3f813e58.ngrok.io');           // uncomment plus adapt for ngrok test session
 //define('GFM_TEST_URL', 'http://google.com');                  // uncomment for non-ngrok test session    
