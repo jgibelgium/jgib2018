@@ -77,8 +77,29 @@ form paginas responsive maken
 
 php 7.1.15
 
-resources knopen even groot maken
+resources knopen anders groot maken
 
 mobiele menu ctln             
-no requirement for newsletter
+
+shadur rond trailer janes journey
+
+
+photo credit hanging ape
+ donationcol schrappen css
+ h3 fonft family inconsequent tov h1 h2
+ backup font family instellen in Joyn
+ 
+hanging chimp: enkel 1400px en 1000 px gebrukt
+
+bruine kleur accordion
+foutieve payment method eblijft staan; javascript in bestand filter[paymments.js moet aangepast worden 
+meet lemba responsive; meet LMM op smartphone en tablet + anadere naam hero image
+email adressen encrypteren
+site map NL FR
+limit adoptions to some countries
+foto credit volunteering page
+
+footer
+
+vision and mission nt ok op smartphone
 

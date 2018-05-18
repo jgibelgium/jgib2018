@@ -1,2 +1,28 @@
 2018-04-10T22:13:33+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
 
+2018-05-08T17:32:43+00:00 CRITICAL Uncaught Error: Call to a member function switch_lang() on null in C:\wamp64\www\jgib2017\wp-content\themes\joyn-child\functions.php:428
+Stack trace:
+#0 C:\wamp64\www\jgib2017\wp-settings.php(424): include()
+#1 C:\wamp64\www\jgib2017\wp-config.php(95): require_once('C:\\wamp64\\www\\j...')
+#2 C:\wamp64\www\jgib2017\wp-load.php(37): require_once('C:\\wamp64\\www\\j...')
+#3 C:\wamp64\www\jgib2017\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\j...')
+#4 C:\wamp64\www\jgib2017\index.php(17): require('C:\\wamp64\\www\\j...')
+#5 {main}
+  thrown
+
+2018-05-08T17:38:01+00:00 CRITICAL Uncaught Error: Call to a member function switch_lang() on null in C:\wamp64\www\jgib2017\wp-content\themes\joyn-child\functions.php:428
+Stack trace:
+#0 C:\wamp64\www\jgib2017\wp-settings.php(424): include()
+#1 C:\wamp64\www\jgib2017\wp-config.php(95): require_once('C:\\wamp64\\www\\j...')
+#2 C:\wamp64\www\jgib2017\wp-load.php(37): require_once('C:\\wamp64\\www\\j...')
+#3 C:\wamp64\www\jgib2017\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\j...')
+#4 C:\wamp64\www\jgib2017\index.php(17): require('C:\\wamp64\\www\\j...')
+#5 {main}
+  thrown
+
+2018-05-10T19:34:15+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 562862795152643 bytes)
+
+2018-05-10T19:35:08+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 562862795152643 bytes)
+
+2018-05-10T19:37:45+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 562862795152643 bytes)
+

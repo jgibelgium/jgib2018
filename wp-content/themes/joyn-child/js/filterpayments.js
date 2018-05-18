@@ -11,11 +11,10 @@ jQuery(document).ready(function()
     { 
     	//var debitMethods = ['ideal', 'creditcard', 'mistercash', 'sofort', 'kbc', 'belfius'];	
     	var debitMethods = ['creditcard'];	
-        var intvl = jQuery(this).val();
+        var intvl = jQuery(this).val(); //waarde vd geselecteerde payment frequentie
         jQuery('li.gfm-payment-method select option').each(function(i) 
         {
             var opt = jQuery(this).val();	//naam methode voor eenmalige betaling
-            //alert(opt);		
             if (intvl > '0')			// subscription payment
             {
                 var dm = jQuery.inArray(opt, debitMethods); //Search for a specified value within an array and return its index (or -1 if not found).
@@ -28,7 +27,7 @@ jQuery(document).ready(function()
         });                            
     });
     
-    jQuery('.gform_wrapper ul.gfield_radio li input[value=Other]').attr('placeholder','Other eg. 100'); 
-    jQuery('.gform_wrapper ul.gfield_radio li input[value=Andere]').attr('placeholder','Anders bv. 100'); 
-    jQuery('.gform_wrapper ul.gfield_radio li input[value=Autrement]').attr('placeholder','Autrement ex. 100'); 
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Other]').attr('placeholder','Other eg. 1000'); 
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Andere]').attr('placeholder','Anders bv. 1000'); 
+    jQuery('.gform_wrapper ul.gfield_radio li input[value=Autrement]').attr('placeholder','Autrement ex. 1000'); 
 });      

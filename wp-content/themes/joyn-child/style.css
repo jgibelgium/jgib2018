@@ -37,7 +37,7 @@
     font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 }
 
-h1 {
+h1,h3,h4,h5,h6 {
     font-family:Futura, sans-serif !important;
 }
 
@@ -53,9 +53,11 @@ h2 {
 	margin-right: 1%;
 }
 
+/*=====*/
+/*Title shadows*/
+/*=====*/
 
-
-/*Page titles*/
+/*Page titles with hero image*/
 .fancy-heading.fancy-image.light-style h1 {
 	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
@@ -64,10 +66,35 @@ div.fancy-heading.fancy-image.light-style h3 {
 	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
+/*Page titles without hero image*/
+.page-heading .heading-text h1 {
+	 text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
 
-
+/*Post heading*/
+.single-post .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
+ }
+    
+.single-post .page-heading h1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+    
+/*Post categories headings*/
+.category .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
+}
+   
+.category .page-heading h1 {
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    }
+    
+    
+/*=====*/
 /*icons in front of some post titles*/
-/*
+/*======*/
 .janeicon:before {
     display: inline-block;
     vertical-align: middle;
@@ -99,7 +126,7 @@ div.fancy-heading.fancy-image.light-style h3 {
     padding-right: 0.7em;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
-*/
+
 
 /*overriding in the style tag*/
 .page-content a {
@@ -197,6 +224,12 @@ div.fancy-heading.fancy-image.light-style h3 {
     box-shadow: 1px 1px 2px 0 rgb(191, 162, 111);
     padding: 10px;
 }
+
+.customquote div {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
     
 /* Clear Floated Elements (source: pinboard)*/
 .clear {
@@ -232,7 +265,9 @@ div.fancy-heading.fancy-image.light-style h3 {
     padding-bottom: 0.25em;
     }
    
-/*videos and presentations*/
+/*=====*/
+/*Videos and presentations*/
+/*=====*/
 .jgibvideo {
       padding-bottom: 1em;    
  }
@@ -252,7 +287,9 @@ div.fancy-heading.fancy-image.light-style h3 {
 		display: none;
 }
   
-/*downloads*/
+/*=====*/
+/*Downloads*/
+/*=====*/
 .dwnlddiv {
    margin-bottom: 1em !important;
    width: 100%;
@@ -289,8 +326,10 @@ img.pdficon:hover {opacity: 0.75;}
 /**********/
 
 .newsletter, .recycle4chimps, .rootsandshoots, .donation, .adoption, .volunteer, .contact, .resources {
-	background-color: #fdf9e1;
-	box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
+	background-color: rgba(255, 255, 239, 0.4);
+	//background: linear-gradient(to bottom right, #fff, #FFFFEF);
+	box-shadow: 0 0 5px 0 rgb(135, 115, 79) inset;
+	//box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 }
 
 .gform_body, .g_form_footer {
@@ -319,6 +358,7 @@ div.ginput_container.ginput_container_total {
 
 .gform_wrapper .field_description_below div.gfield_description {
 	padding-top: 0;
+	margin-top: 0;
 }
 
 .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
@@ -329,19 +369,23 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
 	width: auto;
 }
 
+.ginput_complex label {
+	font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+}
+
 @media only screen and (max-width:641px) {
 	.gform_wrapper .gform_footer input[type=submit]{ margin-left: 10px;}
 }
 
 /*=====*/
-/*top bar sticky wrapper*/
+/*Top bar sticky wrapper*/
 /*=====*/
 #top-bar-sticky-wrapper{
   	display: none;
   }
 
 /*=====*/
-/*surveys of parent pages*/
+/*Surveys of parent pages*/
 /*=====*/
 .surveycol {
      border-radius: 1px;
@@ -368,21 +412,24 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
         background-color: #101013;
   }
   
-  
+div.surveycol.displaynone {
+	display:none;
+}  
   
 /*=====*/
-/*survey of child pages*/
+/*Survey of child pages*/
 /*=====*/
 .gcsurveycol {
      border-radius: 1px;
    }
  
 .gcsurveytext h2 {
-        font-family: FuturaBT-Medium, sans-serif !important;
-  }
+        //font-family: FuturaBT-Medium, sans-serif !important;
+        font-weight: bold;
+}
   
 .gcsurveytext p {
-        font-size: 18px; 
+        font-size: 20px; 
     }
 
 .gcsurvey-btn > div {
@@ -396,7 +443,7 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
 }
      
 /*=====*/
-/*photo credits*/
+/*Photo credits*/
 /*=====*/
 .photo-credit p {
     position: relative;
@@ -404,10 +451,12 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
     font-size: 12px ;
     color: #2a2a2e;
     text-align: center;
+    margin-bottom: 0;
+    line-height: 20px;
  }
  
 /*=====*/
-/*accordions*/
+/*Accordions*/
 /*=====*/
 .spb_accordion_section {
      font-family: adobe-caslon-pro, Georgia;
@@ -448,7 +497,7 @@ div.zipcol, div.ziptextcol {
   } 
  
 /*=====*/
-/*footer*/
+/*Footer*/
 /*=====*/
 #footer { 
 	padding: 0;}
@@ -487,7 +536,7 @@ nav.footer-menu ul.menu li {
   
   
 /*==========*/
-/*lijsten*/
+/*Lijsten*/
 /*==========*/
 .bananafull {
   	list-style-type: square;
@@ -563,12 +612,25 @@ div.ourwork .spb-asset-content {
         color: #F06A00;
      }
 
-/*2. Dr Jane page*/
+/*2. Jane Goodall page*/
+.page-id-1934 .page-heading, .page-id-1936 .page-heading, .page-id-1938 .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
+    	background-size: 100%;
+    	background-position: 0% 45% !important;
+ }
+ 
+/*3. Dr Jane page*/
 div.spb_swift-slider div.caption-content div.caption-excerpt p {
 	color: #FFFFFF;
 }
+
+/*4. Want to know a little more?*/
+ .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
+        background-position: 0% 7% !important;
+     }
+     
     
-/*3. who we are*/
+/*5. who we are*/
 .page-id-16 .page-heading.fancy-heading, .page-id-98 .page-heading.fancy-heading, .page-id-169 .page-heading.fancy-heading{
         background-position: 0% 43% !important;
      }
@@ -583,14 +645,10 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
         box-shadow: none;
     }
     
-/*4. q&A*/
- .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
-        background-position: 0% 7% !important;
-     }
+
      
      
-     
-/*5. our mission */
+/*6. our mission */
 .page-id-25 .page-heading.fancy-heading, .page-id-118 .page-heading.fancy-heading, .page-id-176 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -608,13 +666,13 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     margin: auto !important;
    } 
 
-/*6. our people*/
+/*7. our people*/
 .page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
     background-position: 0% 60% !important;
 }
 
 
-/*7. our team our board*/
+/*8. our team our board*/
 .page-id-31 .page-heading.fancy-heading, .page-id-126 .page-heading.fancy-heading, .page-id-192 .page-heading.fancy-heading{
     background-position: 0% 23% !important;
 }
@@ -624,17 +682,17 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     letter-spacing: 0.025rem;
 }
 
-/*8. our board*/
+/*9. our board*/
 .page-id-33 .page-heading.fancy-heading, .page-id-124 .page-heading.fancy-heading, .page-id-182 .page-heading.fancy-heading{
     background-position: 0% 25% !important;
 }
 
-/*9. our ambassadors*/
+/*10. our ambassadors*/
 .page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
     background-position: 0% 20% !important;
 }
 
-/*10. annual reports*/
+/*11. annual reports*/
 .page-id-29 .page-heading.fancy-heading, .page-id-100 .page-heading.fancy-heading, .page-id-1267 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -645,7 +703,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     box-shadow: 0.1px 0.1px 0.1px 0 #87734f;
 }
     
-/*11.Burundi  reforestation*/
+/*12.Burundi  reforestation*/
 .page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
     background-position: 0% 60% !important;
 }
@@ -658,7 +716,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     margin-top: 0;
 }
 
-/*12. gombe*/
+/*13. gombe*/
 .page-id-51 .page-heading.fancy-heading, .page-id-206 .page-heading.fancy-heading, .page-id-151 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -677,22 +735,22 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
   
   
    
-/*13. snares*/
+/*14. snares*/
 .page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
     background-position: top !important;
 }
    
-/*14. public awareness*/
+/*15. public awareness*/
 .page-id-188 .page-heading.fancy-heading, .page-id-132 .page-heading.fancy-heading, .page-id-59 .page-heading.fancy-heading{
     background-position: 0% 35% !important;
 }
    
-/*15. Senegal*/
+/*16. Senegal*/
 .page-id-47 .page-heading.fancy-heading, .page-id-147 .page-heading.fancy-heading, .page-id-200 .page-heading.fancy-heading{
     background-position: 0% 45% !important;
 }
    
-/*16. research*/
+/*17. research*/
 .page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
     background-position: 0% 35% !important;
     }
@@ -705,17 +763,17 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     }
     
     
-/*17. roots&shoots*/
+/*18. roots&shoots*/
 .jgquote {
         float: right;
      }
   
-/*18. peace day*/
+/*19. peace day*/
 .janepeacequote {
         text-align: justify;    
     }
     
-/*19. recycle4chimps*/
+/*20. recycle4chimps*/
 #recycatable {
         width: 100%;
         margin: 2em 0;
@@ -744,7 +802,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background: #fff;
     }
     
-/*20. ways to give*/
+/*21. ways to give*/
 .page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
     background-position: 0% 55% !important;
     }
@@ -761,12 +819,12 @@ div.donationcol {
     margin: auto !important;
    } 
    
-/*21. host a workshop in your school*/
+/*22. host a workshop in your school*/
 ul.workshopschool {
   	 list-style-type: none;
     }
 
-/*22 start a rs group*/
+/*23. start a rs group*/
 img.wp-image-4183 {
 	border: none;
 	box-shadow: none;
@@ -775,13 +833,14 @@ img.wp-image-4183 {
     
 
     
-/*23. faq*/
+/*24. faq*/
 .page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     }
     
 /*24. youth corner*/
 /*Still used? NO*/
+/*
 .page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
     background-position: center top !important;
     }
@@ -791,7 +850,8 @@ img.wp-image-4180, img.wp-image-4179, img.wp-image-4190, img.wp-image-4191, img.
         border-radius: 0;
         box-shadow: none;
     }
-    
+ */
+   
 /*25. chimps of gombe*/
 .page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
     background-position: 0% 19% !important;
@@ -813,60 +873,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 
 	
 /*27. get in touch page*/
-/*
-div.formcontainer {
-    padding: 10px;
-    margin-bottom: 1em;
-    background: #fdf9e1;
-    box-shadow: 0 0 2px 0 rgb(135, 115, 79) inset;
-    font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
-    font-size: 20px;
-    }
-    
-.formcontainer h3 {
-    	margin:0;
-    }
-    
-.formcontainer h4 {
-	font-size: 20px;
-}
-
-.formcontainer p {
-	 margin-bottom: 10px;
-    }
-    
-span.wpcf7-list-item {
-    float: left;
-    min-width: 370px;
-    top: 0;
-    right: 0;
-    margin: 0;
-    }
-    
-.checkbox-845, .checkbox-846 {
-    	border: 1px solid;
-    	border-radius: 5px;
-    	margin-bottom: 1em;
-    	box-shadow: 1px 1px 1px #ccc ;
-    }
-    
-.checkbox-845 span.wpcf7-list-item, .checkbox-846 span.wpcf7-list-item {
-    	display: block;
-    	float: none;
-    	padding: 0.75em 0 0.75em 1em;
-    	
-    }
-    
-select.femselect {
-    	width: 25%;
-    	min-width: 250px;
-    }
-    
-.wpcf7 input.wpcf7-submit[type="submit"] {
-	font-size: 16px;
-}
-*/
-
 #gform_submit_button_25, #gform_submit_button_26, #gform_submit_button_27 {
 	margin-left:15px;
 }
@@ -932,51 +938,27 @@ font-size: 20px;
     background-position: 0% 35% !important;
     }    
 
-/*36. sponsors*/   
-/*
-.page-id-5456 .page-heading, .page-id-5458 .page-heading, .page-id-5460 .page-heading {
-    display: none;
-}
- 
-div.highlight {
-    color: rgb(97, 26, 26);
-    font-size: 20px;
-    line-height: 1.62em;
-    font-family: Georgia, "URW Bookman L", serif;
-    text-align: center;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.jgibsponsors img {
-	border:none;
-	box-shadow:none;
-}
-*/
-/*37. partners*/
-/*
-.page-id-5463 .page-heading, .page-id-5465 .page-heading, .page-id-5467 .page-heading {
-    display: none;
-}
-
-.jgibpartners img {
-	border:none;
-	box-shadow:none;
-}
-*/
-
-/*38. FAQ Dr. Jane*/
+/*36. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
     background-position: 0% 15% !important;
     } 
     
+/*37. Adoptions: private*/
+.page-id-7440 .page-heading.fancy-heading, .page-id-7442 .page-heading.fancy-heading, .page-id-7444 .page-heading.fancy-heading{
+    background-position: 0% 60% !important;
+    } 
 
-/*39. Chimpanzee adoption*/
+
+/*37.1 Chimpanzee adoption*/
 .page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     } 
     
+.page-id-468 img, .page-id-470 img, .page-id-475 img{
+    border: 0;
+    box-shadow: none;
+} 
+
 div.toggle-wrap h4.spb_toggle {
 	background: linear-gradient(to bottom, #c9b18d 0%,#dbceba 50%,#ddccb1 100%) !important;
     box-shadow: 1px 1px 1px 0 rgb(135, 115, 79);
@@ -988,22 +970,46 @@ div.toggle-wrap h4.spb_toggle {
     border: none;  
   }
   
-/*Become chimp guardian*/  
+/*37.2 Become chimp guardian*/  
+.page-id-7091 .gform_wrapper .gfield_radio li label, .page-id-7093 .gform_wrapper .gfield_radio li label, .page-id-7095 .gform_wrapper .gfield_radio li label {
+	margin-left: 20px;
+    height: 36px;
+}
+
 .page-id-7091 .gfm-form label.gfield_label, .page-id-7093 .gfm-form label.gfield_label , .page-id-7095 .gfm-form label.gfield_label  {
     font-size: 20px !important;
 }
+
+.page-id-7091 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-7093 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-7095 .gf_browser_chrome.gform_wrapper .gfield_radio li input{
+	margin-top:0;
+}
+
+
+.gchoice_35_30_6, .gchoice_x_x_x, .gchoice_x_x_x {
+	height: 36px;
+}
+
+.page-id-7091 .gform_wrapper ul.gfield_radio li input+input, .page-id-7093 .gform_wrapper ul.gfield_radio li input+input, .page-id-7095 .gform_wrapper ul.gfield_radio li input+input {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
     
-/*you have become a chimp guardian */
+/*37.3 Meet Lemba, Mambou and Mbebo*/
+.wp-image-3140, .wp-image-3141, .wp-image-3142 {
+	width: 25%;
+}    
+    
+/*37.4 you have become a chimp guardian */
 .page-id-6720 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     //background-position: 0% 30% !important;
     } 
 
-/*adoption proces failed*/
+/*37.5 adoption proces failed*/
 .page-id-6722 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     //background-position: 0% 30% !important;
-    } 
+     }     
 
-/*40. Donation*/
+/*39. Donation*/
 .page-id-6664 .gfm-form label.gfield_label, .page-id-6666 .gfm-form label.gfield_label , .page-id-6668 .gfm-form label.gfield_label  {
     font-size: 20px !important;
 }
@@ -1041,7 +1047,7 @@ div.toggle-wrap h4.spb_toggle {
 	background-color: #fff;
 }
     
-/*41. resources*/
+/*39. resources*/
 /*form nog vervangen door een gravirty form*/
 /* font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;*/
 
@@ -1055,16 +1061,19 @@ div.toggle-wrap h4.spb_toggle {
 	font-family: FuturaBT-Medium, sans-serif;
 	border-radius: 2px;
 }
+
+/*40. Subscribe to newsletter*/
+.page-id-6603 .page-heading, .page-id-6607 .page-heading, .page-id-6611 .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
+    	background-size: 100%;
+    	background-position: 0% 45% !important;
+ }
     
 /*==========*/
 /*Woocommerce*/
 /*=========*/
-/*=====*/
-/*Headings*/
-/*=====*/
-   
 /*All headings*/
-/*Page heading*/
+/*Page heading*//*waar gebruikt?*/
     .page-id-2851 .page-heading.fancy-heading, .page-id-4865 .page-heading.fancy-heading, .page-id-4869 .page-heading.fancy-heading{
     background-position: 0% 20% !important;
  }
@@ -1094,29 +1103,10 @@ div.toggle-wrap h4.spb_toggle {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
     }
     
-/*Post heading*/
-.single-post .page-heading {
-    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
-    	background-size: 100%;
- }
+
     
-.single-post .page-heading h1 {
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
-}
-    
-/*Post categories headings*/
-.category .page-heading {
-    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
-    	background-size: 100%;
-}
-   
-.category .page-heading h1 {
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
-    }
-    
-/*=====*/
 /*Overview page*/
-/*=====*/
+
 div.cartimage img, div.checkoutimage img {
     	width: 40px;
     	height: 40px;
@@ -1146,9 +1136,8 @@ span.free-badge {
     	display:none;
     }
     
-/*=====*/
 /*Product item*/
-/*=====*/
+
 .woocommerce button {
 	font-size: 16px;
 }
@@ -1173,16 +1162,13 @@ span.free-badge {
     	font-size: 14px;
 }
     
-/*======*/
 /*Categories*/
-/*======*/
+
 .tax-product_cat #breadcrumbs {
 	//display: none;
 }
     
-/*=====*/
 /*Cart page*/
-/*=====*/
    
 ul#shipping_method li label {
   	cursor: pointer;
@@ -1238,9 +1224,7 @@ ul#shipping_method li label {
 	font-size: 16px;
 }
     
-/*=====*/
 /*Quickview*/
-/*=====*/
 #jckqv_summary span.leave-feedback {display:none;}
 #jckqv_summary span.sku_wrapper {display:none;}
 
@@ -1248,18 +1232,38 @@ ul#shipping_method li label {
 /*=====*/
 /*Blog page*/
 /*=====*/
-.masonry-items .blog-item .details-wrap h2 {
-  	overflow: hidden;
-  	font-size: 22px;
-  	line-height: 24px;
-}
-
 .masonry-items .blog-item .details-wrap {
   	padding-bottom: 25px;
+  	padding-left: 25px;
+  	padding-right: 25px;
 }
 
+.masonry-items .blog-item .details-wrap h2 {
+  	overflow: hidden;
+  	font-size: 21px;
+  	line-height: 23px;
+  	text-align: left;
+}
 
-    
+.masonry-items .blog-item .details-wrap div.excerpt p {
+  	font-size: 18px;
+  	text-align: left;
+}
+
+.masonry-items .blog-item .details-wrap .blog-item-details {
+	padding-bottom: 0;
+	font-size: 18px;
+}
+
+/*=====*/
+/*Remove social sharing from article*/
+/*=====*/
+article .article-divider,
+article.type-post .article-share,
+article .post-info {
+  display: none !important;
+}
+   
       
 /*---------------------------------------------------------------------------*/
 /* @media queries
@@ -1420,7 +1424,7 @@ ul.social-icons li {
      
 /*survey of the grandchild pages*/
 .gcsurveycol {
-        height: 300px;
+        height: 400px;
         margin-bottom: 25px;
     }
     
@@ -1433,9 +1437,10 @@ ul.social-icons li {
     }
      
 .gcsurveytext h2 {
-        font-size: 26px;
+        font-size: 21px;
         line-height: 30px;
         margin-top: 0;
+        font-weight: bold;
      }
      
 .gcsurvey-btn {
@@ -1450,6 +1455,8 @@ ul.social-icons li {
 .prezi {
     	width: 100%;
     }
+    
+
     
 /*zip pattern*/
 div.ziptitle {
@@ -1904,16 +1911,17 @@ div[class^='menu-language-menu'] li > a:focus {
     }
      
  .gcsurveytext h2 {
-        font-size: 26px;
+        font-size: 21px;
         line-height: 30px;
         margin-top: 0;
+        font-weight: bold;
      }
      
  .gcsurvey-btn {
          margin-bottom: 20px;
      }
-     
- /*videos and presentations*/
+ 
+/*videos and presentations*/
  .spb_video_widget div.video-wrap {
       padding: 0 !important;
     }
@@ -1921,6 +1929,33 @@ div[class^='menu-language-menu'] li > a:focus {
  .prezi {
     	width: 90%;
     }
+
+/*=====*/
+/*Gravity forms*/
+/*=====*/
+#gform_fields_35 label {
+	width: auto;
+	float: none;
+}
+
+#gform_fields_35 div.ginput_container {
+	margin-left: 0 !important;
+}
+
+#gform_fields_35 div.gfield_description {
+	margin-left: 0 !important;
+	width: auto;
+}
+  
+#input_35_64 {
+	width: 100%;
+}
+
+.gform_wrapper .ginput_complex .ginput_left {
+	display: block;
+}
+
+
     
  /*zip pattern*/
  div.ziptitle {
@@ -2295,9 +2330,10 @@ ul.social-icons li {
  }
     
 .gcsurveytext h2 {
-        font-size: 26px;
+        font-size: 21px;
         line-height: 30px;
         margin-top: 0;
+        font-weight: bold;
 }
     
 .gcsurvey-btn {
@@ -2310,6 +2346,41 @@ ul.social-icons li {
       margin: 0 auto;
       padding: 0 !important;
      }
+     
+/*=====*/
+/*Gravity forms*/
+/*======*/
+div.gform_wrapper ul.gform_fields:not(.top_label) .gfield_label {
+	width:39%;
+}
+
+html:not([dir=rtl]) div.gform_wrapper ul.gform_fields:not(.top_label) .ginput_container:not(.ginput_container_time) {
+    width: 60%; 
+	margin-left: 39% !important;
+}
+
+html:not([dir=rtl]) div.gform_wrapper ul.gform_fields:not(.top_label) .gfield_description {
+    width: 60%; 
+	margin-left: 39% !important;
+}
+
+.gfm-form .ginput_container input {
+	width: 100% !important;
+}
+
+.gfm-form .ginput_container .address_city, .gfm-form .ginput_container .address_zip{
+	width: 200px !important;
+}
+
+/*
+#input_35_64_3, #input_35_64_5 {
+	width: 200px !important;
+}
+   
+#input_36_64_3, #input_36_64_5 {
+	width: 200px !important;
+}
+*/  
    
 /*footer*/
    
@@ -2534,9 +2605,7 @@ div[class^='menu-language-menu'] {
 	display: none;
 }
     
-.full-center #logo {
-    max-width: 35%;
-}
+
 
 #top-bar {
     border-bottom: 0px;
@@ -2640,6 +2709,9 @@ div[class^='menu-language-menu'] {
   }
   
 /*4. main menu*/
+.full-center .fw-header #logo {
+    left: 0;
+    }
 
 .full-center #logo {
     padding-left: 5%;
@@ -2654,10 +2726,11 @@ div.float-menu {
 }
 
 /*styling of the items of the main menu*/
-#menu-main-menu-english > li > a,  #menu-main-menu-french > li > a, #menu-main-menu-dutch > li > a {
+#header nav.std-menu ul#menu-main-menu-english > li > a,  #header nav.std-menu ul#menu-main-menu-french > li > a, #header nav.std-menu ul#menu-main-menu-dutch > li > a {
     font-size: 16px;
     text-transform: uppercase;
     font-family: FuturaBT-Medium, sans-serif;
+    padding: 0 10px;
 }
 
 /*verwijdert de underline in het mega menu bij aanklikken*/
@@ -2776,14 +2849,33 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li {
 }
 
 
-/*donations btn*/ 
-#main-navigation > div > ul > li:last-child > a {
+/*adoption and donations btn*/ 
+#main-navigation > div > ul > li:last-child > a, #main-navigation > div > ul > li:nth-child(5) > a {
     height: 35px !important;
     line-height: 35px !important;
     text-decoration: none;/*verwijdert de underline bij aanklikken*/
  }
 
+/*adoption btn*/
+ #main-navigation > div > ul > li:nth-child(5) span {
+ 	background-color: #92b10f;
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
+ }
+ 
+ #main-navigation > div > ul > li:nth-child(5):hover {
+    background: linear-gradient(#92b10f, #839f0d); 
+ }
+ 
+#main-navigation > div > ul > li:nth-child(5) a:hover span {
+    background: linear-gradient(#92b10f, #839f0d); 
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
+}
 
+/*donation btn*/
 #main-navigation > div > ul > li:last-child span {
     background-color: #6c8720;
     color: #FFF;
@@ -2792,11 +2884,11 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li {
  }
 
 #main-navigation > div > ul > li:last-child:hover {
-    background: linear-gradient(#6c8720, #58730C); 
+    background: linear-gradient(#6c8720, #5f771c); 
  }
  
 #main-navigation > div > ul > li:last-child a:hover span {
-    background: linear-gradient(#6c8720, #58730C); 
+    background: linear-gradient(#6c8720, #5f771c); 
     color: #FFF;
     vertical-align: middle;
     text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
@@ -2860,14 +2952,26 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
      padding-bottom: 0 !important;
  }
  
-/*5. donation buttons*/
- #main-navigation > div > ul > li:last-child {
+/*5. adoption buttons*/
+#main-navigation > div > ul > li:nth-child(5) {
+	background-color: #92b10f;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #222 #333 #333;
+    border-radius: 25px;
+    position: relative;
+    top: 1.9em;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+/*donation button*/
+#main-navigation > div > ul > li:last-child {
     background-color: #6c8720;
     border-width: 1px;
     border-style: solid;
     border-color: #222 #333 #333;
     border-radius: 25px;
-    margin-left: 1em;
+    margin-left: 0.5em;
     position: relative;
     top: 1.9em;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
@@ -2890,18 +2994,18 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
         transform: translateY(-50%);
     }
     
- /*8. survey of the grand child pages*/
+/*8. survey of the grand child pages*/
 .gcsurveycol {
         width: 50%;
         height: 350px; 
      }
     
 .flexbox .spb-column-container.gcsurveycol > div {
-        margin-left: 20px;
+        //margin-left: 20px;
     }
     
 .gcsurveytext h2 {
-        font-size: 30px;
+        font-size: 21px;
         line-height: 37px;
      }
     

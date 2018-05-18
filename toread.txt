@@ -73,12 +73,15 @@ See also: https://polylang.pro/doc/polylang-wc-installation/
 text: adobe caslon pro
 buttons: FuturaBT-Medium
 Gravity forms (ook buttons): adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
-Cf7 forms: font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 Top bar menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
 Hoofmenu: FuturaBT-Medium, sans-serif;
 Footer menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
 Mobile menu: 
+h1 - h6: Futura sans-serif;
 
+* Colors:
+#92b10f is olive color. Upon hovering one shade of is added linearly from top to bottom.
+#839f0d is dark green. Upon hovering one shade of is added linearly from top to bottom.
 
 * Mollie - Teamleader
 Iedere geslaagde betaling komt als een contact in TL terecht.
@@ -86,6 +89,7 @@ Een gefaalde betaling komt niet in Teamleader terecht.
 De data van een ontvanger komen niet in TL terecht.
 De betalingsmethodes van een periodieke betaling worden slechts exact ingevuld bij tunneling met ngrok.
 Gezien de redirectie naar een andere pagina na afloop verschijnt een confirmatie niet, tenzij de volgend efout bij het verzenden van een donatieformuleer optreedt. 100 € als ander bedrag leidt tot een Mollie API error, waarbij toch de standaard confirmatie getoond wordt. 
+Wegens beperking van de GFM plugin kunnen enkel adresgegevens kunnen vanaf een donatieformulier naar de Donations tabel van de website gestuurd worden. Niet
 
 * Encryptie email adressen
 Het Joyn thema behoudt de encoding van een email adres in html entities niet.

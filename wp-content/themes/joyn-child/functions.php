@@ -414,7 +414,49 @@ function log_validation_errors( $validation_result ) {
    return $validation_result;
 }
 
+/*12. retrieve the fourth last newsitem*/
+/*
+function jgib_FourthNewsTitle() {
+  ob_start();
+   get_template_part('fourth-news-title');
+   return ob_get_clean();   
+} 
+add_shortcode( 'fourth-news-title_shortcode', 'jgib_FourthNewsTitle' );
 
+function jgib_FourthNewsExcerpt() {
+ob_start();
 
+$language =  pll_current_language( $field = 'slug' );
+   
+$args = array(
+    'posts_per_page' => 1,
+    'post_type' => 'post',
+    'lang' => $language,
+    'offset' => 3
+   ); 
+
+$the_query = new WP_Query( $args );
+
+if ( $the_query->have_posts() ) :
+while ( $the_query->have_posts() ) : $the_query->the_post();
+  the_excerpt();
+  
+endwhile;
+endif;
+
+wp_reset_postdata();
+return ob_get_clean(); 
+} 
+add_shortcode( 'fourth-news-excerpt_shortcode', 'jgib_FourthNewsExcerpt' );
+
+function jgib_FourthNewsImage() {
+   ob_start();
+   get_template_part('fourth-news-image');
+   return ob_get_clean();   
+} 
+add_shortcode('fourth-news-image_shortcode', 'jgib_FourthNewsImage' );
+*/
+
+/*13. put icon before page title*/
 
 ?>

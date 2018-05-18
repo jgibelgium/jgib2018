@@ -1,0 +1,6 @@
+1) veravng ict@janegoodall.be doorinfo@janegoodall.be
+2) gepaste URL in de api van Teamleader
+3) testmodus uit Mollie weg
+4) Anti hacking plugin
+5) Bad behavior
+
