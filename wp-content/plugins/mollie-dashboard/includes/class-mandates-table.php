@@ -20,7 +20,7 @@ class MDB_Mandates_Table extends MDB_Items_Table
 
             // Note: no paging done for mandates (no 'list mandates' API available...)
             // --> all mandates are retrieved (assumption is that the number of mandates is limited)
-            $data = [];
+            $data = array();
             $offset = 0;
             while (true)
             {
@@ -52,7 +52,7 @@ class MDB_Mandates_Table extends MDB_Items_Table
             
             if (! empty($_POST['s'])) 
             {
-                $data_found = [];
+                $data_found = array();
                 $search = $_POST['s'];
                 foreach ($data as $row) 
                 {

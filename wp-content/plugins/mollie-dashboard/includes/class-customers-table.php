@@ -18,7 +18,7 @@ class MDB_Customers_Table extends MDB_Items_Table
             $offset = ($page - 1) * $page_length;
                 
             $customers = $mollie->customers->all($offset, $page_length);
-            $data = [];            
+            $data = array();            
             foreach ($customers as $customer)
             {
                 $data[] = array(
@@ -32,7 +32,7 @@ class MDB_Customers_Table extends MDB_Items_Table
 
             if (! empty($_POST['s'])) 
             {
-                $data_found = [];
+                $data_found = array();
                 $search = $_POST['s'];
                 foreach ($data as $row) 
                 {

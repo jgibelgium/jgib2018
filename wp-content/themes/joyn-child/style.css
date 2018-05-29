@@ -21,8 +21,9 @@
 	CHILD THEME CSS
 -------------------------------------------- */
 
-
-/*algemeen*/
+/*=====*/
+/*Algemeen*/
+/*=====*/
 .page-id-103 .inner-page-wrap, .page-id-106 .inner-page-wrap, .page-id-108 .inner-page-wrap {
     margin-top: 0;
 }
@@ -37,6 +38,28 @@
     font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 }
 
+/*overriding in the style tag*/
+.page-content a {
+    color: #428BCA;
+    text-decoration: none;/*verwijdert de underline van de hyperlink bij klikken*/
+}
+
+.page-content a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+.page-content img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #87734f;
+}
+
+.imgnoborder img {
+	border: none;
+    box-shadow: none;
+}
+
 h1,h3,h4,h5,h6 {
     font-family:Futura, sans-serif !important;
 }
@@ -46,12 +69,26 @@ h2 {
      letter-spacing: 0.025rem;
 }
 
-/*kolommen*/
-.columnthird {
-	float: left;
-	width: 32%;
-	margin-right: 1%;
-}
+
+
+/*=====*/
+/*Top bar sticky wrapper*/
+/*=====*/
+#top-bar-sticky-wrapper{
+  	display: none;
+  }
+  
+/*****/
+/*Mobile menu*/
+/*****/
+#mobile-menu li > a {
+	text-transform: uppercase;
+	font-weight: 700;
+	} 
+  
+#mobile-menu ul li ul li {
+       font-size: 16px;
+ }  
 
 /*=====*/
 /*Title shadows*/
@@ -71,29 +108,19 @@ div.fancy-heading.fancy-image.light-style h3 {
 	 text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
-/*Post heading*/
-.single-post .page-heading {
-    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
-    	background-size: 100%;
- }
-    
+/*Article*/
 .single-post .page-heading h1 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
-    
-/*Post categories headings*/
-.category .page-heading {
-    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
-    	background-size: 100%;
-}
-   
+
+/*Article catregory*/   
 .category .page-heading h1 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
     }
     
     
 /*=====*/
-/*icons in front of some post titles*/
+/*Icons in front of some post titles*/
 /*======*/
 .janeicon:before {
     display: inline-block;
@@ -128,36 +155,17 @@ div.fancy-heading.fancy-image.light-style h3 {
 }
 
 
-/*overriding in the style tag*/
-.page-content a {
-    color: #428BCA;
-    text-decoration: none;/*verwijdert de underline van de hyperlink bij klikken*/
-}
 
-.page-content a:hover {
-    color: #2a6496;
-    text-decoration: underline;
-}
 
-/*hyperlinks in accordion*/
-.page-content .ui-widget-content  a {
-	color: #428BCA;
-}
+/*=====*/
+/*Custom*/
+/*=====*/
 
-.page-content .ui-widget-content a:hover {
-    color: #2a6496;
-    text-decoration: underline;
-}
-
-.page-content img {
-    border: 1px solid #6b4b15;
-    border-radius: 1px;
-    box-shadow: 3px 3px 3px 0 #87734f;
-}
-
-.imgnoborder img {
-	border: none;
-    box-shadow: none;
+/*custom kolommen*/
+.columnthird {
+	float: left;
+	width: 32%;
+	margin-right: 1%;
 }
 
 /* custom containers*/
@@ -197,8 +205,6 @@ div.fancy-heading.fancy-image.light-style h3 {
     vertical-align: top;
     text-align: justify;
 }
-
-
 
 .contentright b {
     font-family: FuturaBT-Medium, sans-serif;
@@ -258,10 +264,10 @@ div.fancy-heading.fancy-image.light-style h3 {
    
  /*ul indentation*/
 .jgi-indent {
-    padding-left: 2em;
-    text-indent: -2em;
+    padding-left: 22px;
+    text-indent: -28px;
     text-align: justify;
-    line-height: 25px;
+    line-height: 29px;
     padding-bottom: 0.25em;
     }
    
@@ -314,8 +320,6 @@ img.pdficon {
  }
 
 img.pdficon:hover {opacity: 0.75;}
-  
-
 
 #mobile-logo.has-img {
     max-width: 70%;
@@ -344,6 +348,10 @@ li.gfield div.charleft {
 	display: none;
 }
 
+.gfield_price, .gfield_total {
+	display: none !important;
+}
+
 div.gform_footer input.gform_button.button {
 	background-color: #fe504f !important;
 	color: #fff ; 
@@ -369,6 +377,10 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
 	width: auto;
 }
 
+div.gform_wrapper.gf_browser_chrome .ginput_complex select {
+	margin-top: 6px;
+}
+
 .ginput_complex label {
 	font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
 }
@@ -377,12 +389,12 @@ div.gform_wrapper ul.gform_fields:not(.top_label) li ul.gfield_checkbox {
 	.gform_wrapper .gform_footer input[type=submit]{ margin-left: 10px;}
 }
 
-/*=====*/
-/*Top bar sticky wrapper*/
-/*=====*/
-#top-bar-sticky-wrapper{
-  	display: none;
-  }
+.gfm-api-message {
+	color: #333;
+	background-color: #fff;
+}
+
+
 
 /*=====*/
 /*Surveys of parent pages*/
@@ -487,7 +499,19 @@ div.surveycol.displaynone {
     border-bottom-width: 0;
  }
  
-/*zip pattern*/
+ /*hyperlinks in accordion*/
+.page-content .ui-widget-content  a {
+	color: #428BCA;
+}
+
+.page-content .ui-widget-content a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+ 
+/*=====*/
+/*Zip pattern*/
+/*=====*/
 div.zipcol, div.ziptextcol {
     height: 400px;
   }
@@ -500,25 +524,13 @@ div.zipcol, div.ziptextcol {
 /*Footer*/
 /*=====*/
 #footer { 
-	padding: 0;}
-   
-#copyright {
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+	padding: 0;
+    font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
     font-style: normal;
     font-weight: 500;
 }
 
-#copyright div .text-left {
-    line-height: 25px;
-    font-size: 14px;
-    color: #FFF;
-    text-shadow: 0 -0.1px 0 rgba(0,0,0,1);
- }
-
-#copyright div a {
+#footer div a {
     padding-right: 1em;
     text-decoration: underline;
  }
@@ -527,39 +539,14 @@ nav.footer-menu ul.menu li {
     float: none;
   }
   
-#copyright nav ul.menu li a {
-    font-size: 14px;
-    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
-    line-height: 25px;
-  }
-  
-  
-  
-/*==========*/
-/*Lijsten*/
-/*==========*/
-.bananafull {
-  	list-style-type: square;
-  }
 
-/*****/
-/*Mobile menu*/
-/*****/
-#mobile-menu li > a {
-	text-transform: uppercase;
-	font-weight: 700;
-	} 
-  
-#mobile-menu ul li ul li {
-       font-size: 16px;
- }
+
  
    
 /*==========*/
 /*Pages*/
 /*==========*/
 /*1. home page*/
-
 div.swiper-slide h1 strong{
 	text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 	color: #FFFFFF;
@@ -587,7 +574,7 @@ h6.count-subject {
         box-shadow: 0 3px 3px 0 rgba(50,50,50,.2);
     }
     
-div.ourwork .spb-asset-content {
+div.ourwork .spb-asset-content, div.news .spb-asset-content {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -596,7 +583,7 @@ div.ourwork .spb-asset-content {
         display: table;
      }
      
-.ourwork p {
+.ourwork p, news p {
         color: #fff;
         font-weight: 600;
         font-size: 24px;
@@ -645,8 +632,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
         box-shadow: none;
     }
     
-
-     
+  
      
 /*6. our mission */
 .page-id-25 .page-heading.fancy-heading, .page-id-118 .page-heading.fancy-heading, .page-id-176 .page-heading.fancy-heading{
@@ -732,9 +718,6 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
       padding-top: 25px;
 }
   
-  
-  
-   
 /*14. snares*/
 .page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
     background-position: top !important;
@@ -807,18 +790,6 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background-position: 0% 55% !important;
     }
     
-div.donationcol {
-     height: 400px;
-    }
-   
-.donationtextcol {
-     height: 400px;
-   }
-   
-.donationtextcol > div {
-    margin: auto !important;
-   } 
-   
 /*22. host a workshop in your school*/
 ul.workshopschool {
   	 list-style-type: none;
@@ -830,9 +801,6 @@ img.wp-image-4183 {
 	box-shadow: none;
 }
 
-    
-
-    
 /*24. faq*/
 .page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
@@ -840,7 +808,7 @@ img.wp-image-4183 {
     
 /*24. youth corner*/
 /*Still used? NO*/
-/*
+
 .page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
     background-position: center top !important;
     }
@@ -850,7 +818,7 @@ img.wp-image-4180, img.wp-image-4179, img.wp-image-4190, img.wp-image-4191, img.
         border-radius: 0;
         box-shadow: none;
     }
- */
+ 
    
 /*25. chimps of gombe*/
 .page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
@@ -887,10 +855,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 } 
     
 /*29. jgi au monde*/
-.page-id-299 .page-heading, .page-id-301 .page-heading, .page-id-5351 .page-heading {
-    display: none;
-}
-
 #tablepress-1 {
 font-size: 20px;	
 }
@@ -900,16 +864,6 @@ font-size: 20px;
     padding-bottom: 80%;
     height: 0;
     max-width: 100%;
-}
-
-/*30. site map*/
-.page-id-647 .page-heading, .page-id-649 .page-heading, .page-id-651 .page-heading {
-    display: none;
-}
-
-/*31. private policy document*/
-.page-id-641 .page-heading, .page-id-643 .page-heading, .page-id-645 .page-heading {
-    display: none;
 }
 
 /*32. Search results page*/
@@ -1041,12 +995,6 @@ div.toggle-wrap h4.spb_toggle {
 }
 
 
-
-.page-id-6664 .gfm-api-message, .page-id-6666 .gfm-api-message, .page-id-6668 .gfm-api-message {
-	color: #333;
-	background-color: #fff;
-}
-    
 /*39. resources*/
 /*form nog vervangen door een gravirty form*/
 /* font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;*/
@@ -1162,7 +1110,7 @@ span.free-badge {
     	font-size: 14px;
 }
     
-/*Categories*/
+/*Product Categories*/
 
 .tax-product_cat #breadcrumbs {
 	//display: none;
@@ -1256,12 +1204,29 @@ ul#shipping_method li label {
 }
 
 /*=====*/
-/*Remove social sharing from article*/
+/*Articles*/
 /*=====*/
+/*Article heading*/
+.single-post .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
+ }
+ 
+/*Remove social sharing from article*/
 article .article-divider,
 article.type-post .article-share,
 article .post-info {
   display: none !important;
+}
+
+.single-post .page-content{
+	min-height: 600px;
+}
+
+/*Article categories headings*/
+.category .page-heading {
+    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
+    	background-size: 100%;
 }
    
       
@@ -1281,7 +1246,8 @@ article .post-info {
         width: 100%;
         margin-left: 0;
     }
-    
+
+/*language menu*/    
 div[class^='menu-language-menu'] {
     display: block;
     background: -webkit-linear-gradient(#555,#000) !important;
@@ -1308,6 +1274,25 @@ div[class^='menu-language-menu'] li > a{
 div[class^='menu-language-menu'] li > a:focus {
         text-decoration: underline;
     }
+    
+div[class^='menu-language-menu'] li:hover {
+	background-color: #A1CA3A;
+    box-shadow: -2px 0 0 #A1CA3A;
+} 
+
+div[class^='menu-language-menu'] a:hover{
+	text-decoration: none;
+    color: #FFF !important;
+} 
+
+div[class^='menu-language-menu'] li.current-lang a {
+	color: #fe504f !important;
+}
+
+
+div[class^='menu-language-menu'] li.current-lang:hover a {
+	 color: #fff !important;
+}   
     
 /*mobile menu social icons*/
 #mobile-top-text {
@@ -1363,25 +1348,7 @@ ul.social-icons li {
        color: #fff;
    }
    
-#copyright {
-       background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
-   }
-   
-/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
-#copyright div a:hover {
-       text-decoration: underline !important;
-       color: #000 !important;
-   }
 
-/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
-#copyright div nav .menu li a:hover {
-      text-decoration: underline !important;
-      color: #000 !important;
-   }
-
-#copyright nav .menu li {
-      border: none;
-   } 
    
 /*necessary completion for touch devices*/
  .hover {
@@ -1482,8 +1449,62 @@ div.ziptextcol {
      }
  
 /*footer*/
-#footer {display:none;}  
-    
+#footer {display:block;} 
+
+/*1ste kolom*/
+#footer div.text-left {
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	color: #fff;
+}
+
+/*2de kolom*/
+#footer a.footerbutton{
+	display: block;
+	margin: 20px auto;
+	width: 180px;
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #fe504f;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+}
+
+#footer a.footerbutton.first{
+	margin: 0 auto;
+}
+
+#footer a.footerbutton span {
+	display: block;
+	
+} 
+
+/*3de kolom*/
+#footer .widget_nav_menu .menu li {
+	line-height: 30px;
+	border: none;
+	margin: 5px 0;
+	text-align: center;
+	
+}  
+	
+#footer .widget_nav_menu .menu a {
+	font-size: 14px;
+	line-height: 25px;
+	padding: 0;
+	color: #fff;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+} 
+
+#footer li.current-menu-item > a {
+    color: #fe504f;
+ }
+ 
 /*==========*/
 /*Pages*/
 /*==========*/
@@ -1706,14 +1727,21 @@ img.wp-image-1582-bis {
     background-position: 35% 60% !important;
     }   
 
-   
+/*18. Meet Lemba, Mambou en Mbebo*/
+.wp-image-3140, .wp-image-3141, .wp-image-3142 {
+	width: 50%;
+	margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 20px;
+}   
       
 /*==========*/
 /*Posts*/
 /*==========*/
 /*workshops monkeys*/
 .wp-image-4483, .wp-image-4484, .wp-image-4485 {
-    	width: 100%;
+       width: 100%;
+    	
     }
     
 /*==========*/
@@ -1781,6 +1809,25 @@ div[class^='menu-language-menu'] li > a{
 div[class^='menu-language-menu'] li > a:focus {
         text-decoration: underline;
     }
+
+div[class^='menu-language-menu'] li:hover {
+	background-color: #A1CA3A;
+    box-shadow: -2px 0 0 #A1CA3A;
+} 
+
+div[class^='menu-language-menu'] a:hover{
+	text-decoration: none;
+    color: #FFF !important;
+} 
+
+div[class^='menu-language-menu'] li.current-lang a {
+	color: #fe504f !important;
+}
+
+
+div[class^='menu-language-menu'] li.current-lang:hover a {
+	 color: #fff !important;
+}       
  
 /*mobile menu social icons*/
 #mobile-top-text {
@@ -1837,25 +1884,7 @@ div[class^='menu-language-menu'] li > a:focus {
        color: #fff;
    }
    
- #copyright {
-       background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
-   }
-   
-   /*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
- #copyright div a:hover {
-       text-decoration: underline !important;
-       color: #000 !important;
-   }
 
- /*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
- #copyright div nav .menu li a:hover {
-      text-decoration: underline !important;
-      color: #000 !important;
-   }
-
- #copyright nav .menu li {
-      border: none;
-   } 
    
  /*necessary completion for touch devices*/
  .hover {
@@ -1978,10 +2007,67 @@ div[class^='menu-language-menu'] li > a:focus {
      
  .zippage section:nth-child(2n+2) div.ziptextcol {
          order: 2;
-     }
+    } 
      
 /*footer*/
-#footer {display:none;}  
+#footer {display:block;}  
+
+/*1ste kolom*/
+#footer div.text-left {
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	color: #fff;
+}
+
+/*2de kolom*/
+#footer a.footerbutton{
+	display: block;
+	margin: 20px auto;
+	width: 180px;
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #fe504f;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+}
+
+#footer a.footerbutton.first{
+	margin: 0 auto;
+}
+
+#footer a.footerbutton span {
+	display: block;
+	
+} 
+
+/*3de kolom*/
+#footer .widget_nav_menu .menu li {
+	line-height: 30px;
+	border: none;
+	margin: 5px 0;
+	text-align: center;
+	
+}  
+	
+#footer .widget_nav_menu .menu a {
+	font-size: 14px;
+	line-height: 25px;
+	padding: 0;
+	color: #fff;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+} 
+
+#footer li.current-menu-item > a {
+    color: #fe504f;
+ }
+ 
+   
+
 
    
 /*Woocommerce*/
@@ -2246,7 +2332,26 @@ div[class^='menu-language-menu'] li > a{
 div[class^='menu-language-menu'] li > a:focus {
         text-decoration: underline;
     }
+ 
+div[class^='menu-language-menu'] li:hover {
+	background-color: #A1CA3A;
+    box-shadow: -2px 0 0 #A1CA3A;
+} 
 
+div[class^='menu-language-menu'] a:hover{
+	text-decoration: none;
+    color: #FFF !important;
+} 
+
+div[class^='menu-language-menu'] li.current-lang a {
+	color: #fe504f !important;
+}
+
+
+div[class^='menu-language-menu'] li.current-lang:hover a {
+	 color: #fff !important;
+}
+ 
 /*mobile menu social icons*/
 #mobile-top-text {
       text-align: center;
@@ -2300,8 +2405,6 @@ ul.social-icons li {
        background-color: #b00;
        color: #fff;
    }
-   
-   
    
 /*surveys*/
 .surveycol {
@@ -2364,49 +2467,95 @@ html:not([dir=rtl]) div.gform_wrapper ul.gform_fields:not(.top_label) .gfield_de
 	margin-left: 39% !important;
 }
 
-.gfm-form .ginput_container input {
-	width: 100% !important;
+.gform_wrapper .gform_footer:not(.top_label) {
+	width: 60%; 
+	margin-left: 39% !important;
+}
+
+.gform_wrapper .ginput_complex.ginput_container span {
+	display: block;
+}
+
+span.ginput_full.address_line_1 {
+	max-width: 500px;
 }
 
 .gfm-form .ginput_container .address_city, .gfm-form .ginput_container .address_zip{
 	width: 200px !important;
 }
 
-/*
-#input_35_64_3, #input_35_64_5 {
-	width: 200px !important;
-}
-   
-#input_36_64_3, #input_36_64_5 {
-	width: 200px !important;
-}
-*/  
-   
 /*footer*/
-   
-#copyright {
-    background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
+footer section {
+	margin-top: 25px;
+}
+
+/*1ste kolom*/
+#footer div.text-left {
+	font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);	
+}
+
+#footer div a:hover {
+    text-decoration: underline !important;
+    color: #000 !important;
+}
+
+
+
+/*2de kolom*/
+#footer a.footerbutton{
+	display: block;
+	margin: 20px auto;
+	width: 200px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #fe504f;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+}
+
+#footer a.footerbutton.first{
+	margin: 0 auto;
+}
+
+#footer a.footerbutton span {
+	display: block;
+	
+}  
+
+/*3de kolom*/
+#footer .widget_nav_menu .menu li {
+	line-height: 50px;
+	border: none;
+	margin: 5px 0;
+} 
+
+#footer .widget_nav_menu .menu li:first-child {
+	margin-top: 0;
+} 
+ 
+	
+#footer .widget_nav_menu .menu a {
+	font-size: 16px;
+	line-height: 25px;
+	padding: 0;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	text-align: right;
+} 
+
+#footer .widget_nav_menu .menu a::before {
+	margin-left: 20px;
+}
+
+#footer li.current-menu-item > a {
+    color: #fe504f;
  }
 
-
-
-
-/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
-#copyright div a:hover {
-    text-decoration: underline !important;
-    color: #000 !important;
-}
-
-/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
-#copyright div nav .menu li a:hover {
-    text-decoration: underline !important;
-    color: #000 !important;
-}
-
-
-#copyright nav .menu li {
-    border: none;
-}
 
 /*necessary completion for touch devices*/
 .hover {
@@ -2599,13 +2748,6 @@ img.wp-image-2665 {
 /*4de query*/
 @media only screen and (min-width: 1025px)
 {
-	
-/*verbergen van het mobiele taalmenu*/
-div[class^='menu-language-menu'] {
-	display: none;
-}
-    
-
 
 #top-bar {
     border-bottom: 0px;
@@ -2614,7 +2756,14 @@ div[class^='menu-language-menu'] {
     font-style: normal;
     font-weight: 500;
     background: -webkit-linear-gradient(#555,#000) !important;
+}	
+	
+/*verbergen van het mobiele taalmenu*/
+div[class^='menu-language-menu'] {
+	display: none;
 }
+    
+
 
 /*1. social icons menu*/
 #top-bar .col-sm-2 {text-align: center !important;}
@@ -2652,6 +2801,7 @@ div[class^='menu-language-menu'] {
       border: 0;
  }
 
+
 #menu-language-menu-english-1 li:hover, #menu-language-menu-dutch-1 li:hover, #menu-language-menu-french-1 li:hover {
     background-color: #A1CA3A;
     box-shadow: -2px 0 0 #A1CA3A;
@@ -2669,9 +2819,16 @@ div[class^='menu-language-menu'] {
 #menu-language-menu-english-1 li.current-lang:hover a,  #menu-language-menu-dutch-1 li.current-lang:hover a,  #menu-language-menu-french-1 li.current-lang:hover a {
      color: #fff !important;
  } 
- 
+
     
 /*3. navigation menu*/
+
+#top-bar-sticky-wrapper{
+  	display: block;
+  }
+  
+  
+  
 #top-bar nav .menu {
       padding-right: 9%;
   }
@@ -2708,7 +2865,14 @@ div[class^='menu-language-menu'] {
       text-decoration: none;
   }
   
-/*4. main menu*/
+/*4. Logo*/
+div.full-center #header {height:108px;}
+
+div.full-center #logo a {
+	height:108px;
+	line-height: 108px;
+}
+
 .full-center .fw-header #logo {
     left: 0;
     }
@@ -2717,8 +2881,14 @@ div[class^='menu-language-menu'] {
     padding-left: 5%;
 }
 
+/*5. main menu*/
 div.float-menu {
     padding-right: 5% !important;
+}
+
+div.full-center #main-navigation ul.menu > li > a {
+	height:108px;
+	line-height: 108px;
 }
 
 .full-center nav#main-navigation ul.menu > li:first-child {
@@ -2743,12 +2913,12 @@ div.float-menu {
     text-decoration: none ;
 }
 
-/*1. background color of who we are submenu*/
+/*background color of who we are submenu*/
 .menu-item-87 ul, .menu-item-225 ul, .menu-item-256 ul {
      background-color: #E07126 !important;
 } 
 
-/*2. background color of the children of the who we are submenu*/
+/*background color of the children of the who we are submenu*/
 .menu-item-87 ul > *, .menu-item-225 ul > *, .menu-item-256 ul > * {
      background-color: #E07126 !important;
  }
@@ -2768,22 +2938,22 @@ li.menu-item-97 > ul.sub-menu > li > a:hover, li.menu-item-246 > ul > li > a:hov
 	text-decoration: none;	
 }
 
- /*3. background color of our work upon hovering*/
+ /*background color of our work upon hovering*/
 .menu-item-92 a:focus, .menu-item-233 a:hover, .menu-item-264 a:hover {
       background-color: #FFD147;
  }
 
- /*4. background color of our work submenu upon hovering of our work*/
+ /*background color of our work submenu upon hovering of our work*/
 .menu-item-92 ul, .menu-item-233 ul, .menu-item-264 ul {
      background-color: #FFD147 !important;
  }
  
- /*5. background color of support us upon hovering*/
+ /*background color of support us upon hovering*/
 .menu-item-97 a:hover, .menu-item-246 a:hover, .menu-item-276 a:hover {
     background-color: #97D0DB;
 }
 
-/*6. background color of support us submenu upon hovering of support us*/
+/*background color of support us submenu upon hovering of support us*/
 .menu-item-97 ul, .menu-item-246 ul, .menu-item-276 ul {
     background-color: #97D0DB !important;
 }
@@ -2848,57 +3018,10 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li {
 	padding-bottom: 0;
 }
 
-
-/*adoption and donations btn*/ 
-#main-navigation > div > ul > li:last-child > a, #main-navigation > div > ul > li:nth-child(5) > a {
-    height: 35px !important;
-    line-height: 35px !important;
-    text-decoration: none;/*verwijdert de underline bij aanklikken*/
- }
-
-/*adoption btn*/
- #main-navigation > div > ul > li:nth-child(5) span {
- 	background-color: #92b10f;
-    color: #FFF;
-    vertical-align: middle;
-    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
- }
- 
- #main-navigation > div > ul > li:nth-child(5):hover {
-    background: linear-gradient(#92b10f, #839f0d); 
- }
- 
-#main-navigation > div > ul > li:nth-child(5) a:hover span {
-    background: linear-gradient(#92b10f, #839f0d); 
-    color: #FFF;
-    vertical-align: middle;
-    text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
+div.full-center nav li.menu-item.sf-mega-menu > ul.sub-menu {
+	top: 108px !important;
 }
 
-/*donation btn*/
-#main-navigation > div > ul > li:last-child span {
-    background-color: #6c8720;
-    color: #FFF;
-    vertical-align: middle;
-    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
- }
-
-#main-navigation > div > ul > li:last-child:hover {
-    background: linear-gradient(#6c8720, #5f771c); 
- }
- 
-#main-navigation > div > ul > li:last-child a:hover span {
-    background: linear-gradient(#6c8720, #5f771c); 
-    color: #FFF;
-    vertical-align: middle;
-    text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
-}
-
-
-#main-navigation > div > ul > li:last-child:hover > a {
-    text-decoration: none;
-   }
-   
 /*stylimg of the submenu items (eg our people) */
 li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a {
     //color: #FFF !important;
@@ -2941,10 +3064,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
     font-size: 18px !important;
     line-height: 22px !important;
     font-family: FuturaBT-Medium, sans-serif !important;
-    //text-transform: uppercase;
     padding: 5px 15px;
-    //text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
-    //text-shadow: 0.25px 0.25px 0 rgba(255,255,255,0.1);
     text-shadow: 0.2px 0.2px 0 rgba(0,0,0,0.3);
 }
 
@@ -2952,7 +3072,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
      padding-bottom: 0 !important;
  }
  
-/*5. adoption buttons*/
+/*6. adoption button*/
 #main-navigation > div > ul > li:nth-child(5) {
 	background-color: #92b10f;
     border-width: 1px;
@@ -2960,11 +3080,37 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
     border-color: #222 #333 #333;
     border-radius: 25px;
     position: relative;
-    top: 1.9em;
+    top: 1.917em;
+    //height:108px;
+    //line-height:108px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
-/*donation button*/
+#main-navigation > div > ul > li:nth-child(5) > a {
+    height: 35px !important;
+    line-height: 35px !important;
+    text-decoration: none;/*verwijdert de underline bij aanklikken*/
+ }
+ 
+#main-navigation > div > ul > li:nth-child(5) span {
+ 	background-color: #92b10f;
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
+ }
+ 
+ #main-navigation > div > ul > li:nth-child(5):hover {
+    background: linear-gradient(#92b10f 70%, #839f0d); 
+    box-shadow: 0 1.20px 1.2px rgba(0,0,0,0.3);
+ }
+ 
+#main-navigation > div > ul > li:nth-child(5) a:hover span {
+    background: #92b10f; 
+    color: #FFF;
+    vertical-align: middle;
+}
+
+/*7. donation button*/
 #main-navigation > div > ul > li:last-child {
     background-color: #6c8720;
     border-width: 1px;
@@ -2973,16 +3119,42 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
     border-radius: 25px;
     margin-left: 0.5em;
     position: relative;
-    top: 1.9em;
+    top: 1.917em;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
  } 
  
-/*6. top bar sticky wrapper*/
-#top-bar-sticky-wrapper{
-  	display: block;
-  }
+ #main-navigation > div > ul > li:last-child > a {
+    height: 35px !important;
+    line-height: 35px !important;
+    text-decoration: none;/*verwijdert de underline bij aanklikken*/
+ }
  
-/*7. surveys*/
+#main-navigation > div > ul > li:last-child span {
+    background-color: #6c8720;
+    color: #FFF;
+    vertical-align: middle;
+    text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
+ }
+
+#main-navigation > div > ul > li:last-child:hover {
+    background: linear-gradient(#6c8720 70%, #5f771c); 
+    box-shadow: 0 1.2px 1.2px rgba(0,0,0,0.3);
+ }
+ 
+#main-navigation > div > ul > li:last-child a:hover span {
+    background: #6c8720; 
+    color: #FFF;
+    vertical-align: middle;
+    
+}
+
+/*8. search*/
+div.header-right ul.menu > li.menu-search > a {
+	height:108px;
+	line-height: 108px;
+}
+ 
+/*9. surveys*/
 .surveycol {
         width: 50%;
         height: 500px;
@@ -2994,15 +3166,11 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
         transform: translateY(-50%);
     }
     
-/*8. survey of the grand child pages*/
+/*10. survey of the grand child pages*/
 .gcsurveycol {
         width: 50%;
         height: 350px; 
      }
-    
-.flexbox .spb-column-container.gcsurveycol > div {
-        //margin-left: 20px;
-    }
     
 .gcsurveytext h2 {
         font-size: 21px;
@@ -3013,52 +3181,87 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
         padding-left: 20px;
      }
     
-/*9. videos*/
+/*11. videos*/
 .spb_video_widget div.video-wrap {
       width: 75%;
       margin: 0 auto;
       padding-bottom: 0 !important;
   } 
   
-/*10. zip pattern*/
+/*12. zip pattern*/
 div.zipcol, div.ziptextcol {
        height: 500px;  
    }
    
 
-/*11. footer*/
-
-#copyright {
-    background-image:url(http://localhost:8080/jgib2017/wp-content/uploads/2017/04/footer-darkened.jpg);
-  }
-
-footer#copyright .container {
-    min-width: 990px;
-    z-index: 99;
-   }
-
-#copyright div .text-left {
-    font-size: 16px;
-    max-width: 60%;
+/*13. footer*/
+footer section {
+	margin-top: 25px;
 }
 
-/*specificiteit: 112 in order to override a css rule with !important from Joyn theme*/
-#copyright div a:hover {
+/*1ste kolom*/
+#footer div.text-left {
+	font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);	
+}
+
+#footer div a:hover  {
     text-decoration: underline !important;
     color: yellow !important;
 }
 
-/*specificiteit: 124 in order to override a css rule with !important from Joyn theme*/
-#copyright div nav .menu li a:hover {
-    text-decoration: underline !important;
-    color: yellow !important;
+/*2de kolom*/
+#footer a.footerbutton{
+	display: block;
+	margin: 20px auto;
+	width: 180px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #fe504f;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 }
 
-/*114*/
-#copyright nav ul.menu li a {
-    font-size: 16px;
+#footer a.footerbutton.first{
+	margin: 0 auto;
 }
 
+#footer a.footerbutton span {
+	display: block;
+	
+}  
+
+/*3de kolom*/
+#footer .widget_nav_menu .menu li {
+	line-height: 30px;
+	border: none;
+	margin: 5px 0;
+}
+
+#footer .widget_nav_menu .menu li:first-child {
+	margin-top: 0;
+} 
+	
+#footer .widget_nav_menu .menu a {
+	font-size: 16px;
+	line-height: 25px;
+	padding: 0;
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	text-align: right;
+} 
+
+#footer .widget_nav_menu .menu a::before {
+	padding-left: 25px;
+} 
+
+#footer li.current-menu-item > a {
+    color: #fe504f;
+ }
 
 
   
@@ -3209,27 +3412,6 @@ div.missioncol {
     margin-bottom: 6px !important;
 	}
     
-/*11 ways to give*/
-div.donationcol {
-      height: 350px;
-      margin-bottom: 1em;
-     }
-     
-.donationtextcol {
-      height: 350px;
-      margin-bottom: 1em;
-    }
-    
-/*11 roots and shoots survey*/
-/*
-  .jgrs-logo  {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    */
-   
 /*this image got on the French page the same mr as on the Ducth page*/
 div > img.wp-image-2665,  div > img.wp-image-2697 {
         width: 90.1%;
@@ -3326,10 +3508,5 @@ img.wp-image-2665, img.wp-image-2697 {
 
 
 
-    
-	
 }
-
-
-
 

@@ -1,18 +1,3 @@
-disclaimer / become a rs school / host a workshop / 4 laatste nieuwsberichten
-
-photo credits donations page
- 
-photo credits uniformiseren
-
-afprintbaarheid pags ctln
-
-volunteer types accordion
-
-lnks en gravity forms borderradius buttons: 2px
-
-resources pagina form door een gravity form vervangen met notificatie
-
-search van 404 page op hidden ziten 
 
 ***WC****
 
@@ -65,41 +50,54 @@ mailchimp beheer je voorkeuren wissen
 Waarom verschillende naam bij description and consumer name?
 
 
-in contactform ict@janegoodall.be vervangen door info@janegoodall.be
-
 ***plugins
-foutieve foutmelding the payment could not be refunded
+- foutieve foutmelding the payment could not be refunded
+- foutieve payment method eblijft staan; javascript in bestand filter[paymments.js moet aangepast worden 
+Mollie API Error - Error executing API call (request): The payment method does not support recurring type.
+- one time payment other in total gaayt niet wachten op gf
+- newsletter language van newsletter subscription komt nt door
+bestand class*request.php van GFM plugin aanpassen
 
 h2 hoger senegal
-groter lettertype input velden vd forms
-
-form paginas responsive maken
 
 php 7.1.15
 
-resources knopen anders groot maken
-
-mobiele menu ctln             
-
-shadur rond trailer janes journey
-
-
-photo credit hanging ape
- donationcol schrappen css
- h3 fonft family inconsequent tov h1 h2
- backup font family instellen in Joyn
- 
-hanging chimp: enkel 1400px en 1000 px gebrukt
+photo credit hanging ape; / hanging chimp: enkel 1400px en 1000 px gebrukt
 
 bruine kleur accordion
-foutieve payment method eblijft staan; javascript in bestand filter[paymments.js moet aangepast worden 
-meet lemba responsive; meet LMM op smartphone en tablet + anadere naam hero image
+
 email adressen encrypteren
-site map NL FR
-limit adoptions to some countries
-foto credit volunteering page
 
-footer
+PP
 
-vision and mission nt ok op smartphone
+vrede foto lichtjes verdonkeren
+
+become a rs school / host a workshop
+
+photo credits donations page / photo credits uniformiseren
+
+afprintbaarheid pags ctln
+
+search van 404 page op hidden ziten 
+
+submit hover bij forms
+
+nieuwe foto janes journey
+jane goodall foto uit Canada
+
+icoontje in buttons of footer
+
+[data-zn_icon]:before {
+    content: attr(data-zn_icon);
+}
+
+link PP actief maken met rood
+
+
+
+
+
+
+
+
 

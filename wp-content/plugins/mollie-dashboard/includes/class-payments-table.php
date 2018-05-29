@@ -18,7 +18,7 @@ class MDB_Payments_Table extends MDB_Items_Table
             $offset = ($page - 1) * $page_length;
             
             $payments = $mollie->payments->all($offset, $page_length);
-            $data = [];            
+            $data = array();            
             foreach ($payments as $payment)
             {
                 if ($payment->method == 'creditcard') {
@@ -27,7 +27,7 @@ class MDB_Payments_Table extends MDB_Items_Table
                     $cust_name = isset($payment->details->consumerName) ? $payment->details->consumerName : '';                    
                 }
                 
-                $data = array(
+                $data[] = array(
                     'payment_id'                => $payment->id,
                     'payment_amount'            => $payment->amount,
                     'payment_method'            => $payment->method,

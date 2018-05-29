@@ -181,9 +181,8 @@ class GFTeamleaderAddOn extends GFAddOn
  	// # HELPERS -------------------------------------------------------------------------------------------------------            
     public function get_field_values($entry, $form) 
     {
-    	//$field_values = array();
-    	$field_values = [];
-        
+    	$field_values = array();
+    	        
         foreach ($form['fields'] as $field) 
         {
             if (!isset($field['adminLabel']) || !$field['adminLabel']) {        // field has no name

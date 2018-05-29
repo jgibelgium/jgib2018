@@ -3,4 +3,6 @@
 3) testmodus uit Mollie weg
 4) Anti hacking plugin
 5) Bad behavior
+6) email naar de membership coordinators enablen
+
 

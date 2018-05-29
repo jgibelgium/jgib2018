@@ -248,7 +248,7 @@
 
 
 
-/*5. provide help op de checkout page*/
+/*4. provide help op de checkout page*/
 function jgi_ProvideHelp() {
    ob_start();
    
@@ -279,51 +279,8 @@ function jgi_ProvideHelp() {
 add_shortcode( 'provide-help_shortcode', 'jgi_ProvideHelp' );
 
 
-/*6. provide a copyright footer*/
-function jgi_ProvideLeftFooter() {
-   ob_start();
-   
-   $language =  pll_current_language( $field = 'slug' );
-   switch($language)
-	{
-		case "en":
-			$message = "Jane Goodall Institute Belgium asbl/vzw<br />
-			            +32(0)488/87.80.41<br />
-			            (call Tuesday 12h00 - 14h00 or Thursday 15h00 -17h00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/privacy-policy'>Privacy Policy</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map'>Site map</a>";
-			
-		break;
 
-		case "nl":
-			$message = "Jane Goodall Institute Belgium vzw<br />
-			            +32(0)488/87.80.41<br />
-			            (bel dinsdag 12u00 - 14u00 of donderdag 15u00 -17u00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/disclaimer'>Disclaimer</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-nl'>Site map</a>";
-			
-		break;
-
-		case "fr":
-			$message = "Jane Goodall Institute Belgium asbl<br />
-			            +32(0)488/87.80.41<br />
-			            (appelez mardi 12h00 - 14h00 ou jeudi 15h00 -17h00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/copyright-et-vie-privee'>Copyright et vie privée</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-fr'>Site map</a>";
-								
-		break;
-
-	}
- 	echo $message;
-	
-    return ob_get_clean();   
-} 
-add_shortcode( 'provide-footer_shortcode', 'jgi_ProvideLeftFooter' );
-
-/*7. provide 404 message*/
+/*5. provide 404 message*/
 function jgi_ErrorMessage() {
    ob_start();
    
@@ -353,7 +310,7 @@ function jgi_ErrorMessage() {
 } 
 add_shortcode( 'provide-error_shortcode', 'jgi_ErrorMessage' );
 
-/*8. wijzigingen in functions.js*/
+/*6. wijzigingen in functions.js*/
 function re_adapt_javascriptfunctions()
 {
     wp_dequeue_script('sf-functions'); /*ge enqueued op regel 312 van functions.php van joyn theme*/
@@ -363,14 +320,14 @@ function re_adapt_javascriptfunctions()
 }
 add_action('wp_enqueue_scripts', 're_adapt_javascriptfunctions', 1000);
 
-/*9. error messages field validations gravity forms*/
+/*7. error messages field validations gravity forms*/
 add_filter( 'gform_validation_message_8', 'change_message_into_nl', 10, 2 );
 add_filter( 'gform_validation_message_13', 'change_message_into_nl', 10, 2 );
 add_filter( 'gform_validation_message_15', 'change_message_into_nl', 10, 2 );
 add_filter( 'gform_validation_message_21', 'change_message_into_nl', 10, 2 );
-add_filter( 'gform_validation_message_23', 'change_message_into_nl', 10, 2 );
 add_filter( 'gform_validation_message_26', 'change_message_into_nl', 10, 2 );
-add_filter( 'gform_validation_message_28', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_35', 'change_message_into_nl', 10, 2 );
+add_filter( 'gform_validation_message_39', 'change_message_into_nl', 10, 2 );
 
 function change_message_into_nl( $message, $form ) {
     return "<div class='validation_error'>Er was een probleem bij het verzenden. Fouten staan hieronder aangeduid.</div>";
@@ -380,29 +337,26 @@ add_filter( 'gform_validation_message_9', 'change_message_into_fr', 10, 2 );
 add_filter( 'gform_validation_message_14', 'change_message_into_fr', 10, 2 );
 add_filter( 'gform_validation_message_17', 'change_message_into_fr', 10, 2 );
 add_filter( 'gform_validation_message_22', 'change_message_into_fr', 10, 2 );
-add_filter( 'gform_validation_message_24', 'change_message_into_fr', 10, 2 );
 add_filter( 'gform_validation_message_27', 'change_message_into_fr', 10, 2 );
-add_filter( 'gform_validation_message_29', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_37', 'change_message_into_fr', 10, 2 );
+add_filter( 'gform_validation_message_40', 'change_message_into_fr', 10, 2 );
 
 function change_message_into_fr( $message, $form ) {
     return "<div class='validation_error'>Il y avait un problème à la soumission. Les erreurs sont marquées ci-dessous.</div>";
 }
 
 
-
-
-
-/*10. limit payment methods for direct debts*/
+/*8. limit payment methods for direct debts*/
 function jgib_LimitPaymentMethods()
 {
-	if(is_page('become-chimp-guardian') or is_page('word-chimpvoogd') or is_page('parrainez-un-chimpanze') or is_page('ways-to-donate/donation') or is_page('mogelijkheden-tot-gift/gift') or is_page('possibilites-de-don/don')){
+	if(is_page('become-chimp-guardian') or is_page('word-chimpvoogd') or is_page('parrainez-un-chimpanze') or is_page('ways-to-donate/donate') or is_page('mogelijkheden-tot-gift/doe-een-gift') or is_page('possibilites-de-don/faites-un-don')){
 	wp_register_script('lpm_script', get_stylesheet_directory_uri() . '/js/filterpayments.js', array('jquery'),'1.1', true);
     wp_enqueue_script('lpm_script');	
 	}
 }
 add_action('wp_enqueue_scripts', 'jgib_LimitPaymentMethods');
 
-/*11. write field validation of gravity form in core log */
+/*9. write field validation of gravity form in core log */
 add_filter( 'gform_validation', 'log_validation_errors', 50 );
 function log_validation_errors( $validation_result ) {
     $form = $validation_result['form'];
@@ -459,4 +413,93 @@ add_shortcode('fourth-news-image_shortcode', 'jgib_FourthNewsImage' );
 
 /*13. put icon before page title*/
 
+/*10. provide left footer*/
+function jgi_ProvideLeftFooter() {
+   ob_start();
+   
+   $language =  pll_current_language( $field = 'slug' );
+   switch($language)
+	{
+		case "en":
+			$message = "<div class='text-left'>Jane Goodall Institute Belgium asbl/vzw<br />
+			            +32(0)488/87.80.41<br />
+			            (call Tuesday 12h00 - 14h00<br />
+			            or Thursday 15h00 -17h00)<br />
+			            info@janegoodall.be<br />
+			            <br />
+			            <a href='http://localhost:8080/jgib2017/privacy-declaration'>Privacy declaration</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map'>Site map</a></div>";
+			
+		break;
+
+		case "nl":
+			$message = "<div class='text-left'>Jane Goodall Institute Belgium vzw<br />
+			            +32(0)488/87.80.41<br />
+			            (bel dinsdag 12u00 - 14u00<br />
+			            of donderdag 15u00 -17u00)<br />
+			            info@janegoodall.be<br />
+			            <br />
+			            <a href='http://localhost:8080/jgib2017/privacy-verklaring'>Privacy verklaring</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-nl'>Site map</a></div>";
+			
+		break;
+
+		case "fr":
+			$message = "<div class='text-left'>Jane Goodall Institute Belgium asbl<br />
+			            +32(0)488/87.80.41<br />
+			            (appelez mardi 12h00 - 14h00<br />
+			            ou jeudi 15h00 -17h00)<br />
+			            info@janegoodall.be<br />
+			            <br />
+			            <a href='http://localhost:8080/jgib2017/declaration-vie-privee'>Déclaration vie privée</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-fr'>Site map</a></div>";
+								
+		break;
+
+	}
+ 	echo $message;
+	
+    return ob_get_clean();   
+} 
+add_shortcode( 'leftfooter_shortcode', 'jgi_ProvideLeftFooter' );
+
+
+/*11. provide buttons in footer*/
+function jgib_ProvideButtons() {
+   ob_start();
+   
+   $language =  pll_current_language( $field = 'slug' );
+   switch($language)
+	{
+		case "en":
+			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/chimpanzee-adoption'><span>Adoptions<span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/ways-to-donate'><span>Donations</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/subscribe-to-newsletter'><span>Newsletter</span></a></div>";
+			
+		break;
+
+		case "nl":
+			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/chimpansee-adoptie'><span>Adopties<span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/mogelijkheden-tot-gift'><span>Giften</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/inschrijven-voor-nieuwsbrief'><span>Nieuwsbrief</span></a></div>";
+			
+		break;
+
+		case "fr":
+			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/adoption-chimpanze'><span>Adoptions<span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/possibilites-de-don'><span>Dons</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/sinscrire-au-newsletter'><span>Newsletter</span></a></div>";
+								
+		break;
+
+	}
+ 	echo $buttons;
+	
+    return ob_get_clean();   
+} 
+add_shortcode( 'buttons_shortcode', 'jgib_ProvideButtons' );
+
+/*12. provide countries for dropdown of Gravity forms*/
+add_filter( 'gform_countries', 'remove_country' );
+function remove_country( $countries ){
+    return array( 'Albania', 'Andorra', 'Austria', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Czech republic', 'Cyprus', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia',
+     'Liechtenstein', 'Lithuania', 'Luxemburg', 'Macedonia', 'Malta', 'Moldavia', 'Monaco', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'Ukraine', 'United Kingdom', 'Vatican City' );
+}
 ?>

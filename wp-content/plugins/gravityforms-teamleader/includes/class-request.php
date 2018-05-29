@@ -48,6 +48,8 @@ class GFT_Request
             $fields[GFT_FIELD_CITY]         = $this->gval($data, GFM_FIELD_CITY);
             $fields[GFT_FIELD_COUNTRY]      = $this->gval($data, GFM_FIELD_COUNTRY);
             $fields[GFT_FIELD_OPTIONS]      = $this->gval($data, GFM_FIELD_OPTIONS);
+			//door RE toegevoegd
+		    $fields[GFT_FIELD_LANGUAGE]     = $this->gval($data, GFM_FIELD_LANGUAGE);
             
             // add custom fields
             $custom_fields = $this->get_custom_fields($data, $plugin_settings);           
@@ -65,8 +67,7 @@ class GFT_Request
     
     private function get_custom_fields($data, $plugin_settings) 
     {
-        //$custom_fields = array();  
-        $custom_fields = [];         
+        $custom_fields = array();  
         for ($n = 1; $n <= GFT_NUM_TL_CUSTOM_FIELDS;  $n++) 
         {
             $name = 'custom_' . $n;

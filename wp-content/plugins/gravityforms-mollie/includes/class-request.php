@@ -211,8 +211,7 @@ class GFM_Request
 
     public function get_custom_fields($form, $fields)
     {
-        $custom_fields = [];  
-        //$custom_fields = array();             
+        $custom_fields = array();             
         foreach ($form['fields'] as $fld) {
             if (strpos($fld->cssClass, GFM_TYPE_CUSTOM) !== false) {
                 $val = $this->gval($fields, $fld->adminLabel);
