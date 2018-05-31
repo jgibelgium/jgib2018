@@ -98,10 +98,10 @@
     add_action('wp_enqueue_scripts', 'joyn_re_script_enqueue');
     
 //2. backend taal menu
-    function re_language_menu(){
+    function jgib_language_menu(){
     register_nav_menu('secondary','Language Menu');
     }
-    add_action('init','re_language_menu');   
+    add_action('init','jgib_language_menu');   
 
 
 /*3. override van sf_header_wrap in joyn ten behoeve van het taalmenu in de front end*/
@@ -311,14 +311,14 @@ function jgi_ErrorMessage() {
 add_shortcode( 'provide-error_shortcode', 'jgi_ErrorMessage' );
 
 /*6. wijzigingen in functions.js*/
-function re_adapt_javascriptfunctions()
+function jgib_adapt_javascriptfunctions()
 {
     wp_dequeue_script('sf-functions'); /*ge enqueued op regel 312 van functions.php van joyn theme*/
     wp_register_script('child_theme_sf-functions', get_stylesheet_directory_uri().'/js/functions.js', array('jquery'), NULL, TRUE);
     /*functions.js in de footer laden met FALSE blijkt niet te gaan*/
     wp_enqueue_script('child_theme_sf-functions', get_stylesheet_directory_uri().'/js/functions.js', array('jquery'));
 }
-add_action('wp_enqueue_scripts', 're_adapt_javascriptfunctions', 1000);
+add_action('wp_enqueue_scripts', 'jgib_adapt_javascriptfunctions', 1000);
 
 /*7. error messages field validations gravity forms*/
 add_filter( 'gform_validation_message_8', 'change_message_into_nl', 10, 2 );
@@ -422,36 +422,18 @@ function jgi_ProvideLeftFooter() {
 	{
 		case "en":
 			$message = "<div class='text-left'>Jane Goodall Institute Belgium asbl/vzw<br />
-			            +32(0)488/87.80.41<br />
-			            (call Tuesday 12h00 - 14h00<br />
-			            or Thursday 15h00 -17h00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/privacy-declaration'>Privacy declaration</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map'>Site map</a></div>";
+            <i>To empower people of all ages to make a difference for all living things</i></div>";
+			break;
 			
-		break;
-
 		case "nl":
 			$message = "<div class='text-left'>Jane Goodall Institute Belgium vzw<br />
-			            +32(0)488/87.80.41<br />
-			            (bel dinsdag 12u00 - 14u00<br />
-			            of donderdag 15u00 -17u00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/privacy-verklaring'>Privacy verklaring</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-nl'>Site map</a></div>";
-			
-		break;
+			            <i>Om mensen van alle leeftijden in staat te stellen een verschil te maken voor alle levende wezens</i></div>";
+			break;
 
 		case "fr":
 			$message = "<div class='text-left'>Jane Goodall Institute Belgium asbl<br />
-			            +32(0)488/87.80.41<br />
-			            (appelez mardi 12h00 - 14h00<br />
-			            ou jeudi 15h00 -17h00)<br />
-			            info@janegoodall.be<br />
-			            <br />
-			            <a href='http://localhost:8080/jgib2017/declaration-vie-privee'>Déclaration vie privée</a>&nbsp;<a href='http://localhost:8080/jgib2017/site-map-fr'>Site map</a></div>";
-								
-		break;
+			            <i>Encourager les gens de tous âges à agir pour le bénéfice de l'ensemble des êtres vivants</i></div>";
+			break;
 
 	}
  	echo $message;
@@ -502,4 +484,8 @@ function remove_country( $countries ){
     return array( 'Albania', 'Andorra', 'Austria', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Czech republic', 'Cyprus', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia',
      'Liechtenstein', 'Lithuania', 'Luxemburg', 'Macedonia', 'Malta', 'Moldavia', 'Monaco', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'Ukraine', 'United Kingdom', 'Vatican City' );
 }
+
+
+ 
+
 ?>

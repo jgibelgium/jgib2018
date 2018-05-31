@@ -87,14 +87,14 @@ jane goodall foto uit Canada
 
 icoontje in buttons of footer
 
-[data-zn_icon]:before {
-    content: attr(data-zn_icon);
-}
-
 link PP actief maken met rood
 
 
+home page nt ok in FF
 
+home page footer menu home link nl nt rood indien actief
+
+site map kan beter op sm
 
 
 

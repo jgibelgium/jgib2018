@@ -4,5 +4,9 @@
 4) Anti hacking plugin
 5) Bad behavior
 6) email naar de membership coordinators enablen
+7) Goofle analytics
+8) Back WPUp plugin
+9) SEO
+
 
 
