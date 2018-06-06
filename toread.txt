@@ -70,14 +70,14 @@ See also: https://polylang.pro/doc/polylang-wc-installation/
 * De breadcrumb verschijnt niet op smartphone en kleine smartphone.
 
 * Lettertypes
-text: adobe caslon pro
-buttons: FuturaBT-Medium
-Gravity forms (ook buttons): adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
-Top bar menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
-Hoofmenu: FuturaBT-Medium, sans-serif;
-Footer menu: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+text: Georgia
+buttons: sans-serif gerenderd als Arial in Chrome
+Gravity forms (ook buttons): Georgia
+Top bar menu: "Source Sans Pro",arial,helvetica,sans-serif;
+Hoofdmenu: sans-serif gerenderd als Arial in Chrome
+Footer menu: "Source Sans Pro",arial,helvetica,sans-serif;
 Mobile menu: 
-h1 - h6: Futura sans-serif;
+h1 - h6: sans-serif gerenderd als Arial in Chrome
 
 * Font-weights:
 h2 komt veelvuldig voor in de timelines. Hier is font-weight: 400. Op de andere paginas is h2 per css op font-weight: 700 gezet.
@@ -87,7 +87,8 @@ De lettergrootte van het top bar menu komt slechts gepast online tot stand.
 
 * Colors:
 #92b10f is olive color. Upon hovering one shade of is added linearly from top to bottom.
-#839f0d is dark green. Upon hovering one shade of is added linearly from top to bottom.
+#f5a919 is vivid orange. Upon hovering some #ddd940a gets in.
+The color of the logo is #f5ce19 of rgb(245,206,25). Di. vivid yellow.
 
 * Mollie - Teamleader
 Iedere geslaagde betaling komt als een contact in TL terecht.
@@ -111,4 +112,5 @@ li.gfm-payment-method select {
     margin-top: 20px !important;
 }
 
-
+* https://www.theguardian.com/science/animal-magic/2014/apr/03/jane-goodall-80-chimp
+Mr H sinds 1994.

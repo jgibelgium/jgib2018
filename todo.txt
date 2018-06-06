@@ -62,8 +62,6 @@ h2 hoger senegal
 
 php 7.1.15
 
-photo credit hanging ape; / hanging chimp: enkel 1400px en 1000 px gebrukt
-
 bruine kleur accordion
 
 email adressen encrypteren
@@ -74,28 +72,28 @@ vrede foto lichtjes verdonkeren
 
 become a rs school / host a workshop
 
-photo credits donations page / photo credits uniformiseren
+photo credits uniformiseren: (place) name/org
 
 afprintbaarheid pags ctln
 
 search van 404 page op hidden ziten 
 
-submit hover bij forms
-
-nieuwe foto janes journey
-jane goodall foto uit Canada
-
 icoontje in buttons of footer
 
-link PP actief maken met rood
 
-
-home page nt ok in FF
-
-home page footer menu home link nl nt rood indien actief
 
 site map kan beter op sm
 
+overzicht campagnes
+
+hero image campagnes in Belgiumto be choosen
+
+form soms ajax soms niet
+
+home page nt ok in FF: lege bar; #main-container.clearfix::before in FF
+FF checkboxen en select nt ok padding top
+
+transitie
 
 
 

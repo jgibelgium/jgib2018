@@ -349,7 +349,7 @@ function change_message_into_fr( $message, $form ) {
 /*8. limit payment methods for direct debts*/
 function jgib_LimitPaymentMethods()
 {
-	if(is_page('become-chimp-guardian') or is_page('word-chimpvoogd') or is_page('parrainez-un-chimpanze') or is_page('ways-to-donate/donate') or is_page('mogelijkheden-tot-gift/doe-een-gift') or is_page('possibilites-de-don/faites-un-don')){
+	if(is_page('become-chimp-guardian') or is_page('word-chimpvoogd') or is_page('parrainez-un-chimpanze') or is_page('donations/donate') or is_page('giften/doe-een-gift') or is_page('dons/faites-un-don')){
 	wp_register_script('lpm_script', get_stylesheet_directory_uri() . '/js/filterpayments.js', array('jquery'),'1.1', true);
     wp_enqueue_script('lpm_script');	
 	}
@@ -452,21 +452,21 @@ function jgib_ProvideButtons() {
 	{
 		case "en":
 			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/chimpanzee-adoption'><span>Adoptions<span></a>
-			            <a class='footerbutton' href='http://localhost:8080/jgib2017/ways-to-donate'><span>Donations</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/donations'><span>Donations</span></a>
 			            <a class='footerbutton' href='http://localhost:8080/jgib2017/subscribe-to-newsletter'><span>Newsletter</span></a></div>";
 			
 		break;
 
 		case "nl":
 			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/chimpansee-adoptie'><span>Adopties<span></a>
-			            <a class='footerbutton' href='http://localhost:8080/jgib2017/mogelijkheden-tot-gift'><span>Giften</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/giften'><span>Giften</span></a>
 			            <a class='footerbutton' href='http://localhost:8080/jgib2017/inschrijven-voor-nieuwsbrief'><span>Nieuwsbrief</span></a></div>";
 			
 		break;
 
 		case "fr":
 			$buttons = "<div><a class='footerbutton first' href='http://localhost:8080/jgib2017/adoption-chimpanze'><span>Adoptions<span></a>
-			            <a class='footerbutton' href='http://localhost:8080/jgib2017/possibilites-de-don'><span>Dons</span></a>
+			            <a class='footerbutton' href='http://localhost:8080/jgib2017/dons'><span>Dons</span></a>
 			            <a class='footerbutton' href='http://localhost:8080/jgib2017/sinscrire-au-newsletter'><span>Newsletter</span></a></div>";
 								
 		break;

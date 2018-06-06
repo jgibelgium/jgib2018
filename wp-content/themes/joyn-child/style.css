@@ -34,9 +34,15 @@
 }
 
 .page-content p, .page-content div{
-    /*font-family: Geneva, Verdana, "DejaVu Sans", sans-serif;*/
-    font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+    //font-family: Geneva, Verdana, "DejaVu Sans", sans-serif;/*old website*/
+    //font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;/*Canadian website*/
+    //font-family: Futura, Verdana, "DejaVu Sans", sans-serif;
+    //font-family: 'Open Sans';/*interdep website*/
+    //font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: Georgia, serif;/*Canadian website*/
 }
+
+
 
 /*overriding in the style tag*/
 .page-content a {
@@ -62,11 +68,13 @@
 
 h1,h3,h4,h5,h6 {
     font-family:Futura, sans-serif !important;
+    //font-family: sans-serif !important;
 }
 
 h2 {
      font-family:Futura, sans-serif !important;
      letter-spacing: 0.025rem;
+     //font-family: sans-serif !important;
 }
 
 
@@ -270,7 +278,11 @@ div.fancy-heading.fancy-image.light-style h3 {
     line-height: 29px;
     padding-bottom: 0.25em;
     }
-   
+ 
+ .browser-ff .jgi-indent {
+ 	  text-indent: -20px;
+ }  
+ 
 /*=====*/
 /*Videos and presentations*/
 /*=====*/
@@ -351,11 +363,21 @@ li.gfield div.charleft {
 }
 
 div.gform_footer input.gform_button.button {
-	background-color: #fe504f !important;
+	//background-color: #fe504f !important;
+	background-color: #ff9000 !important;
 	color: #fff ; 
+	text-shadow: 0.05px 0.05px 0.05px rgba(0,0,0,0.5);
 	border-radius: 2px;
 	font-size: 20px;
 	width: auto !important;
+}
+
+div.gform_footer input.gform_button.button:hover, div.gform_footer input.gform_button.button:focus  {
+	//background: linear-gradient(#ff9000, #eb8500) !important;
+	background-color: #eb8500 !important;
+	text-shadow: 0.1px 0.1px 0.1px rgba(0,0,0,0.6);
+	box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.6) !important;
+	//background-color: yellow !important;
 }
 
 div.ginput_container.ginput_container_total {
@@ -392,7 +414,33 @@ div.gform_wrapper.gf_browser_chrome .ginput_complex select {
 	background-color: #fff;
 }
 
+/*make other choice visible*/
+.gchoice_38_6_5, .gchoice_39_6_5, .gchoice_40_6_5 {
+	height: 36px;
+}
 
+#input_38_6_other, #input_39_6_other, #input_40_6_other  {
+	height: 36px;
+}
+
+.gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
+    margin-top: 0 !important;
+}
+
+/*firefox adaptations*/
+/*Joyn theme uses an own arrow image for select tag in FF*/
+.browser-ff select {
+background-image: url("http://localhost:8080/jgib2017/wp-content/themes/joyn/images/down-arrow@2x.png");
+margin-top:0;
+}
+
+.browser-ff .gform_wrapper .gfield_radio li label {
+	padding-top:3px;
+}
+
+.browser-ff .ginput_container input[type="text"] {
+	margin-top: 0;
+}
 
 /*=====*/
 /*Surveys of parent pages*/
@@ -434,7 +482,6 @@ div.surveycol.displaynone {
    }
  
 .gcsurveytext h2 {
-        //font-family: FuturaBT-Medium, sans-serif !important;
         font-weight: bold;
 }
   
@@ -486,7 +533,6 @@ div.surveycol.displaynone {
      font-weight: normal;
      color: #333333;
   } 
- 
   
 .spb_accordion .ui-accordion .ui-accordion-content {
      padding-left: 20px;
@@ -537,10 +583,6 @@ nav.footer-menu ul.menu li {
     float: none;
   }
   
-
-
- 
-   
 /*==========*/
 /*Pages*/
 /*==========*/
@@ -598,12 +640,20 @@ div.ourwork .spb-asset-content, div.news .spb-asset-content {
      }
 
 /*2. Jane Goodall page*/
+/*
 .page-id-1934 .page-heading, .page-id-1936 .page-heading, .page-id-1938 .page-heading {
     	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
     	background-size: 100%;
     	background-position: 0% 45% !important;
  }
- 
+ */
+
+.page-id-1934 .page-heading.fancy-heading, .page-id-1936 .page-heading.fancy-heading, .page-id-1938 .page-heading.fancy-heading{
+        background-position: 0% 37% !important;
+     }
+     
+
+
 /*3. Dr Jane page*/
 div.spb_swift-slider div.caption-content div.caption-excerpt p {
 	color: #FFFFFF;
@@ -676,7 +726,8 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background-position: 0% 20% !important;
 }
 
-/*11. annual reports*/
+/*11. annual reports*//*not used*/
+/*
 .page-id-29 .page-heading.fancy-heading, .page-id-100 .page-heading.fancy-heading, .page-id-1267 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -686,8 +737,14 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     border-radius: 1px;
     box-shadow: 0.1px 0.1px 0.1px 0 #87734f;
 }
+*/
+
+/*11 Our work*/
+.page-id-18 .page-heading.fancy-heading {
+    background-position: 0% 40% !important;
+}
     
-/*12.Burundi  reforestation*/
+/*12.Burundi reforestation*/
 .page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
     background-position: 0% 60% !important;
 }
@@ -744,7 +801,7 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     }
     
     
-/*18. roots&shoots*/
+/*18. jane goodall's roots&shoots*/
 .jgquote {
         float: right;
      }
@@ -783,9 +840,11 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background: #fff;
     }
     
-/*21. ways to give*/
-.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
-    background-position: 0% 55% !important;
+
+    
+/*Youth empowermnt*/
+.page-id-2170 .page-heading.fancy-heading {
+    background-position: 0% 15% !important;
     }
     
 /*22. host a workshop in your school*/
@@ -799,14 +858,14 @@ img.wp-image-4183 {
 	box-shadow: none;
 }
 
-/*24. faq*/
+/*24. faq RS*/
 .page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     }
     
 /*24. youth corner*/
 /*Still used? NO*/
-
+/*
 .page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
     background-position: center top !important;
     }
@@ -816,7 +875,7 @@ img.wp-image-4180, img.wp-image-4179, img.wp-image-4190, img.wp-image-4191, img.
         border-radius: 0;
         box-shadow: none;
     }
- 
+ */
    
 /*25. chimps of gombe*/
 .page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
@@ -834,10 +893,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
     background-position: 0% 30% !important;
     }
     
-
-	
-
-	
 /*27. get in touch page*/
 #gform_submit_button_25, #gform_submit_button_26, #gform_submit_button_27 {
 	margin-left:15px;
@@ -869,7 +924,7 @@ font-size: 20px;
     display: none;
 }
 
-/*33. FAQ Fi1D*/
+/*33. FAQ Fi1D*//*afgeschaft dor Lise*/
 .page-id-1620 .page-heading.fancy-heading, .page-id-5523 .page-heading.fancy-heading, .page-id-5538 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     }
@@ -936,11 +991,6 @@ div.toggle-wrap h4.spb_toggle {
 	margin-top:0;
 }
 
-
-.gchoice_35_30_6, .gchoice_x_x_x, .gchoice_x_x_x {
-	height: 36px;
-}
-
 .page-id-7091 .gform_wrapper ul.gfield_radio li input+input, .page-id-7093 .gform_wrapper ul.gfield_radio li input+input, .page-id-7095 .gform_wrapper ul.gfield_radio li input+input {
     margin-left: 20px;
     margin-bottom: 0;
@@ -961,41 +1011,33 @@ div.toggle-wrap h4.spb_toggle {
     //background-position: 0% 30% !important;
      }     
 
-/*39. Donation*/
+/*38. donations*/
+.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
+    background-position: 0% 55% !important;
+    }
+
+/*38.1. Donate*/
 .page-id-6664 .gfm-form label.gfield_label, .page-id-6666 .gfm-form label.gfield_label , .page-id-6668 .gfm-form label.gfield_label  {
     font-size: 20px !important;
 }
 
-/*Donation succeeded*/
+/*38.2 Donation succeeded*/
 .page-id-6664 .gform_wrapper .gfield_radio li label, .page-id-6666 .gform_wrapper .gfield_radio li label, .page-id-6668 .gform_wrapper .gfield_radio li label {
 	margin-left: 20px;
     height: 36px;
 }
 
-/*Donation failed*/
+/*38.3 Donation failed*/
 .page-id-6664 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6666 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6668 .gf_browser_chrome.gform_wrapper .gfield_radio li input{
 	margin-top:0;
 }
-
-
 
 .page-id-6664 .gform_wrapper ul.gfield_radio li input+input, .page-id-6666 .gform_wrapper ul.gfield_radio li input+input, .page-id-6668 .gform_wrapper ul.gfield_radio li input+input{
 	 margin-left: 20px;
 	 margin-bottom: 0;
 }
 
-/*make other choice visible*/
-.gchoice_38_6_5, .gchoice_39_6_5, .gchoice_40_6_5 {
-	height: 36px;
-}
 
-#input_38_6_other, #input_39_6_other, #input_40_6_other  {
-	height: 36px;
-}
-
-.gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
-    margin-top: 0 !important;
-}
 
 
 /*39. resources*/
@@ -1019,6 +1061,11 @@ div.toggle-wrap h4.spb_toggle {
     	background-size: 100%;
     	background-position: 0% 45% !important;
  }
+ 
+ /*41. Chimpanzees and great apes*/
+.page-id-1807 .page-heading.fancy-heading, .page-id-1785 .page-heading.fancy-heading{
+    background-position: 0% 42% !important;
+    } 
     
 /*==========*/
 /*Woocommerce*/
@@ -1452,9 +1499,9 @@ div.ziptextcol {
      }
  
 /*footer*/
-footer {display:block;} 
+#footer {display:block;} 
 
-footer .widget_nav_menu .menu li {
+#footer .widget_nav_menu .menu li {
 	line-height: 30px;
 	border: none;
 	margin: 5px 0;
@@ -1462,7 +1509,7 @@ footer .widget_nav_menu .menu li {
 	
 }  
 	
-footer .widget_nav_menu .menu a {
+#footer .widget_nav_menu .menu a {
 	font-size: 14px;
 	line-height: 25px;
 	padding: 0;
@@ -1470,12 +1517,12 @@ footer .widget_nav_menu .menu a {
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 } 
 
-footer li.current-menu-item > a {
+#footer li.current-menu-item > a {
     color: #fe504f;
  }
 
 /*1ste kolom*/
-footer div.text-left {
+#footer div.text-left {
 	text-align: center;
 	font-size: 14px;
 	line-height: 25px;
@@ -1488,7 +1535,7 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 }
 
 /*2de kolom*/
-footer a.footerbutton{
+#footer a.footerbutton{
 	display: block;
 	margin: 20px auto;
 	width: 180px;
@@ -1502,11 +1549,11 @@ footer a.footerbutton{
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 }
 
-footer a.footerbutton.first{
+#footer a.footerbutton.first{
 	margin: 0 auto;
 }
 
-footer a.footerbutton span {
+#footer a.footerbutton span {
 	display: block;
 	
 } 
@@ -2019,16 +2066,16 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
     } 
      
 /*footer*/
-footer {display:block;} 
+#footer {display:block;} 
 
-footer .widget_nav_menu .menu li {
+#footer .widget_nav_menu .menu li {
 	line-height: 30px;
 	border: none;
 	margin: 5px 0;
 	text-align: center;
 }  
 	
-footer .widget_nav_menu .menu a {
+#footer .widget_nav_menu .menu a {
 	font-size: 14px;
 	line-height: 25px;
 	padding: 0;
@@ -2036,7 +2083,7 @@ footer .widget_nav_menu .menu a {
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 } 
 
-footer li.current-menu-item > a {
+#footer li.current-menu-item > a {
     color: #fe504f;
  } 
 
@@ -2054,7 +2101,7 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 }
 
 /*2de kolom*/
-footer a.footerbutton{
+#footer a.footerbutton{
 	display: block;
 	margin: 20px auto;
 	width: 180px;
@@ -2068,11 +2115,11 @@ footer a.footerbutton{
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 }
 
-footer a.footerbutton.first{
+#footer a.footerbutton.first{
 	margin: 0 auto;
 }
 
-footer a.footerbutton span {
+#footer a.footerbutton span {
 	display: block;
 } 
 
@@ -2498,18 +2545,17 @@ span.ginput_full.address_line_1 {
 }
 
 /*footer*/
-
-footer section {
+#footer section {
 	margin-top: 25px;
 }
 
-footer .widget_nav_menu .menu li {
+#footer .widget_nav_menu .menu li {
 	line-height: 30px;
 	border: none;
 	margin: 5px 0;
 }
 
-footer .widget_nav_menu .menu a {
+#footer .widget_nav_menu .menu a {
 	font-size: 16px;
 	line-height: 25px;
 	padding: 0;
@@ -2517,21 +2563,21 @@ footer .widget_nav_menu .menu a {
 	text-align: right;
 } 
 
-footer .widget_nav_menu .menu a::before {
+#footer .widget_nav_menu .menu a::before {
 	padding-left: 25px;
 } 
 
-footer li.current-menu-item > a {
+#footer li.current-menu-item > a {
     color: #fe504f;
  }
 
-footer div a:hover  {
+#footer div a:hover  {
     text-decoration: underline !important;
     color: yellow !important;
 }
 
 /*1ste kolom*/
-footer div.text-left {
+#footer div.text-left {
 	font-size: 16px;
     line-height: 25px;
     color: #fff;
@@ -2559,7 +2605,7 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 }
 
 /*2de kolom*/
-footer a.footerbutton{
+#footer a.footerbutton{
 	display: block;
 	margin: 20px auto;
 	width: 180px;
@@ -2573,11 +2619,11 @@ footer a.footerbutton{
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 }
 
-footer a.footerbutton.first{
+#footer a.footerbutton.first{
 	margin: 0 auto;
 }
 
-footer a.footerbutton span {
+#footer a.footerbutton span {
 	display: block;
 	
 }  
@@ -2624,21 +2670,25 @@ h6.count-subject {
     }
     
 .post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
-    	top: 260px;
+    	top: 250px;
     }
     
 .post-106 .ourworkdesc, .post-108 .ourworkdesc {
-    	height: 280px;
+    	height: 270px;
     }
-    
-.post-106 > section:nth-child(6) > div:nth-child(2) > div > section > div {
+  
+.post-106 > section:nth-child(8) > div > div > section > div {
     	overflow-x: hidden;
+    	//background-color: yellow;
     }
-    
-.post-108 > section:nth-child(6) > div:nth-child(2) > div > section > div {
+  
+  
+.post-108 > section:nth-child(8) > div > div > section > div {
     	overflow-x: hidden;
+    	//background-color: yellow;
     }
-    
+  
+   
 /*2 Dr Jane page*/
    .swiper-slide .caption-content > h2 {
        font-size: 30px !important;
@@ -3109,8 +3159,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
     border-radius: 25px;
     position: relative;
     top: 1.917em;
-    //height:108px;
-    //line-height:108px;
+    margin-left: 0.5em;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
@@ -3140,7 +3189,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
 
 /*7. donation button*/
 #main-navigation > div > ul > li:last-child {
-    background-color: #6c8720;
+    background-color: #f5a919;
     border-width: 1px;
     border-style: solid;
     border-color: #222 #333 #333;
@@ -3158,19 +3207,19 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
  }
  
 #main-navigation > div > ul > li:last-child span {
-    background-color: #6c8720;
+    background-color: #f5a919;
     color: #FFF;
     vertical-align: middle;
     text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
  }
 
 #main-navigation > div > ul > li:last-child:hover {
-    background: linear-gradient(#6c8720 70%, #5f771c); 
+    background: linear-gradient(#f5a919 70%, #dd940a); 
     box-shadow: 0 1.2px 1.2px rgba(0,0,0,0.3);
  }
  
 #main-navigation > div > ul > li:last-child a:hover span {
-    background: #6c8720; 
+    background: #f5a919; 
     color: #FFF;
     vertical-align: middle;
     
@@ -3223,33 +3272,33 @@ div.zipcol, div.ziptextcol {
    
 
 /*13. footer*/
-footer section {
+#footer section {
 	margin-top: 25px;
 }
 
-footer .widget_nav_menu .menu li {
+#footer .widget_nav_menu .menu li {
 	line-height: 30px;
 	border: none;
 	margin: 5px 0;
 }
 
-footer .widget_nav_menu .menu a {
+#footer .widget_nav_menu .menu a {
 	font-size: 16px;
 	line-height: 25px;
 	padding: 0;
-	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,0.9);
 	text-align: right;
 } 
 
-footer .widget_nav_menu .menu a::before {
+#footer .widget_nav_menu .menu a::before {
 	padding-left: 25px;
 } 
 
-footer li.current-menu-item > a {
+#footer li.current-menu-item > a {
     color: #fe504f;
  }
 
-footer div a:hover  {
+#footer div a:hover  {
     text-decoration: underline !important;
     color: yellow !important;
 }
@@ -3257,11 +3306,11 @@ footer div a:hover  {
   
 
 /*1ste kolom*/
-footer div.text-left {
+#footer div.text-left {
 	font-size: 16px;
     line-height: 25px;
     color: #fff;
-    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);	
+    text-shadow: 0.1px 0.1px 0 rgba(0,0,0,0.9);	
 }
 
 #text-5.widget {
@@ -3285,7 +3334,7 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 }
 
 /*2de kolom*/
-footer a.footerbutton{
+#footer a.footerbutton{
 	display: block;
 	margin: 20px auto;
 	width: 180px;
@@ -3296,20 +3345,20 @@ footer a.footerbutton{
 	text-align: center;
 	font-size: 16px;
 	text-decoration: none;
-	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
+	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,0.9);
+	text-decoration: none !important;
 }
 
-footer a.footerbutton.first{
+#footer a.footerbutton.first{
 	margin: 0 auto;
 }
 
-footer a.footerbutton span {
+#footer a.footerbutton span {
 	display: block;
 	
 }  
 
 /*3de kolom*/
-
 #nav_menu-2.widget.widget_nav_menu li:first-child, #nav_menu-3.widget.widget_nav_menu li:first-child, #nav_menu-4.widget.widget_nav_menu li:first-child {
 	margin-top: 0;
 }
@@ -3337,23 +3386,35 @@ h6.count-subject {
         box-shadow: none;
     }
     
-.ourworkreadmore, .newsreadmore {
+.ourworkreadmore {
         position: absolute;
         top: 120px;
      }
-    
+ 
+.newsreadmore {
+        position: absolute;
+        top: 180px;
+     }    
        
-.ourworkdesc, .newsdesc {
+.ourworkdesc {
         height: 150px;
     }
+    
+.newsdesc {
+        height: 200px;
+    }
+        
+
+ 
         
 .post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
-    	top: 180px;
+    	top: 160px;
     }
     
 .post-106 .ourworkdesc, .post-108 .ourworkdesc {
-    	height: 200px;
+    	height: 180px;
     }
+
 
 /*2. dr jane page*/
 /*slider*/
