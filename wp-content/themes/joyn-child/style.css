@@ -34,12 +34,7 @@
 }
 
 .page-content p, .page-content div{
-    //font-family: Geneva, Verdana, "DejaVu Sans", sans-serif;/*old website*/
-    //font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;/*Canadian website*/
-    //font-family: Futura, Verdana, "DejaVu Sans", sans-serif;
-    //font-family: 'Open Sans';/*interdep website*/
-    //font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-family: Georgia, serif;/*Canadian website*/
+    font-family: Georgia, serif;
 }
 
 
@@ -66,15 +61,8 @@
     box-shadow: none;
 }
 
-h1,h3,h4,h5,h6 {
-    font-family:Futura, sans-serif !important;
-    //font-family: sans-serif !important;
-}
-
 h2 {
-     font-family:Futura, sans-serif !important;
      letter-spacing: 0.025rem;
-     //font-family: sans-serif !important;
 }
 
 
@@ -162,7 +150,11 @@ div.fancy-heading.fancy-image.light-style h3 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
-
+/*Joyn impact text*/
+p.impact-text{
+	text-align: right;
+	padding-right: 100px;
+}
 
 
 /*=====*/
@@ -215,7 +207,7 @@ div.fancy-heading.fancy-image.light-style h3 {
 }
 
 .contentright b {
-    font-family: FuturaBT-Medium, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.025rem;
 }
 
@@ -363,7 +355,6 @@ li.gfield div.charleft {
 }
 
 div.gform_footer input.gform_button.button {
-	//background-color: #fe504f !important;
 	background-color: #ff9000 !important;
 	color: #fff ; 
 	text-shadow: 0.05px 0.05px 0.05px rgba(0,0,0,0.5);
@@ -373,11 +364,9 @@ div.gform_footer input.gform_button.button {
 }
 
 div.gform_footer input.gform_button.button:hover, div.gform_footer input.gform_button.button:focus  {
-	//background: linear-gradient(#ff9000, #eb8500) !important;
 	background-color: #eb8500 !important;
 	text-shadow: 0.1px 0.1px 0.1px rgba(0,0,0,0.6);
 	box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.6) !important;
-	//background-color: yellow !important;
 }
 
 div.ginput_container.ginput_container_total {
@@ -402,7 +391,7 @@ div.gform_wrapper.gf_browser_chrome .ginput_complex select {
 }
 
 .ginput_complex label {
-	font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;
+	font-family: Georgia, serif;
 }
 
 @media only screen and (max-width:641px) {
@@ -495,7 +484,7 @@ div.surveycol.displaynone {
 
 .gcsurvey-btn a.sf-button {
         font-size: 16px;
-        font-family: FuturaBT-Medium,sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         border-radius: 2px;
 }
      
@@ -504,7 +493,7 @@ div.surveycol.displaynone {
 /*=====*/
 .photo-credit p {
     position: relative;
-    font-family: FuturaBT-Medium,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px ;
     color: #2a2a2e;
     text-align: center;
@@ -516,7 +505,7 @@ div.surveycol.displaynone {
 /*Accordions*/
 /*=====*/
 .spb_accordion_section {
-     font-family: adobe-caslon-pro, Georgia;
+     font-family: Georgia, serif;
   }
  
 .spb_accordion .spb_accordion_section h4 {
@@ -569,7 +558,7 @@ div.zipcol, div.ziptextcol {
 /*=====*/
 #footer { 
 	padding: 0;
-    font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+    font-family: "Source Sans Pro", Arial, Helvetica,sans-serif;
     font-style: normal;
     font-weight: 500;
 }
@@ -596,12 +585,16 @@ div.swift-slider-pagination {
 	text-align: center;
 }
 
+.homepageheading h2{
+	font-size: 26px;
+}
+
 .sf-count-asset .count-divider {
        display: none;
     }
   
 h6.count-subject {
-        font-family: FuturaBT-Medium, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         letter-spacing: 0.025rem;
         text-transform: none;
@@ -623,7 +616,7 @@ div.ourwork .spb-asset-content, div.news .spb-asset-content {
         display: table;
      }
      
-.ourwork p, news p {
+.ourwork p {
         color: #fff;
         font-weight: 600;
         font-size: 24px;
@@ -639,35 +632,9 @@ div.ourwork .spb-asset-content, div.news .spb-asset-content {
         color: #F06A00;
      }
 
-/*2. Jane Goodall page*/
-/*
-.page-id-1934 .page-heading, .page-id-1936 .page-heading, .page-id-1938 .page-heading {
-    	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
-    	background-size: 100%;
-    	background-position: 0% 45% !important;
- }
- */
-
-.page-id-1934 .page-heading.fancy-heading, .page-id-1936 .page-heading.fancy-heading, .page-id-1938 .page-heading.fancy-heading{
-        background-position: 0% 37% !important;
-     }
-     
-
-
-/*3. Dr Jane page*/
-div.spb_swift-slider div.caption-content div.caption-excerpt p {
-	color: #FFFFFF;
-}
-
-/*4. Want to know a little more?*/
- .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
-        background-position: 0% 7% !important;
-     }
-     
-    
-/*5. who we are*/
+/*2. who we are*/
 .page-id-16 .page-heading.fancy-heading, .page-id-98 .page-heading.fancy-heading, .page-id-169 .page-heading.fancy-heading{
-        background-position: 0% 43% !important;
+        background-position: 0% 55% !important;
      }
 
  #who4icons {
@@ -679,12 +646,28 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
         border: none;
         box-shadow: none;
     }
-    
-  
+
+/*3. Jane Goodall page*/
+.page-id-1934 .page-heading.fancy-heading, .page-id-1936 .page-heading.fancy-heading, .page-id-1938 .page-heading.fancy-heading{
+        background-position: 0% 37% !important;
+     }
      
-/*6. our mission */
+
+
+/*4. About Jane page*/
+div.spb_swift-slider div.caption-content div.caption-excerpt p {
+	color: #FFFFFF;
+}
+
+/*5. Want to know a little more?*/
+ .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
+        background-position: 0% 7% !important;
+     }
+     
+     
+/*6. vision and mission */
 .page-id-25 .page-heading.fancy-heading, .page-id-118 .page-heading.fancy-heading, .page-id-176 .page-heading.fancy-heading{
-    background-position: top !important;
+     background-position: 0% 20% !important;
 }
 
  div.missioncol {
@@ -699,6 +682,8 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
  .missiontextcol1 > div, .missiontextcol2 > div {
     margin: auto !important;
    } 
+   
+   
 
 /*7. our people*/
 .page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
@@ -706,19 +691,14 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
 }
 
 
-/*8. our team our board*/
+/*8. our team*/
 .page-id-31 .page-heading.fancy-heading, .page-id-126 .page-heading.fancy-heading, .page-id-192 .page-heading.fancy-heading{
     background-position: 0% 23% !important;
 }
 
-.jgib-active strong {
-     font-family: FuturaBT-Medium, sans-serif;
-    letter-spacing: 0.025rem;
-}
-
 /*9. our board*/
 .page-id-33 .page-heading.fancy-heading, .page-id-124 .page-heading.fancy-heading, .page-id-182 .page-heading.fancy-heading{
-    background-position: 0% 25% !important;
+    background-position: center 5% !important;
 }
 
 /*10. our ambassadors*/
@@ -726,8 +706,8 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background-position: 0% 20% !important;
 }
 
-/*11. annual reports*//*not used*/
-/*
+/*11. annual reports*//*draft: actually not used*/
+
 .page-id-29 .page-heading.fancy-heading, .page-id-100 .page-heading.fancy-heading, .page-id-1267 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -737,27 +717,50 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     border-radius: 1px;
     box-shadow: 0.1px 0.1px 0.1px 0 #87734f;
 }
-*/
 
-/*11 Our work*/
-.page-id-18 .page-heading.fancy-heading {
+
+/*12. Our work*/
+.page-id-18 .page-heading.fancy-heading, .page-id-128 .page-heading.fancy-heading, .page-id-184 .page-heading.fancy-heading {
     background-position: 0% 40% !important;
 }
-    
-/*12.Burundi reforestation*/
-.page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
-    background-position: 0% 60% !important;
+
+/*13. forest planting*/
+.page-id-8365 .page-heading.fancy-heading, .page-id-8363 .page-heading.fancy-heading, .page-id-8361 .page-heading.fancy-heading{
+    background-position: 0% 70% !important;
 }
 
-.wp-image-6148 {
-	width: 40%;
+/*14. Belgium reforestation*/
+.page-id-1285 .page-heading.fancy-heading, .page-id-1287 .page-heading.fancy-heading, .page-id-1289 .page-heading.fancy-heading{
+    background-position: 0% 35% !important;
+}
+
+/*15. Reforestation in africa*/
+.page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
+    background-position: 0% 58% !important;
+}
+
+img.wp-image-6148 {
+	width: 30%;
+	box-shadow: none;
 }
 
 .post-143 h3, .post-45 h3 {
     margin-top: 0;
 }
 
-/*13. gombe*/
+
+  
+/*16. snares*/
+.page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
+     background-position: 0% 28% !important;
+}
+   
+/*17. public awareness*/
+.page-id-188 .page-heading.fancy-heading, .page-id-132 .page-heading.fancy-heading, .page-id-59 .page-heading.fancy-heading{
+    background-position: 0% 35% !important;
+}
+
+/*18. gombe*/
 .page-id-51 .page-heading.fancy-heading, .page-id-206 .page-heading.fancy-heading, .page-id-151 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -768,27 +771,29 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
         margin: auto;
    }
    */
-  
+/*  
 .donationp {
       padding-top: 25px;
 }
-  
-/*14. snares*/
-.page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
-    background-position: top !important;
-}
-   
-/*15. public awareness*/
-.page-id-188 .page-heading.fancy-heading, .page-id-132 .page-heading.fancy-heading, .page-id-59 .page-heading.fancy-heading{
-    background-position: 0% 35% !important;
-}
-   
-/*16. Senegal*/
+*/   
+
+    
+    
+/*19. youth empowerment*/
+.page-id-2166 .page-heading.fancy-heading, .page-id-2168 .page-heading.fancy-heading, .page-id-2170 .page-heading.fancy-heading {
+    background-position: 0% 20% !important;
+    }
+    
+.jgquote {
+        float: right;
+     }
+     
+/*20. Senegal*/
 .page-id-47 .page-heading.fancy-heading, .page-id-147 .page-heading.fancy-heading, .page-id-200 .page-heading.fancy-heading{
     background-position: 0% 45% !important;
 }
    
-/*17. research*/
+/*research*//*momenteel draft*/
 .page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
     background-position: 0% 35% !important;
     }
@@ -798,20 +803,19 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
        float: none;
        margin-left: auto;
        margin-right: auto;
+    }     
+     
+/*21. Forest in one day*/
+.page-id-8564 .page-heading.fancy-heading, .page-id-8581 .page-heading.fancy-heading, .page-id-8583 .page-heading.fancy-heading {
+    background-position: 0% 60% !important;
     }
-    
-    
-/*18. jane goodall's roots&shoots*/
-.jgquote {
-        float: right;
-     }
   
-/*19. peace day*/
+/*22. peace day*/
 .janepeacequote {
         text-align: justify;    
     }
     
-/*20. recycle4chimps*/
+/*23. recycle4chimps*/
 #recycatable {
         width: 100%;
         margin: 2em 0;
@@ -840,44 +844,41 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     background: #fff;
     }
     
+/*24. Partnerships*/
+.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
+    background-position: 0% 35% !important;
+    } 
+    
+/*25. youth page*/
+.page-id-4045 .page-heading.fancy-heading, .page-id-4048 .page-heading.fancy-heading, .page-id-4050 .page-heading.fancy-heading{
+     background-position: 0% 15% !important;
+    }    
 
     
-/*Youth empowermnt*/
-.page-id-2170 .page-heading.fancy-heading {
-    background-position: 0% 15% !important;
-    }
-    
-/*22. host a workshop in your school*/
+/*26. host a workshop in your school*/
 ul.workshopschool {
   	 list-style-type: none;
     }
 
-/*23. start a rs group*/
+/*27. start a rs group*/
 img.wp-image-4183 {
 	border: none;
 	box-shadow: none;
 }
 
-/*24. faq RS*/
-.page-id-2154 .page-heading.fancy-heading, .page-id-2156 .page-heading.fancy-heading, .page-id-2158 .page-heading.fancy-heading{
-    background-position: 0% 30% !important;
-    }
-    
-/*24. youth corner*/
-/*Still used? NO*/
-/*
-.page-id-1811 .page-heading.fancy-heading, .page-id-1813 .page-heading.fancy-heading, .page-id-1787 .page-heading.fancy-heading{
-    background-position: center top !important;
-    }
-    
-img.wp-image-4180, img.wp-image-4179, img.wp-image-4190, img.wp-image-4191, img.wp-image-4192, img.wp-image-4218, img.wp-image-4182 {
-    	border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
- */
+/*28. resources*/
+.instpage > div {
+	text-align:center;
+}
+
+.instpage a {
+	width:100%;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 2px;
+}
    
-/*25. chimps of gombe*/
+/*29. chimps of gombe*/
 .page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
     background-position: 0% 19% !important;
     }
@@ -888,49 +889,15 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
         box-shadow: none;
     }
   
-/*26. youth page*/
-.page-id-4045 .page-heading.fancy-heading, .page-id-4048 .page-heading.fancy-heading, .page-id-4050 .page-heading.fancy-heading{
-    background-position: 0% 30% !important;
-    }
-    
-/*27. get in touch page*/
-#gform_submit_button_25, #gform_submit_button_26, #gform_submit_button_27 {
-	margin-left:15px;
-}
-
-#gform_confirmation_wrapper_25, #gform_confirmation_wrapper_26, #gform_confirmation_wrapper_27{
-	margin-top:15px;
-}
-    
-/*28. 404 page*/
-.error404  .page-heading {
-	 display: none;
-} 
-    
-/*29. jgi au monde*/
-#tablepress-1 {
-font-size: 20px;	
-}
-
-.page-id-5351 .embed-container {
-	position: relative;
-    padding-bottom: 80%;
-    height: 0;
-    max-width: 100%;
-}
-
-/*32. Search results page*/
-.search-results .page-heading, .search-no-results .page-heading {
-    display: none;
-}
-
-/*33. FAQ Fi1D*//*afgeschaft dor Lise*/
+/*FAQ Fi1D*//*afgeschaft door Lise*/
+/*
 .page-id-1620 .page-heading.fancy-heading, .page-id-5523 .page-heading.fancy-heading, .page-id-5538 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     }
+    */
     
-/*34. Chimpanzees and great apes*/
-.page-id-1805 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
+/*30. Chimpanzees and great apes*/
+.page-id-1805 .page-heading.fancy-heading, .page-id-1807 .page-heading.fancy-heading, .page-id-1785 .page-heading.fancy-heading{
     background-position: 0% 42% !important;
     } 
     
@@ -940,23 +907,30 @@ font-size: 20px;
         box-shadow: none;
     }   
 
-/*35. Partnerships*/
-.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
-    background-position: 0% 35% !important;
-    }    
+  
+      
 
-/*36. FAQ Dr. Jane*/
+/*31. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
     background-position: 0% 15% !important;
     } 
     
-/*37. Adoptions: private*/
+    
+/*32. volunteering*/
+.page-id-69 .page-heading.fancy-heading, .page-id-165 .page-heading.fancy-heading, .page-id-218 .page-heading.fancy-heading{
+        background-position: 0% 55% !important;
+    }    
+    
+   
+    
+    
+/*33. Adoptions: private*/
 .page-id-7440 .page-heading.fancy-heading, .page-id-7442 .page-heading.fancy-heading, .page-id-7444 .page-heading.fancy-heading{
     background-position: 0% 60% !important;
     } 
 
 
-/*37.1 Chimpanzee adoption*/
+/*33.1 Chimpanzee adoption*/
 .page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
     background-position: 0% 30% !important;
     } 
@@ -977,7 +951,7 @@ div.toggle-wrap h4.spb_toggle {
     border: none;  
   }
   
-/*37.2 Become chimp guardian*/  
+/*33.2 Become chimp guardian*/  
 .page-id-7091 .gform_wrapper .gfield_radio li label, .page-id-7093 .gform_wrapper .gfield_radio li label, .page-id-7095 .gform_wrapper .gfield_radio li label {
 	margin-left: 20px;
     height: 36px;
@@ -996,38 +970,38 @@ div.toggle-wrap h4.spb_toggle {
     margin-bottom: 0;
 }
     
-/*37.3 Meet Lemba, Mambou and Mbebo*/
+/*33.3 Meet Lemba, Mambou and Mbebo*/
 .wp-image-3140, .wp-image-3141, .wp-image-3142 {
 	width: 25%;
 }    
     
-/*37.4 you have become a chimp guardian */
+/*33.4 you have become a chimp guardian */
 .page-id-6720 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     //background-position: 0% 30% !important;
     } 
 
-/*37.5 adoption proces failed*/
+/*33.5 adoption proces failed*/
 .page-id-6722 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
     //background-position: 0% 30% !important;
      }     
 
-/*38. donations*/
+/*34. donations*/
 .page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
     background-position: 0% 55% !important;
     }
 
-/*38.1. Donate*/
+/*34.1. Donate*/
 .page-id-6664 .gfm-form label.gfield_label, .page-id-6666 .gfm-form label.gfield_label , .page-id-6668 .gfm-form label.gfield_label  {
     font-size: 20px !important;
 }
 
-/*38.2 Donation succeeded*/
+/*34.2 Donation succeeded*/
 .page-id-6664 .gform_wrapper .gfield_radio li label, .page-id-6666 .gform_wrapper .gfield_radio li label, .page-id-6668 .gform_wrapper .gfield_radio li label {
 	margin-left: 20px;
     height: 36px;
 }
 
-/*38.3 Donation failed*/
+/*34.3 Donation failed*/
 .page-id-6664 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6666 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-6668 .gf_browser_chrome.gform_wrapper .gfield_radio li input{
 	margin-top:0;
 }
@@ -1038,34 +1012,45 @@ div.toggle-wrap h4.spb_toggle {
 }
 
 
-
-
-/*39. resources*/
-/*form nog vervangen door een gravirty form*/
-/* font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;*/
-
-.instpage > div {
-	text-align:center;
+/*35. 404 page*/
+.error404  .page-heading {
+	 display: none;
+} 
+    
+/*36. jgi au monde*/
+#tablepress-1 {
+font-size: 20px;	
 }
 
-.instpage a {
-	width:100%;
-	font-size:16px;
-	font-family: FuturaBT-Medium, sans-serif;
-	border-radius: 2px;
+.page-id-5351 .embed-container {
+	position: relative;
+    padding-bottom: 80%;
+    height: 0;
+    max-width: 100%;
 }
 
-/*40. Subscribe to newsletter*/
+/*37. Search results page*/
+.search-results .page-heading, .search-no-results .page-heading {
+    display: none;
+}
+
+/*38. Subscribe to newsletter*//*niet gebruikt*/
 .page-id-6603 .page-heading, .page-id-6607 .page-heading, .page-id-6611 .page-heading {
     	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/jgib_color.jpg");
     	background-size: 100%;
     	background-position: 0% 45% !important;
  }
  
- /*41. Chimpanzees and great apes*/
-.page-id-1807 .page-heading.fancy-heading, .page-id-1785 .page-heading.fancy-heading{
-    background-position: 0% 42% !important;
-    } 
+/*39. get in touch page*/
+#gform_submit_button_25, #gform_submit_button_26, #gform_submit_button_27 {
+	margin-left:15px;
+}
+
+#gform_confirmation_wrapper_25, #gform_confirmation_wrapper_26, #gform_confirmation_wrapper_27{
+	margin-top:15px;
+} 
+    
+ 
     
 /*==========*/
 /*Woocommerce*/
@@ -1296,6 +1281,12 @@ article .post-info {
         width: 100%;
         margin-left: 0;
     }
+    
+/*Joyn impact-text*/
+p.impact-text{
+	text-align: center;
+	padding-right: 0;
+}    
 
 /*language menu*/    
 div[class^='menu-language-menu'] {
@@ -1596,7 +1587,7 @@ h6.count-subject {
     
     
     
-/*2. dr Jane page*/
+/*2. about Jane page*/
 .page-id-22 .page-heading {
         display: table;
         width: 100%;
@@ -1611,7 +1602,7 @@ h6.count-subject {
         white-space: normal;
     }
     
-/*3. mission*/
+/*3. mission and vision*/
 .missiontextcol1, .missiontextcol2 {
         height: auto;
     }
@@ -1630,8 +1621,13 @@ h6.count-subject {
         margin: 0 auto;
     }
     
-/*5. Burundi reforestation*/
-.wp-image-6148 {
+/*5. our ambassadors*/
+.page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
+    background-position: 60% 20% !important;
+}    
+    
+/*6. Burundi reforestation*/
+img.wp-image-6148 {
 	width: auto;
 	float: none;
     display: block;
@@ -1639,7 +1635,7 @@ h6.count-subject {
 }
 
 /*6. RS*/
-        
+ /*       
 div > img.wp-image-2665 {
         width: 90.1%;
     }
@@ -1650,9 +1646,9 @@ img.wp-image-2665 {
         border: none;
         box-shadow: none;
       }
-    
+ */   
         
-/*7. jane goodalls roots&shoots*/
+/*7. youth empowerment*/
 .jgquote {
         width: 100%;
         margin-bottom: 1em;
@@ -1698,7 +1694,8 @@ img.wp-image-1582-bis {
          margin-right: 25%;
      }
      
- /*10. run4chimps*/
+ /*10. run4chimps: private*/
+
 .post-666 h2 {
          text-align: center;
      }
@@ -1710,7 +1707,8 @@ img.wp-image-1582-bis {
 .post-666 .thumbleft img {
          float: none;
      }
-     
+ 
+    
 /*11. recycle4chimps*/
        
 .post-660 .viewcontent {
@@ -1749,7 +1747,12 @@ img.wp-image-1582-bis {
     text-transform: uppercase;
     }
     
-/*12 chimpanzees and great apes*/
+ /*12. partnerships*/
+.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
+    background-position: 35% 60% !important;
+    }    
+    
+/*13. chimpanzees and great apes*/
 .wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
     	display: block;
     	width: 300px;
@@ -1757,39 +1760,37 @@ img.wp-image-1582-bis {
     	margin: 20px auto;
     	float: none;
     }
-    
-/*13. youth*/
-.post-4045 > section:last-child  {
-        background-color: yellow;
-    }
-    
-/*14. ways to give*/
-.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
-    background-position: 40% 55% !important;
-    }  
-
-/*15. our ambassadors*/
-.page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
-    background-position: 60% 20% !important;
-}
-
-/*16. research*/
-.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
-    background-position: 30% 35% !important;
-    }
-    
-/*17. partnerships and gifts*/
-.page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
-    background-position: 35% 60% !important;
-    }   
-
-/*18. Meet Lemba, Mambou en Mbebo*/
+ 
+/*14. Meet Lemba, Mambou en Mbebo*/
 .wp-image-3140, .wp-image-3141, .wp-image-3142 {
 	width: 50%;
 	margin-left:25%;
     margin-right:25%;
     margin-bottom: 20px;
-}   
+}     
+ 
+/*15. donations*/
+.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
+    background-position: 40% 55% !important;
+    }  
+
+
+
+/*research*//*draft*/
+.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
+    background-position: 30% 35% !important;
+    }
+    
+/*16. jgi worldwide*/
+#tablepress-1 tr td {
+	display:block;
+}  
+
+#tablepress-1 tr {
+	border-top: 0.5px solid #555;
+	border-bottom: 0.5px solid #555;
+	
+}
       
 /*==========*/
 /*Posts*/
@@ -1839,6 +1840,13 @@ div.cartimage, div.checkoutimage {
         margin-left: 0;
     }
     
+/*Joyn impact-text*/
+p.impact-text{
+	text-align: center;
+	padding-right: 0;
+}     
+
+/*language menu*/    
 div[class^='menu-language-menu'] {
     display: block;
     background: -webkit-linear-gradient(#555,#000) !important;
@@ -1940,9 +1948,7 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
        color: #fff;
    }
    
-
-   
- /*necessary completion for touch devices*/
+/*necessary completion for touch devices*/
  .hover {
    -webkit-user-select: none;
    -webkit-touch-callout: none;        
@@ -2125,11 +2131,6 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 
 /*3de kolom*/
 
- 
-   
-
-
-   
 /*Woocommerce*/
 .cart_totals tr.shipping td {
     	width: 40%;
@@ -2165,7 +2166,7 @@ h6.count-subject {
     
     
     
-/*2. dr Jane page*/
+/*2. about Jane page*/
    
 .page-id-22 .page-heading {
         display: table;
@@ -2201,7 +2202,7 @@ h6.count-subject {
     }
     
 /*5. Burundi reforestation*/
-.wp-image-6148 {
+img.wp-image-6148 {
 	    width: 75%;
 	    float: none;
         display: block;
@@ -2209,6 +2210,7 @@ h6.count-subject {
     }
     
 /*6. RS*/
+/*
 div > img.wp-image-2665 {
         width: 90.1%;
     }
@@ -2219,9 +2221,9 @@ div > img.wp-image-2665 {
         border: none;
         box-shadow: none;
       }
-    
+ */   
         
- /*7. jane goodalls roots&shoots*/
+ /*7. youth empowerment*/
  .jgquote {
         width: 100%;
         margin-bottom: 1em;
@@ -2267,7 +2269,7 @@ div > img.wp-image-2665 {
          margin-right: 25%;
      }
      
- /*10. run4chimps*/
+ /*run4chimps: private*/
  .post-666 h2 {
          text-align: center;
      }
@@ -2328,7 +2330,7 @@ div > img.wp-image-2665 {
     	float: none;
     }
     
-/*13. partnerships and gifts*/
+/*13. partnerships*/
 .page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
     background-position: 50% 60% !important;
     }   
@@ -2689,7 +2691,7 @@ h6.count-subject {
     }
   
    
-/*2 Dr Jane page*/
+/*2 about Jane page*/
    .swiper-slide .caption-content > h2 {
        font-size: 30px !important;
    }
@@ -2832,7 +2834,7 @@ img.wp-image-2665 {
 #top-bar {
     border-bottom: 0px;
     text-transform: uppercase;
-    font-family: "futura-pt","Source Sans Pro",arial,helvetica,sans-serif;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     background: -webkit-linear-gradient(#555,#000) !important;
@@ -2977,7 +2979,7 @@ div.full-center #main-navigation ul.menu > li > a {
 #header nav.std-menu ul#menu-main-menu-english > li > a,  #header nav.std-menu ul#menu-main-menu-french > li > a, #header nav.std-menu ul#menu-main-menu-dutch > li > a {
     font-size: 16px;
     text-transform: uppercase;
-    font-family: FuturaBT-Medium, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
 }
 
@@ -3102,15 +3104,12 @@ div.full-center nav li.menu-item.sf-mega-menu > ul.sub-menu {
 
 /*stylimg of the submenu items (eg our people) */
 li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a {
-    //color: #FFF !important;
-    //color: #FFF;
     font-size: 20px !important;
     line-height: 22px !important;
-    font-family: FuturaBT-Medium, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     font-weight: normal !important;
     margin-top: 10px !important;
     padding-top: 5px !important;
-    //text-shadow: 0 -0.5px 0 rgba(0,0,0,0.3);
     text-shadow: 0.2px 0.2px 0 rgba(0,0,0,0.3);
     }
  
@@ -3265,6 +3264,8 @@ div.header-right ul.menu > li.menu-search > a {
       padding-bottom: 0 !important;
   } 
   
+  
+  
 /*12. zip pattern*/
 div.zipcol, div.ziptextcol {
        height: 500px;  
@@ -3369,6 +3370,13 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
  /*==========*/
 
 /*1. home page*/
+div[data-slide-title="Reforestation in Belgium and Africa"], div[data-slide-title="Herbebossing in België en Afrika"], div[data-slide-title="Reforestation en Belgique et Afrique"] {
+	background-position: center 33% !important;
+}
+
+div[data-slide-title="Youth empowerment"], div[data-slide-title="Empowerment van jeugd"], div[data-slide-title="Autonomisation de la jeunesse"] {
+	background-position: center 20% !important;
+}
  
 .sf-count-asset .count-number {
           font-size: 48px !important;
@@ -3404,9 +3412,6 @@ h6.count-subject {
         height: 200px;
     }
         
-
- 
-        
 .post-106 .ourworkreadmore, .post-108 .ourworkreadmore {
     	top: 160px;
     }
@@ -3416,14 +3421,13 @@ h6.count-subject {
     }
 
 
-/*2. dr jane page*/
+/*2. about jane page*/
 /*slider*/
 .swiper-slide .caption-content > h2 {
        font-size: 30px !important;
    }
 
 .caption-excerpt p {
-    font-family: adobe-caslon-pro, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 24px !important;
     line-height: 29px !important;
@@ -3456,13 +3460,18 @@ div.missioncol {
     width: 59.8%;
     }
     
-/*5. reforestation*/
+/*4.5 Our people*/
+.boardcol > div {
+	background-position-y: 45%;
+}    
+    
+/*5. reforestation Burundi*/
 .wp-image-1275 {
       width: 35.1%;
   }
     
     
-/*6. roots&shoots*/
+/*6. youth empowerment*/
 .jgquote {
         max-width: 600px;
         margin: 0 10px 10px 20px;
@@ -3471,6 +3480,10 @@ div.missioncol {
 .wp-image-1582 {
         width: 51.9%;
     }
+    
+.rsvideo > div {
+	padding: 0 10%;
+}
     
 /*7. peace day*/
 .wp-image-1582-bis {

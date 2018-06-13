@@ -34,14 +34,9 @@ hoofding product page verkleinen
 
 bronze membership nt ok
 
-****FOTOS****
-some guys with Mister H voor banner van de campaigns
-our board
-donation hero image vert krimpen
-
 ***unused pages****
 jeugdhoek
-press
+
 *****
 mailchimp beheer je voorkeuren wissen
 
@@ -66,27 +61,13 @@ bruine kleur accordion
 
 email adressen encrypteren
 
-PP
-
 vrede foto lichtjes verdonkeren
-
-become a rs school / host a workshop
-
-photo credits uniformiseren: (place) name/org
 
 afprintbaarheid pags ctln
 
-search van 404 page op hidden ziten 
+
 
 icoontje in buttons of footer
-
-
-
-site map kan beter op sm
-
-overzicht campagnes
-
-hero image campagnes in Belgiumto be choosen
 
 form soms ajax soms niet
 
@@ -94,6 +75,30 @@ home page nt ok in FF: lege bar; #main-container.clearfix::before in FF
 FF checkboxen en select nt ok padding top
 
 transitie
+
+
+nieuwe p our work Lise
+
+RS icon op alle rs paginas jane goodall roots and shoots belgium  xxxx
+
+
+mambou in youtube steken
+
+
+old peace videos
+
+waar michael neugebauer
+
+edge checken
+
+
+
+
+Questions to Swiftideas
+- timeline is not available on sm
+- gap on home page in FF
+- text of animate dheadline flows out of the box on sm
+- search van 404 page werkt niet
 
 
 

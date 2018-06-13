@@ -86,9 +86,12 @@ h2 komt veelvuldig voor in de timelines. Hier is font-weight: 400. Op de andere 
 De lettergrootte van het top bar menu komt slechts gepast online tot stand.
 
 * Colors:
-#92b10f is olive color. Upon hovering one shade of is added linearly from top to bottom.
-#f5a919 is vivid orange. Upon hovering some #ddd940a gets in.
-The color of the logo is #f5ce19 of rgb(245,206,25). Di. vivid yellow.
+Adoption button: #92b10f is olive color. Upon hovering one shade of is added linearly from top to bottom.
+Donation button: #f5a919 is vivid orange. Upon hovering some #ddd940a gets in.
+The color of the JGIB logo is #f5ce19 of rgb(245,206,25). Di. vivid yellow.
+The color of the brownish JGIB logo is #6a3c00 of rgb(106,60,0).
+The text color is #58595b. This is very dark greyish blue.
+The quotes color is #333. This is very dark grey.
 
 * Mollie - Teamleader
 Iedere geslaagde betaling komt als een contact in TL terecht.
@@ -114,3 +117,13 @@ li.gfm-payment-method select {
 
 * https://www.theguardian.com/science/animal-magic/2014/apr/03/jane-goodall-80-chimp
 Mr H sinds 1994.
+
+* Photo credits:
+- https://multimedia.europarl.europa.eu/en/ep-vice-president-silvana-koch-mehrin-and-dr-jane-goodall-famous-primatologist-hold-press-conference_20101122_Goodall_Press_159_p#ssh
+to find the photographer's name.
+- https://janegoodall.ca/who-we-are/jane-goodall/ Hugo Van Lawick
+- https://www.smh.com.au/lifestyle/we-can-put-the-world-on-the-right-track-why-jane-goodall-isnt-slowing-down-20180213-h0vzo0.html  Hugo Van Lawick
+
+* In order to send free documents a statement has to be taken up in the privacy declaration.
+* Sliding of the timelines is not available on smartphone.
+ 
