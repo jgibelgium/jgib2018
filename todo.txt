@@ -77,30 +77,34 @@ FF checkboxen en select nt ok padding top
 transitie
 
 
-nieuwe p our work Lise
+nieuwe p our work Lise FR
 
 RS icon op alle rs paginas jane goodall roots and shoots belgium  xxxx
 
 
 mambou in youtube steken
-
-
-old peace videos
-
-waar michael neugebauer
-
-edge checken
-
+a:focus op smartphone
+nieuwe fots apen
 
 
 
 Questions to Swiftideas
-- timeline is not available on sm
-- gap on home page in FF
-- text of animate dheadline flows out of the box on sm
+- timeline is not available on sm 
+- gap on home page in FF en Edge / content-divider-wrap
+- text of animate headline flows out of the box on sm
 - search van 404 page werkt niet
+- Google maps invalid key
 
 
+Edge problemen:
+- nutteloze bar op home page
+- radiobuttons en checkboxes gekleurde achtergrond
+
+
+IE problemen
+- radiobuttons en checkboxes gekleurde achtergrond
+- submit buton
+- geen padding links van read mor elink
 
 
 

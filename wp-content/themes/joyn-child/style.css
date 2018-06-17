@@ -37,8 +37,6 @@
     font-family: Georgia, serif;
 }
 
-
-
 /*overriding in the style tag*/
 .page-content a {
     color: #428BCA;
@@ -80,6 +78,10 @@ h2 {
 #mobile-menu li > a {
 	text-transform: uppercase;
 	font-weight: 700;
+	} 
+
+#mobile-menu li > a:focus {
+	color: yellow;
 	} 
   
 #mobile-menu ul li ul li {
@@ -545,13 +547,22 @@ div.surveycol.displaynone {
 /*=====*/
 /*Zip pattern*/
 /*=====*/
-div.zipcol, div.ziptextcol {
+div.zipcol > div, div.ziptextcol {
     height: 400px;
   }
-   
+
+div.ziptextcol {
+	display: flex;
+	align-items: center;
+}
+
+/*werkt niet in Edge;ook niet nodig in Chrome met flex*/
+/*   
 .ziptextcol > div {
-    margin: auto !important;
-  } 
+        margin: auto !important;
+  }
+  */
+
  
 /*=====*/
 /*Footer*/
@@ -670,21 +681,17 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
      background-position: 0% 20% !important;
 }
 
- div.missioncol {
+ div.missioncol > div {
      height: 400px;
  }
 
    
  .missiontextcol1, .missiontextcol2 {
     height: 400px;
+    display: flex;
+    align-items:center;
    }
    
- .missiontextcol1 > div, .missiontextcol2 > div {
-    margin: auto !important;
-   } 
-   
-   
-
 /*7. our people*/
 .page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
     background-position: 0% 60% !important;
@@ -860,12 +867,6 @@ ul.workshopschool {
   	 list-style-type: none;
     }
 
-/*27. start a rs group*/
-img.wp-image-4183 {
-	border: none;
-	box-shadow: none;
-}
-
 /*28. resources*/
 .instpage > div {
 	text-align:center;
@@ -889,13 +890,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
         box-shadow: none;
     }
   
-/*FAQ Fi1D*//*afgeschaft door Lise*/
-/*
-.page-id-1620 .page-heading.fancy-heading, .page-id-5523 .page-heading.fancy-heading, .page-id-5538 .page-heading.fancy-heading{
-    background-position: 0% 30% !important;
-    }
-    */
-    
 /*30. Chimpanzees and great apes*/
 .page-id-1805 .page-heading.fancy-heading, .page-id-1807 .page-heading.fancy-heading, .page-id-1785 .page-heading.fancy-heading{
     background-position: 0% 42% !important;
@@ -907,9 +901,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
         box-shadow: none;
     }   
 
-  
-      
-
 /*31. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
     background-position: 0% 15% !important;
@@ -920,9 +911,6 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 .page-id-69 .page-heading.fancy-heading, .page-id-165 .page-heading.fancy-heading, .page-id-218 .page-heading.fancy-heading{
         background-position: 0% 55% !important;
     }    
-    
-   
-    
     
 /*33. Adoptions: private*/
 .page-id-7440 .page-heading.fancy-heading, .page-id-7442 .page-heading.fancy-heading, .page-id-7444 .page-heading.fancy-heading{
@@ -1258,8 +1246,8 @@ article .post-info {
 	min-height: 600px;
 }
 
-/*Article categories headings*/
-.category .page-heading {
+/*Article categories and archive headings*/
+.archive .page-heading {
     	background-image: url("http://localhost:8080/jgib2017/wp-content/uploads/2017/04/green_background.jpg");
     	background-size: 100%;
 }
@@ -1417,10 +1405,10 @@ ul.social-icons li {
  */
    
 /*surveys*/
-.surveycol {
+.surveycol > div {
         height: 400px;
     }
-    
+ 
 .surveytext {
         position: absolute;
         top: 50%;
@@ -1432,9 +1420,12 @@ ul.social-icons li {
      
 /*survey of the grandchild pages*/
 .gcsurveycol {
-        height: 400px;
         margin-bottom: 25px;
-    }
+ }
+
+.gcsurveycol > div {
+        height: 400px;
+  }
     
 .spb_content_element.gcsurveycol {
         margin-bottom: 0;   
@@ -1663,17 +1654,23 @@ img.wp-image-2665 {
     }
     
 /*8. campaigns in Belgium survey*/
-.post-61 > section:nth-child(1) > div:nth-child(2), .post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
-        height: 450px;
-    }
-    
-.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
-        height: 500px;
-    }
-    
-.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
-        height: 550px;
-    }
+
+ /*forest in one day*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(1) > div:nth-child(2) {
+	height: 550px;
+}
+
+
+/*peace day*/
+.post-61 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2) {
+	height: 700px;
+}
+
+
+/*recycle4chimps*/   
+.post-61 > section:nth-child(3) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2),  .post-212 > section:nth-child(3) > div:nth-child(2) {
+	height: 700px;
+}    
     
     
     
@@ -1791,6 +1788,21 @@ img.wp-image-1582-bis {
 	border-bottom: 0.5px solid #555;
 	
 }
+
+/*17. start RS*/
+img.wp-image-rsb {
+	display: none;
+} 
+
+/*18. registration RS*/
+img.wp-image-8916 {
+	width: 10%;
+	position: absolute;
+	top: 60px;
+	right:25px;
+	border:none;
+	box-shadow: none;
+}    
       
 /*==========*/
 /*Posts*/
@@ -1974,11 +1986,11 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
 */
     
  /*surveys*/
- .surveycol {
+ .surveycol > div {
         height: 400px;
     }
-    
- .surveytext {
+
+.surveytext {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -1989,9 +2001,17 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
      
  /*survey of the grandchild pages*/
  .gcsurveycol {
-        height: 300px;
         margin-bottom: 25px;
-    }
+   }
+    
+ .gcsurveycol > div {
+        height: 300px;
+  }
+  
+ 
+.boardcol > div {
+	  background-position-y: 35%;
+}  
     
  .spb_content_element.gcsurveycol {
         margin-bottom: 0;   
@@ -2061,6 +2081,8 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
         height: auto;
         margin-top: 1em;
      }
+  
+ 
      
  .zippage section:nth-child(2n+2) {
          display: flex;
@@ -2238,22 +2260,18 @@ div > img.wp-image-2665 {
     }
     
  /*8. campaigns in Belgium survey*/
- .post-61 > section:nth-child(1) > div:nth-child(2), .post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
-        height: 450px;
-    }
-    
- .post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
-        height: 500px;
-    }
-    
- .post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
-        height: 550px;
-    }
-    
-    
-    
- /*9. peace day*/
- img.wp-image-1582-bis {
+ /*forest in one day*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(1) > div:nth-child(2) {
+	height: 430px;
+}
+
+
+/*9. peace day*/
+.post-61 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2) {
+	height: 500px;
+}
+
+img.wp-image-1582-bis {
          width: 50%;
          float: none;
          display: inline-block;
@@ -2268,6 +2286,11 @@ div > img.wp-image-2665 {
          margin-left: 25%;
          margin-right: 25%;
      }
+     
+ /*10. recycle4chimps*/   
+.post-61 > section:nth-child(3) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2),  .post-212 > section:nth-child(3) > div:nth-child(2) {
+	height: 500px;
+}     
      
  /*run4chimps: private*/
  .post-666 h2 {
@@ -2334,6 +2357,21 @@ div > img.wp-image-2665 {
 .page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
     background-position: 50% 60% !important;
     }   
+
+/*14. start RS*/
+img.wp-image-rsb {
+	display: none;
+} 
+    
+/*15. registration RS*/
+img.wp-image-8916 {
+	width: 8.77%;
+	position: absolute;
+	top: 60px;
+	right:25px;
+	border:none;
+	box-shadow: none;
+}     
     
 	
 /*==========*/
@@ -2470,10 +2508,13 @@ ul.social-icons li {
    
 /*surveys*/
 .surveycol {
-        width: 50%;
-        height: 500px;
-    }
-    
+     width: 50%;
+}
+  
+.surveycol > div {
+	 height: 500px;
+}  
+ 
 .surveytext {
         position: absolute;
         top: 50%;
@@ -2481,16 +2522,11 @@ ul.social-icons li {
     }
     
 /*survey grandchild pages*/
-.gcsurveycol {
-        width: 50%;
+.gcsurveycol > div {
         height: 350px; 
      }
-    
-.flexbox .spb-column-container.gcsurveycol > div {
-        /*margin-left: 20px;*/
-    }
-    
-.gcsurveytext > div {
+ 
+ .gcsurveytext > div {
         padding-left: 0;
  }
     
@@ -2787,20 +2823,45 @@ img.wp-image-2665 {
     
     
 /*9. campaigns in Belgium*/
-.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
-        height: 450px;
-    }
+/*forest in one day*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(1) > div:nth-child(2) {
+	height: 500px;
+}
+
+/*10. peace day*/
+.post-61 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2) {
+	height: 650px;
+}
+
+
+/*11. recycle4chimps*/   
+.post-61 > section:nth-child(3) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2),  .post-212 > section:nth-child(3) > div:nth-child(2) {
+	height: 650px;
+}      
     
-.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
-        height: 500px;
-    }
-    
-/*10. join recycle4chimps*/
+/*12. join recycle4chimps*/
 .page-id-6615 .fancy-heading .heading-text, .page-id-6617 .fancy-heading .heading-text, .page-id-6619 .fancy-heading .heading-text {
 	top:75%;
 }
 
- 
+/*13. start RS*/
+img.wp-image-rsb {
+	width: 8.77%;
+	position: absolute;
+	right:50px;
+	border:none;
+	box-shadow: none;
+}    
+
+/*14. registration RS*/
+img.wp-image-8916 {
+	width: 8.77%;
+	position: absolute;
+	top: 75px;
+	right:50px;
+	border:none;
+	box-shadow: none;
+} 
 	
 /*==========*/
 /*Posts*/
@@ -3233,8 +3294,11 @@ div.header-right ul.menu > li.menu-search > a {
 /*9. surveys*/
 .surveycol {
         width: 50%;
-        height: 500px;
-    }
+ }
+ 
+.surveycol > div {
+	height: 500px;
+}    
     
 .surveytext {
         position: absolute;
@@ -3245,9 +3309,12 @@ div.header-right ul.menu > li.menu-search > a {
 /*10. survey of the grand child pages*/
 .gcsurveycol {
         width: 50%;
-        height: 350px; 
+  }
+
+.gcsurveycol > div {
+        height: 350px;
      }
-    
+   
 .gcsurveytext h2 {
         font-size: 21px;
         line-height: 37px;
@@ -3267,10 +3334,9 @@ div.header-right ul.menu > li.menu-search > a {
   
   
 /*12. zip pattern*/
-div.zipcol, div.ziptextcol {
+div.zipcol > div, div.ziptextcol {
        height: 500px;  
    }
-   
 
 /*13. footer*/
 #footer section {
@@ -3447,12 +3513,14 @@ h6.count-subject {
     }
   
 /*3. mission*/
-div.missioncol {
+div.missioncol > div {
      height: 500px;
      }
      
 .missiontextcol1, .missiontextcol2 {
     height: 500px;
+    display: flex;
+    align-items:center;
    }
   
 /*4. annual reports*/
@@ -3549,17 +3617,22 @@ img.wp-image-2665, img.wp-image-2697 {
     }
     
 /*9 campaigns in Belgium survey*/
-.post-61 > section:nth-child(2) > div:nth-child(2), .post-61 > section:nth-child(3) > div:nth-child(2)  {
-        height: 400px;
-    }
-    
-.post-159 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2)  {
-        height: 450px;
-    }
-    
-.post-212 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(3) > div:nth-child(2)  {
-        height: 450px;
-    }
+/*forest in one day*/
+.post-61 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(1) > div:nth-child(2) {
+	height: 450px;
+}
+
+
+/*peace day*/
+.post-61 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2) {
+	height: 500px;
+}
+
+
+/*recycle4chimps*/   
+.post-61 > section:nth-child(3) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2),  .post-212 > section:nth-child(3) > div:nth-child(2) {
+	height: 500px;
+}       
     
 /*10. chimpanzees and great apes*/
 .wp-image-4073, .wp-image-4071, .wp-image-4080, .wp-image-4081, .wp-image-4089, .wp-image-4088, .wp-image-4094, .wp-image-4095 {
@@ -3598,14 +3671,33 @@ img.wp-image-2665, img.wp-image-2697 {
 /*17. join recycle4chimps*/
 .page-id-6615 .fancy-heading .heading-text, .page-id-6617 .fancy-heading .heading-text, .page-id-6619 .fancy-heading .heading-text {
 	top:75%;
+} 
+
+
+/*18. start RS*/
+img.wp-image-rsb {
+	width: 8.77%;
+	position: absolute;
+	right:50px;
+	border:none;
+	box-shadow: none;
 }       
         
-/*18. registration roots & shoots*/
+/*19. registration roots & shoots*/
 .page-id-6633 div#main-container, .page-id-6635 div#main-container, .page-id-6637 div#main-container {
 	  min-height: 600px;  
-}   
+}  
 
-/*19. contact page*/
+img.wp-image-8916 {
+	width: 8.77%;
+	position: absolute;
+	top: 75px;
+	right:50px;
+	border:none;
+	box-shadow: none;
+} 
+
+/*20. contact page*/
  .jgibemails {
  	padding-left:100px;
  }  

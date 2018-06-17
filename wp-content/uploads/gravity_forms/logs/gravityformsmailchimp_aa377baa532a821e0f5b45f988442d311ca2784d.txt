@@ -1,2 +1,0 @@
-2018-06-04 17:21:29.602560 - DEBUG --> GFFeedAddOn::maybe_process_feed(): Checking for feeds to process for entry #250 for gravityformsmailchimp. 
-2018-06-04 17:21:29.607022 - DEBUG --> GFFeedAddOn::maybe_process_feed(): No feeds to process for entry #250. 
