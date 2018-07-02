@@ -199,7 +199,8 @@
                         <div class="col-sm-3"><?php wp_nav_menu(array( 'theme_location'=>'secondary' , 'container' => 'false', 'link_before' => '<span class="menu-item-text">', 'link_after' => '</span>'));  ?></div>
                         <div class="col-sm-7 tb-right"><?php echo $tb_right_output; ?></div>
                 </div>
-            </div>
+                </div>
+               
             <?php } ?>
 
             <!--// HEADER //-->
@@ -288,18 +289,17 @@ function jgi_ErrorMessage() {
    switch($langauge)
 	{
 		case "en":
-			
-			$message = "<br />Sorry but we couldn't find the page you are looking for. Please check to make sure you've typed the URL correctly. You may also want to search for what you are looking for.";
+			$message = "<br />Sorry but we couldn't find the page you are looking for. Please check to make sure you've typed the address correctly. You may also want to search for what you are looking for.";
 			
 		break;
 
 		case "nl":
-			$message = "<br />Sorry. We konden niet de pagina vinden die u zocht. Gelieve te controleren of je de URL correct getypt hebt. Je kan ook de zoekfunctie gebruiken.";
+			$message = "<br />Sorry. We konden niet de pagina vinden die u zocht. Gelieve te controleren of je het adres correct getypt hebt. Je kan ook de zoekfunctie gebruiken.";
 			            
 		break;
 
 		case "fr":
-			$message = "<br />Désolé, nous ne pouvions pas trouver le page que vous cherchez. Veuillez contrôler si vous avez ...";
+			$message = "<br />Désolé, nous ne pouvions pas trouver le page que vous cherchez. Veuillez contrôler si vous avez tapé l'adresse correctement. Vous pouvez aussi utiliser la fonction de recherche.";
 						
 		break;
 
@@ -369,7 +369,7 @@ function log_validation_errors( $validation_result ) {
 }
 
 /*12. retrieve the fourth last newsitem*/
-/*
+
 function jgib_FourthNewsTitle() {
   ob_start();
    get_template_part('fourth-news-title');
@@ -377,6 +377,7 @@ function jgib_FourthNewsTitle() {
 } 
 add_shortcode( 'fourth-news-title_shortcode', 'jgib_FourthNewsTitle' );
 
+/*
 function jgib_FourthNewsExcerpt() {
 ob_start();
 

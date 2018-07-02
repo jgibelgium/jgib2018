@@ -258,6 +258,28 @@
     ) );
 
     Redux::setSection( $opt_name, array(
+        'title' => __('Media', 'swift-builder'),
+        'desc' => '',
+        'subsection' => false,
+        'icon' => 'el el-icon-film',
+        'fields' => array(
+            array(
+                'id' => 'youtube_nocookie',
+                'type' => 'button_set',
+                'title' => __('YouTube No Cookie Domain', 'swiftframework'),
+                'subtitle' => __('Enable/Disable the YouTube no cookie domain, for compliance with GDPR.', 'swiftframework'),
+                'desc' => '',
+                'options' => array('0' => 'Disabled','1' => 'Enabled'),
+                'default' => '0'
+                ),
+        )
+    ) );
+    Redux::setSection( $opt_name, array(
+        'type' => 'divide',
+        'id' => 'divide-3'
+    ) );
+
+    Redux::setSection( $opt_name, array(
         'title' => __('Custom Post Types', 'swift-builder'),
         'desc' => '',
         'subsection' => false,
@@ -293,7 +315,7 @@
 
     Redux::setSection( $opt_name, array(
         'type' => 'divide',
-        'id' => 'divide-3'
+        'id' => 'divide-4'
     ) );
 
     Redux::setSection( $opt_name, array(

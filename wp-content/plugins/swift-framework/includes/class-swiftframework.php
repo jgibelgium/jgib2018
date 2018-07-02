@@ -111,6 +111,15 @@ class SwiftFramework {
 		if ( ! $safety ) {
 			$this->include_shortcodes();
 		}
+
+		$youtube_nocookie = false;
+
+		if (isset($sf_opts['youtube_nocookie'])) {
+			$youtube_nocookie = $sf_opts['youtube_nocookie'];
+			if ($youtube_nocookie) {
+				$this->loader->add_filter( 'spb_youtube_base_domain', $this, 'spb_youtube_nocookie' );
+			}
+		}
 	}
 
 	/**
@@ -343,4 +352,12 @@ class SwiftFramework {
         return $classes;
     }
 
+
+    /**
+	 * Adjust YouTube URLs
+	 * @since    2.5.55
+	 */
+   	public function spb_youtube_nocookie() {
+        return 'www.youtube-nocookie.com';
+    }
 }

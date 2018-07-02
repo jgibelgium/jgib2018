@@ -1107,7 +1107,7 @@ jQuery( document ).ready(
             jQuery(this).removeClass('z-depth-4'); 
         });
 
-        jQuery('.sf-close-delete-file').on('click', function(e) {
+        jQuery(document).on('click','.sf-close-delete-file',function(e) {
             e.preventDefault();
             jQuery(this).parent().parent().remove();
             jQuery('.sf_gallery_widget_attached_images_ids').val("");
@@ -2873,22 +2873,23 @@ function initDroppable() {
             cancel: '.spb_map_pin, .spb_elem_handles, .el_name_editor',
            
             change: function( event, ui){
-   
-                 if ( !ui.item.hasClass( 'spb_row' ) ) {
-                   ui.placeholder.stop().height(24).animate({
-                   height: 54,                    
-                   duration: "fast",
-                   easing: "easeout",                    
-                   opacity: 0
-                   }, 300);
-               }
+                
+                ui.placeholder.stop().height(100);
+               //   if ( !ui.item.hasClass( 'spb_row' ) ) {
+               //     ui.placeholder.stop().height(24).animate({
+               //     height: 54,                    
+               //     duration: "fast",
+               //     easing: "easeout",                    
+               //     opacity: 0
+               //     }, 300);
+               // }
                               
             },                
             start: function( event, ui ) {
 
                  startInitDragging();
                  jQuery( '.spb_elem_controls' ).hide();
-                 ui.placeholder.css("opacity", "0");
+                 // ui.placeholder.css("opacity", "0");
                  ui.placeholder.css("width", ui.item.width());
                  ui.placeholder.height( ui.item.height() ); 
                  
@@ -2898,9 +2899,9 @@ function initDroppable() {
                     row_object.parent().hide();        
                     ui.item.find('.controls_right, .spb_elem_controls').hide();
                     ui.placeholder.width( ui.item.width()-20 );
-                    ui.placeholder.height( 66 );
+                    ui.placeholder.height( 100 );
                     ui.placeholder.addClass('widgets-placeholder');
-                    row_object.parent().parent().css('height', 66 );
+                    row_object.parent().parent().css('height', 100 );
                     ui.item.parent().find('.spb_row').addClass('spb_sortable_container_dragging');
                     
                 }
@@ -2998,14 +2999,14 @@ function initDroppable() {
             refreshPositions: true,
             change: function( event, ui){
    
-                 if ( !ui.item.hasClass( 'spb_row' ) ) {
-                   ui.placeholder.stop().height(24).animate({
-                   height: 54,                    
-                   duration: "fast",
-                   easing: "easeout",                    
-                   opacity: 0
-                   }, 300);
-               }
+               //   if ( !ui.item.hasClass( 'spb_row' ) ) {
+               //     ui.placeholder.stop().height(24).animate({
+               //     height: 54,                    
+               //     duration: "fast",
+               //     easing: "easeout",                    
+               //     opacity: 1
+               //     }, 300);
+               // }
                               
             }, 
             start: function( event, ui ) {
@@ -3019,8 +3020,10 @@ function initDroppable() {
                 
                 ui.item.closest('.spb_row').find( '.spb_element_wrapper').first().find( '.spb_column_container' ).first().append( '<div  class="newrowbottom_sortable_element spb_content_element spb_sortable span12  spb_last spb_first ui-sortable-handle" style="position: relative; opacity: 1; z-index: 0;"></div>');
                 jQuery( '.spb_elem_controls' ).hide();
-                ui.placeholder.css("opacity", "0");
+                // ui.placeholder.css("opacity", "0");
                 ui.placeholder.css("width", ui.item.width());
+
+                jQuery('.spb_column_container.ui-droppable').css('min-height', '100px');
                 
                 if ( ui.item.hasClass( 'span12' ) ) {
                     ui.placeholder.css( {maxWidth: ui.item.width()} );
@@ -3040,6 +3043,7 @@ function initDroppable() {
                 jQuery('.newrowbottom_sortable_element').remove();
                 jQuery( 'body' ).removeClass( 'startedDragging' );
                 jQuery.swift_page_builder.save_spb_html();
+                jQuery('.spb_column_container.ui-droppable').css('min-height', 0);
                 
             }
         }

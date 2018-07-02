@@ -2,15 +2,16 @@
 2) verwijder de entry records  van d egravity forms
 3)veravng ict@janegoodall.be doorinfo@janegoodall.be
 4) gepaste URL in de api van Teamleader
-4.5) .htaccess aanpassen op server
-5) testmodus uit Mollie weg
-6) Anti hacking plugin
-7) Bad behavior
-8) email naar de membership coordinators enablen
-9) Goofle analytics
-10) Back WPUp plugin
-11) SEO
-12) adaptive images
+5) deployment
+6) .htaccess aanpassen op server
+7) testmodus uit Mollie weg
+8) Anti hacking plugin
+9) Bad behavior
+10) email naar de membership coordinators enablen
+11) Goofle analytics
+12) Back WPUp plugin
+13) SEO
+14) adaptive images
 
 
 

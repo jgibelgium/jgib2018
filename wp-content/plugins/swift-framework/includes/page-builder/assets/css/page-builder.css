@@ -718,8 +718,8 @@ textarea.spb-encoded-textarea {
 ---------------------------------------------------------- */
 
 .widgets-placeholder-last {
- 
     border: 2px dashed #afafaf;
+    background: #dadada;
     display: inline-block;
     float: left;
     margin-bottom: 15px !important;
@@ -745,16 +745,16 @@ textarea.spb-encoded-textarea {
 }
 
 .widgets-placeholder-row {
-    background-color: #ebc929;
     border: 2px dashed #afafaf;
+    background: #dadada;
     display: inline-block;
     float: left;
     margin-bottom: 15px !important;
 }
 
 .widgets-placeholder {
-    background-color: #fff;
     border: 2px dashed #afafaf;
+    background: #dadada;
     float: left;
     margin-bottom: 15px !important;
     display: inline-block;

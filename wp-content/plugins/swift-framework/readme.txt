@@ -2,8 +2,8 @@
 Contributors: SwiftIdeas
 Tags: swift framework
 Requires at least: 4.0
-Tested up to: 4.8.2
-Stable tag: 4.8.2
+Tested up to: 4.9.6
+Stable tag: 4.9.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,6 +16,19 @@ The Swift Framework plugin provides the Custom Post Types, Swift Slider, and Swi
 Supported Themes: Uplift, Atelier, Cardinal, JOYN
 
 == Changelog ==
+
+= 2.5.56 =
+* FRONTEND: Fix background video issue
+
+= 2.5.55 =
+* FRONTEND: Swift Slider background video support on mobile
+* FRONTEND: Fixed issue with team shortcode output
+* FRONTEND: Added option for youtube videos to be output using nocookie domain
+* FRONTEND: Adjusted video support for background rows
+* FRONTEND: Fixed issue with dynamic header height
+* FRONTEND: Fixed issue with tour auto rotate setting
+* FRONTEND: Fixed issue with column positioning on older browsers
+* BACKEND: Minor adjustments to page builder drag/drop functionality, re-enabled helper box for better movement - still working to improve this
 
 = 2.5.53 =
 * FRONTEND: Actually fixed error with icon box

@@ -77,34 +77,58 @@ FF checkboxen en select nt ok padding top
 transitie
 
 
-nieuwe p our work Lise FR
-
 RS icon op alle rs paginas jane goodall roots and shoots belgium  xxxx
 
 
 mambou in youtube steken
-a:focus op smartphone
 nieuwe fots apen
+canonical link tag wijzigen nr frans
 
+vision and mission
 
 
 Questions to Swiftideas
-- timeline is not available on sm 
 - gap on home page in FF en Edge / content-divider-wrap
 - text of animate headline flows out of the box on sm
 - search van 404 page werkt niet
+- search tout court werkt nt op sm
 - Google maps invalid key
+- hero image appears retardly on sm
 
 
 Edge problemen:
 - nutteloze bar op home page
 - radiobuttons en checkboxes gekleurde achtergrond
+- geen padding op hp
+
 
 
 IE problemen
 - radiobuttons en checkboxes gekleurde achtergrond
 - submit buton
 - geen padding links van read mor elink
+-jgi indent
+
+
+
+
+
+
+IIS tekortkomingen
+- geen verhindering bestandstoegang
+- EWWW Optimizer plugin werkt voor de helft
+- Adative images plugin werkt niet
+
+
+
+
+bedragen nt naast radiobutton op sm in de 3 talen 
+icons in footer buttons
+
+
+
+
+
 
 
 

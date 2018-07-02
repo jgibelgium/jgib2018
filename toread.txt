@@ -83,14 +83,54 @@ h1 - h6: sans-serif gerenderd als Arial in Chrome
 h2 komt veelvuldig voor in de timelines. Hier is font-weight: 400. Op de andere paginas is h2 per css op font-weight: 700 gezet.
 
 *Font-size
-De lettergrootte van het top bar menu komt slechts gepast online tot stand.
+                        kleine smartphome                     grote smartphone              tablet	                   tops
+p                            18px                                  18px                        18px                     20px
 
+div                          18px                                  18px                        18px                    20px
+
+ul                           18px                                  18px                        18px                     20px
+
+accordion titel              18px                                  18px                         18px                     20px
+
+accordion inhoud             18px                                  18px                         18px                     20px
+
+gform label                  18px                                   18px                        18px                     20px
+
+gform button                  18px                                  18px                        18px                    20px
+
+timeline                       18px                                 18px                         20px                    24px
+
+linkbutton parent page          16px                                16px                         16px                     18px
+
+linkbutton child pg             16px                                16px                         16px                     18px
+
+linkbutton gcpage               16px                                16px                          16px                     18px
+
+top bar menu                   12px                                 12px                            12px                    12.25px
+
+main menu                      
+
+mobile menu                    16px                                  16px                         16px
+
+footer                         12px                                  12px                          12px                    12px
+
+tablepress                     18px                                  18px                          18px                    20px
+
+blog h2                        18px                                    18 px                           18px                      20px
+
+blog excerpt                   16px                                    16px                            16px                      18px
+
+artikel h1
+
+artikel p                     18px                                  18px                          18px                       20px
+
+quote                                                                                                                        44px
 * Colors:
 Adoption button: #92b10f is olive color. Upon hovering one shade of is added linearly from top to bottom.
 Donation button: #f5a919 is vivid orange. Upon hovering some #ddd940a gets in.
 The color of the JGIB logo is #f5ce19 of rgb(245,206,25). Di. vivid yellow.
 The color of the brownish JGIB logo is #6a3c00 of rgb(106,60,0).
-The text color is #58595b. This is very dark greyish blue.
+The text color was #58595b. This is very dark greyish blue. Now it is #4f5051. This is also very dark greyish blue.
 The quotes color is #333. This is very dark grey.
 
 * Mollie - Teamleader
@@ -125,5 +165,5 @@ to find the photographer's name.
 - https://www.smh.com.au/lifestyle/we-can-put-the-world-on-the-right-track-why-jane-goodall-isnt-slowing-down-20180213-h0vzo0.html  Hugo Van Lawick
 
 * In order to send free documents a statement has to be taken up in the privacy declaration.
-* Sliding of the timelines is not available on smartphone.
+
  

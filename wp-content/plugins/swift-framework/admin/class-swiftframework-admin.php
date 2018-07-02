@@ -122,7 +122,20 @@ class SwiftFramework_Admin {
 					<br/><br/>
 				<?php } ?>
 
-				<h3>Latest Update (v2.5.51)</h3>
+				<h3>Latest Update (v2.5.55)</h3>
+				<p></p>
+				<ul>
+					<li>FRONTEND: Swift Slider background video support on mobile.</li>
+					<li>FRONTEND: Fixed issue with team shortcode output.</li>
+					<li>FRONTEND: Added option for youtube videos to be output using nocookie domain.</li>
+					<li>FRONTEND: Adjusted video support for background rows.</li>
+					<li>FRONTEND: Fixed issue with dynamic header height.</li>
+					<li>FRONTEND: Fixed issue with tour auto rotate setting.</li>
+					<li>FRONTEND: Fixed issue with column positioning on older browsers.</li>
+					<li>BACKEND: Minor adjustments to page builder drag/drop functionality, re-enabled helper box for better movement - still working to improve this.</li>
+				</ul>
+				<div class="divide"></div>
+				<h3>Previous Update (v2.5.51)</h3>
 				<p></p>
 				<ul>
 					<li>FRONTEND: Background video now plays on mobile devices, if supported.</li>
@@ -130,20 +143,6 @@ class SwiftFramework_Admin {
 					<li>BACKEND: Fixed issue with custom padding values not saving.</li>
 					<li>BACKEND: Fixed issue with icons not loading in page builder icon elements.</li>
 					<li>BACKEND: Improved some error handling.</li>
-				</ul>
-				<div class="divide"></div>
-				<h3>Previous Update (v2.5.50)</h3>
-				<p></p>
-				<ul>
-					<li>FRONTEND: Fixed flexbox display issues.</li>
-					<li>FRONTEND: Fixed issue with code snippet display.</li>
-					<li>FRONTEND: Fixed issue with Swift Slider random option.</li>
-					<li>FRONTEND: Fixed issue with Swift Slider parallax.</li>
-					<li>FRONTEND: Fixed zoomIn animation issue on Safari.</li>
-					<li>BACKEND: Added option to disable SPB History, for performance improvements.</li>
-					<li>BACKEND: Fixed Page Builder editing issue on shop page.</li>
-					<li>FRONTEND: Removed testimonials archive.</li>
-					<li>BACKEND: Fixed shortcode generator issue with WordPress 4.8.</li>
 				</ul>
 			</div>
 		</div>

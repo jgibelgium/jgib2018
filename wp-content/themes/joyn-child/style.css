@@ -30,10 +30,11 @@
 
 .page-content p, .page-content div, .page-content ul {
     text-align: justify;
-    color: #58595b;
+    color: #4f5051;
 }
 
 .page-content p, .page-content div{
+    /*font-family: adobe-caslon-pro, "Adobe Caslon Pro", Georgia, serif;*//*de 2 adobe caslon pro geraken niet gerenderd op smartphone*/
     font-family: Georgia, serif;
 }
 
@@ -59,9 +60,7 @@
     box-shadow: none;
 }
 
-h2 {
-     letter-spacing: 0.025rem;
-}
+h2 { letter-spacing: 0.025rem;}
 
 
 
@@ -80,9 +79,7 @@ h2 {
 	font-weight: 700;
 	} 
 
-#mobile-menu li > a:focus {
-	color: yellow;
-	} 
+
   
 #mobile-menu ul li ul li {
        font-size: 16px;
@@ -111,7 +108,7 @@ div.fancy-heading.fancy-image.light-style h3 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
-/*Article catregory*/   
+/*Article category*/   
 .category .page-heading h1 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
     }
@@ -152,12 +149,13 @@ div.fancy-heading.fancy-image.light-style h3 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
 }
 
-/*Joyn impact text*/
+/*=====*/
+/*Quotes*/
+/*=====*/
 p.impact-text{
 	text-align: right;
 	padding-right: 100px;
 }
-
 
 /*=====*/
 /*Custom*/
@@ -361,7 +359,7 @@ div.gform_footer input.gform_button.button {
 	color: #fff ; 
 	text-shadow: 0.05px 0.05px 0.05px rgba(0,0,0,0.5);
 	border-radius: 2px;
-	font-size: 20px;
+	font-size: 16px;
 	width: auto !important;
 }
 
@@ -394,6 +392,10 @@ div.gform_wrapper.gf_browser_chrome .ginput_complex select {
 
 .ginput_complex label {
 	font-family: Georgia, serif;
+}
+
+form.gfm-form label.gfield_label {
+	font-size:16px !important;
 }
 
 @media only screen and (max-width:641px) {
@@ -453,6 +455,7 @@ margin-top:0;
         color: #FFF;
         background-color: #2A2A2E;
         border-radius: 2px;
+        font-size: 16px;
   }
     
 .surveytext a:hover {
@@ -493,7 +496,7 @@ div.surveycol.displaynone {
 /*=====*/
 /*Photo credits*/
 /*=====*/
-.photo-credit p {
+div.photo-credit p {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px ;
@@ -563,6 +566,7 @@ div.ziptextcol {
   }
   */
 
+
  
 /*=====*/
 /*Footer*/
@@ -611,8 +615,6 @@ h6.count-subject {
         text-transform: none;
     }
     
-
-    
 .ourworkcolumn, .newscolumn {
         border-radius: 5px;
         box-shadow: 0 3px 3px 0 rgba(50,50,50,.2);
@@ -645,7 +647,7 @@ div.ourwork .spb-asset-content, div.news .spb-asset-content {
 
 /*2. who we are*/
 .page-id-16 .page-heading.fancy-heading, .page-id-98 .page-heading.fancy-heading, .page-id-169 .page-heading.fancy-heading{
-        background-position: 0% 55% !important;
+        background-position: center 55% !important;
      }
 
  #who4icons {
@@ -660,25 +662,36 @@ div.ourwork .spb-asset-content, div.news .spb-asset-content {
 
 /*3. Jane Goodall page*/
 .page-id-1934 .page-heading.fancy-heading, .page-id-1936 .page-heading.fancy-heading, .page-id-1938 .page-heading.fancy-heading{
-        background-position: 0% 37% !important;
+        background-position: center 37% !important;
      }
-     
-
 
 /*4. About Jane page*/
 div.spb_swift-slider div.caption-content div.caption-excerpt p {
 	color: #FFFFFF;
+	font-size: 16px;
+}
+
+div.swift-scroll-indicator {
+	display:none;
+}
+
+.mobile-browser .swift-slider a.swift-slider-continue {
+	display:none;
+}
+
+.standard-browser .swift-slider a.swift-slider-continue {
+	display:none;
 }
 
 /*5. Want to know a little more?*/
  .page-id-1944 .page-heading.fancy-heading, .page-id-1940 .page-heading.fancy-heading, .page-id-1942 .page-heading.fancy-heading{
-        background-position: 0% 7% !important;
+        background-position: center 7% !important;
      }
      
      
 /*6. vision and mission */
 .page-id-25 .page-heading.fancy-heading, .page-id-118 .page-heading.fancy-heading, .page-id-176 .page-heading.fancy-heading{
-     background-position: 0% 20% !important;
+     background-position: center 20% !important;
 }
 
  div.missioncol > div {
@@ -694,13 +707,13 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
    
 /*7. our people*/
 .page-id-27 .page-heading.fancy-heading, .page-id-120 .page-heading.fancy-heading, .page-id-178 .page-heading.fancy-heading{
-    background-position: 0% 60% !important;
+    background-position: center 60% !important;
 }
 
 
 /*8. our team*/
 .page-id-31 .page-heading.fancy-heading, .page-id-126 .page-heading.fancy-heading, .page-id-192 .page-heading.fancy-heading{
-    background-position: 0% 23% !important;
+    background-position: center 23% !important;
 }
 
 /*9. our board*/
@@ -710,11 +723,10 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
 
 /*10. our ambassadors*/
 .page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
-    background-position: 0% 20% !important;
+    background-position: center 20% !important;
 }
 
 /*11. annual reports*//*draft: actually not used*/
-
 .page-id-29 .page-heading.fancy-heading, .page-id-100 .page-heading.fancy-heading, .page-id-1267 .page-heading.fancy-heading{
     background-position: top !important;
 }
@@ -725,25 +737,24 @@ div.spb_swift-slider div.caption-content div.caption-excerpt p {
     box-shadow: 0.1px 0.1px 0.1px 0 #87734f;
 }
 
-
 /*12. Our work*/
 .page-id-18 .page-heading.fancy-heading, .page-id-128 .page-heading.fancy-heading, .page-id-184 .page-heading.fancy-heading {
-    background-position: 0% 40% !important;
+    background-position: center 40% !important;
 }
 
 /*13. forest planting*/
 .page-id-8365 .page-heading.fancy-heading, .page-id-8363 .page-heading.fancy-heading, .page-id-8361 .page-heading.fancy-heading{
-    background-position: 0% 70% !important;
+    background-position: center 70% !important;
 }
 
 /*14. Belgium reforestation*/
 .page-id-1285 .page-heading.fancy-heading, .page-id-1287 .page-heading.fancy-heading, .page-id-1289 .page-heading.fancy-heading{
-    background-position: 0% 35% !important;
+    background-position: center 35% !important;
 }
 
 /*15. Reforestation in africa*/
 .page-id-45 .page-heading.fancy-heading, .page-id-143 .page-heading.fancy-heading, .page-id-196 .page-heading.fancy-heading{
-    background-position: 0% 58% !important;
+    background-position: center 58% !important;
 }
 
 img.wp-image-6148 {
@@ -754,41 +765,25 @@ img.wp-image-6148 {
 .post-143 h3, .post-45 h3 {
     margin-top: 0;
 }
-
-
   
 /*16. snares*/
 .page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
-     background-position: 0% 28% !important;
+     background-position: center 28% !important;
 }
    
 /*17. public awareness*/
 .page-id-188 .page-heading.fancy-heading, .page-id-132 .page-heading.fancy-heading, .page-id-59 .page-heading.fancy-heading{
-    background-position: 0% 35% !important;
+    background-position: center 35% !important;
 }
 
 /*18. gombe*/
 .page-id-51 .page-heading.fancy-heading, .page-id-206 .page-heading.fancy-heading, .page-id-151 .page-heading.fancy-heading{
-    background-position: top !important;
+    background-position: center top !important;
 }
 
-   /*centreert niet in Chrome, dus is !important nodig*/
-   /*
-   .flexbox .spb-column-container.achievementtextcol > .spb-column-inner {
-        margin: auto;
-   }
-   */
-/*  
-.donationp {
-      padding-top: 25px;
-}
-*/   
-
-    
-    
 /*19. youth empowerment*/
 .page-id-2166 .page-heading.fancy-heading, .page-id-2168 .page-heading.fancy-heading, .page-id-2170 .page-heading.fancy-heading {
-    background-position: 0% 20% !important;
+    background-position: center 20% !important;
     }
     
 .jgquote {
@@ -797,7 +792,7 @@ img.wp-image-6148 {
      
 /*20. Senegal*/
 .page-id-47 .page-heading.fancy-heading, .page-id-147 .page-heading.fancy-heading, .page-id-200 .page-heading.fancy-heading{
-    background-position: 0% 45% !important;
+    background-position: center 45% !important;
 }
    
 /*research*//*momenteel draft*/
@@ -814,13 +809,17 @@ img.wp-image-6148 {
      
 /*21. Forest in one day*/
 .page-id-8564 .page-heading.fancy-heading, .page-id-8581 .page-heading.fancy-heading, .page-id-8583 .page-heading.fancy-heading {
-    background-position: 0% 60% !important;
+    background-position: center 60% !important;
     }
   
 /*22. peace day*/
 .janepeacequote {
         text-align: justify;    
     }
+    
+img.wp-image-1650 {
+	box-shadow: none;
+}    
     
 /*23. recycle4chimps*/
 #recycatable {
@@ -851,14 +850,21 @@ img.wp-image-6148 {
     background: #fff;
     }
     
+.post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
+    border: 1px solid #6b4b15;
+    border-radius: 1px;
+    box-shadow: none;
+    padding: 0;
+    }    
+    
 /*24. Partnerships*/
 .page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
-    background-position: 0% 35% !important;
+    background-position: center 35% !important;
     } 
     
 /*25. youth page*/
 .page-id-4045 .page-heading.fancy-heading, .page-id-4048 .page-heading.fancy-heading, .page-id-4050 .page-heading.fancy-heading{
-     background-position: 0% 15% !important;
+     background-position: center 15% !important;
     }    
 
     
@@ -881,7 +887,7 @@ ul.workshopschool {
    
 /*29. chimps of gombe*/
 .page-id-4289 .page-heading.fancy-heading, .page-id-4291 .page-heading.fancy-heading, .page-id-4293 .page-heading.fancy-heading{
-    background-position: 0% 19% !important;
+    background-position: center 19% !important;
     }
     
 img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
@@ -892,7 +898,7 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
   
 /*30. Chimpanzees and great apes*/
 .page-id-1805 .page-heading.fancy-heading, .page-id-1807 .page-heading.fancy-heading, .page-id-1785 .page-heading.fancy-heading{
-    background-position: 0% 42% !important;
+    background-position: center 42% !important;
     } 
     
 .page-id-1805 img, .page-id-1807 img, .page-id-1785 img {
@@ -903,24 +909,30 @@ img.wp-image-4305, img.wp-image-4308, img.wp-image-4314, img.wp-image-4306 {
 
 /*31. FAQ Dr. Jane*/
 .page-id-6155 .page-heading.fancy-heading, .page-id-6211 .page-heading.fancy-heading, .page-id-6239 .page-heading.fancy-heading{
-    background-position: 0% 15% !important;
+    background-position: center 15% !important;
     } 
     
     
 /*32. volunteering*/
 .page-id-69 .page-heading.fancy-heading, .page-id-165 .page-heading.fancy-heading, .page-id-218 .page-heading.fancy-heading{
-        background-position: 0% 55% !important;
-    }    
+        background-position: center 55% !important;
+    }  
+    
+/*join jgibelgium*/
+.page-id-9080 .page-heading.fancy-heading, .page-id-9086 .page-heading.fancy-heading, .page-id-9088 .page-heading.fancy-heading{
+        background-position: center 48% !important;
+    }         
+          
     
 /*33. Adoptions: private*/
 .page-id-7440 .page-heading.fancy-heading, .page-id-7442 .page-heading.fancy-heading, .page-id-7444 .page-heading.fancy-heading{
-    background-position: 0% 60% !important;
+    background-position: center 60% !important;
     } 
 
 
 /*33.1 Chimpanzee adoption*/
 .page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
-    background-position: 0% 30% !important;
+    background-position: center 30% !important;
     } 
     
 .page-id-468 img, .page-id-470 img, .page-id-475 img{
@@ -945,9 +957,11 @@ div.toggle-wrap h4.spb_toggle {
     height: 36px;
 }
 
+/*
 .page-id-7091 .gfm-form label.gfield_label, .page-id-7093 .gfm-form label.gfield_label , .page-id-7095 .gfm-form label.gfield_label  {
     font-size: 20px !important;
 }
+*/
 
 .page-id-7091 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-7093 .gf_browser_chrome.gform_wrapper .gfield_radio li input, .page-id-7095 .gf_browser_chrome.gform_wrapper .gfield_radio li input{
 	margin-top:0;
@@ -963,25 +977,12 @@ div.toggle-wrap h4.spb_toggle {
 	width: 25%;
 }    
     
-/*33.4 you have become a chimp guardian */
-.page-id-6720 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
-    //background-position: 0% 30% !important;
-    } 
-
-/*33.5 adoption proces failed*/
-.page-id-6722 .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading, .page-id-xxxx .page-heading.fancy-heading{
-    //background-position: 0% 30% !important;
-     }     
-
 /*34. donations*/
 .page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
-    background-position: 0% 55% !important;
+    background-position: center 55% !important;
     }
 
 /*34.1. Donate*/
-.page-id-6664 .gfm-form label.gfield_label, .page-id-6666 .gfm-form label.gfield_label , .page-id-6668 .gfm-form label.gfield_label  {
-    font-size: 20px !important;
-}
 
 /*34.2 Donation succeeded*/
 .page-id-6664 .gform_wrapper .gfield_radio li label, .page-id-6666 .gform_wrapper .gfield_radio li label, .page-id-6668 .gform_wrapper .gfield_radio li label {
@@ -1007,7 +1008,7 @@ div.toggle-wrap h4.spb_toggle {
     
 /*36. jgi au monde*/
 #tablepress-1 {
-font-size: 20px;	
+font-size: 16px;	
 }
 
 .page-id-5351 .embed-container {
@@ -1074,10 +1075,7 @@ font-size: 20px;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
     }
     
-
-    
 /*Overview page*/
-
 div.cartimage img, div.checkoutimage img {
     	width: 40px;
     	height: 40px;
@@ -1113,8 +1111,6 @@ span.free-badge {
 	font-size: 16px;
 }
 
-
-
 .woocommerce div.product div.woocommerce-product-gallery figure a img {
     border: none;
     box-shadow: none;
@@ -1134,13 +1130,11 @@ span.free-badge {
 }
     
 /*Product Categories*/
-
 .tax-product_cat #breadcrumbs {
-	//display: none;
+	/*display: none;*/
 }
     
 /*Cart page*/
-   
 ul#shipping_method li label {
   	cursor: pointer;
   	margin-left: 10px;
@@ -1211,13 +1205,13 @@ ul#shipping_method li label {
 
 .masonry-items .blog-item .details-wrap h2 {
   	overflow: hidden;
-  	font-size: 21px;
+  	font-size: 18px;
   	line-height: 23px;
   	text-align: left;
 }
 
 .masonry-items .blog-item .details-wrap div.excerpt p {
-  	font-size: 18px;
+  	font-size: 16px;
   	text-align: left;
 }
 
@@ -1258,7 +1252,13 @@ article .post-info {
 /*---------------------------------------------------------------------------*/
 /*1ste query*/
 @media only screen and (max-width: 480px) {
-    
+	
+.page-content p, .page-content div, .page-content ul {
+    font-size: 16px;
+    line-height: 25px;
+}	
+   
+/*custom*/    
 .thumbleft {
         width: 100%;
         text-align: center;
@@ -1270,11 +1270,20 @@ article .post-info {
         margin-left: 0;
     }
     
-/*Joyn impact-text*/
+.jgi-indent {
+    text-indent: -22px;
+  }    
+    
+/*quotes*/
 p.impact-text{
 	text-align: center;
 	padding-right: 0;
-}    
+}   
+
+p.impact-text-large{
+	font-size: 25px;
+	line-height: 35px;
+}  
 
 /*language menu*/    
 div[class^='menu-language-menu'] {
@@ -1317,7 +1326,6 @@ div[class^='menu-language-menu'] a:hover{
 div[class^='menu-language-menu'] li.current-lang a {
 	color: #fe504f !important;
 }
-
 
 div[class^='menu-language-menu'] li.current-lang:hover a {
 	 color: #fff !important;
@@ -1377,13 +1385,9 @@ ul.social-icons li {
        color: #fff;
    }
    
-
+/*downloads*/
+img.pdficon {width:40px;}
    
-/*necessary completion for touch devices*/
- .hover {
-   -webkit-user-select: none;
-   -webkit-touch-callout: none;        
-    }
     
 /*icons in front of the titles*/
 /*
@@ -1412,11 +1416,15 @@ ul.social-icons li {
 .surveytext {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
         width: 350px;
      }
+     
+.surveytext a {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}     
      
 /*survey of the grandchild pages*/
 .gcsurveycol {
@@ -1455,8 +1463,6 @@ ul.social-icons li {
     	width: 100%;
     }
     
-
-    
 /*zip pattern*/
 div.ziptitle {
         margin-bottom: 0;    
@@ -1479,6 +1485,24 @@ div.ziptextcol {
 .zippage section:nth-child(2n+2) div.ziptextcol {
          order: 2;
      }
+     
+/*ul indentation*/
+.jgi-indent {
+    text-align: left;
+    line-height: 25px;
+}
+
+ .spb_accordion .spb_accordion_section h4 {
+     padding-right: 20px !important;
+ }   
+     
+     
+.spb_accordion .spb_accordion_section h4 a {
+     font-size: 16px;
+     line-height: 25px;
+  }   
+ 
+ 
  
 /*footer*/
 #footer {display:block;} 
@@ -1488,7 +1512,6 @@ div.ziptextcol {
 	border: none;
 	margin: 5px 0;
 	text-align: center;
-	
 }  
 	
 #footer .widget_nav_menu .menu a {
@@ -1499,9 +1522,14 @@ div.ziptextcol {
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 } 
 
-#footer li.current-menu-item > a {
+#footer ul.menu li.current-menu-item > a {
     color: #fe504f;
  }
+ 
+#footer div a:hover  {
+    text-decoration: underline;
+    color: yellow !important;
+} 
 
 /*1ste kolom*/
 #footer div.text-left {
@@ -1576,9 +1604,13 @@ h6.count-subject {
     	top: 130px;
     }
     
-    
-    
-/*2. about Jane page*/
+/*2. who we are*/
+   
+
+/*3. jane goodall page*/    
+
+       
+/*4. about Jane page*/
 .page-id-22 .page-heading {
         display: table;
         width: 100%;
@@ -1593,31 +1625,32 @@ h6.count-subject {
         white-space: normal;
     }
     
-/*3. mission and vision*/
-.missiontextcol1, .missiontextcol2 {
-        height: auto;
-    }
-   
-.missiontextcol1 {
-        margin-top: 1em;
-    }
+/*5. mission and vision*/
+.post-25 div.blank_spacer, .post-118 div.blank_spacer, .post-176 div.blank_spacer {
+	height:0 !important;
+}
+
+/*6. our team*/    
+.page-id-31 .page-heading.fancy-heading, .page-id-126 .page-heading.fancy-heading, .page-id-192 .page-heading.fancy-heading{
+    background-position: 50% 23% !important;
+}    
     
-.missiontextcol2 {
-        margin-top: -1em;
-    }
-    
-/*4. our board  */ 
+/*7. our board  */ 
+.page-id-33 .page-heading.fancy-heading, .page-id-124 .page-heading.fancy-heading, .page-id-182 .page-heading.fancy-heading{
+    background-position: 20% 5% !important;
+}
+
 .boardimg {
         max-width: 300px;
         margin: 0 auto;
     }
     
-/*5. our ambassadors*/
+/*8. our ambassadors*/
 .page-id-35 .page-heading.fancy-heading, .page-id-122 .page-heading.fancy-heading, .page-id-180 .page-heading.fancy-heading{
     background-position: 60% 20% !important;
 }    
     
-/*6. Burundi reforestation*/
+/*9. Burundi reforestation*/
 img.wp-image-6148 {
 	width: auto;
 	float: none;
@@ -1625,21 +1658,16 @@ img.wp-image-6148 {
     margin: 0 auto 1em auto;
 }
 
-/*6. RS*/
- /*       
-div > img.wp-image-2665 {
-        width: 90.1%;
+/*10. snare removal*/
+.page-id-57 .page-heading.fancy-heading, .page-id-134 .page-heading.fancy-heading, .page-id-190 .page-heading.fancy-heading{
+     background-position: 18% 28% !important;
+}
+
+/*11. youth empowerment*/
+.page-id-2166 .page-heading.fancy-heading, .page-id-2168 .page-heading.fancy-heading, .page-id-2170 .page-heading.fancy-heading {
+    background-position: 70% 20% !important;
     }
     
-img.wp-image-2665 {
-        display: inline-block;
-        margin: 0 auto;
-        border: none;
-        box-shadow: none;
-      }
- */   
-        
-/*7. youth empowerment*/
 .jgquote {
         width: 100%;
         margin-bottom: 1em;
@@ -1652,29 +1680,33 @@ img.wp-image-2665 {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
+/*12. senegal*/
+.page-id-47 .page-heading.fancy-heading, .page-id-147 .page-heading.fancy-heading, .page-id-200 .page-heading.fancy-heading{
+    background-position: 45% 45% !important;
+}
     
-/*8. campaigns in Belgium survey*/
+/*13. campaigns in Belgium survey*/
 
  /*forest in one day*/
 .post-61 > section:nth-child(1) > div:nth-child(2), .post-159 > section:nth-child(1) > div:nth-child(2), .post-212 > section:nth-child(1) > div:nth-child(2) {
-	height: 550px;
+	height: 450px;
 }
 
 
 /*peace day*/
 .post-61 > section:nth-child(2) > div:nth-child(2), .post-159 > section:nth-child(2) > div:nth-child(2), .post-212 > section:nth-child(2) > div:nth-child(2) {
-	height: 700px;
+	height: 600px;
 }
 
 
 /*recycle4chimps*/   
 .post-61 > section:nth-child(3) > div:nth-child(2), .post-159 > section:nth-child(3) > div:nth-child(2),  .post-212 > section:nth-child(3) > div:nth-child(2) {
-	height: 700px;
+	height: 600px;
 }    
+   
     
-    
-    
-/*9. peace day*/
+/*14. peace day*/
 img.wp-image-1582-bis {
          width: 50%;
          float: none;
@@ -1706,20 +1738,19 @@ img.wp-image-1582-bis {
      }
  
     
-/*11. recycle4chimps*/
-       
-.post-660 .viewcontent {
+/*15. recycle4chimps*/
+.post-660 .viewcontent, .post-662 .viewcontent, .post-664 .viewcontent {
     border: 0;
     background: none;
     margin-bottom: 2em;
     }
 
-.post-660 .thumbleft {
+.post-660 .thumbleft, .post-662 .thumbleft, .post-664 .thumbleft {
     display: block;
     width: 100%;
      }
 
-.post-660 .thumbleft img {
+.post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
     border: 1px solid #6b4b15;
     border-radius: 1px;
     box-shadow: none;
@@ -1727,7 +1758,7 @@ img.wp-image-1582-bis {
     width: 50%;
     }
 
-.post-660 .contentmid {
+.post-660 .contentmid, .post-662 .contentmid, .post-664 .contentmid {
     display: inline-block;
     width: 47%;
     margin-left: 2%;
@@ -1735,7 +1766,7 @@ img.wp-image-1582-bis {
     vertical-align: middle;
     }
     
-.post-660 .contentright {
+.post-660 .contentright, .post-662 .contentright, .post-664 .contentright {
     display: inline-block;
     width: 47%;
     margin-left: 2%;
@@ -1744,52 +1775,12 @@ img.wp-image-1582-bis {
     text-transform: uppercase;
     }
     
- /*12. partnerships*/
+ /*16. partnerships*/
 .page-id-65 .page-heading.fancy-heading, .page-id-161 .page-heading.fancy-heading, .page-id-214 .page-heading.fancy-heading{
     background-position: 35% 60% !important;
-    }    
-    
-/*13. chimpanzees and great apes*/
-.wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
-    	display: block;
-    	width: 300px;
-    	height: 300px;
-    	margin: 20px auto;
-    	float: none;
-    }
- 
-/*14. Meet Lemba, Mambou en Mbebo*/
-.wp-image-3140, .wp-image-3141, .wp-image-3142 {
-	width: 50%;
-	margin-left:25%;
-    margin-right:25%;
-    margin-bottom: 20px;
-}     
- 
-/*15. donations*/
-.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
-    background-position: 40% 55% !important;
     }  
-
-
-
-/*research*//*draft*/
-.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
-    background-position: 30% 35% !important;
-    }
     
-/*16. jgi worldwide*/
-#tablepress-1 tr td {
-	display:block;
-}  
-
-#tablepress-1 tr {
-	border-top: 0.5px solid #555;
-	border-bottom: 0.5px solid #555;
-	
-}
-
-/*17. start RS*/
+ /*17. start RS*/
 img.wp-image-rsb {
 	display: none;
 } 
@@ -1802,7 +1793,78 @@ img.wp-image-8916 {
 	right:25px;
 	border:none;
 	box-shadow: none;
-}    
+}         
+    
+/*19. chimpanzees and great apes*/
+.wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
+    	display: block;
+    	width: 300px;
+    	height: 300px;
+    	margin: 20px auto;
+    	float: none;
+    }
+    
+/*20. volunteering*/
+.page-id-69 .page-heading.fancy-heading, .page-id-165 .page-heading.fancy-heading, .page-id-218 .page-heading.fancy-heading{
+        background-position: center 55% !important;
+    }   
+    
+
+/*21. chimpanzee adoption*/
+.page-id-468 .page-heading.fancy-heading, .page-id-470 .page-heading.fancy-heading, .page-id-475 .page-heading.fancy-heading{
+    background-position: 50% 30% !important;
+    }     
+    
+/*22. Meet Lemba, Mambou en Mbebo*/
+.wp-image-3140, .wp-image-3141, .wp-image-3142 {
+	width: 50%;
+	margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 20px;
+}  
+
+/*23. become chimp guardian*/
+ul#input_38_30 label, ul#input_39_30 label, ul#input_40_30 label {
+	padding-top: 4px;
+}   
+ 
+/*24. donations*/
+.page-id-63 .page-heading.fancy-heading, .page-id-167 .page-heading.fancy-heading, .page-id-220 .page-heading.fancy-heading{
+    background-position: 45% 55% !important;
+    }  
+
+/*25. donate*/
+ul#input_38_6 label, ul#input_39_6 label, ul#input_40_6 label {
+	padding-top: 4px;
+}  
+
+#input_38_6_other, #input_39_6_other, #input_40_6_other {
+	padding-top: 0;
+	margin-top: 2px;
+}
+
+/*research*//*draft*/
+.page-id-39 .page-heading.fancy-heading, .page-id-149 .page-heading.fancy-heading, .page-id-202 .page-heading.fancy-heading{
+    background-position: 30% 35% !important;
+    }
+    
+/*26. jgi worldwide*/
+#tablepress-1 tr td {
+	display:block;
+}  
+
+#tablepress-1 tr {
+	border-top: 0.5px solid #555;
+	border-bottom: 0.5px solid #555;
+	
+}
+
+/*27. Blog page*/
+.masonry-items .blog-item .details-wrap h2 {
+  	font-size: 18px !important;
+}
+
+
       
 /*==========*/
 /*Posts*/
@@ -1840,7 +1902,13 @@ div.cartimage, div.checkoutimage {
 
 /*2de query*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    
+	
+.page-content p, .page-content div, .page-content ul {
+    font-size: 16px;
+    line-height: 25px;
+}	
+ 
+/*custom*/    
 .thumbleft {
         width: 100%;
         text-align: center;
@@ -1852,11 +1920,20 @@ div.cartimage, div.checkoutimage {
         margin-left: 0;
     }
     
-/*Joyn impact-text*/
+.jgi-indent {
+    text-indent: -22px;
+  }     
+    
+/*quotes*/
 p.impact-text{
 	text-align: center;
 	padding-right: 0;
-}     
+}  
+
+p.impact-text-large{
+	font-size: 25px;
+	line-height: 35px;
+}   
 
 /*language menu*/    
 div[class^='menu-language-menu'] {
@@ -1959,14 +2036,13 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
        background-color: #b00;
        color: #fff;
    }
-   
-/*necessary completion for touch devices*/
- .hover {
-   -webkit-user-select: none;
-   -webkit-touch-callout: none;        
-    }
-    
- /*icons in front of the titles*/
+ 
+/*downloads*/
+img.pdficon {
+	width:40px;
+	}
+	   
+/*icons in front of the titles*/
 /*
  .janeicon:before {
     content: '';
@@ -1993,11 +2069,15 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
 .surveytext {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
-        width: 350px;
+        width: 370px;
      }
+     
+ .surveytext a {
+ 	padding-left: 0.5em;
+ 	padding-right:0.5em;
+ }    
      
  /*survey of the grandchild pages*/
  .gcsurveycol {
@@ -2040,33 +2120,28 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
  .prezi {
     	width: 90%;
     }
+    
+/*accordions*/
+.spb_accordion .spb_accordion_section h4 {
+     padding-right: 20px !important;
+ } 
+ 
+.spb_accordion .spb_accordion_section h4 a {
+	font-size: 16px;
+}     
 
 /*=====*/
 /*Gravity forms*/
 /*=====*/
-#gform_fields_35 label {
-	width: auto;
-	float: none;
-}
-
-#gform_fields_35 div.ginput_container {
-	margin-left: 0 !important;
-}
-
-#gform_fields_35 div.gfield_description {
-	margin-left: 0 !important;
-	width: auto;
-}
-  
-#input_35_64 {
-	width: 100%;
-}
-
 .gform_wrapper .ginput_complex .ginput_left {
 	display: block;
 }
 
-
+/*
+form.gfm-form label.gfield_label {
+	font-size:18px !important;
+}
+*/
     
  /*zip pattern*/
  div.ziptitle {
@@ -2082,9 +2157,7 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
         margin-top: 1em;
      }
   
- 
-     
- .zippage section:nth-child(2n+2) {
+.zippage section:nth-child(2n+2) {
          display: flex;
          flex-direction: column;
      }
@@ -2095,6 +2168,11 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
      
 /*footer*/
 #footer {display:block;} 
+
+#footer a:hover {
+	text-decoration:underline;
+	color: yellow !important;
+}
 
 #footer .widget_nav_menu .menu li {
 	line-height: 30px;
@@ -2111,7 +2189,7 @@ div[class^='menu-language-menu'] li.current-lang:hover a {
 	text-shadow: 0.1px 0.1px 0 rgba(0,0,0,1);
 } 
 
-#footer li.current-menu-item > a {
+#footer ul.menu li.current-menu-item > a {
     color: #fe504f;
  } 
 
@@ -2186,10 +2264,7 @@ h6.count-subject {
         height: 150px;
     }
     
-    
-    
 /*2. about Jane page*/
-   
 .page-id-22 .page-heading {
         display: table;
         width: 100%;
@@ -2205,18 +2280,10 @@ h6.count-subject {
     }
     
 /*3. mission*/
-.missiontextcol1, .missiontextcol2 {
-        height: auto;
-    }
-   
-.missiontextcol1 {
-        margin-top: 1em;
-    }
-    
-.missiontextcol2 {
-        margin-top: -1em;
-    }
-    
+.post-25 div.blank_spacer, .post-118 div.blank_spacer, .post-176 div.blank_spacer {
+	height:0 !important;
+}
+
 /*4. our board  */ 
 .boardimg {
         max-width: 300px;
@@ -2231,21 +2298,7 @@ img.wp-image-6148 {
         margin: 0 auto 1em auto;
     }
     
-/*6. RS*/
-/*
-div > img.wp-image-2665 {
-        width: 90.1%;
-    }
-    
- img.wp-image-2665 {
-        display: inline-block;
-        margin: 0 auto;
-        border: none;
-        box-shadow: none;
-      }
- */   
-        
- /*7. youth empowerment*/
+/*7. youth empowerment*/
  .jgquote {
         width: 100%;
         margin-bottom: 1em;
@@ -2306,22 +2359,22 @@ img.wp-image-1582-bis {
      }
      
  /*11. recycle4chimps*/
- .page-id-660 .page-heading h1 {
+ .page-id-660 .page-heading h1, .page-id-662 .page-heading h1, .page-id-664 .page-heading h1 {
         display: none;
     }
     
- .post-660 .viewcontent {
+ .post-660 .viewcontent, .post-662 .viewcontent, .post-664 .viewcontent {
     border: 0;
     background: none;
     margin-bottom: 2em;
     }
 
- .post-660 .thumbleft {
+ .post-660 .thumbleft, .post-662 .thumbleft , .post-664 .thumbleft  {
     display: block;
     width: 100%;
      }
 
- .post-660 .thumbleft img {
+ .post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
     border: 1px solid #6b4b15;
     border-radius: 1px;
     box-shadow: none;
@@ -2329,7 +2382,7 @@ img.wp-image-1582-bis {
     width: 50%;
     }
 
- .post-660 .contentmid {
+ .post-660 .contentmid, .post-662 .contentmid , .post-664 .contentmid  {
     display: inline-block;
     width: 47%;
     margin-left: 2%;
@@ -2337,7 +2390,7 @@ img.wp-image-1582-bis {
     vertical-align: middle;
     }
     
- .post-660 .contentright {
+ .post-660 .contentright, .post-662 .contentright, .post-664 .contentright {
     display: inline-block;
     width: 47%;
     margin-left: 2%;
@@ -2346,7 +2399,7 @@ img.wp-image-1582-bis {
     text-transform: uppercase;
     }
     
-/*12 chimpanzees and great apes*/
+/*12. chimpanzees and great apes*/
 .wp-image-4071, .wp-image-4073, .wp-image-4080, .wp-image-4152, .wp-image-4089, .wp-image-4151, .wp-image-4094, .wp-image-4147 {
     	display: block;
     	margin: 20px auto;
@@ -2371,7 +2424,22 @@ img.wp-image-8916 {
 	right:25px;
 	border:none;
 	box-shadow: none;
-}     
+} 
+
+/*16. become chimp guardian*/
+ul#input_35_30 label, ul#input_36_30 label, ul#input_37_30 label {
+	padding-top: 4px;
+} 
+
+/*17. donate*/
+ul#input_38_6 label, ul#input_39_6 label, ul#input_40_6 label {
+	padding-top: 4px;
+}  
+
+/*18. Blog page*/
+.masonry-items .blog-item .details-wrap h2 {
+  	font-size: 18px !important;
+}   
     
 	
 /*==========*/
@@ -2399,12 +2467,32 @@ div.cartimage, div.checkoutimage {
     	width: 80%;
     	margin: 0 auto;
 }  
+
+@media only screen and (min-width: 641px) {
+	.ginput_container select {
+		margin-top: 0;
+	}
+	
+	.ginput_container ul.gfield_checkbox {
+		margin-top: 0;
+	}
+}/*end sub media query*/
     
                
 }/*end media query tablet portrait*/
 
 /*3de query*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+.page-content p, .page-content div, .page-content ul {
+    font-size: 18px;
+    line-height: 25px;
+}	
+
+/*custom*/
+.jgi-indent {
+    text-indent: -25px;
+  } 	
     
 div[class^='menu-language-menu'] {
     display: block;
@@ -2506,6 +2594,11 @@ ul.social-icons li {
        color: #fff;
    }
    
+/*downloads*/
+img.pdficon {
+	width: 45px;
+	}   
+   
 /*surveys*/
 .surveycol {
      width: 50%;
@@ -2548,6 +2641,11 @@ ul.social-icons li {
       padding: 0 !important;
      }
      
+/*accordions*/
+.spb_accordion .spb_accordion_section h4 a {
+	font-size: 18px;
+}     
+     
 /*=====*/
 /*Gravity forms*/
 /*======*/
@@ -2580,6 +2678,14 @@ span.ginput_full.address_line_1 {
 
 .gfm-form .ginput_container .address_city, .gfm-form .ginput_container .address_zip{
 	width: 200px !important;
+}
+
+form.gfm-form label.gfield_label {
+	font-size:18px !important;
+}
+
+div.gform_wrapper div.gform_footer input[type=submit] {
+	font-size: 18px;
 }
 
 /*footer*/
@@ -2670,6 +2776,12 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 #nav_menu-2.widget.widget_nav_menu li:first-child, #nav_menu-3.widget.widget_nav_menu li:first-child, #nav_menu-4.widget.widget_nav_menu li:first-child {
 	margin-top: 0;
 }
+
+/*quotes*/
+p.impact-text-large {
+	font-size: 30px;
+	line-height: 40px;
+}
 	
 /*necessary completion for touch devices*/
 .hover {
@@ -2717,20 +2829,22 @@ h6.count-subject {
   
 .post-106 > section:nth-child(8) > div > div > section > div {
     	overflow-x: hidden;
-    	//background-color: yellow;
     }
   
   
 .post-108 > section:nth-child(8) > div > div > section > div {
     	overflow-x: hidden;
-    	//background-color: yellow;
-    }
-  
+  }
    
 /*2 about Jane page*/
-   .swiper-slide .caption-content > h2 {
+.swiper-slide .caption-content > h2 {
        font-size: 30px !important;
    }
+   
+div.spb_swift-slider div.caption-content div.caption-excerpt p {
+	color: #FFFFFF;
+	font-size: 20px;
+}   
     
 /*3. annual reports*/
 .annrep {
@@ -2762,25 +2876,25 @@ h6.count-subject {
      }
      
 /*7. recycle4chimps*/
-.post-660 .viewcontent {
+.post-660 .viewcontent, .post-662 .viewcontent , .post-664 .viewcontent  {
     border: 0;
     background: none;
     margin-bottom: 2em;
     }
 
-.post-660 .thumbleft {
+.post-660 .thumbleft, .post-662 .thumbleft, .post-664 .thumbleft {
     display: inline-block;
     width: 33%;
      }
 
-.post-660 .thumbleft img {
+.post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
     border: 1px solid #6b4b15;
     border-radius: 1px;
     box-shadow: none;
     padding: 0;
     }
 
-.post-660 .contentmid {
+.post-660 .contentmid, .post-662 .contentmid, .post-664 .contentmid {
     display: inline-block;
     width: 30%;
     margin-left: 2%;
@@ -2788,7 +2902,7 @@ h6.count-subject {
     vertical-align: middle;
     }
     
-.post-660 .contentright {
+.post-660 .contentright, .post-662 .contentright, .post-664 .contentright {
     display: inline-block;
     width: 30%;
     margin-left: 2%;
@@ -2862,6 +2976,11 @@ img.wp-image-8916 {
 	border:none;
 	box-shadow: none;
 } 
+
+/*15 jgi au monde*/
+#tablepress-1 {
+	font-size:18px;
+}
 	
 /*==========*/
 /*Posts*/
@@ -2892,6 +3011,7 @@ img.wp-image-8916 {
 @media only screen and (min-width: 1025px)
 {
 
+
 #top-bar {
     border-bottom: 0px;
     text-transform: uppercase;
@@ -2901,7 +3021,7 @@ img.wp-image-8916 {
     background: -webkit-linear-gradient(#555,#000) !important;
 }	
 	
-/*verbergen van het mobiele taalmenu*/
+/*. verbergen van het mobiele taalmenu*/
 div[class^='menu-language-menu'] {
 	display: none;
 }
@@ -2915,10 +3035,14 @@ div[class^='menu-language-menu'] {
 
 
 /*2. language menu in top bar*/
-#top-bar .col-sm-3 {text-align: center;}
+#top-bar .col-sm-3 {
+	text-align: center;
+	padding-left:10px;/*nodig voor FF*/
+	padding-right:10px;/*nodig voor FF*/
+}
 
 #menu-language-menu-english-1, #menu-language-menu-dutch-1, #menu-language-menu-french-1  {
-    font-size: 12px;
+    font-size: 12.25px;
     margin-bottom: 0;/*overrides bootstrap*/
 }
 
@@ -2965,7 +3089,6 @@ div[class^='menu-language-menu'] {
 
     
 /*3. navigation menu*/
-
 #top-bar-sticky-wrapper{
   	display: block;
   }
@@ -2973,12 +3096,12 @@ div[class^='menu-language-menu'] {
 #top-bar nav .menu {
       padding-right: 9%;
   }
-  
 
 #top-bar nav .menu > li > a
   {
       padding: 0 !important;
       text-decoration: none;
+      font-size: 12.25px;
   }
 
 #top-bar li:last-child > a {
@@ -3176,7 +3299,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a {
  
  /*kleurt sub menu item wit bij hoveren*/   
  li.menu-item.sf-mega-menu > ul.sub-menu > li.menu-item > a:hover {
-    //color: #FFF !important;
+    
  }
     
  
@@ -3211,7 +3334,7 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
  }
  
 /*6. adoption button*/
-#main-navigation > div > ul > li:nth-child(5) {
+#main-navigation > div > ul > li:nth-child(6) {
 	background-color: #92b10f;
     border-width: 1px;
     border-style: solid;
@@ -3219,29 +3342,28 @@ li.menu-item.sf-mega-menu > ul.sub-menu > li > ul a {
     border-radius: 25px;
     position: relative;
     top: 1.917em;
-    margin-left: 0.5em;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
-#main-navigation > div > ul > li:nth-child(5) > a {
+#main-navigation > div > ul > li:nth-child(6) > a {
     height: 35px !important;
     line-height: 35px !important;
     text-decoration: none;/*verwijdert de underline bij aanklikken*/
  }
  
-#main-navigation > div > ul > li:nth-child(5) span {
+#main-navigation > div > ul > li:nth-child(6) span {
  	background-color: #92b10f;
     color: #FFF;
     vertical-align: middle;
     text-shadow: 0.25px 0.25px 0 rgba(0,0,0,0.3);
  }
  
- #main-navigation > div > ul > li:nth-child(5):hover {
+ #main-navigation > div > ul > li:nth-child(6):hover {
     background: linear-gradient(#92b10f 70%, #839f0d); 
     box-shadow: 0 1.20px 1.2px rgba(0,0,0,0.3);
  }
  
-#main-navigation > div > ul > li:nth-child(5) a:hover span {
+#main-navigation > div > ul > li:nth-child(6) a:hover span {
     background: #92b10f; 
     color: #FFF;
     vertical-align: middle;
@@ -3306,6 +3428,10 @@ div.header-right ul.menu > li.menu-search > a {
         transform: translateY(-50%);
     }
     
+.surveytext a {
+	font-size: 18px;
+}    
+    
 /*10. survey of the grand child pages*/
 .gcsurveycol {
         width: 50%;
@@ -3323,6 +3449,11 @@ div.header-right ul.menu > li.menu-search > a {
 .gcsurvey-btn {
         padding-left: 20px;
      }
+     
+.gcsurvey-btn a.sf-button {
+        font-size: 18px;
+}
+
     
 /*11. videos*/
 .spb_video_widget div.video-wrap {
@@ -3331,14 +3462,21 @@ div.header-right ul.menu > li.menu-search > a {
       padding-bottom: 0 !important;
   } 
   
+/*12. gravity forms*/
+form.gfm-form label.gfield_label {
+	font-size: 20px !important;
+} 
+
+div.gform_footer input.gform_button.button {
+	font-size: 20px;
+} 
   
-  
-/*12. zip pattern*/
+/*13. zip pattern*/
 div.zipcol > div, div.ziptextcol {
        height: 500px;  
    }
-
-/*13. footer*/
+   
+/*14. footer*/
 #footer section {
 	margin-top: 25px;
 }
@@ -3429,6 +3567,8 @@ section#nav_menu-5.widget.widget_nav_menu a::before, section#nav_menu-6.widget.w
 #nav_menu-2.widget.widget_nav_menu li:first-child, #nav_menu-3.widget.widget_nav_menu li:first-child, #nav_menu-4.widget.widget_nav_menu li:first-child {
 	margin-top: 0;
 }
+
+
 	
 
  /*===========*/
@@ -3513,15 +3653,6 @@ h6.count-subject {
     }
   
 /*3. mission*/
-div.missioncol > div {
-     height: 500px;
-     }
-     
-.missiontextcol1, .missiontextcol2 {
-    height: 500px;
-    display: flex;
-    align-items:center;
-   }
   
 /*4. annual reports*/
 .annrep {
@@ -3530,7 +3661,7 @@ div.missioncol > div {
     
 /*4.5 Our people*/
 .boardcol > div {
-	background-position-y: 45%;
+	background-position: center 45%;
 }    
     
 /*5. reforestation Burundi*/
@@ -3573,13 +3704,6 @@ div.missioncol > div {
     display: inline-block;
     width: 33%;
      }
-
-.post-660 .thumbleft img, .post-662 .thumbleft img, .post-664 .thumbleft img {
-    border: 1px solid #6b4b15;
-    border-radius: 1px;
-    box-shadow: none;
-    padding: 0;
-    }
 
 .post-660 .contentmid, .post-662 .contentmid, .post-664 .contentmid {
     display: inline-block;
@@ -3697,7 +3821,28 @@ img.wp-image-8916 {
 	box-shadow: none;
 } 
 
-/*20. contact page*/
+/*Volunteering*/
+.volunteertext p{
+	font-size:22px;
+	line-height:32px;
+}
+
+/*20. Blog page*/
+.masonry-items .blog-item .details-wrap h2 {
+  	font-size: 20px;
+  	
+}
+
+.masonry-items .blog-item .details-wrap div.excerpt p {
+  	font-size: 18px;
+}
+
+/*20. jgi au monde*/
+#tablepress-1 {
+font-size: 20px;	
+}
+
+/*21. contact page*/
  .jgibemails {
  	padding-left:100px;
  }  
@@ -3721,6 +3866,117 @@ img.wp-image-8916 {
 /*==========*/
 /*Woocommerce product*/
 /*=========*/
+
+/*media query in media query*/
+@media only screen and (max-width: 1200px) {
+	/*who we are*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-87 {
+		max-width: 110px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-87 > a {
+		width: 110px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*our work*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-92 {
+		max-width: 95px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-92 > a {
+		width: 95px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*join us*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-97 {
+		max-width: 80px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-97 > a {
+		width: 80px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*alle 3 de FR menu items  */
+	div.full-center nav#main-navigation ul.menu > li.menu-item-87 > a span, div.full-center nav#main-navigation ul.menu > li.menu-item-92 > a span, div.full-center nav#main-navigation ul.menu > li.menu-item-97 > a span {
+		display:table-cell;
+		vertical-align: middle;
+	}
+	
+	
+	/*wie we zijn*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-225 {
+		max-width: 110px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-225 > a {
+		width: 110px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*ons werk*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-233 {
+		max-width: 95px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-233 > a {
+		width: 95px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*doe mee*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-246 {
+		max-width: 90px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-246 > a {
+		width: 90px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*alle 3 de NL menu items  */
+	div.full-center nav#main-navigation ul.menu > li.menu-item-225 > a span, div.full-center nav#main-navigation ul.menu > li.menu-item-233 > a span, div.full-center nav#main-navigation ul.menu > li.menu-item-246 > a span {
+		display:table-cell;
+		vertical-align: middle;
+	}
+	
+	/*qui sonmmes-nous*/
+	div.full-center nav#main-navigation ul.menu > li.menu-item-256 {
+		max-width: 140px;
+	}
+	
+	div.full-center nav#main-navigation ul.menu > li.menu-item-256 > a {
+		width: 130px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/*notre travail */
+	 div.full-center nav#main-navigation ul.menu > li.menu-item-264 {
+	 	max-width: 120px;
+	 }
+	 
+	div.full-center nav#main-navigation ul.menu > li.menu-item-264 > a {
+		width: 80px;
+		line-height: 20px;
+		display:table;
+	}
+	
+	/* qui sommes-nous en notre travail */
+	div.full-center nav#main-navigation ul.menu > li.menu-item-256 > a span, div.full-center nav#main-navigation ul.menu > li.menu-item-264 > a span{
+		display:table-cell;
+		vertical-align: middle;
+	}
+
+}
 
 
 
